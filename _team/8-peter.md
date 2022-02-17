@@ -19,4 +19,4 @@ expertise:
 
 *ROLE:* I represent the department of Technology, Human and Institutional Behaviour (HIB) in BDSI.
 
-*NEED HELP:* I 'm happy to help you with questions about the optimal design, statistical analysis and power calculations for your observational or intervention studies. I can also support you with measurement development and evaluation projects and with different types of multilevel and latent variable modelling analyses such as structural equation modelling. 
+*NEED HELP:* I'm happy to help you with questions about the optimal design, statistical analysis and power calculations for your observational or intervention studies. I can also support you with measurement development and evaluation projects and with different types of multilevel and latent variable modelling analyses such as structural equation modelling. 
