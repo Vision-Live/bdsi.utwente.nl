@@ -74,7 +74,7 @@ The decision will be loosely based on these criteria;
 -   Potential for followup
 -   Investment by applicant
 
-A decision on successful proposals can be expected mid-November, and will be communicated with applicants directly and through this website.
+A decision on successful proposals can be expected by the end of April, and will be communicated with applicants directly and through this website.
 
 ### Contact
 
