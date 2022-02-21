@@ -1,6 +1,6 @@
 ---
 title: BDSi call for proposals 2022
-frontpage: false
+frontpage: true
 subtitle: Sparking Data Science Innovation across BMS
 image: /assets/images/content/call-for-proposals-2021/hero.png
 introduction: |
