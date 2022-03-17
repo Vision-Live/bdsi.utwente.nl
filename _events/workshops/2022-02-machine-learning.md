@@ -20,7 +20,7 @@ A 45 minute guided overview of basic machine learning techniques. [Anna Machens]
 
 This workshop is also open for those who do not want to participate in the Data Science Week. You can sign up for just this workshop using the button below. Note that if you've already signed up for the [Data Science week][dsw], you do not need to sign up for this event again.
 
-<a href="https://forms.office.com/r/gsMLWFWpHY" class="button">Sign up now</a>
+<!-- <a href="https://forms.office.com/r/gsMLWFWpHY" class="button">Sign up now</a> -->
 
 [dsw]: /events/workshops/2022-02_data-science-week/
 [sign-up]: https://forms.office.com/r/gsMLWFWpHY
