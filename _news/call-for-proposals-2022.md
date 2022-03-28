@@ -61,7 +61,7 @@ You **can not** apply for tasks that;
 
 ### When to apply
 
-The deadline for submission of full proposals is April 1st, 2022. We are available to help you with a proposal. That ensures the goals and time estimate will be realistic. Please feel free to contact us to discuss your preliminary ideas.
+The deadline for submission of full proposals is May 1st, 2022. We are available to help you with a proposal. That ensures the goals and time estimate will be realistic. Please feel free to contact us to discuss your preliminary ideas.
 
 ### Selection procedure
 
