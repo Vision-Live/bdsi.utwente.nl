@@ -20,7 +20,7 @@ Projects receive an in-kind investment rather than funding. This means that a de
 
 ### Criteria - How to apply
 
-Applications can be submitted by sending a proposal to [bdsi@utwente.nl](mailto:bdsi@utwente.nl?subject=BDSi%20Data%20Science%20grant%202022) with the subject “BDSi Data Science grant 2022”.
+Applications can be submitted by sending a proposal to [bdsi@utwente.nl](mailto:bdsi@utwente.nl?subject=BDSi%20Data%20Science%20grant%202022) with the subject “BDSi Data Science grant 2022”. A proposal template is available [here](/assets/files/templates/BDSi-grant-template.docx).
 
 A proposal should:
 
