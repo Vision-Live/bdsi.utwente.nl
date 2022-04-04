@@ -19,6 +19,7 @@ In the first part of this webinar, we will have a look at causal relationships, 
 
 ### Recordings
 
--   [Part 1 - January 20th](<https://universiteittwente-my.sharepoint.com/:v:/r/personal/a_k_machens_utwente_nl/Documents/Recordings/Causality%20and%20Causal%20Inference%20from%20observational%20data%20(BDSi%20webinar%20series)-20220120_124728-Meeting%20Recording.mp4?csf=1&web=1&e=EyMqTS>)
--   [Part 2 - February 3rd (First 6 minutes)](<https://universiteittwente-my.sharepoint.com/:v:/r/personal/a_k_machens_utwente_nl/Documents/Recordings/Causality%20and%20Causal%20Inference%20from%20observational%20data%20-%20part%202%20(BDSi%20webinar%20series)-20220203_124727-Meeting%20Recording.mp4?csf=1&web=1&e=vubqCh>)
--   [Part 2 - February 3rd (Remaining ~30 minutes)](<https://universiteittwente-my.sharepoint.com/:v:/r/personal/a_k_machens_utwente_nl/Documents/Recordings/Causality%20and%20Causal%20Inference%20from%20observational%20data%20-%20part%202%20(BDSi%20webinar%20series)-20220203_125401-Meeting%20Recording.mp4?csf=1&web=1&e=5DvqFz>)
+ -   [Part 1 - January 20th](<https://universiteittwente-my.sharepoint.com/:v:/r/personal/a_k_machens_utwente_nl/Documents/Recordings/Causality%20and%20Causal%20Inference%20from%20observational%20data%20(BDSi%20webinar%20series)-20220120_124728-Meeting%20Recording.mp4?csf=1&web=1&e=EyMqTS>)
+ -   [Part 2 - February 3rd (First 6 minutes)](<https://universiteittwente-my.sharepoint.com/:v:/r/personal/a_k_machens_utwente_nl/Documents/Recordings/Causality%20and%20Causal%20Inference%20from%20observational%20data%20-%20part%202%20(BDSi%20webinar%20series)-20220203_124727-Meeting%20Recording.mp4?csf=1&web=1&e=vubqCh>)
+ -   [Part 2 - February 3rd (Remaining ~30 minutes)](<https://universiteittwente-my.sharepoint.com/:v:/r/personal/a_k_machens_utwente_nl/Documents/Recordings/Causality%20and%20Causal%20Inference%20from%20observational%20data%20-%20part%202%20(BDSi%20webinar%20series)-20220203_125401-Meeting%20Recording.mp4?csf=1&web=1&e=5DvqFz>)
+ 
