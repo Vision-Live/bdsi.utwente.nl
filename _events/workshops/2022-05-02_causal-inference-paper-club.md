@@ -23,4 +23,4 @@ The course covers causal inference from the perspective of machine learning, but
 
 <a class="button" href="mailto:bdsi@utwente.nl?subject=paperclub causal inference&body=I would like to join the paper club on causal inference!">Register now!</a>
 
-Registrations are open until April 28th. If you have any questions about this paper club, please send an email to <bdsi@utwente.nl>.
+If you have any questions about this paper club, please send an email to <bdsi@utwente.nl>.
