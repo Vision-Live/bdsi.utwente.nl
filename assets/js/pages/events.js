@@ -132,6 +132,6 @@ function formatDates(start, end, time) {
  */
 function addSuperscriptOrdinals(text) {
     return text.replace(/\b(\d+)(st|nd|rd|th)\b/g, (match, p1, p2) => {
-        return `${p1}<sup>${p2}</sup>`;
+        return `${p1}<sup style="text-transform: none;">${p2}</sup>`;
     });
 }
