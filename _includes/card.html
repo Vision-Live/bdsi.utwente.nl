@@ -12,8 +12,10 @@
       <div class="small text-muted">{{include.subtitle}}</div>
       {% endif %}
     </div>
+    {% if include.content %}
     <div class="card-text">
       {{content}}
     </div>
+    {% endif %}
   </div>
 </div>
