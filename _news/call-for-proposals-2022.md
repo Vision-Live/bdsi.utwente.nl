@@ -59,11 +59,12 @@ You **can not** apply for tasks that;
 -   Are too large, or take too long (for the Data Science grant)  
      _We do not have the (wo)manpower to take on large projects on our own, but we can cooperate with researchers to provide data science support. Please do get in touch, there may be other ways in which we can support you._
 
+<!--
 ### When to apply
 
 {% include card.html title="Data Science grants are now continuous!" subtitle="Updated: May 2nd, 2022" content="Due to popular demand, the BDSi Data Science grants will now be continuously awarded throughout the year. Applications can be made at any time, and grants will be awarded based on available resources." title_element="h4" %}
 
-The deadline for submission of full proposals is May 1st, 2022. We are available to help you with a proposal. That ensures the goals and time estimate will be realistic. Please feel free to contact us to discuss your preliminary ideas.
+The deadline for submission of full proposals is May 1st, 2022. We are available to help you with a proposal. That ensures the goals and time estimate will be realistic. Please feel free to contact us to discuss your preliminary ideas. -->
 
 ### Selection procedure
 
@@ -76,7 +77,7 @@ The decision will be loosely based on these criteria;
 -   Potential for followup
 -   Investment by applicant
 
-A decision on successful proposals can be expected by the end of May, and will be communicated with applicants directly and through this website.
+<!-- A decision on successful proposals can be expected by the end of May, and will be communicated with applicants directly and through this website. -->
 
 ### Contact
 
