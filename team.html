@@ -6,32 +6,32 @@ iconSize: 28
 ---
 
 <div class="container py-6">
-  <h1 class="hero text-white">Meet The Team</h1>
+    <h1 class="hero text-white">Meet The Team</h1>
 </div>
 
 <div class="strip strip-diagonal">
-  <div class="container">
-    <p>
-      Our team consists of one representative from each research cluster at BMS
-      faculty at University of Twente. Each of us have multiple years of
-      experience in developing data driven methods to solve social science
-      problems.
-    </p>
+    <div class="container">
+        <p>
+            Our team consists of one representative from each research cluster
+            at BMS faculty at University of Twente. Each of us have multiple
+            years of experience in developing data driven methods to solve
+            social science problems.
+        </p>
 
-    <div class="mb-4">{% include find-expertise.html %}</div>
+        <div class="mb-4">{% include find-expertise.html %}</div>
 
-    <div id="profiles" class="container mb-6">
-      {% for profile in site.team %}
-      <!-- prettier-ignore -->
-      {% assign givenName = profile.title | split: " " | first %}
-      <div
-        class="team team-summary mb-4"
-        id="{{profile.email | split: '@' | first | replace: '.', '-'}}"
-      >
-        {% include profile-widget.html %}
-        <div class="team-content mt-1">{{ profile.content }}</div>
-      </div>
-      {% endfor %}
+        <div id="profiles" class="container mb-6">
+            {% for profile in site.team %}
+            <!-- prettier-ignore -->
+            {% assign givenName = profile.title | split: " " | first %}
+            <div
+                class="team team-summary mb-4"
+                id="{{profile.email | split: '@' | first | replace: '.', '-'}}"
+            >
+                {% include profile-widget.html %}
+                <div class="team-content mt-1">{{ profile.content }}</div>
+            </div>
+            {% endfor %}
+        </div>
     </div>
-  </div>
 </div>

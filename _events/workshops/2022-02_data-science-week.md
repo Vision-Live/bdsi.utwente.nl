@@ -1,5 +1,5 @@
 ---
-title: "BDSi Data Science Week: Retake"
+title: "Data Science Week: Retake"
 authors:
     - Anna Machens
     - Karel Kroeze
@@ -39,7 +39,7 @@ frontpage: true
   - [Submission Deadline](#submission-deadline)
   - [Closing Session](#closing-session)
 
-{% include card.html title="Are you already signed up?" title_element="h4" content="More information about the dataset, goal and structure of the datathon, slides, and so forth is available <a href='/data-science-week-2022-02'>here</a>." %}
+{% include card.html title="Are you already signed up?" title_element="h4" content="More information about the dataset, goal and structure of the datathon, slides, and so forth is available <a href='/archive/2022-Q1-data-science-week.html'>here</a>." %}
 
 ## What is it?
 
@@ -168,11 +168,12 @@ The teams that created the best and most creative solutions will give a short pr
 [isl-book]: https://www.statlearning.com/ "Introduction to Statistical Learning book"
 [r-primer]: https://moderndive.netlify.app/1-getting-started.html#installing "A primer to R and RStudio"
 [r4ds]: https://r4ds.had.co.nz/ "Hadley Wickhams' R for Data Science"
-[ws-asl]: /events/workshops/statistical-learning "Applied Statistical Learning reading club"
-[sign-up]: https://forms.office.com/r/HyBXA6PJyS "Sign up for the Data Science week"
-[ws-tdw]: /events/workshops/2022-02-tidy-data-wrangling "Workshop Tidy Data Wrangling"
-[sign-up-tdw]: https://forms.office.com/r/Cb3LXfAbTd "Sign up for the Tidy Data Wrangling worskhop"
-[ws-ml]: /events/workshops/2022-02-machine-learning "Workshop Introduction to Machine Learning"
-[sign-up-ml]: https://forms.office.com/r/gsMLWFWpHY "Sign up for the Introduction to Machine Learning workshop"
-[ws-viz]: /events/workshops/2022-02-data-visualization "Workshop Data Visualization in R"
-[sign-up-viz]: https://forms.office.com/r/ewemfe4vHG "Sign up for the Data Visualization workshop"
+
+[ws-asl]: {% link _events/workshops/2021-02-24_statistical-learning.md %} "Applied Statistical Learning reading club"
+[sign-up]: <https://forms.office.com/r/HyBXA6PJyS> "Sign up for the Data Science week"
+[ws-tdw]: {% link _events/workshops/2022-02-tidy-data-wrangling.md %} "Workshop Tidy Data Wrangling"
+[sign-up-tdw]: <https://forms.office.com/r/Cb3LXfAbTd> "Sign up for the Tidy Data Wrangling worskhop"
+[ws-ml]: {% link _events/workshops/2022-02-machine-learning.md %} "Workshop Introduction to Machine Learning"
+[sign-up-ml]: <https://forms.office.com/r/gsMLWFWpHY> "Sign up for the Introduction to Machine Learning workshop"
+[ws-viz]: {% link _events/workshops/2022-02-data-visualization.md %} "Workshop Data Visualization in R"
+[sign-up-viz]: <https://forms.office.com/r/ewemfe4vHG> "Sign up for the Data Visualization workshop"

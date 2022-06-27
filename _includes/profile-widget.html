@@ -1,85 +1,91 @@
 {% if profile.image %}
 <div class="profile-widget">
-  <div
-    class="profile-image"
-    style="background-image: url({{profile.image}}); width: 100px; height: 100px;"
-  ></div>
-  {% endif %}
-  <div class="profile-meta">
-    <h2 class="profile-name">{{ profile.title }}</h2>
-    <h4 class="profile-description">{{ profile.jobtitle }}</h4>
-    <div class="profile-socials">
-      {% if profile.email %}
-      <!-- prettier-ignore -->
-      {% assign userName = profile.email | split: "@" | first %}
-      <a
-        class="icon icon-email"
-        target="_blank"
-        href="mailto:{{profile.email}}"
-        title="Send {{givenName}} an email"
-      >
-        <span
-          class="iconify"
-          data-icon="ph:envelope"
-          data-width="{{page.iconSize | default: 24}}"
-          data-height="{{page.iconSize | default: 24}}"
-        ></span>
-      </a>
-      <a
-        class="icon icon-teams"
-        target="_blank"
-        href="https://teams.microsoft.com/l/chat/0/0?users={{profile.email}}"
-        title="Chat with {{givenName}} on Teams"
-      >
-        <span
-          class="iconify"
-          data-icon="ph:chats-fill"
-          data-width="{{page.iconSize | default: 24}}"
-          data-height="{{page.iconSize | default: 24}}"
-        ></span>
-      </a>
-      <a
-        class="icon icon-people"
-        target="_blank"
-        href="https://people.utwente.nl/{{userName}}"
-        title="Check out {{givenName}}'s works"
-      >
-        <span
-          class="iconify"
-          data-icon="ph:newspaper-clipping"
-          data-width="{{page.iconSize | default: 24}}"
-          data-height="{{page.iconSize | default: 24}}"
-        ></span>
-      </a>
-      {% endif %} {% if profile.linkedinurl %}
-      <a
-        class="icon icon-linkedin"
-        target="_blank"
-        href="{{profile.linkedinurl}}"
-        title="Connect with {{givenName}} on LinkedIn"
-      >
-        <span
-          class="iconify"
-          data-icon="ph:linkedin-logo"
-          data-width="{{page.iconSize | default: 24}}"
-          data-height="{{page.iconSize | default: 24}}"
-        ></span>
-      </a>
-      {% endif %} {% if profile.website %}
-      <a
-        class="icon icon-website"
-        target="_blank"
-        href="{{profile.website}}"
-        title="{{givenName}} also has a website!"
-      >
-        <span
-          class="iconify"
-          data-icon="ph:desktop"
-          data-width="{{page.iconSize | default: 24}}"
-          data-height="{{page.iconSize | default: 24}}"
-        ></span>
-      </a>
-      {% endif %}
+    <div
+        class="profile-image"
+        style="background-image: url({{profile.image}}); width: 100px; height: 100px;"
+    ></div>
+    {% endif %}
+    <div class="profile-meta">
+        <h2 class="profile-name">{{ profile.title }}</h2>
+        <h4 class="profile-description">{{ profile.jobtitle }}</h4>
+        <div class="profile-socials">
+            <!-- prettier-ignore -->
+            {% if profile.email %}
+            {% if profile.identifier %}
+            {% assign identifier = profile.identifier %}
+            {% else %}
+            {% assign identifier = profile.email %}
+            {% endif %}
+            {% assign userName = identifier | split: "@" | first %}
+
+            <a
+                class="icon icon-email"
+                target="_blank"
+                href="mailto:{{profile.email}}"
+                title="Send {{givenName}} an email"
+            >
+                <span
+                    class="iconify"
+                    data-icon="ph:envelope"
+                    data-width="{{page.iconSize | default: 24}}"
+                    data-height="{{page.iconSize | default: 24}}"
+                ></span>
+            </a>
+            <a
+                class="icon icon-teams"
+                target="_blank"
+                href="https://teams.microsoft.com/l/chat/0/0?users={{identifier}}"
+                title="Chat with {{givenName}} on Teams"
+            >
+                <span
+                    class="iconify"
+                    data-icon="ph:chats-fill"
+                    data-width="{{page.iconSize | default: 24}}"
+                    data-height="{{page.iconSize | default: 24}}"
+                ></span>
+            </a>
+            <a
+                class="icon icon-people"
+                target="_blank"
+                href="https://people.utwente.nl/{{userName}}"
+                title="Check out {{givenName}}'s works"
+            >
+                <span
+                    class="iconify"
+                    data-icon="ph:newspaper-clipping"
+                    data-width="{{page.iconSize | default: 24}}"
+                    data-height="{{page.iconSize | default: 24}}"
+                ></span>
+            </a>
+            {% endif %} {% if profile.linkedinurl %}
+            <a
+                class="icon icon-linkedin"
+                target="_blank"
+                href="{{profile.linkedinurl}}"
+                title="Connect with {{givenName}} on LinkedIn"
+            >
+                <span
+                    class="iconify"
+                    data-icon="ph:linkedin-logo"
+                    data-width="{{page.iconSize | default: 24}}"
+                    data-height="{{page.iconSize | default: 24}}"
+                ></span>
+            </a>
+            {% endif %} {% if profile.website %}
+            <a
+                class="icon icon-website"
+                target="_blank"
+                href="{{profile.website}}"
+                title="{{givenName}} also has a website!"
+            >
+                <span
+                    class="iconify"
+                    data-icon="ph:desktop"
+                    data-width="{{page.iconSize | default: 24}}"
+                    data-height="{{page.iconSize | default: 24}}"
+                ></span>
+            </a>
+            {% endif %}
+        </div>
     </div>
-  </div>
 </div>

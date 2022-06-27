@@ -37,4 +37,4 @@ Amin's submission gave the most accurate predictions, **and we .... XXX?**. Sadl
 
 Iris, Anouk, and Emily presented their submission during the final session. While their model is much simpler than that of Amin, they still achieved an admirable prediction accuracy. We especially like their attention to feature creation, and trying to understand and mitigate the patterns of missing data.
 
-Their slides are available for download [here](/assets/files/housing/team-5.pptx).
+<!-- Their slides are available for download [here](/assets/files/housing/team-5.pptx). -->

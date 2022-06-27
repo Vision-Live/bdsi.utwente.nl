@@ -6,21 +6,26 @@ future: true
 collections:
   services:
     output: true
-    permalink: /services/:path/
+    permalink: /:collection/:title
   partners:
+    output: false
   team:
+    output: false
   blogs:
     output: true
-    permalink: /blog/:path/
+    permalink: /:collection/:title
   projects:
     output: true
-    permalink: /projects/:path/
+    permalink: /:collection/:title
   events:
     output: true
-    permalink: /events/:path/
+    permalink: /:collection/:title
   news:
     output: true
-    permalink: /news/:path/
+    permalink: /:collection/:title
+  archive:
+    output: true
+    permalink: /:collection/:title
 
 defaults:
   - scope:
@@ -68,3 +73,4 @@ sass:
 
 plugins:
   - jekyll-environment-variables
+  - jekyll-redirect-from
