@@ -39,7 +39,7 @@ jobs:
 
       - name: Check dead links
         run: |
-          htmlproofer --only-4xx --assume_extension --empty-alt-ignore --checks-to-ignore ScriptCheck  source/_site
+          bundle exec htmlproofer --only-4xx --assume_extension --empty-alt-ignore --checks-to-ignore ScriptCheck  source/_site
     
       - name: Push to www
         run: |
