@@ -30,7 +30,7 @@ frontpage: true
 <!--<a class='button mr-2 btn disabled' href='https://forms.office.com/r/pM0qCQF5eH' title='signups have closed'>Sign up now!</a>-->
 <p>Recordings, slides, and scripts for the workshops are available through the 'Info for participants' page.</p>
 
-<a class='button bg-secondary' href='/archive/2021-Q3-data-science-week.html'>Info for participants</a>" %}
+<a class='button bg-secondary' href='/archive/2021-Q3-data-science-week/'>Info for participants</a>" %}
 
 ## Contents
 
