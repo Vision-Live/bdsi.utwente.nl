@@ -52,7 +52,7 @@ frontpage: true
 
 ## Are you already signed up?
 
-More information about the dataset, goal and structure of the datathon, slides, and so forth will be available [here]({% link _archive/2021-Q3-data-science-week.html %}).
+More information about the dataset, goal and structure of the datathon, slides, and so forth will be available [here]({% link _archive/2021-Q3-data-science-week.md %}).
 
 ## What is it?
 
