@@ -25,6 +25,10 @@ imageBackground: "#009CC3"
     - [Submission Deadline](#submission-deadline)
     - [Closing Session](#closing-session)
 
+
+{% include card.html title="Summer 2022 Data Science Week" content="Registration is now open for the Summer 2022 Data Science Week, September 19th - 26th. <br/> <br/> Get a team together or join on your own and register now!" cta="Register here" cta_link="https://www.utwente.nl/en/bms/research/bdsi/Data%20Science%20Week/" %}
+
+
 ## What is the Data Science Week?
 
 Over the course of two weeks BDSi will organize a datathon and a series of workshops and seminars. In the datathon, you will compete with other teams of behavioural data scientists to solve a real data science case. BDSi staff will organise seminars and workshops throughout the first week to introduce the various steps involved in data science. These activities are meant to support the datathon, but are open to all BMS students and staff. Coaches will be available throughout both weeks to guide you when you run into problems.
@@ -92,6 +96,10 @@ The Data Science Week will start and end with a group session. You will be free 
 
 > <span class="small"> The above schedule is from the winter 2022 data science week, but future data science weeks will follow the same overall schedule.</span>
 
+
+{% include card.html title="Summer 2022 Data Science Week" content="Registration is now open for the Summer 2022 Data Science Week, September 19th - 26th. <br/> <br/> Get a team together or join on your own and register now!" cta="Register here" cta_link="https://www.utwente.nl/en/bms/research/bdsi/Data%20Science%20Week/" %}
+
+
 ### Kickoff
 
 After a quick introduction about BDSi, we will introduce the topic, and give a description of the dataset, and the problem you will solve.
@@ -122,6 +130,10 @@ After spending all weekend with your team fine-tuning your solutions, you will h
 ### Closing Session
 
 The teams that created the best and most creative solutions will give a short presentation about their approach, and there will be time to ask questions to the winning teams as well as BDSi staff and coaches.
+
+
+{% include card.html title="Summer 2022 Data Science Week" content="Registration is now open for the Summer 2022 Data Science Week, September 19th - 26th. <br/> <br/> Get a team together or join on your own and register now!" cta="Register here" cta_link="https://www.utwente.nl/en/bms/research/bdsi/Data%20Science%20Week/" %}
+
 
 ###### References
 

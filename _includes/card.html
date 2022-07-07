@@ -17,5 +17,8 @@
       {{content}}
     </div>
     {% endif %}
+    {% if include.cta %}
+    <a class="button lg mt-2" href="{{include.cta_link}}">{{include.cta}}</a>
+    {% endif %}
   </div>
 </div>
