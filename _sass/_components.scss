@@ -189,11 +189,15 @@ blockquote {
   @include media-breakpoint-up(sm) {
     display: block;
   }
-  img {
+                img,
+                svg {
     width: auto;
-    height: auto;
+    height: 100%;
     max-height: 100%;
   }
+                svg .st1 {
+                  fill: var(--accent-colour, #009cc3);
+                }
   a {
     display: block;
     width: 100%;
@@ -404,7 +408,7 @@ $button-width: 35px;
         text-decoration: none;
         color: $white;
         &:hover {
-          background: $primary;
+          background: var(--accent-colour, $primary);
           color: $white;
           text-decoration: none;
         }
