@@ -5,6 +5,7 @@ bodyClass: page-single
 image: /assets/images/content/2022-09-data-science-week/data-science-week-people-at-work.svg
 imageNarrow: true
 imageBackground: "#edc300"
+accentColour: "#ddb300"
 ---
 
 ## Contents
@@ -40,7 +41,7 @@ The goal of the Data Science week is to introduce interested students and staff 
 
 Everyone related to the faculty of Behavioural and Management Sciences and their friends and family can join (although at least one member of your team needs to have a University of Twente account in order to sign up). You can join with friends, colleagues or even family. The event is open to both novices and experts, and everyone in between. You can join the datathon as a team, alone, or skip it altogether and only participate in the workshops. If you do join alone you can choose to be assigned to a team with other data science enthusiasts.
 
-### Some experience with R (or another programming lannguage)
+### Some experience with R (or another programming language)
 You'll need to have a basic idea of R in order to follow along with the workshops and seminars as all of our examples will be using R and various R packages.
 
 If you're confident you can do the datathon in Python (or any other language - we challenge you to try in C, Fortran, [Brainf***](https://en.wikipedia.org/wiki/Brainfuck), or JavaScript), you're more than welcome to do so. Just be aware that we probably can't offer support if or when you get stuck. 
