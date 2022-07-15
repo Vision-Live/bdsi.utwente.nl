@@ -6,9 +6,9 @@ $primary: #008eaa;
 $secondary: #1f2229;
 
 // Links
-$link-color: $primary;
+$link-color: var(--link-colour, var(--accent-colour, $primary));
 $link-decoration: none;
-$link-hover-color: lighten($primary, 20%);
+$link-hover-color: var(--link-colour, var(--accent-colour, $primary));
 $link-hover-decoration: underline;
 
 // Fonts

@@ -30,7 +30,7 @@ $text: $secondary; // darken($header, 30);
       text-decoration: $link-decoration;
 
       &:hover, &:active, &:focus-within {
-        color: $link-hover-color;
+        filter: brightness(120%);
         text-decoration: $link-hover-decoration;
       }
     }
@@ -45,7 +45,25 @@ h2 {
 }
 h1,
 h2 {
-  color: $primary;
+  color: var(--accent-colour, $primary);
+}
+
+a {
+  text-decoration: underline;
+  filter: var(--link-filter);
+
+  &:hover, &:active, &:focus {
+    filter: var(--link-hover-filter, brightness(120%));
+  }
+
+  &.button {
+    text-decoration: none;
+    filter: none;
+
+    &:hover, &:active, &:focus {
+      filter: brightness(110%);
+    }
+  }
 }
 
 .hero { 
@@ -64,7 +82,7 @@ body {
 
   white-space: nowrap;
   color: $white;
-  background: $primary;
+  background: var(--accent-colour, $primary);
   border-radius: 4px;
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
   
@@ -90,8 +108,9 @@ body {
     font-size: 32px;
   }
   
-  &:hover {
-    background-color: lighten($primary, 10%);
+  &:hover, &:active, &:focus {
+    background: var(--accent-colour, $primary);
+    filter: brightness(110%);
     transform: translateY(-1px);
     box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
     text-decoration: none;
@@ -111,21 +130,27 @@ body {
     border-radius: 3px;
     box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.2);
   }
-} // Type Styling for body content
-.content {
-  ul,
-  ol {
-    margin-top: 10px;
-    margin-bottom: 20px;
-    li {
-      margin-bottom: 5px;
-      margin-left: 20px;
-    }
-  }
-  a {
-    text-decoration: underline;
-  }
-}
+} 
+
+// // Type Styling for body content
+// .content {
+//   ul,
+//   ol {
+//     margin-top: 10px;
+//     margin-bottom: 20px;
+//     li {
+//       margin-bottom: 5px;
+//       margin-left: 20px;
+//     }
+//   }
+//   a {
+//     text-decoration: underline;
+
+//     &:hover, &:active, &:focus {
+//       filter: brightness(120%);
+//     }
+//   }
+// }
 
 .hamburger {
   padding: 0;

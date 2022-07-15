@@ -2,6 +2,7 @@
 <div
     class="card shadow mb-2"
     style="
+        {% if item.accentColour %}--accent-colour: {{item.accentColour}};{% endif %} 
         height: 500px;
         overflow-y: hidden;
         display: flex;
@@ -23,7 +24,7 @@
             height: auto;
         "
     >
-        <div class="tag">{% if item.tag %}{{item.tag}}{% elsif item.tags.size >= 1 %}{{item.tags[0]}}{% else %}{{item.collection}}{% endif %}</div>
+        <div class="tag" {% if item.accentColour %}style="background: {{item.accentColour}}" {% endif %}>{% if item.tag %}{{item.tag}}{% elsif item.tags.size >= 1 %}{{item.tags[0]}}{% else %}{{item.collection}}{% endif %}</div>
         <div class="card-title" style="flex: 0 0 auto">
             <h2><a href="{{site.baseurl}}{{item.url}}">{{item.title}}</a></h2>
             <div class="small text-muted">

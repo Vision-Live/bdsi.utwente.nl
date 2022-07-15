@@ -36,32 +36,6 @@
         --link-hover-filter: brightness(100%);
       {% endif %}
     }
-    
-    #content h1, #content h2 {
-      color: var(--accent-colour);
-    }
-
-    #content a {
-      color: var(--link-colour, var(--accent-colour));
-      filter: var(--link-filter);
-    }
-
-    #content a:hover, #content a:focus {
-      color: var(--link-colour, var(--accent-colour));
-      filter: var(--link-hover-filter, brightness(110%));
-    }
-
-    #content .button, #content a.button {
-      color: #fff;
-      background: var(--accent-colour);
-      filter: none;
-    }
-
-    #content .button:hover, #content .button:focus-within, #content a.button:hover, #content a.button:focus-within {
-      background: var(--accent-colour);
-      filter: brightness(110%);
-    }
-
   </style>
   {% endif %}
 
