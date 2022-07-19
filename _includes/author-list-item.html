@@ -1,9 +1,10 @@
 {% assign profile = site.team | find: "title", author %}
 {% assign header = include.header | default: "h4" %}
+
 {%- if profile -%}
     <a class="author-list-item" href="/team/#{{profile.email | split: '@' | first | replace: '.', '-'}}">
         <{{header}}><img src="{{profile.image}}" alt="{{author}}">{{profile.title}}</{{header}}>
     </a>
 {%- else -%}
-    <{{header}} class="author-list-item">{{author}}</{{header}}>
+    <{{header}} class="author-list-item unresolved" data-name="{{author}}">{{author}}</{{header}}>
 {%- endif -%}

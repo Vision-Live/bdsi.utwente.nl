@@ -2,6 +2,7 @@ $background: $white;
 $header: $secondary;
 $text: $secondary; // darken($header, 30);
 
+@import "./components/projects";
 @for $i from 1 through 6 {
   h#{$i} {
     text-transform: uppercase;
@@ -552,7 +553,19 @@ $button-width: 35px;
       display: flex;
       flex-flow: row nowrap;
 
+      &.external {
+          color: $header  !important;
+          text-decoration: underline;
+          // text-decoration-thickness: 1px;
+          text-decoration-color: $header;
       
+          @for $i from 1 through 6 {
+            & h#{$i} {
+              color: $header  !important;
+            }
+          }
+        }
+
       img {
         height: 1.3em;
         width: auto;
