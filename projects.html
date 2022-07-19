@@ -2,6 +2,9 @@
 title: projects
 layout: default
 bodyClass: page-projects-list
+
+accentColour: "#ef7e22"
+imageBackground: "#ef7e22"
 ---
 
 <div class="container py-6">
@@ -11,18 +14,29 @@ bodyClass: page-projects-list
 <div class="strip strip-diagonal">
   <div class="container">
       {% for project in site.projects %}
-        <div class="project project-summary pb-4">
-          <div class="project-content">
-            <h2 class="project-title">
-              <a href="{{site.baseurl}}{{ project.url }}"
-                >{{ project.title }}</a
-              >
-            </h2>
-            <h4>{{project.author}}</h4>
-            {{ project.content | truncate: 500 }}
+        <div class="project row mb-4">
+            <div class="col-8">
+            <h3>
+              <a href="{{site.baseurl}}{{ project.url }}">{{ project.title }}</a>
+            </h3>
+            <div class="authors">
+              {% include author-list.html authors=project.authors page=project
+              header="h6" %}
+            </div>
+            <div class="introduction">
+              {% if project.introduction %}
+                {{ project.introduction }}
+              {% else %} 
+                {{ project.content | mardownify }} 
+              {% endif %}
+              <a href="{{site.baseurl}}{{project.url}}" class="button read-more">read more...</a>
+            </div>
+          </div>
+          <div class="col-4">
+            <h6 class="date mt-1"></h6>
+            {% include tags-list.html page=project %}
           </div>
         </div>
       {% endfor %}
     </div>
-  </div>
 </div>
