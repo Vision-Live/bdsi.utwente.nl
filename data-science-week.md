@@ -34,12 +34,14 @@ accentColour: "#ddb300"
 
 Over the course of two weeks BDSi will organize a datathon and a series of workshops and seminars. In the datathon, you will compete with other teams of behavioural data scientists to solve a real data science case. BDSi staff will organise seminars and workshops throughout the first week to introduce the various steps involved in data science. These activities are meant to support the datathon, but are open to all BMS students and staff. Coaches will be available throughout both weeks to guide you when you run into problems.
 
-The goal of the Data Science week is to introduce interested students and staff to data science in a fun and cooperative way, and help create a community of data scientists at BMS. After one week, the teams with the best solutions and most interesting approaches to the data science problem will present their work, and be presented with a suitable prize.
+The goal of the Data Science week is to introduce interested students and staff to data science in a fun and cooperative way, and help create a community of data scientists at BMS andn beyond. After one week, the teams with the best solutions and most interesting approaches to the data science problem will present their work, and be presented with a suitable prize.
 
 ## Who can join?
-### BMS staff, students, family, and friends
+### Staff, students, family, and friends
 
-Everyone related to the faculty of Behavioural and Management Sciences and their friends and family can join (although at least one member of your team needs to have a University of Twente account in order to sign up). You can join with friends, colleagues or even family. The event is open to both novices and experts, and everyone in between. You can join the datathon as a team, alone, or skip it altogether and only participate in the workshops. If you do join alone you can choose to be assigned to a team with other data science enthusiasts.
+Everyone related to the University of Twente and their friends and family can join (although at least one member of your team needs to have a University of Twente account in order to sign up). You can join with friends, colleagues or even family. The event is open to both novices and experts, and everyone in between. You can join the datathon as a team, alone, or skip it altogether and only participate in the workshops. If you do join alone you can choose to be assigned to a team with other data science enthusiasts.
+
+BDSi primarily supports Data Science for the faculty of Behavioural and Management Sciences (BMS). Other University of Twente staff is welcome to attend, as long as spaces are available.
 
 ### Some experience with R (or another programming language)
 You'll need to have a basic idea of R in order to follow along with the workshops and seminars as all of our examples will be using R and various R packages.
