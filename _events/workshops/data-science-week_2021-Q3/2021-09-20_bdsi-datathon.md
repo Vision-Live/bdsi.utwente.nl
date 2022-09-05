@@ -28,14 +28,10 @@ frontpage: true
 <p>The Data Science week has finished, and signups are now closed. A new Data Science week will be announced in the coming months.</p>
 <p>If you <a href='mailto:bdsi@utwente.nl?subject=subscribe%20to%20the%20newsletter&body=please%20subscribe%20me%20to%20the%20newsletter' target='_blank'>subscribe to the newsletter</a>, you'll be the first to know!</p>
 <!--<a class='button mr-2 btn disabled' href='https://forms.office.com/r/pM0qCQF5eH' title='signups have closed'>Sign up now!</a>-->
-<p>Recordings, slides, and scripts for the workshops are available through the 'Info for participants' page.</p>
-
-<a class='button bg-secondary' href='/archive/2021-Q3-data-science-week/'>Info for participants</a>" %}
-
+" %}
 ## Contents
 
 - [Contents](#contents)
-- [Are you already signed up?](#are-you-already-signed-up)
 - [What is it?](#what-is-it)
 - [Who can join?](#who-can-join)
 - [What can I do to prepare?](#what-can-i-do-to-prepare)
@@ -50,9 +46,9 @@ frontpage: true
   - [Submission Deadline](#submission-deadline)
   - [Closing Session](#closing-session)
 
-## Are you already signed up?
+<!-- ## Are you already signed up?
 
-More information about the dataset, goal and structure of the datathon, slides, and so forth will be available [here]({% link _archive/2021-Q3-data-science-week.md %}).
+More information about the dataset, goal and structure of the datathon, slides, and so forth will be available [here](). -->
 
 ## What is it?
 
@@ -134,10 +130,10 @@ The teams that created the best and most creative solutions will give a short pr
 <sup>header image adapted from [upklyak](https://www.freepik.com/upklyak)</sup>
 
 <!-- prettier-ignore -->
-[ws-tdw]: {% link _events/workshops/2021-09-21_tidy-data-wrangling.md %} "Workshop Tidy Data Wrangling"
+[ws-tdw]: {% link _events/workshops/data-science-week_2021-Q3/2021-09-21_tidy-data-wrangling.md %} "Workshop Tidy Data Wrangling"
 [ws-asl]: {% link _events/workshops/2021-02-24_statistical-learning.md %} "Applied Statistical Learning reading club"
-[ws-ml]: {% link _events/workshops/2021-09-23_machine-learning.md %} "Workshop Introduction to Machine Learning"
-[ws-viz]: {% link _events/workshops/2021-09-24_data-visualization.md %} "Workshop Data Visualization in R"
+[ws-ml]: {% link _events/workshops/data-science-week_2021-Q3/2021-09-23_machine-learning.md %} "Workshop Introduction to Machine Learning"
+[ws-viz]: {% link _events/workshops/data-science-week_2021-Q3/2021-09-24_data-visualization.md %} "Workshop Data Visualization in R"
 [isl-book]: <https://www.statlearning.com/> "Introduction to Statistical Learning book"
 [r-primer]: <https://moderndive.netlify.app/1-getting-started.html#installing> "A primer to R and RStudio"
 [r4ds]: <https://r4ds.had.co.nz/> "Hadley Wickhams' R for Data Science"

@@ -21,8 +21,7 @@ This workshop is also open for those who do not want to participate in the Data 
 
 <!-- <a href="https://forms.office.com/r/ewemfe4vHG" class="button">Sign up now</a> -->
 
-[dsw]: {% link _events/2022-02_data-science-week.md %}
-[sign-up]: <https://forms.office.com/r/ewemfe4vHG>
+[dsw]: {% link _events/workshops/data-science-week_2022-Q1/2022-02_data-science-week.md %}
 
 ##### Materials
 

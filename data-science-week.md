@@ -10,25 +10,25 @@ accentColour: "#ddb300"
 
 ## Contents
 
-- [Contents](#contents)
-- [What is the Data Science Week?](#what-is-the-data-science-week)
-- [Who can join?](#who-can-join)
-- [What can I do to prepare?](#what-can-i-do-to-prepare)
-    - [Get a team](#get-a-team)
-    - [Read the book (or at least pretend to)](#read-the-book-or-at-least-pretend-to)
-    - [Install R, RStudio, and tidyverse](#install-r-rstudio-and-tidyverse)
-- [What will we do?](#what-will-we-do)
-- [Schedule](#schedule)
-    - [Kickoff](#kickoff)
-    - [Workshop Data Wrangling](#workshop-data-wrangling)
-    - [Workshop Data Visualization](#workshop-data-visualization)
-    - [Workshop Machine Learning](#workshop-machine-learning)
-    - [Submission Deadline](#submission-deadline)
-    - [Closing Session](#closing-session)
-
+-   [Contents](#contents)
+-   [What is the Data Science Week?](#what-is-the-data-science-week)
+-   [Who can join?](#who-can-join)
+    -   [Staff, students, family, and friends](#staff-students-family-and-friends)
+    -   [Some experience with R (or another programming language)](#some-experience-with-r-or-another-programming-language)
+-   [What can I do to prepare?](#what-can-i-do-to-prepare)
+    -   [Get a team](#get-a-team)
+    -   [Read the book (or at least pretend to)](#read-the-book-or-at-least-pretend-to)
+    -   [Install R, RStudio, and tidyverse](#install-r-rstudio-and-tidyverse)
+-   [What will we do?](#what-will-we-do)
+-   [Schedule](#schedule)
+    -   [Kickoff](#kickoff)
+    -   [Workshop Data Wrangling](#workshop-data-wrangling)
+    -   [Workshop Data Visualization](#workshop-data-visualization)
+    -   [Workshop Machine Learning](#workshop-machine-learning)
+    -   [Submission Deadline](#submission-deadline)
+    -   [Closing Session](#closing-session)
 
 {% include card.html title="Summer 2022 Data Science Week" content="Registration is now open for the Summer 2022 Data Science Week, September 19th - 26th. <br/> <br/> Get a team together or join on your own and register now!" cta="Register here" cta_link="https://www.utwente.nl/en/bms/research/bdsi/Data%20Science%20Week/" %}
-
 
 ## What is the Data Science Week?
 
@@ -37,16 +37,18 @@ Over the course of two weeks BDSi will organize a datathon and a series of works
 The goal of the Data Science week is to introduce interested students and staff to data science in a fun and cooperative way, and help create a community of data scientists at BMS andn beyond. After one week, the teams with the best solutions and most interesting approaches to the data science problem will present their work, and be presented with a suitable prize.
 
 ## Who can join?
+
 ### Staff, students, family, and friends
 
 Everyone related to the University of Twente and their friends and family can join (although at least one member of your team needs to have a University of Twente account in order to sign up). You can join with friends, colleagues or even family. The event is open to both novices and experts, and everyone in between. You can join the datathon as a team, alone, or skip it altogether and only participate in the workshops. If you do join alone you can choose to be assigned to a team with other data science enthusiasts.
 
-BDSi primarily supports Data Science for the faculty of Behavioural and Management Sciences (BMS). Other University of Twente staff is welcome to attend, as long as spaces are available.
+BDSi primarily supports Data Science for the faculty of Behavioural and Management Sciences (BMS). Other University of Twente students and staff is welcome to attend (with or without their family and friends), as long as spaces are available.
 
 ### Some experience with R (or another programming language)
+
 You'll need to have a basic idea of R in order to follow along with the workshops and seminars as all of our examples will be using R and various R packages.
 
-If you're confident you can do the datathon in Python (or any other language - we challenge you to try in C, Fortran, [Brainf***](https://en.wikipedia.org/wiki/Brainfuck), or JavaScript), you're more than welcome to do so. Just be aware that we probably can't offer support if or when you get stuck. 
+If you're confident you can do the datathon in Python (or any other language - we challenge you to try in C, Fortran, [Brainf\*\*\*](https://en.wikipedia.org/wiki/Brainfuck), or JavaScript), you're more than welcome to do so. Just be aware that we probably can't offer support if or when you get stuck.
 
 ## What can I do to prepare?
 
@@ -105,9 +107,7 @@ The Data Science Week will start and end with a group session. You will be free 
 
 > <span class="small"> The above schedule is from the winter 2022 data science week, but future data science weeks will follow the same overall schedule.</span>
 
-
 {% include card.html title="Summer 2022 Data Science Week" content="Registration is now open for the Summer 2022 Data Science Week, September 19th - 26th. <br/> <br/> Get a team together or join on your own and register now!" cta="Register here" cta_link="https://www.utwente.nl/en/bms/research/bdsi/Data%20Science%20Week/" %}
-
 
 ### Kickoff
 
@@ -140,9 +140,7 @@ After spending all weekend with your team fine-tuning your solutions, you will h
 
 The teams that created the best and most creative solutions will give a short presentation about their approach, and there will be time to ask questions to the winning teams as well as BDSi staff and coaches.
 
-
 {% include card.html title="Summer 2022 Data Science Week" content="Registration is now open for the Summer 2022 Data Science Week, September 19th - 26th. <br/> <br/> Get a team together or join on your own and register now!" cta="Register here" cta_link="https://www.utwente.nl/en/bms/research/bdsi/Data%20Science%20Week/" %}
-
 
 ###### References
 
@@ -153,6 +151,6 @@ The teams that created the best and most creative solutions will give a short pr
 [r4ds]: https://r4ds.had.co.nz/ "Hadley Wickhams' R for Data Science"
 
 [ws-asl]: {% link _events/workshops/2021-02-24_statistical-learning.md %} "Applied Statistical Learning reading club"
-[ws-tdw]: {% link _events/workshops/2022-02-tidy-data-wrangling.md %} "Workshop Tidy Data Wrangling"
-[ws-ml]: {% link _events/workshops/2022-02-machine-learning.md %} "Workshop Introduction to Machine Learning"
-[ws-viz]: {% link _events/workshops/2022-02-data-visualization.md %} "Workshop Data Visualization in R"
+[ws-tdw]: {% link _events/workshops/data-science-week_2022-Q3/workshop-tidy-data-wrangling.md %} "Workshop Tidy Data Wrangling"
+[ws-ml]: {% link _events/workshops/data-science-week_2022-Q3/workshop-machine-learning.md %} "Workshop Introduction to Machine Learning"
+[ws-viz]: {% link _events/workshops/data-science-week_2022-Q3/workshop-data-visualization.md %} "Workshop Data Visualization in R"

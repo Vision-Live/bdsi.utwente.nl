@@ -170,10 +170,11 @@ The teams that created the best and most creative solutions will give a short pr
 [r4ds]: https://r4ds.had.co.nz/ "Hadley Wickhams' R for Data Science"
 
 [ws-asl]: {% link _events/workshops/2021-02-24_statistical-learning.md %} "Applied Statistical Learning reading club"
-[sign-up]: <https://forms.office.com/r/HyBXA6PJyS> "Sign up for the Data Science week"
-[ws-tdw]: {% link _events/workshops/2022-02-tidy-data-wrangling.md %} "Workshop Tidy Data Wrangling"
-[sign-up-tdw]: <https://forms.office.com/r/Cb3LXfAbTd> "Sign up for the Tidy Data Wrangling worskhop"
-[ws-ml]: {% link _events/workshops/2022-02-machine-learning.md %} "Workshop Introduction to Machine Learning"
-[sign-up-ml]: <https://forms.office.com/r/gsMLWFWpHY> "Sign up for the Introduction to Machine Learning workshop"
-[ws-viz]: {% link _events/workshops/2022-02-data-visualization.md %} "Workshop Data Visualization in R"
-[sign-up-viz]: <https://forms.office.com/r/ewemfe4vHG> "Sign up for the Data Visualization workshop"
+[ws-tdw]: {% link _events/workshops/data-science-week_2022-Q1/2022-02-tidy-data-wrangling.md %} "Workshop Tidy Data Wrangling"
+[ws-ml]: {% link _events/workshops/data-science-week_2022-Q1/2022-02-machine-learning.md %} "Workshop Introduction to Machine Learning"
+[ws-viz]: {% link _events/workshops/data-science-week_2022-Q1/2022-02-data-visualization.md %} "Workshop Data Visualization in R"
+
+[sign-up]: https://forms.office.com/r/HyBXA6PJyS "Sign up for the Data Science week"
+[sign-up-tdw]: https://forms.office.com/r/Cb3LXfAbTd "Sign up for the Tidy Data Wrangling worskhop"
+[sign-up-ml]: https://forms.office.com/r/gsMLWFWpHY "Sign up for the Introduction to Machine Learning workshop"
+[sign-up-viz]: https://forms.office.com/r/ewemfe4vHG "Sign up for the Data Visualization workshop"
