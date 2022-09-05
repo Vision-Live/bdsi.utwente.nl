@@ -23,23 +23,24 @@ frontpage: true
 
 ## Contents
 
-- [Contents](#contents)
-- [What is it?](#what-is-it)
-- [Who can join?](#who-can-join)
-- [What can I do to prepare?](#what-can-i-do-to-prepare)
-  - [Get a team](#get-a-team)
-  - [Read the book (or at least pretend to)](#read-the-book-or-at-least-pretend-to)
-  - [Install R, RStudio, and tidyverse](#install-r-rstudio-and-tidyverse)
-- [What will we do?](#what-will-we-do)
-- [Schedule](#schedule)
-  - [Kickoff](#kickoff)
-  - [Workshop Data Wrangling](#workshop-data-wrangling)
-  - [Workshop Data Visualization](#workshop-data-visualization)
-  - [Workshop Machine Learning](#workshop-machine-learning)
-  - [Submission Deadline](#submission-deadline)
-  - [Closing Session](#closing-session)
+-   [Contents](#contents)
+-   [What is it?](#what-is-it)
+-   [Who can join?](#who-can-join)
+-   [What can I do to prepare?](#what-can-i-do-to-prepare)
+    -   [Get a team](#get-a-team)
+    -   [Read the book (or at least pretend to)](#read-the-book-or-at-least-pretend-to)
+    -   [Install R, RStudio, and tidyverse](#install-r-rstudio-and-tidyverse)
+-   [What will we do?](#what-will-we-do)
+-   [Schedule](#schedule)
+    -   [Kickoff](#kickoff)
+    -   [Workshop Data Wrangling](#workshop-data-wrangling)
+    -   [Workshop Data Visualization](#workshop-data-visualization)
+    -   [Workshop Machine Learning](#workshop-machine-learning)
+    -   [Submission Deadline](#submission-deadline)
+    -   [Closing Session](#closing-session)
 
-{% include card.html title="Are you already signed up?" title_element="h4" content="More information about the dataset, goal and structure of the datathon, slides, and so forth is available <a href='/archive/2022-Q1-data-science-week/'>here</a>." %}
+<!--
+{% include card.html title="Are you already signed up?" title_element="h4" content="More information about the dataset, goal and structure of the datathon, slides, and so forth is available <a href='/archive/2022-Q1-data-science-week/'>here</a>." %} -->
 
 ## What is it?
 
