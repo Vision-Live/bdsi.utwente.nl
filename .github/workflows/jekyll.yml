@@ -40,7 +40,7 @@ jobs:
       - name: Check dead links
         run: |
           cd source
-          bundle exec htmlproofer --only-4xx --ignore-status-codes "403" --assume-extension --ignore-empty-alt --checks "Links,Images"  ./_site
+          bundle exec htmlproofer --only-4xx --ignore-status-codes "403" --assume-extension --ignore-empty-alt=true --checks "Links,Images"  ./_site
     
       - name: Push to www
         run: |
