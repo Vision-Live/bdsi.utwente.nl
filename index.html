@@ -52,7 +52,7 @@ bodyClass: page-home
     {% assign items = site.events | concat: site.news | concat: site.blogs %} 
     {% assign items = items | where: "frontpage", true | sort: "date" | reverse %}
     {% for item in items limit:3 %}
-      <div class="col-12 col-md-6 col-xl-4">{% include news-card.html %}</div>
+        <div class="col-12 col-md-6 col-xl-4">{% include news-card.html %}</div>
     {% endfor %}
   </div>
 </div>

@@ -1,5 +1,5 @@
 ---
-title: BDSi Data Science Week 2022 
+title: Summer 2022 Data Science Week - A recap
 frontpage: true
 subtitle: Sharing Data Science Innovation
 image: /assets/images/content/2022-09-data-science-week/data-science-week-people-at-work.svg

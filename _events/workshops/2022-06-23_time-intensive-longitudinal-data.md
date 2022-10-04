@@ -1,5 +1,6 @@
 ---
 title: Analysis of time-intensive longitudinal data
+date: 2022-06-23
 startDate: 2022-06-23
 endDate: 2022-07-07
 time: "12:45 - 13:30"

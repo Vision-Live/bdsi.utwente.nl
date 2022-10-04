@@ -1,5 +1,6 @@
 ---
 title: Causal Inference Paper Club
+date: 2022-05-02
 startDate: 2022-05-02
 endDate: ongoing
 time: "every other monday, 16:30 - 17:30"
