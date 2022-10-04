@@ -5,6 +5,8 @@ jobtitle: "Data Science Researcher"
 section: 'Department Liaisons'
 email: "p.m.tenklooster@utwente.nl"
 linkedinurl: "https://www.linkedin.com/in/peter-ten-klooster-5b0150a/"
+sortorder: 3
+department: HIB
 expertise:
     - research methodology
     - data analytics

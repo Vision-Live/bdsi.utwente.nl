@@ -68,8 +68,13 @@
         <span class="iconify-inline" data-icon="ph:rainbow-cloud"></span>
         Meet the team
       </h5>
-      {% assign members = site.team | sort: "title" %} {% for profile in members
+      {% assign section = "" %}
+      {% assign members = site.team | sort: "title" | sort: "sortorder" %} {% for profile in members
       %}
+      {% if profile.section != section %}
+      {% assign section = profile.section %}
+      <div class="tiny-header">{{section}}</div>
+      {% endif %}
       <a
         href="/team/#{{profile.email | split: '@' | first | replace: '.', '-'}}"
         class="inset"
@@ -77,7 +82,7 @@
           src="{{profile.image}}"
           alt="{{author}}"
           class="profile-image"
-        />{{profile.title}}</a
+        />{{profile.title}}{% if profile.department %} <span class="text-muted">{{ profile.department}}</span>{% endif %}</a
       >
       {% endfor %}
     </div>

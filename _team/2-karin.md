@@ -5,6 +5,8 @@ jobtitle: 'Data Science Researcher'
 section: 'Department Liaisons'
 email: 'c.g.m.oudshoorn@utwente.nl'
 linkedinurl: 'https://www.linkedin.com/in/karin-groothuis-oudshoorn-37b7866/'
+sortorder: 3
+department: TPS
 expertise:
     - biostatistics
     - mathematical statistics

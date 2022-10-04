@@ -5,7 +5,7 @@ bodyClass: page-team-list
 iconSize: 28
 ---
 
-{% assign sections = site.team | map: "section" | uniq %} 
+{% assign sections = site.team | sort: "sortorder" | map: "section" | uniq %} 
 
 <div class="container py-6">
     <h1 class="hero text-white">Meet The Team</h1>
@@ -24,7 +24,7 @@ iconSize: 28
 
         <div id="profiles" class="container mb-6">
             {% for section in sections %}
-            {% assign section_profiles = site.team | where_exp: "profile", "profile.section == section" %}
+            {% assign section_profiles = site.team | where_exp: "profile", "profile.section == section" | sort: "title" %}
             <h1>{{section}}</h1>
             {% for profile in section_profiles %}
             <!-- prettier-ignore -->

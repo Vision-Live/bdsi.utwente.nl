@@ -5,6 +5,7 @@ section: "Head of BDSi"
 jobtitle: "Team Leader"
 email: "stephanie.vandenberg@utwente.nl"
 linkedinurl: "https://www.linkedin.com/in/stéphanie-van-den-berg-3038765/"
+sortorder: 1
 expertise:
     - research methodology
     - data analytics

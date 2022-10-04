@@ -598,7 +598,7 @@ $button-width: 35px;
       max-width: calc(max(900px, 80vw));
 
       display: flex;
-      flex-flow: row nowrap;
+      flex-flow: row wrap;
       justify-content: space-between;
     }
 
@@ -645,12 +645,23 @@ $button-width: 35px;
       overflow: hidden;
     }
 
+                .tiny-header {
+                  font-size: .8em;
+                  font-weight: lighter;
+                  text-transform: uppercase;
+        
+                  color: rgba(255, 255, 255, 0.4);
+                }
+        
+                a+.tiny-header {
+                  margin-top: .5em;
+                }
     a {
       .icon {
         width: 24px;
       }
       img.profile-image {
-        height: auto;
+        height: 1.3em;
         width: 1.3em;
         border-radius: 50%;
         position: relative;
@@ -658,6 +669,7 @@ $button-width: 35px;
         margin-right: .3em;
         filter: saturate(0%) brightness(120%) contrast(120%);
         transition: filter .2s ease-in-out;
+        object-fit: cover;
       }
 
       img.logo {

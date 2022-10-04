@@ -5,6 +5,7 @@ jobtitle: 'Data Scientist'
 section: "Data Scientists"
 email: 'k.a.kroeze@utwente.nl'
 linkedinurl: 'https://www.linkedin.com/in/karelkroeze'
+sortorder: 2
 website: 'https://karel-kroeze.nl/'
 expertise:
     - computational statistics

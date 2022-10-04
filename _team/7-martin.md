@@ -6,6 +6,8 @@ section: 'Department Liaisons'
 email: "martin.schmettow@utwente.nl"
 identifier: "m.schmettow@utwente.nl"
 linkedinurl: "https://www.linkedin.com/in/schmettow/"
+sortorder: 3
+department: LDT
 expertise:
     - complex motor skills
     - training simulators

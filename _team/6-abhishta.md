@@ -5,6 +5,8 @@ jobtitle: "Data Science Researcher"
 section: 'Department Liaisons'
 email: "s.abhishta@utwente.nl"
 linkedinurl: "https://linkedin.com/in/aabhishta"
+sortorder: 3
+department: HBE
 expertise:
   - cyber security
   - monte carlo simulations

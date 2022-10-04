@@ -5,6 +5,7 @@ jobtitle: "Communications Manager"
 section: "Student Assistants"
 email: "m.ivichjijon@student.utwente.nl"
 linkedinurl: "https://www.linkedin.com/in/martina-ivich-b99809231"
+sortorder: 4
 expertise:
     - communication
     - social media
