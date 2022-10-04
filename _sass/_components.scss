@@ -577,9 +577,10 @@ $button-width: 35px;
 
       img {
         height: 1.3em;
-        width: auto;
+        width: 1.3em;
         border-radius: 50%;
         margin-right: .2em;
+        object-fit: cover;
       }
     }
 }
