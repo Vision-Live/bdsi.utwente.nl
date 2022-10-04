@@ -49,6 +49,7 @@ h2 {
   color: var(--accent-colour, $primary);
 }
 
+
 a {
   text-decoration: underline;
   filter: var(--link-filter);
@@ -74,6 +75,14 @@ a {
 body {
   background-color: $background;
   color: $text;
+  counter-reset: figure;
+  }
+  
+  .label-figure::before {
+    counter-increment: figure;
+    content: "Figure " counter(figure)": ";
+  
+    font-weight: bolder;
 }
 
 .button {
