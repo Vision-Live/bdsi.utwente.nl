@@ -51,14 +51,20 @@
       </a>
       <h5 class="mt-2">Proud partners with</h5>
       {% assign partners = site.partners | sort: "title" %}
-      <div class="inset" id="partners-slider">
+      <div class="inset" id="partners-list">
         {% for partner in partners %}
         <a href="{{partner.website}}" target="_blank">
+          {% if partner.logo %}
           <img
             src="{{partner.logoLight | default: partner.logo}}"
             alt="{{partner.title}} logo"
             class="logo"
           />
+          {% elsif partner.short_title %}
+          {{partner.short_title}}
+          {% else %}
+          {{partner.title}}
+          {% endif %}
         </a>
         {% endfor %}
       </div>
