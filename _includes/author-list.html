@@ -1,15 +1,19 @@
+{%- if include.page -%}
+    {%- assign page = include.page -%}
+{%- endif -%}
+
+{% assign header = include.header | default: "h4" %}
+{%- assign authors = include.authors | default: page.authors -%}
+
+{%- if authors == nil -%} 
+    {% if page.author != nil %}
+    {% assign authors = "" | split: "" %}
+    {% assign authors = authors | push: page.author %}
+    {% endif %}
+{%- endif -%}
+
+{% if authors != nil %}
 <div class="author-list">
-    {%- if include.page -%}
-        {%- assign page = include.page -%}
-    {%- endif -%}
-    {%- assign header = include.header | default: "h4" -%}
-    {%- assign authors = include.authors | default: page.authors -%}
-
-    {%- if authors == nil -%} 
-        {% assign authors = "" | split: "" %}
-        {% assign authors = authors | push: page.author %}
-    {%- endif -%}
-
     {%- for author in authors -%}
         {%- if forloop.first != true -%}
             <{{header}}>,&MediumSpace;</{{header}}>
@@ -20,3 +24,4 @@
         {% include author-list-item.html %}
     {% endfor %}
 </div>
+{% endif %}
