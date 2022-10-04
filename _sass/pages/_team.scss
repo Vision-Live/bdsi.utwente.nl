@@ -48,20 +48,22 @@
   }
   .profile-socials {
     display: flex;
+    flex-flow: column nowrap;
     width: min-content;
-    padding: 1.3em .3em 0em; 
-    gap: .3em;
     background-color: $primary;
     border-radius: 3px;
     position: relative;
+    padding: 0.1em 0.6em 0;
 
-    &::after {
-      content: "Get in touch!";
-      position: absolute;
-      left: .6em;
-      top: .1em;
+    .socials-callout {
       color: $white;
       font-family: "Nothing You Could Do", cursive;
+      min-width: max-content;
+      }
+      
+      .socials-buttons {
+        display: flex;
+        flex-flow: row nowrap;
     }
 
     a.icon {

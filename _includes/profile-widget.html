@@ -9,6 +9,7 @@
         <h2 class="profile-name">{{ profile.title }}</h2>
         <h4 class="profile-description">{{ profile.jobtitle }}</h4>
         <div class="profile-socials">
+            <div class="socials-callout">Get in touch!</div>
             <!-- prettier-ignore -->
             {% if profile.email %}
             {% if profile.identifier %}
@@ -17,7 +18,8 @@
             {% assign identifier = profile.email %}
             {% endif %}
             {% assign userName = identifier | split: "@" | first %}
-
+            {% assign domain = identifier | split: "@" | last %}
+            <div class="socials-buttons">
             <a
                 class="icon icon-email"
                 target="_blank"
@@ -44,6 +46,7 @@
                     data-height="{{page.iconSize | default: 24}}"
                 ></span>
             </a>
+            {% if domain == "utwente.nl" %}
             <a
                 class="icon icon-people"
                 target="_blank"
@@ -57,6 +60,7 @@
                     data-height="{{page.iconSize | default: 24}}"
                 ></span>
             </a>
+            {% endif %}
             {% endif %} {% if profile.linkedinurl %}
             <a
                 class="icon icon-linkedin"
@@ -86,6 +90,7 @@
                 ></span>
             </a>
             {% endif %}
+        </div>
         </div>
     </div>
 </div>
