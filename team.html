@@ -5,6 +5,8 @@ bodyClass: page-team-list
 iconSize: 28
 ---
 
+{% assign sections = site.team | map: "section" | uniq %} 
+
 <div class="container py-6">
     <h1 class="hero text-white">Meet The Team</h1>
 </div>
@@ -21,7 +23,10 @@ iconSize: 28
         <div class="mb-4">{% include find-expertise.html %}</div>
 
         <div id="profiles" class="container mb-6">
-            {% for profile in site.team %}
+            {% for section in sections %}
+            {% assign section_profiles = site.team | where_exp: "profile", "profile.section == section" %}
+            <h1>{{section}}</h1>
+            {% for profile in section_profiles %}
             <!-- prettier-ignore -->
             {% assign givenName = profile.title | split: " " | first %}
             <div
@@ -31,6 +36,7 @@ iconSize: 28
                 {% include profile-widget.html %}
                 <div class="team-content mt-1">{{ profile.content }}</div>
             </div>
+            {% endfor %}
             {% endfor %}
         </div>
     </div>

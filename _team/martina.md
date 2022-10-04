@@ -2,6 +2,7 @@
 title: "Martina Ivich Jijon"
 image: "/assets/images/team/martina.jpeg"
 jobtitle: "Communications Manager"
+section: "Student Assistants"
 email: "m.ivichjijon@student.utwente.nl"
 linkedinurl: "https://www.linkedin.com/in/martina-ivich-b99809231"
 expertise:

@@ -2,6 +2,7 @@
 title: "Martin Schmettow"
 image: "/assets/images/team/Martin-thumbnail.png"
 jobtitle: "Human Factors researcher"
+section: 'Department Liaisons'
 email: "martin.schmettow@utwente.nl"
 identifier: "m.schmettow@utwente.nl"
 linkedinurl: "https://www.linkedin.com/in/schmettow/"

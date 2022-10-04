@@ -2,6 +2,7 @@
 title: 'Karel Kroeze'
 image: '/assets/images/team/Karel-thumbnail.png'
 jobtitle: 'Data Scientist'
+section: "Data Scientists"
 email: 'k.a.kroeze@utwente.nl'
 linkedinurl: 'https://www.linkedin.com/in/karelkroeze'
 website: 'https://karel-kroeze.nl/'

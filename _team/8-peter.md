@@ -2,6 +2,7 @@
 title: "Peter ten Klooster"
 image: '/assets/images/team/Peter-thumbnail.png'
 jobtitle: "Data Science Researcher"
+section: 'Department Liaisons'
 email: "p.m.tenklooster@utwente.nl"
 linkedinurl: "https://www.linkedin.com/in/peter-ten-klooster-5b0150a/"
 expertise:
