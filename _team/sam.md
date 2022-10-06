@@ -1,6 +1,6 @@
 ---
 title: "Tran Thi Hoang Anh (Sam)"
-image: "/assets/images/team/Sam.jpeg"
+image: "/assets/images/team/Sam.JPEG"
 jobtitle: "Student Assistant"
 email: "tranthihoanganh@student.utwente.nl"
 linkedinurl: "https://www.linkedin.com/in/anhtth"
