@@ -2,10 +2,10 @@
 title: Data Science week
 layout: single_page
 bodyClass: page-single
-image: /assets/images/content/2022-09-data-science-week/data-science-week-people-at-work.svg
+image: /assets/images/data-science-week-2023-spring.svg
 imageNarrow: true
-imageBackground: "#edc300"
-accentColour: "#ddb300"
+imageBackground: "#aa065d"
+accentColour: "#dd0979"
 ---
 
 ## Contents
@@ -28,21 +28,21 @@ accentColour: "#ddb300"
     -   [Submission Deadline](#submission-deadline)
     -   [Closing Session](#closing-session)
 
-{% include card.html title="Summer 2022 Data Science Week" content="Registration is now open for the Summer 2022 Data Science Week, September 19th - 26th. <br/> <br/> Get a team together or join on your own and register now!" cta="Register here" cta_link="https://www.utwente.nl/en/bms/research/bdsi/Data%20Science%20Week/" %}
+{% include card.html title="Spring 2023 Data Science Week" content="Registration is not yet open for the Spring 2023 Data Science Week, March 6th - 13th. <br/> <br/> Start getting a team together, and keep an eye on our newsletter!" cta="Sign up for the newsletter" cta_link="https://www.utwente.nl/en/bms/research/bdsi/#subscribe-to-our-newsletter" %}
 
 ## What is the Data Science Week?
 
-Over the course of two weeks BDSi will organize a datathon and a series of workshops and seminars. In the datathon, you will compete with other teams of behavioural data scientists to solve a real data science case. BDSi staff will organise seminars and workshops throughout the first week to introduce the various steps involved in data science. These activities are meant to support the datathon, but are open to all BMS students and staff. Coaches will be available throughout both weeks to guide you when you run into problems.
+Over the course of two weeks, BDSi will organize a datathon and a series of workshops and seminars. In the datathon, you will compete with other teams of behavioural data scientists to solve a real data science case. BDSi staff will organize seminars and workshops throughout the first week to introduce the various steps involved in data science. These activities are meant to support the datathon, but are open to all BMS students and staff. Coaches will be available throughout both weeks to guide you when you run into problems.
 
-The goal of the Data Science week is to introduce interested students and staff to data science in a fun and cooperative way, and help create a community of data scientists at BMS andn beyond. After one week, the teams with the best solutions and most interesting approaches to the data science problem will present their work, and be presented with a suitable prize.
+The goal of the Data Science week is to introduce interested students and staff to data science in a fun and cooperative way, and help create a community of data scientists at BMS and beyond. After one week, the teams with the best solutions and most interesting approaches to the data science problem will present their work, and be presented with a suitable prize.
 
 ## Who can join?
 
 ### Staff, students, family, and friends
 
-Everyone related to the University of Twente and their friends and family can join (although at least one member of your team needs to have a University of Twente account in order to sign up). You can join with friends, colleagues or even family. The event is open to both novices and experts, and everyone in between. You can join the datathon as a team, alone, or skip it altogether and only participate in the workshops. If you do join alone you can choose to be assigned to a team with other data science enthusiasts.
+Everyone related to the University of Twente and their friends and family can join (although at least one member of your team needs to have a University of Twente account in order to sign up). You can join with friends, colleagues or even family. The event is open to both novices and experts, and everyone in between. You can join the datathon as a team, alone, or skip it altogether and only participate in the workshops. If you do join alone, you can choose to be assigned to a team with other data science enthusiasts.
 
-BDSi primarily supports Data Science for the faculty of Behavioural and Management Sciences (BMS). Other University of Twente students and staff is welcome to attend (with or without their family and friends), as long as spaces are available.
+BDSi primarily supports Data Science for the faculty of Behavioural and Management Sciences (BMS). Other University of Twente students and staff are welcome to attend (with or without their family and friends), as long as spaces are available.
 
 ### Some experience with R (or another programming language)
 
@@ -62,7 +62,7 @@ The materials we will use are based on the freely available [Introduction to Sta
 
 ### Install R, RStudio, and tidyverse
 
-As a faculty, BMS has decided to use _R_ for statistical education. We will follow this example, and use _R_ and the _tidyverse_ packages in the workshops and seminars. If you do not already have a preferred programming language, you may want to install _R_ and _RStudio_. ModernDive has published a good [primer on installing _R_ and _RStudio_][r-primer], that also covers the basics of working in R. If you'd like to go further, we recommend the free [_R_ for Data Science][r4ds] book by Hadley Wickham - a name you'll encounter often in the _R_ community.
+As a faculty, BMS has decided to use _R_ for statistical education. We will follow this example, and use _R_ and the _tidyverse_ packages in the workshops and seminars. If you do not already have a preferred programming language, you may want to install _R_ and _RStudio_. ModernDive has published a good [primer on installing _R_ and _RStudio_][r-primer], that also covers the basics of working in R. If you'd like to go further, we recommend the free [_R_ for Data Science][r4ds] book by Hadley Wickham - a name you'll often encounter in the _R_ community.
 
 ## What will we do?
 
@@ -103,11 +103,11 @@ As a faculty, BMS has decided to use _R_ for statistical education. We will foll
 
 The Data Science Week will start and end with a group session. You will be free to work on the case on your own schedule, and coaches will be available for questions and feedback throughout. The workshops and seminars are scheduled throughout the week, gradually introducing new topics by creating a baseline solution to datathon.
 
-![data science week schedule](/assets/images/data-science-week-2022-2-schedule.png)
+<!-- ![data science week schedule](/assets/images/data-science-week-2022-2-schedule.png) -->
 
-> <span class="small"> The above schedule is from the winter 2022 data science week, but future data science weeks will follow the same overall schedule.</span>
+<!-- > <span class="small"> The above schedule is from the winter 2022 data science week, but future data science weeks will follow the same overall schedule.</span> -->
 
-{% include card.html title="Summer 2022 Data Science Week" content="Registration is now open for the Summer 2022 Data Science Week, September 19th - 26th. <br/> <br/> Get a team together or join on your own and register now!" cta="Register here" cta_link="https://www.utwente.nl/en/bms/research/bdsi/Data%20Science%20Week/" %}
+{% include card.html title="Spring 2023 Data Science Week" content="Registration is not yet open for the Spring 2023 Data Science Week, March 6th - 13th. <br/> <br/> Start getting a team together, and keep an eye on our newsletter!" cta="Sign up for the newsletter" cta_link="https://www.utwente.nl/en/bms/research/bdsi/#subscribe-to-our-newsletter" %}
 
 ### Kickoff
 
@@ -128,19 +128,19 @@ This workshop is also open for those who do not want to participate in the Data 
 
 ### Workshop Machine Learning
 
-A 45 minute guided overview of basic machine learning techniques. [Anna Machens](/team/#a-k-machens) will take you through the basics of model fitting, paramater selection and hyperparameter tuning, ending up with a simple but effective predictive model.
+A 45 minute guided overview of basic machine learning techniques. [Anna Machens](/team/#a-k-machens) will take you through the basics of model fitting, parameter selection and hyperparameter tuning, ending up with a simple but effective predictive model.
 
 This workshop is also open for those who do not want to participate in the Data Science Week. You can find more information about the workshop [here][ws-ml].
 
 ### Submission Deadline
 
-After spending all weekend with your team fine-tuning your solutions, you will have to submit them before midnight on Sunday. That gives us a bit of time to check your models and pick a winner. In the mean time, you can practice your victory speech - or suddenly have a brilliant idea that it's too late to implement before submission.
+After spending all weekend with your team fine-tuning your solutions, you will have to submit them before midnight on Sunday. That gives us a bit of time to check your models and pick a winner. In the meantime, you can practice your victory speech - or suddenly have a brilliant idea that it's too late to implement before submission.
 
 ### Closing Session
 
 The teams that created the best and most creative solutions will give a short presentation about their approach, and there will be time to ask questions to the winning teams as well as BDSi staff and coaches.
 
-{% include card.html title="Summer 2022 Data Science Week" content="Registration is now open for the Summer 2022 Data Science Week, September 19th - 26th. <br/> <br/> Get a team together or join on your own and register now!" cta="Register here" cta_link="https://www.utwente.nl/en/bms/research/bdsi/Data%20Science%20Week/" %}
+{% include card.html title="Spring 2023 Data Science Week" content="Registration is not yet open for the Spring 2023 Data Science Week, March 6th - 13th. <br/> <br/> Start getting a team together, and keep an eye on our newsletter!" cta="Sign up for the newsletter" cta_link="https://www.utwente.nl/en/bms/research/bdsi/#subscribe-to-our-newsletter" %}
 
 ###### References
 
