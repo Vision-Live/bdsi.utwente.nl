@@ -29,3 +29,5 @@ Thumbs.db
 vendor/
 .bundle/
 package*.json
+
+Gemfile.lock
