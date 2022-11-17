@@ -28,25 +28,26 @@ accentColour: "#dd0979"
     -   [Submission Deadline](#submission-deadline)
     -   [Closing Session](#closing-session)
 
-{% include card.html title="Spring 2023 Data Science Week" content="Registration is not yet open for the Spring 2023 Data Science Week, March 6th - 13th. <br/> <br/> Start getting a team together, and keep an eye on our newsletter!" cta="Sign up for the newsletter" cta_link="https://www.utwente.nl/en/bms/research/bdsi/#subscribe-to-our-newsletter" %}
-
+{% include card.html title="Spring 2023 Data Science Week" content="Registration for the Spring 2023 Data Science Week, March 6th - 13th, is now open!." cta="Register now!" cta_link="https://www.utwente.nl/en/bms/research/bdsi/data-science-week-2023/" %}
 ## What is the Data Science Week?
 
-Over the course of two weeks, BDSi will organize a datathon and a series of workshops and seminars. In the datathon, you will compete with other teams of behavioural data scientists to solve a real data science case. BDSi staff will organize seminars and workshops throughout the first week to introduce the various steps involved in data science. These activities are meant to support the datathon, but are open to all BMS students and staff. Coaches will be available throughout both weeks to guide you when you run into problems.
+Over the course of two weeks, BDSi will organize a datathon and a series of workshops and seminars. In the datathon, you will compete with other teams of behavioural data scientists to solve a real data science case. BDSi staff will organize seminars and workshops throughout the first week to introduce the various steps involved in data science. These activities are meant to support the datathon, but are open to all students and staff. Coaches will be available throughout both weeks to guide you when you run into problems.
 
-The goal of the Data Science week is to introduce interested students and staff to data science in a fun and cooperative way, and help create a community of data scientists at BMS and beyond. After one week, the teams with the best solutions and most interesting approaches to the data science problem will present their work, and be presented with a suitable prize.
+The goal of the Data Science week is to introduce interested students and staff to data science in a fun and cooperative way, and help create a community of data scientists at the University of Twente, the faculty of Behavioural and Management Sciences, and beyond. After one week, the teams with the best solutions and most interesting approaches to the data science problem will present their work, and be presented with a suitable prize.
 
 ## Who can join?
 
 ### Staff, students, family, and friends
 
-Everyone related to the University of Twente and their friends and family can join (although at least one member of your team needs to have a University of Twente account in order to sign up). You can join with friends, colleagues or even family. The event is open to both novices and experts, and everyone in between. You can join the datathon as a team, alone, or skip it altogether and only participate in the workshops. If you do join alone, you can choose to be assigned to a team with other data science enthusiasts.
+Everyone related to the University of Twente and their friends and family can join. You can join with friends, colleagues or even family. The event is open to both novices and experts, and everyone in between. You can join the datathon as a team, alone, or skip it altogether and only participate in the workshops. If you do join alone, you can choose to be assigned to a team with other data science enthusiasts.
 
 BDSi primarily supports Data Science for the faculty of Behavioural and Management Sciences (BMS). Other University of Twente students and staff are welcome to attend (with or without their family and friends), as long as spaces are available.
 
 ### Some experience with R (or another programming language)
 
 You'll need to have a basic idea of R in order to follow along with the workshops and seminars as all of our examples will be using R and various R packages.
+
+{% include card.html title_element="h3" title="<span style='color: var(--accent-colour, #008eaa);'>Some programming knowledge is required!</span>" content="While we will do our best to introduce data science topics in the various workshops, a basic understanding of R will make it much easier to follow along. <br/><br/><a href='https://www.utwente.nl/en/bms/m-store/'>Introductory courses an R helpdesk for staff</a> are provided by the <a href='https://www.utwente.nl/en/bms/code/'>Cognition, Data and Education (CoDE)</a> section." %}
 
 If you're confident you can do the datathon in Python (or any other language - we challenge you to try in C, Fortran, [Brainf\*\*\*](https://en.wikipedia.org/wiki/Brainfuck), or JavaScript), you're more than welcome to do so. Just be aware that we probably can't offer support if or when you get stuck.
 
@@ -62,7 +63,7 @@ The materials we will use are based on the freely available [Introduction to Sta
 
 ### Install R, RStudio, and tidyverse
 
-As a faculty, BMS has decided to use _R_ for statistical education. We will follow this example, and use _R_ and the _tidyverse_ packages in the workshops and seminars. If you do not already have a preferred programming language, you may want to install _R_ and _RStudio_. ModernDive has published a good [primer on installing _R_ and _RStudio_][r-primer], that also covers the basics of working in R. If you'd like to go further, we recommend the free [_R_ for Data Science][r4ds] book by Hadley Wickham - a name you'll often encounter in the _R_ community.
+As a faculty, BMS has decided to use _R_ for statistical education. We will follow this example, and use _R_ and the _tidyverse_ packages in the workshops and seminars. If you do not already have a preferred programming language, you may want to install _R_ and _RStudio_. ModernDive has a good [primer on installing _R_ and _RStudio_][r-primer], that also covers the basics of working in R. If you'd like to go further, we recommend the free [_R_ for Data Science][r4ds] book by Hadley Wickham - a name you'll encounter often in the _R_ community.
 
 ## What will we do?
 
@@ -87,7 +88,7 @@ As a faculty, BMS has decided to use _R_ for statistical education. We will foll
   </div>
   <div class="col-lg-6 col-12"><p>
     Amin Asadi was kind of enough to record a video presentation of his
-    submission for last years' Data Science Week - have a look!
+    submission for the 2021 Data Science Week - have a look!
 </p>
 <p>
     Amin chose to meet the challenge on his own, but you don't have to.
@@ -107,7 +108,7 @@ The Data Science Week will start and end with a group session. You will be free 
 
 <!-- > <span class="small"> The above schedule is from the winter 2022 data science week, but future data science weeks will follow the same overall schedule.</span> -->
 
-{% include card.html title="Spring 2023 Data Science Week" content="Registration is not yet open for the Spring 2023 Data Science Week, March 6th - 13th. <br/> <br/> Start getting a team together, and keep an eye on our newsletter!" cta="Sign up for the newsletter" cta_link="https://www.utwente.nl/en/bms/research/bdsi/#subscribe-to-our-newsletter" %}
+{% include card.html title="Spring 2023 Data Science Week" content="Registration for the Spring 2023 Data Science Week, March 6th - 13th, is now open!." cta="Register now!" cta_link="https://www.utwente.nl/en/bms/research/bdsi/data-science-week-2023/" %}
 
 ### Kickoff
 
@@ -139,8 +140,6 @@ After spending all weekend with your team fine-tuning your solutions, you will h
 ### Closing Session
 
 The teams that created the best and most creative solutions will give a short presentation about their approach, and there will be time to ask questions to the winning teams as well as BDSi staff and coaches.
-
-{% include card.html title="Spring 2023 Data Science Week" content="Registration is not yet open for the Spring 2023 Data Science Week, March 6th - 13th. <br/> <br/> Start getting a team together, and keep an eye on our newsletter!" cta="Sign up for the newsletter" cta_link="https://www.utwente.nl/en/bms/research/bdsi/#subscribe-to-our-newsletter" %}
 
 ###### References
 

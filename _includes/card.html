@@ -3,8 +3,8 @@
 {% assign content = include.content | default "no content given, add 'content=...' %}
 {% capture shadow %}{{include.shadow | default: "true" }}{% endcapture %}
 
-<br />
-<div class="card mb-2{% if shadow == 'true' %} shadow{% endif %}{% if include.bg %} bg-{{include.bg}}{% endif %}{% if include.text %} text-{{include.text}}{% endif %}">
+<div
+  class="card mt-2 mb-2{% if shadow == 'true' %} shadow{% endif %}{% if include.bg %} bg-{{include.bg}}{% endif %}{% if include.text %} text-{{include.text}}{% endif %}">
   <div class="card-body">
     <div class="card-title">
       <{{title_element}}>{{title}}</{{title_element}}>
