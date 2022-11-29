@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: Summer 2022 Data Science Week - A recap
 frontpage: true
 subtitle: Sharing Data Science Innovation
@@ -8,10 +9,18 @@ imageBackground: "#edc300"
 accentColour: "#ddb300"
 introduction: It has already been a week since the data science week and the 3rd datathon took place, lets take look back at it!
 author: Martina Ivich Jijon
+=======
+title: BDSi Data Science Week 2022 
+frontpage: true
+subtitle: Sharing Data Science Innovation
+image: /assets/images/content/bdsi-datathon/datathon-header.svg
+introduction: It has already been a week since the data science week and the 3rd datathon took place, lets take look back at it!
+>>>>>>> 4fc1360 (global corona emotions blog)
 date: 2022-09-26
 ---
 
 ## Recap
+<<<<<<< HEAD
 The week started with workshops in data wrangling, modeling and visualizations in order to introduce the various steps involved in data science. Additionally, these workshops supported the competition (datathon) at the end of the week.
 
 This edition of the Datathon was focused on predicting house sale prices with of course the use of real data. We are happy to say there were 28 staff and students participating in the Data Science Week, and 20 new members of the Data Science Community.
@@ -45,3 +54,39 @@ You can keep yourself informed of the different seminars and activities organize
 
 ### Contact
 Feel free to contact us at [bdsi@utwente.nl](mailto:bdsi@utwente.nl?subject=BDSi%202021) for more information.
+=======
+The week started with workshops in data wrangling, modeling and visualizations in order to introduce the various steps involved in data science. Additionally, these workshops supported the competition (datathon) at the end of the week! 
+
+This edition of the Datathon was focused on predicting house sale prices with of course the use of real data. We are happy to say we had <!--insert number-->… participating in the competition and over<!--insert number-->… signing up for the multiple workshops. 
+
+
+## Datathon
+We are extremely pleased to announce that this editions winner got the best overall prediction out of the 3 editions so far! 
+
+### 1st place
+TEAM 1 composed of Jean Paul, Bhinawa Putra, Martijn Ma and Bart Lesschen
+
+Obtained a result of 23,194 giving them the tittle of 1st place on datathon summer edition 2022 
+
+<!-- Their slides are available for download [here](/assets/files/housing/team-5.pptx). -->
+
+### 2nd place 
+ Team 8 composed of Iris Ten and Yin Qu
+
+### 3rd place 
+Team 6 formed by Yasin Fahmy, Elvin Khoirun
+
+## Keep in touch
+We would like to congratulate all our participants for their support. 
+
+We hope you enjoyed this week as much as we did and to see you on the next DATA SCIENCE WEEK happening on March 6-13, 2023! 
+
+<!--insert image of participants found in teams marketing chat-->
+
+You can always keep yourself informed of the different seminars and activities done by the BDSi <a href='mailto:bdsi@utwente.nl?subject=subscribe%20to%20the%20newsletter&body=please%20subscribe%20me%20to%20the%20newsletter' target='_blank'>by subscribing to our news letter</a>, this way you can always be the first to know what is happening! 
+
+
+### Contact
+
+Feel free to Contact us at [bdsi@utwente.nl](mailto:bdsi@utwente.nl?subject=BDSi%202021) for more information. Contact our [domain experts](/team/) or your [department representative](/team/) for specific information, or other data science questions.
+>>>>>>> 4fc1360 (global corona emotions blog)
