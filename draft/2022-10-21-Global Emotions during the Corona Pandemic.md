@@ -3,12 +3,15 @@ title: "Global Emotions during the Corona Pandemic"
 author: "Anna Machens"
 layout: "blog"
 bodyClass: "page-blogs-single"
-introduction: |
-     Do you have data lying around? Are you curious about what Data Science can mean for your research?\n
-    BDSi is making several grants available for research involving data science. The grant is meant for projects exploring new ideas, or as a first step to qualify for external funding.\n
-    A dedicated team of BDSi data scientists will help integrate data science into your project.
+# introduction: |
+#      Do you have data lying around? Are you curious about what Data Science can mean for your research?\n
+#     BDSi is making several grants available for research involving data science. The grant is meant for projects exploring new ideas, or as a first step to qualify for external funding.\n
+#     A dedicated team of BDSi data scientists will help integrate data science into your project.
 date: 2022-10-22
 ---
+
+{% include figure.html iframe="/assets/images/blogs/global-emotions-corona/twitter_map_emo.html" caption="Somethigng" %}
+
 <!-- !TODO: link and subtitle for figure  
 (file:///Users/martinaivich/Library/Containers/com.apple.mail/Data/Library/Mail%20Downloads/3EA25790-0FC0-4BA8-B995-2A1F5F40921E/twitter_map_emo.html) 
 plt.suptitle('Fig. 1 - Fig. 1.: Tweets are coloured according to their emotion. Yellow: Joy, Red: Anger, Blue: Sadness, Green: Fear. The Tweet appears on the location it was sent from (given in latitude and longitude). ')--> 
@@ -75,7 +78,8 @@ This cross-lingual language model significantly outperforms multilingual Bert, a
 <!--! TODO : FIX IMAGE +subtitle 
  , subtitle = Fig 3. Training Data for XLM-Roberta encompasses many languages besides English (4).-->
 
- ![png](/assets/images/blogs/text/text.png)
+{% include figure.html url="/assets/images/blogs/global-emotions-corona/fig3-training-data.png" caption="Training Data for XLM-Roberta encompasses many languages besides English" %}
+
 
 The pretrained model can then be used for finetuning to a specific task, which can be different from the one it was pretrained on (7). 
 In our case, we finetuned the model to predict emotions from tweets. For this purpose we could use the training data of the SemEval18 competition (2).
