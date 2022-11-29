@@ -4,8 +4,8 @@ layout: single_page
 bodyClass: page-single
 image: /assets/images/data-science-week-2023-spring.svg
 imageNarrow: true
-imageBackground: "#aa065d"
-accentColour: "#dd0979"
+imageBackground: "#b95f06"
+accentColour: "#ec7a08"
 ---
 
 ## Contents
