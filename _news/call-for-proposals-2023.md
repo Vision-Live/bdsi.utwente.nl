@@ -18,9 +18,11 @@ This call for proposals aims to support data-driven research. The call supports 
 
 Projects receive an in-kind investment rather than funding. This means that a dedicated team of data scientists from BDSi will work together with the applicants to simulate, retrieve, analyze and/or visualize the data. This call offers support for projects that can be seen as a pilot study or proof of concept for a larger project, with an aim to be later funded by other sources.
 
-### Criteria - How to apply
+{% include card.html title="Don't be a stranger" content="We strongly encourage potential applicants to get in touch early. We can help you with early feedback on your idea or draft proposal, fine-tuning your proposal, and making sure that expectations and estimates are realistic." cta="Get in touch!" cta_link="mailto=bdsi@utwente.nl" %}
 
-Applications can be submitted by sending a proposal to [bdsi@utwente.nl](mailto:bdsi@utwente.nl?subject=BDSi%202023) with the subject “BDSi 2023”.
+### Criteria — How to apply
+
+Applications can be submitted by sending a proposal to [bdsi@utwente.nl](mailto:bdsi@utwente.nl?subject=BDSi%20Data%20Science%20grant%202023) with the subject “BDSi Data Science grant 2023”.
 
 A proposal should:
 
@@ -36,6 +38,13 @@ To maximize the added value and impact for applicants, the technological needs a
 -   Data processing: databases, real-time data analysis, linked data, data scraping, full data pipeline setup
 -   Computing: hardware accelerators (GPUs), high performance computing, cloud computing.
 
+The decision on which proposals to support will be loosely based on these criteria;
+
+-   Innovativity, novelty, relevance
+-   Impact, importance, visibility
+-   Potential for followup
+-   Investment by applicant(s)
+
 ### Who may apply?
 
 Proposals can be submitted by BMS researchers. In case the proposal is submitted by an inter-disciplinary team, the principal investigator (PI) must belong to BMS faculty. The PI should satisfy the following requirements:
@@ -46,7 +55,7 @@ Proposals can be submitted by BMS researchers. In case the proposal is submitted
 
 ### What can you apply for?
 
-The call makes available in-kind support by allocating the time of BDSi’s Data Scientists to the project. BDSi’s in-kind contribution is calculated in “person hours”. Note that there is a limit in hours BDSI can provide across all projects. BDSi's aim is to incubate Data Science in BMS research and education, with a focus on developing new skills and capabilities.
+The call makes available in-kind support by allocating the time of BDSi’s Data Scientists to the project. BDSi’s in-kind contribution is calculated in “person hours”. Note that there is a limit in hours BDSi can provide across all projects. BDSi's aim is to incubate Data Science in BMS research and education, with a focus on developing new skills and capabilities.
 
 You **can not** apply for tasks that;
 
@@ -59,22 +68,19 @@ You **can not** apply for tasks that;
 -   Are too large, or take too long (for the Data Science grant)  
     _We do not have the (wo)manpower to take on large projects on our own, but we can cooperate with researchers to provide data science support. Please do get in touch, there may be other ways in which we can support you._
 
-<!-- ### When to apply
+### When to apply
 
-The deadline for submission of full proposals is has been extended to Sunday, November 1st, 2021. We are available to help you with a proposal. That ensures the goals and time estimate will be realistic. Please feel free to contact us to discuss your preliminary ideas. -->
+The deadline for submission of full proposals is April 1st, 2023. We are available to help you with writing the proposal. Contacting us early for an open discussion on a draft proposal or idea ensures the goals and time estimate will be realistic. 
+
+{% include card.html title="Don't be a stranger" content="We strongly encourage potential applicants to get in touch early. We can help you with early feedback on your idea or draft proposal, fine-tuning your proposal, and making sure that expectations and estimates are realistic." cta="Get in touch!" cta_link="mailto=bdsi@utwente.nl" %}
 
 ### Selection procedure
 
 Before or after submitting a proposal, you will be invited for short meeting with BDSi data scientists to discuss the project idea, and ensure it can be achieved within the scope of the Data Science grant.
 
-The decision will be loosely based on these criteria;
+Proposals that fit the scope and aims of the BDSi Data Science grant as outlined in the 'Criteria — How to apply' section will be considered. To maximize the impact of the grants BDSi will then make a selection based on proposals' expected costs and benefits.
 
--   Innovative, novelty, relevance
--   Impact, importance, visibility
--   Potential for followup
--   Investment by applicant
-
-<!-- A decision on successful proposals can be expected mid-November, and will be communicated with applicants directly and through this website. -->
+A decision on successful proposals can be expected mid-April, and will be communicated with applicants directly and through this website.
 
 ### Contact
 
