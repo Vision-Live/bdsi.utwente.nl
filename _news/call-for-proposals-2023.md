@@ -2,7 +2,7 @@
 title: BDSi call for proposals 2023
 frontpage: true
 subtitle: Sparking Data Science Innovation across BMS
-image: /assets/images/content/call-for-proposals-2021/hero.png
+image: /assets/images/content/call-for-proposals-2023/header.png
 introduction: |
     Do you have data lying around? Are you curious about what Data Science can mean for your research?\n
     BDSi is making several grants available for research involving data science. The grant is meant for projects exploring new ideas, or as a first step to qualify for external funding.\n
