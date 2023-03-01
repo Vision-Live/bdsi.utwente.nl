@@ -12,16 +12,18 @@ tags:
 image: /assets/images/workshops/machine-learning.jpg
 imageNarrow: true
 imageBackground: white
-startDate: 2022-09-21
-time: "12:45 - 13:30"
+startDate: 2023-03-09
+endDate: 2023-03-10
+time: "12:45 - 14:30"
+location: Oosthorst 111 (Wed), Carre 2N (Thu)
 ---
 
-A 45 minute guided overview of basic machine learning techniques. [Anna Machens](/team/#a-k-machens) will take you through the basics of model fitting, paramater selection and hyperparameter tuning, ending up with a simple but effective predictive model.
+Over two days with two seminars and two practicals, [Anna Machens](/team/#a-k-machens) will take you through the basics of model fitting, paramater selection and hyperparameter tuning, ending up with a simple but effective predictive model. On Wednesday, Anna will give a guided overview of basic machine learning techniques. On Thursday we will dive deeper into the models, and have plenty of time for questions about your models for the datathon.
 
 This workshop is also open for those who do not want to participate in the Data Science Week. You can sign up for just this workshop using the button below. Note that if you've already signed up for the [Data Science week][dsw], you do not need to sign up for this event again.
 
-<a href="https://www.utwente.nl/en/bms/research/bdsi/dsw-2022-q3-workshop-machine-learning/" class="button">Sign up now</a>
+<a href="https://www.utwente.nl/en/bms/research/bdsi/data-science-week-2023/" class="button">Sign up now</a>
 
 {% include card.html title_element="h4" title="Materials" content="Materials for this workshop will be uploaded when available." %}
 
-[dsw]: {% link _events/workshops/data-science-week_2022-Q3/data-science-week.md %}
+[dsw]: {% link _events/workshops/data-science-week_2023-Q1/data-science-week-spring-2023.md %}
