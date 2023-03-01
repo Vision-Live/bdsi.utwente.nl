@@ -24,7 +24,7 @@ accentColour: "#ec7a08"
     -   [Kickoff](#kickoff)
     -   [Workshop Data Wrangling](#workshop-data-wrangling)
     -   [Workshop Data Visualization](#workshop-data-visualization)
-    -   [Workshop Machine Learning](#workshop-machine-learning)
+    -   [Workshop Modelling I](#workshop-modelling-i)
     -   [Submission Deadline](#submission-deadline)
     -   [Closing Session](#closing-session)
 
@@ -127,7 +127,7 @@ This workshop is also open for those who do not want to participate in the Data 
 ##### 13:45 - 14:30 
 Hands-on data wrangling for the datathon dataset.
 
-### Workshop Introduction to Modelling
+### Workshop Modelling I
 #### Wednesday March 8th, Oosthorst 111
 ##### 12:45 - 13:30
 A 45 minute guided overview of basic machine learning techniques. [Anna Machens](/team/#a-k-machens) will take you through the basics of model fitting, parameter selection and hyperparameter tuning, ending up with a simple but effective predictive model.
