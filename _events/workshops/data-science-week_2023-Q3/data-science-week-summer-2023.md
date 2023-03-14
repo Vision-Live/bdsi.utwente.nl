@@ -109,7 +109,7 @@ As a faculty, BMS has decided to use _R_ for statistical education. We will foll
 
 The Data Science Week will start and end with a group session. You will be free to work on the case on your own schedule, and coaches will be available for questions and feedback throughout. The workshops and seminars are scheduled throughout the week, gradually introducing new topics by creating a baseline solution to datathon.
 
-<img alt="Timeline with the schedule for the data science week" src="/assets/images/workshops/data-science-week-spring-2023-schedule.png" style="position: relative; left: -10%; max-width: 120%" />
+<img alt="Timeline with the schedule for the data science week" src="/assets/images/data-science-week-2023-summer-schedule.png" style="position: relative; left: -10%; max-width: 120%" />
 
 ### Kickoff
 #### Monday September 25th, location TBA
