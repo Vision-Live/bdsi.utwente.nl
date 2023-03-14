@@ -1,5 +1,5 @@
 ---
-title: "Data Science Week - Spring 2023"
+title: "Data Science Week - Summer 2023"
 authors:
     - Anna Machens
     - Karel Kroeze
@@ -13,16 +13,15 @@ tags:
     - Visualization
     - Statistical Learning
     - Machine Learning
-image: /assets/images/data-science-week-2023-spring.svg
+image: /assets/images/data-science-week-2023-summer.svg
 imageNarrow: true
-imageBackground: "#b95f06"
-accentColour: "#ec7a08"
+imageBackground: "#6d0039"
+accentColour: "#ed007e"
 layout: "event"
-date: 2023-03-06
-startDate: 2023-03-06
-endDate: 2023-03-13
+date: 2023-09-25
+startDate: 2023-09-25
+endDate: 2023-10-02
 frontpage: true
-redirect_to: /data-science-week
 ---
 
 ## Contents
@@ -34,7 +33,7 @@ redirect_to: /data-science-week
 - [What will we do?](#what-will-we-do)
 - [Schedule](#schedule)
 
-{% include card.html title="Spring 2023 Data Science Week" content="Registration for the Spring 2023 Data Science Week, March 6th - 13th, is still open!." cta="Register now!" cta_link="https://www.utwente.nl/en/bms/research/bdsi/data-science-week-2023/" %}
+{% include card.html title="Summer 2023 Data Science Week" content="Registration for the Summer 2023 Data Science Week, September 25th - October 2nd, is already open!." cta="Register now!" cta_link="https://www.utwente.nl/en/bms/research/bdsi/data-science-week-Summer-2023/" %}
 ## What is the Data Science Week?
 
 Over the course of two weeks, BDSi will organize a datathon and a series of workshops and seminars. In the datathon, you will compete with other teams of behavioural data scientists to solve a real data science case. BDSi staff will organize seminars and workshops throughout the first week to introduce the various steps involved in data science. These activities are meant to support the datathon, but are open to all students and staff. Coaches will be available throughout both weeks to guide you when you run into problems.
@@ -113,7 +112,7 @@ The Data Science Week will start and end with a group session. You will be free 
 <img alt="Timeline with the schedule for the data science week" src="/assets/images/workshops/data-science-week-spring-2023-schedule.png" style="position: relative; left: -10%; max-width: 120%" />
 
 ### Kickoff
-#### Monday March 6th, Ravelijn 2501
+#### Monday September 25th, location TBA
 ##### 12:45 - 13:15
 After a quick introduction about BDSi, we will introduce the goal of the datathon, and how you can compete. We will also explain how to reach the coaches for help, and give a brief overview of the schedule. Finally we will announce the teams for those who signed up alone and want to join a team.
 
@@ -124,7 +123,7 @@ Coffee, tea, and cookies while meeting your team and having the opportunity to a
 Quick introduction to resources you can use, followed by a hands on exploration of the dataset for the datathon. Bring your laptop, you're expected to get down and dirty with the data!
 
 ### Workshop Data Wrangling
-#### Tuesday March 7th, Ravelijn 2231
+#### Tuesday September 26th, location TBA
 ##### 12:45 - 13:30
 A 45 minute guided introduction to data wrangling in _R_, using the 'tidy' data principles. [Karel Kroeze](/team/#k-a-kroeze) will show how to prepare a 'raw' dataset for analysis, by cleaning, reshaping and mutating the data until it gives up all its secrets.
 
@@ -134,7 +133,7 @@ This workshop is also open for those who do not want to participate in the Data 
 Hands-on data wrangling for the datathon dataset.
 
 ### Workshop Modelling I
-#### Wednesday March 8th, Oosthorst 111
+#### Wednesday September 27th, location TBA
 ##### 12:45 - 13:30
 A 45 minute guided overview of basic machine learning techniques. [Anna Machens](/team/#a-k-machens) will take you through the basics of model fitting, parameter selection and hyperparameter tuning, ending up with a simple but effective predictive model.
 
@@ -144,7 +143,7 @@ This workshop is also open for those who do not want to participate in the Data 
 Hands-on creation of a basic model for the datathon. 
 
 ### Workshop Modelling II
-#### Thursday March 9th, Carré 2N
+#### Thursday September 28th, location TBA
 ##### 12:45 - 13:30
 A 45 minute deeper dive into more advanced modelling techniques with [Anna Machens](/team/#a-k-machens).
 
@@ -154,7 +153,7 @@ This workshop is also open for those who do not want to participate in the Data 
 Hands-on tuning and improvements of a categorization model for the datathon, and plenty of time to ask questions. 
 
 ### Workshop Data Visualization
-#### Friday March 10th, Oosthorst 114
+#### Friday September 29th, location TBA
 ##### 12:45 - 13:30
 A 45 minute guided overview of data visualization using `ggplot2` and the grammar of graphics. [Karel Kroeze](/team/#k-a-kroeze) will explain the principles of creating and layering visualizations with _ggplot_ in _R_, and give a quick introduction to interactive visualizations with plotly, shiny and beyond.
 
@@ -165,13 +164,13 @@ Hands-on visualization practical, with a focus on visualizing model results and 
 
 
 ### Submission Deadline
-#### Sunday March 12th 
+#### Sunday October 1st 
 ##### 23:59
 
 After spending all weekend with your team fine-tuning your solutions, you will have to submit them before midnight on Sunday. That gives us a bit of time to check your models and pick a winner. In the meantime, you can practice your victory speech - or suddenly have a brilliant idea that it's too late to implement before submission.
 
 ### Closing Session
-#### Monday March 13th, Ravelijn 2501
+#### Monday October 2nd, location TBA
 ##### 12:45 - 13:15
 Debriefing by the BDSi team, and announcement of the winning team(s).
 
@@ -190,6 +189,6 @@ Coffee, tea, cookies.
 [r4ds]: https://r4ds.had.co.nz/ "Hadley Wickhams' R for Data Science"
 
 [ws-asl]: {% link _events/workshops/2021-02-24_statistical-learning.md %} "Applied Statistical Learning reading club"
-[ws-tdw]: {% link _events/workshops/data-science-week_2023-Q1/workshop-tidy-data-wrangling-spring-2023.md %} "Workshop Tidy Data Wrangling"
-[ws-ml]: {% link _events/workshops/data-science-week_2023-Q1/workshop-machine-learning-spring-2023.md %} "Workshop Introduction to Machine Learning"
-[ws-viz]: {% link _events/workshops/data-science-week_2023-Q1/workshop-data-visualization-spring-2023.md %} "Workshop Data Visualization in R"
+[ws-tdw]: {% link _events/workshops/data-science-week_2023-Q3/workshop-tidy-data-wrangling-summer-2023.md %} "Workshop Tidy Data Wrangling"
+[ws-ml]: {% link _events/workshops/data-science-week_2023-Q3/workshop-machine-learning-summer-2023.md %} "Workshop Introduction to Machine Learning"
+[ws-viz]: {% link _events/workshops/data-science-week_2023-Q3/workshop-data-visualization-summer-2023.md %} "Workshop Data Visualization in R"
