@@ -23,11 +23,10 @@ date: 2023-06-08
 startDate: 2023-06-08
 frontpage: true
 ---
-<img alt="WIDS Twente" src="/assets/images/banner WIDS.png" style="position: relative; max-width: 120%" />
+<img alt="WIDS Twente" src="/assets/images/WIDS SPEAKERS/top header.png" style="position: relative; max-width: 120%" />
 
 ## Contents
 
-- [Contents](#contents)
 - [ Women in Data Science Vision](#about-women-in-data-science-vision)
 - [WIDS Twente](#about-wids-twente)
 - [Who can join?](#who-can-join)
@@ -58,9 +57,7 @@ Feel free to further personalize and refine the description to align with the to
 
 ## Who can join?
 
-### Staff, students, family, and friends
-
-Everyone related to the University of Twente and their friends and family can join. You can join with friends, colleagues or even family. The event is open to both novices and experts, and everyone in between.
+### Who are interested
 
 ## Speakers 
 
@@ -80,7 +77,7 @@ Everyone related to the University of Twente and their friends and family can jo
    style='width:2in;height:2in;visibility:visible;mso-wrap-style:square'>
    <v:imagedata src="Explainable%20AI%20for%20Healthcare%20Applications%202.fld/image004.png"
     o:title="csm_csm_Tao_Qian_website_photo_97956ad757_38c03c48c0"/>
-  </v:shape><![endif]--><!--[if !vml]--><img width="144" height="144" src="/assets/images/WIDS SPEAKERS/Qian.png" alt="DR. Qian Tao
+  </v:shape><![endif]--><!--[if !vml]--><img width="144" height="144" src="/assets/images/WIDS SPEAKERS/Qian.png" alt="Dr. Qian Tao
 Delft University of Technology" v:shapes="图片_x0020_1"><!--[endif]--></span><span lang="EN-US" style="font-size:
   13.0pt;mso-ansi-language:EN-US"><o:p></o:p></span></p>
   </td>
