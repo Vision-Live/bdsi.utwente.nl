@@ -57,7 +57,7 @@ Feel free to further personalize and refine the description to align with the to
 
 ## Who can join?
 
-### Who are interested
+### Anyone Who are interested
 
 ## Speakers 
 
@@ -178,7 +178,7 @@ BMS STRATEGIC RESEARCH FUND
 
 
 ## Agenda
-[Agenda](/assets/files/WiDS Conference Program Template.pdf)
+[Agenda](/assets/files/WiDS Agenda TWENTE-3.pdf)
 
 
 ## Ambassadors 
