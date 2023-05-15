@@ -16,7 +16,8 @@ tags:
     - Health care 
 image: /assets/images/wids-2color-1line.png
 imageNarrow: true
-imageBackground: "000000"
+imageBackground: white
+accentColour: "#00B140"
 layout: "event"
 date: 2023-06-08
 startDate: 2023-06-08
@@ -176,7 +177,7 @@ Description automatically generated with low confidence" v:shapes="Picture_x0020
 ## Sponsors 
 BMS STRATEGIC RESEARCH FUND
 
-<img alt="Behavioral Data Science incubator" src="/assets/images/logo-utwente-bdsi.png" style="position: relative; left: -10%; max-width: 120%" />
+<img alt="Behavioral Data Science incubator" src="/assets/images/logo-utwente-bdsi.png" style="position: relative; max-width: 120%" />
 
 
 ## Agenda
