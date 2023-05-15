@@ -23,7 +23,7 @@ date: 2023-06-08
 startDate: 2023-06-08
 frontpage: true
 ---
-<img alt="WIDS Twente" src="/assets/images/banner WIDS.png" style="position: relative; left: -10%; max-width: 120%" />
+<img alt="WIDS Twente" src="/assets/images/banner WIDS.png" style="position: relative; max-width: 120%" />
 
 ## Contents
 
