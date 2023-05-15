@@ -57,7 +57,7 @@ Feel free to further personalize and refine the description to align with the to
 
 ## Who can join?
 
-### Anyone Who are interested
+### Anyone who is interested
 
 ## Speakers 
 
