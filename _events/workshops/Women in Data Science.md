@@ -70,8 +70,7 @@ Everyone related to the University of Twente and their friends and family can jo
   <p style="margin-bottom:0cm"><span style="font-size:13.0pt"><span style="mso-no-proof:yes"><!--[if gte vml 1]><v:shape id="Picture_x0020_3"
    o:spid="_x0000_i1032" type="#_x0000_t75" alt="dr. F.A. Bukhsh (Faiza) | University of Twente"
    style='width:150pt;height:150pt;visibility:visible;mso-wrap-style:square'>
-   <v:imagedata src="Explainable%20AI%20for%20Healthcare%20Applications%202.fld/image003.jpg"
-    o:href="https://people.utwente.nl/f.a.bukhsh/picture.jpg"/>
+   <v:imagedata src="assets/images/WIDS SPEAKERS/faiza.png"/>
   </v:shape><![endif]--><!--[if !vml]--><img width="150" height="150" src="/assets/images/WIDS SPEAKERS/faiza.png" alt="dr. F.A. Bukhsh (Faiza) | University of Twente" v:shapes="Picture_x0020_3"><!--[endif]--></span></span><span lang="EN-US" style="font-size:13.0pt;mso-ansi-language:EN-US"><o:p></o:p></span></p>
   </td>
   <td width="229" valign="top" style="width:171.85pt;padding:0cm 5.4pt 0cm 5.4pt">
@@ -80,7 +79,8 @@ Everyone related to the University of Twente and their friends and family can jo
    style='width:2in;height:2in;visibility:visible;mso-wrap-style:square'>
    <v:imagedata src="Explainable%20AI%20for%20Healthcare%20Applications%202.fld/image004.png"
     o:title="csm_csm_Tao_Qian_website_photo_97956ad757_38c03c48c0"/>
-  </v:shape><![endif]--><!--[if !vml]--><img width="144" height="144" src="/assets/images/WIDS SPEAKERS/Qian.png" alt="https://d2k0ddhflgrk1i.cloudfront.net/_processed_/2/c/csm_csm_Tao_Qian_website_photo_97956ad757_38c03c48c0.png" v:shapes="图片_x0020_1"><!--[endif]--></span><span lang="EN-US" style="font-size:
+  </v:shape><![endif]--><!--[if !vml]--><img width="144" height="144" src="/assets/images/WIDS SPEAKERS/Qian.png" alt="DR. Qian Tao
+Delft University of Technology" v:shapes="图片_x0020_1"><!--[endif]--></span><span lang="EN-US" style="font-size:
   13.0pt;mso-ansi-language:EN-US"><o:p></o:p></span></p>
   </td>
   <td width="265" valign="top" style="width:7.0cm;padding:0cm 5.4pt 0cm 5.4pt">
@@ -195,7 +195,7 @@ BMS STRATEGIC RESEARCH FUND
    style='width:103pt;height:2in;visibility:visible;mso-wrap-style:square'>
    <v:imagedata src="Explainable%20AI%20for%20Healthcare%20Applications%202.fld/image008.jpg"
     o:title="A person smiling at the camera&#10;&#10;Description automatically generated with low confidence"/>
-  </v:shape><![endif]--><!--[if !vml]--><img width="103" height="144" src="Explainable%20AI%20for%20Healthcare%20Applications%202.fld/image008.jpg" alt="A person smiling at the camera
+  </v:shape><![endif]--><!--[if !vml]--><img width="103" height="144" src="/assets/images/WIDS SPEAKERS/maryam amir.png" alt="A person smiling at the camera
 
 Description automatically generated with low confidence" v:shapes="Picture_x0020_6"><!--[endif]--></span><span lang="EN-US" style="font-size:13.0pt;mso-ansi-language:EN-US"><o:p></o:p></span></p>
   </td>
@@ -206,7 +206,7 @@ Description automatically generated with low confidence" v:shapes="Picture_x0020
    style='width:98pt;height:146pt;visibility:visible;mso-wrap-style:square'>
    <v:imagedata src="Explainable%20AI%20for%20Healthcare%20Applications%202.fld/image009.png"
     o:title="A close-up of a person smiling&#10;&#10;Description automatically generated with medium confidence"/>
-  </v:shape><![endif]--><!--[if !vml]--><img width="98" height="146" src="Explainable%20AI%20for%20Healthcare%20Applications%202.fld/image009.png" alt="A close-up of a person smiling
+  </v:shape><![endif]--><!--[if !vml]--><img width="98" height="146" src="/assets/images/WIDS SPEAKERS/stephanie .png" alt="A close-up of a person smiling
 
 Description automatically generated with medium confidence" v:shapes="Picture_x0020_1"><!--[endif]--></span><span lang="EN-US" style="font-size:13.0pt;mso-ansi-language:EN-US"><o:p></o:p></span></p>
   </td>
