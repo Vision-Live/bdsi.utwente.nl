@@ -14,3 +14,4 @@ introduction: Advances, advantages and challenges of using data science for the 
 </div>
 
 {% include card.html title="Stream not working?" title_element="h4" content="Make sure you are signed in with a University of Twente account" shadow="false" %}
+
