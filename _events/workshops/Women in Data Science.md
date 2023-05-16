@@ -46,7 +46,7 @@ WiDS Twente is an independent event that is organized by Dr. Maryam Amir Haeri a
 
 ## Conference
 
-Join us at the Women in Data Science Twente event, held on June 8th at UPark Hotel, UT campus. This dynamic gathering is centered around the captivating theme of Explainable AI for Healthcare Applications. We invite you to be part of an inspiring event where you can connect with industry experts, researchers, and practitioners in the exciting intersection of AI, data science, and healthcare.
+Join us at the Women in Data Science Twente event, held on June 8th at U Parkhotel, UT campus. This dynamic gathering is centered around the captivating theme of Explainable AI for Healthcare Applications. We invite you to be part of an inspiring event where you can connect with industry experts, researchers, and practitioners in the exciting intersection of AI, data science, and healthcare.
 
 Immerse yourself in a day filled with insightful discussions, thought-provoking presentations, and engaging networking opportunities. Gain valuable knowledge and expand your understanding of the latest advancements in explainable AI within the healthcare domain. Whether you are an AI enthusiast, a healthcare professional, or a data science practitioner, this event offers a unique platform to exchange ideas, share experiences, and broaden your professional network.
 
