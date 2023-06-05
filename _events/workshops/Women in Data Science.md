@@ -178,7 +178,7 @@ BMS STRATEGIC RESEARCH FUND
 
 
 ## Agenda
-[Agenda](/assets/files/WiDS Agenda TWENTE-3.pdf)
+[Agenda](/assets/files/WiDS Agenda TWENTE-4.pdf)
 
 
 ## Ambassadors 
