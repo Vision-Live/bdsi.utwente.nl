@@ -22,7 +22,7 @@ $text: $secondary; // darken($header, 30);
     }
 
     @if $i < 6 {
-      @for $j from $i +1 through 6 {
+      @for $j from $i + 1 through 6 {
         &+h#{$j} {
           margin-top: 0;
         }
