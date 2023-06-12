@@ -2,9 +2,9 @@
 title: Data Science week
 layout: single_page
 bodyClass: page-single
-image: /assets/images/data-science-week-2023-spring.svg
+image: /assets/images/data-science-week-2023-summer.svg
 imageNarrow: true
-imageBackground: "#b95f06"
-accentColour: "#ec7a08"
-redirectTo: "_events/workshops/data-science-week_2023-Q3/data-science-week-summer-2023.md"
+imageBackground: "#6d0039"
+accentColour: "#ed007e"
+redirect_to: "/events/data-science-week-summer-2023/"
 ---
