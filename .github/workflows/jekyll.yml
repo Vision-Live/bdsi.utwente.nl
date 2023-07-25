@@ -30,10 +30,19 @@ jobs:
         uses: actions/upload-pages-artifact@v2
         
       - name: Build static files for github pages
-        run: bundle exec jekyll build --baseurl bdsi.utwente.nl/ --destination _site_dev/
+        run: bundle exec jekyll build --baseurl bdsi.utwente.nl --destination _site_dev/
 
       - name: Check dead links
-        run: bundle exec htmlproofer --only-4xx --ignore-status-codes "403" --assume-extension ".html" --ignore-empty-alt true --ignore-missing-alt true --checks "Links,Images"  ./_site_dev
+        run: |
+          bundle exec htmlproofer
+            --only-4xx
+            --ignore-status-codes "403"
+            --assume-extension ".html"
+            --ignore-empty-alt true
+            --ignore-missing-alt true 
+            --checks "Links,Images" 
+            --swap-urls '^/bdsi.utwente.nl/:/'
+            ./_site_dev
 
       - name: Create development artifact
         uses: actions/upload-pages-artifact@v2
