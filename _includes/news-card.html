@@ -10,7 +10,7 @@
     "
 >
     {% if item.image %}<img
-        src="{{item.image}}"
+        src="{% link {{item.image}} %}"
         alt="{{item.title}}"
         class="card-img-top"
         style="height: 150px; width: 100%; object-fit: cover; flex: 0 0 auto"

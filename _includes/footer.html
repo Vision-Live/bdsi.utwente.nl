@@ -56,7 +56,7 @@
         <a href="{{partner.website}}" target="_blank">
           {% if partner.logo %}
           <img
-            src="{{partner.logoLight | default: partner.logo}}"
+            src="{% link {{partner.logoLight | default: partner.logo}} %}"
             alt="{{partner.title}} logo"
             class="logo"
           />
@@ -85,7 +85,7 @@
         href="/team/#{{profile.email | split: '@' | first | replace: '.', '-'}}"
         class="inset"
         ><img
-          src="{{profile.image}}"
+          src="{% link {{profile.image}} %}"
           alt="{{author}}"
           class="profile-image"
         />{{profile.title}}{% if profile.department %} <span class="text-muted">{{ profile.department}}</span>{% endif %}</a

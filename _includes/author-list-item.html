@@ -3,7 +3,7 @@
 
 {%- if profile -%}
     <a class="author-list-item" href="/team/#{{profile.email | split: '@' | first | replace: '.', '-'}}">
-        <{{header}}><img src="{{profile.image}}" alt="{{author}}">{{profile.title}}</{{header}}>
+        <{{header}}><img src="{% link {{profile.image}} %}" alt="{{author}}">{{profile.title}}</{{header}}>
     </a>
 {%- else -%}
     <{{header}} class="author-list-item unresolved" data-name="{{author}}">{{author}}</{{header}}>
