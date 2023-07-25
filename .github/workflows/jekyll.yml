@@ -14,7 +14,7 @@ on:
         description: 'Deploy to production server'
 
 env:
-  DEPLOY_TO_PRODUCTION: ${{ contains(github.event.commits.*.message, '[deploy]') || github.event.inputs.deploy }}
+  DEPLOY_TO_PRODUCTION: ${{ contains(join(github.event.commits.*.message, '\n\n'), '[deploy]') || github.event.inputs.deploy }}
     
 jobs:
   build:
@@ -25,8 +25,8 @@ jobs:
 
       - name: debug
         run: |
-          echo deploy: "${{ contains('github.event.commits.*.message', '[deploy]' )}}"
-          echo "${DEPLOY_TO_PRODUCTION}"
+          echo deploy: "${{ contains(join(github.event.commits.*.message, '\n\n'), '[deploy]') || github.event.inputs.deploy }}"
+          echo $DEPLOY_TO_PRODUCTION
           echo "${{ toJSON(github.event) }}"
 
       - name: Set up Ruby
