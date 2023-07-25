@@ -25,7 +25,7 @@ jobs:
 
       - name: debug
         run: |
-          echo deploy: "${{ contains(github.event.commits.*.message, '[deploy]' )}}"
+          echo deploy: "${{ contains('github.event.commits.*.message', '[deploy]' )}}"
           echo "${DEPLOY_TO_PRODUCTION}"
           echo "${{ toJSON(github.event) }}"
 
