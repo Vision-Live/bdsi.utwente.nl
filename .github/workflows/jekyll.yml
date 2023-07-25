@@ -25,8 +25,9 @@ jobs:
 
       - name: debug
         run: |
-          echo $DEPLOY_TO_PRODUCTION
-          echo ${{ toJSON(github.event) }}
+          echo deploy: "${{ contains(github.event.commits.*.message, '[deploy]' )}}"
+          echo "${DEPLOY_TO_PRODUCTION}"
+          echo "${{ toJSON(github.event) }}"
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
