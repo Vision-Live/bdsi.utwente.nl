@@ -9,43 +9,64 @@ on:
     
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout source
         uses: actions/checkout@v2
-        with: 
-          path: source
-      
-      - name: Checkout www
-        uses: actions/checkout@v2
-        with:
-          path: www
-          ref: www
-          
+
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 2.7
           bundler-cache: true
           cache-version: 24
-          working-directory: source
 
       - name: Build static files
-        run: | 
-          cd source
-          bundle exec jekyll build
+        run: bundle exec jekyll build
 
       - name: Check dead links
-        run: |
-          cd source
-          bundle exec htmlproofer --only-4xx --ignore-status-codes "403" --assume-extension ".html" --ignore-empty-alt true --ignore-missing-alt true --checks "Links,Images"  ./_site
+        run: bundle exec htmlproofer --only-4xx --ignore-status-codes "403" --assume-extension ".html" --ignore-empty-alt true --ignore-missing-alt true --checks "Links,Images"  ./_site
+
+      - name: Create pages artifact
+        uses: actions/upload-pages-artifact@v2
+
+  # always run dev deployment on push
+  deploy-development:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to Github Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
+
+  # only deploy to production if [deploy] tag is present in commit message
+  deploy-production:
+    needs: build
+    if: github.event.commits.some(e => e.message.contains("[deploy]"))
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout www
+        uses: actions/checkout@v2
+        with:
+          path: www
+          ref: www
+
+      - name: Fetch pages artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: github-pages
+          path: www-new
     
       - name: Push to www
         run: |
           rm -rf www/*
-          cp -rf source/_site/* www
+          cp -rf www-new/* www
           cd www
           git config --local user.name jekyll-bot
           git config --local user.email bdsi@utwente.nl
