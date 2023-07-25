@@ -21,14 +21,14 @@ jobs:
           bundler-cache: true
           cache-version: 24
 
+      - name: Build static files for github pages
+        run: bundle exec jekyll build --baseurl /bdsi.utwente.nl --destination _site_dev/
+        
       - name: Create development artifact
         uses: actions/upload-pages-artifact@v2
         with: 
           name: github-pages-dev
           path: _site_dev/
-          
-      - name: Build static files for github pages
-        run: bundle exec jekyll build --baseurl /bdsi.utwente.nl --destination _site_dev/
 
       - name: Build static files for production
         if: contains(github.event.commits.*.message, '[deploy]')
