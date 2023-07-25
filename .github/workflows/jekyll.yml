@@ -6,6 +6,15 @@ on:
   pull_request:
     branches: [ main ]
   workflow_dispatch:
+    inputs:
+      deploy: 
+        default: false
+        type: boolean
+        required: false
+        description: 'Deploy to production server'
+
+env:
+  DEPLOY_TO_PRODUCTION: ${{ contains(github.event.commits.*.message), "[deploy]") || github.event.inputs.deploy }}
     
 jobs:
   build:
@@ -13,6 +22,11 @@ jobs:
     steps:
       - name: Checkout source
         uses: actions/checkout@v2
+
+      - name: debug
+        run: |
+          echo $DEPLOY_TO_PRODUCTION
+          echo ${{ github.event }}
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
