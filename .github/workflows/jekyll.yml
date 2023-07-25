@@ -48,7 +48,8 @@ jobs:
   # only deploy to production if [deploy] tag is present in commit message
   deploy-production:
     needs: build
-    if: github.event.commits.some(e => e.message.contains("[deploy]"))
+    if: |
+      github.event.commits.some(e => e.message.contains("[deploy]"))
     runs-on: ubuntu-latest
     steps:
       - name: Checkout www
