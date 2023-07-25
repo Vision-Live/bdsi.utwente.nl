@@ -23,12 +23,6 @@ jobs:
       - name: Checkout source
         uses: actions/checkout@v2
 
-      - name: debug
-        run: |
-          echo deploy: "${{ contains(join(github.event.commits.*.message, '\n\n'), '[deploy]') || github.event.inputs.deploy }}"
-          echo $DEPLOY_TO_PRODUCTION
-          echo "${{ toJSON(github.event) }}"
-
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -46,11 +40,11 @@ jobs:
           path: _site_dev/
 
       - name: Build static files for production
-        if: contains(github.event.commits.*.message, '[deploy]')
+        if: env.DEPLOY_TO_PRODUCTION == 'true'
         run: bundle exec jekyll build
         
       - name: Check dead links
-        if: contains(github.event.commits.*.message, '[deploy]')
+        if: env.DEPLOY_TO_PRODUCTION == 'true'
         run: |
           bundle exec htmlproofer
             --only-4xx
@@ -62,14 +56,14 @@ jobs:
             ./_site
         
       - name: Create production artifact
-        if: contains(github.event.commits.*.message, '[deploy]')
+        if: env.DEPLOY_TO_PRODUCTION == 'true'
         uses: actions/upload-pages-artifact@v2
 
         
   # only deploy to production if [deploy] tag is present in commit message
   deploy-production:
     needs: build
-    if: contains(github.event.commits.*.message, '[deploy]')
+    if: contains(join(github.event.commits.*.message, '\n\n'), '[deploy]') || github.event.inputs.deploy
     runs-on: ubuntu-latest
     steps:
       - name: Checkout www
