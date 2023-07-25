@@ -9,7 +9,7 @@ image: /assets/images/work-in-progress.svg
     class="intro mb-0"
     style="box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
         height: 25vw !important;
-        background-image: url({{page.image}});
+        background-image: url({% link {{page.image}} %});
         background-size: {% if page.imageNarrow %}contain{% else %}cover{% endif %};
         {% if page.imageBackground %}background-color: {{page.imageBackground}};{% endif %}
         background-position: center;
