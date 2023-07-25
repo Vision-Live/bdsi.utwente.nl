@@ -30,7 +30,7 @@ jobs:
         uses: actions/upload-pages-artifact@v2
         
       - name: Build static files for github pages
-        run: bundle exec jekyll build --baseurl bdsi.utwente.nl --destination _site_dev/
+        run: bundle exec jekyll build --baseurl /bdsi.utwente.nl --destination _site_dev/
 
       - name: Check dead links
         run: |
