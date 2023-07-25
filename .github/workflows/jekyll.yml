@@ -21,30 +21,26 @@ jobs:
           bundler-cache: true
           cache-version: 24
 
-      - name: Build static files
+      - name: Build static files for production
+        if: contains(github.event.commits.*.message, '[deploy]')
         run: bundle exec jekyll build
+        
+      - name: Create production artifact
+        if: contains(github.event.commits.*.message, '[deploy]')
+        uses: actions/upload-pages-artifact@v2
+        
+      - name: Build static files for github pages
+        run: bundle exec jekyll build --baseurl bdsi.utwente.nl/ --destination _site_dev/
 
       - name: Check dead links
-        run: bundle exec htmlproofer --only-4xx --ignore-status-codes "403" --assume-extension ".html" --ignore-empty-alt true --ignore-missing-alt true --checks "Links,Images"  ./_site
+        run: bundle exec htmlproofer --only-4xx --ignore-status-codes "403" --assume-extension ".html" --ignore-empty-alt true --ignore-missing-alt true --checks "Links,Images"  ./_site_dev
 
-      - name: Create pages artifact
+      - name: Create development artifact
         uses: actions/upload-pages-artifact@v2
-
-  # always run dev deployment on push
-  deploy-development:
-    needs: build
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy to Github Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
-
+        with: 
+          name: github-pages-dev
+          path: _site_dev/
+        
   # only deploy to production if [deploy] tag is present in commit message
   deploy-production:
     needs: build
@@ -73,3 +69,22 @@ jobs:
           git add .
           git commit -am "rebuild for $(echo $GITHUB_SHA | cut -c1-8)"
           git push origin www
+
+  # always run dev deployment on push
+  deploy-development:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to Github Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
+        with:
+          artifact_name: github-pages-dev
+
+
