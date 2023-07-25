@@ -14,7 +14,7 @@ on:
         description: 'Deploy to production server'
 
 env:
-  DEPLOY_TO_PRODUCTION: ${{ contains(github.event.commits.*.message), "[deploy]") || github.event.inputs.deploy }}
+  DEPLOY_TO_PRODUCTION: ${{ contains(github.event.commits.*.message, "[deploy]") || github.event.inputs.deploy }}
     
 jobs:
   build:
