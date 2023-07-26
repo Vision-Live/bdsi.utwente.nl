@@ -71,8 +71,8 @@ jobs:
       - name: Push to www
         run: |
           rm -rf www/*
-          cp -rf www-new/* www
           cd www
+          tar -xvf ../www-new/artifact.tar
           git config --local user.name jekyll-bot
           git config --local user.email bdsi@utwente.nl
           git add .
