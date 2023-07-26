@@ -30,6 +30,16 @@ jobs:
           bundler-cache: true
           cache-version: 24
 
+      - name: Build static files for production
+        run: bundle exec jekyll build
+        
+      - name: Check dead links
+        run: bundle exec htmlproofer --only-4xx --ignore-status-codes "403" --assume-extension ".html" --ignore-empty-alt true --ignore-missing-alt true --checks "Links,Images" ./_site
+        
+      - name: Create production artifact
+        if: env.DEPLOY_TO_PRODUCTION == 'true'
+        uses: actions/upload-pages-artifact@v2
+
       - name: Build static files for github pages
         run: bundle exec jekyll build --baseurl /bdsi.utwente.nl --destination _site_dev/
         
@@ -38,26 +48,6 @@ jobs:
         with: 
           name: github-pages-dev
           path: _site_dev/
-
-      - name: Build static files for production
-        if: env.DEPLOY_TO_PRODUCTION == 'true'
-        run: bundle exec jekyll build
-        
-      - name: Check dead links
-        if: env.DEPLOY_TO_PRODUCTION == 'true'
-        run: |
-          bundle exec htmlproofer
-            --only-4xx
-            --ignore-status-codes "403"
-            --assume-extension ".html"
-            --ignore-empty-alt true
-            --ignore-missing-alt true 
-            --checks "Links,Images" 
-            ./_site
-        
-      - name: Create production artifact
-        if: env.DEPLOY_TO_PRODUCTION == 'true'
-        uses: actions/upload-pages-artifact@v2
 
         
   # only deploy to production if [deploy] tag is present in commit message
