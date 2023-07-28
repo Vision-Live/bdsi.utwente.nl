@@ -7,7 +7,7 @@
   class="card mt-2 mb-2{% if shadow == 'true' %} shadow{% endif %}{% if include.bg %} bg-{{include.bg}}{% endif %}{% if include.text %} text-{{include.text}}{% endif %}">
   <div class="card-body">
     <div class="card-title">
-      <{{title_element}}>{{title}}</{{title_element}}>
+      <{{title_element}} {% if include.toc != 'true' %} data-toc-skip="true"{% endif %}>{{title}}</{{title_element}}>
       {% if include.subtitle %}
       <div class="small text-muted">{{include.subtitle}}</div>
       {% endif %}
