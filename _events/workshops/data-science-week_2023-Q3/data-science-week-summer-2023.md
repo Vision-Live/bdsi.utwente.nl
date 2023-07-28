@@ -24,16 +24,7 @@ endDate: 2023-10-02
 frontpage: true
 ---
 
-## Contents
-
-- [Contents](#contents)
-- [What is the Data Science Week?](#what-is-the-data-science-week)
-- [Who can join?](#who-can-join)
-- [What can I do to prepare?](#what-can-i-do-to-prepare)
-- [What will we do?](#what-will-we-do)
-- [Schedule](#schedule)
-
-{% include card.html title="Summer 2023 Data Science Week" content="Registration for the Summer 2023 Data Science Week, September 25th - October 2nd, is already open!." cta="Register now!" cta_link="https://www.utwente.nl/en/bms/research/bdsi/data-science-week-Summer-2023/" %}
+{% include card.html title="Summer 2023 Data Science Week" toc="false" content="Registration for the Summer 2023 Data Science Week, September 25th - October 2nd, is already open!." cta="Register now!" cta_link="https://www.utwente.nl/en/bms/research/bdsi/data-science-week-Summer-2023/" %}
 ## What is the Data Science Week?
 
 Over the course of two weeks, BDSi will organize a datathon and a series of workshops and seminars. In the datathon, you will compete with other teams of behavioural data scientists to solve a real data science case. BDSi staff will organize seminars and workshops throughout the first week to introduce the various steps involved in data science. These activities are meant to support the datathon, but are open to all students and staff. Coaches will be available throughout both weeks to guide you when you run into problems.
