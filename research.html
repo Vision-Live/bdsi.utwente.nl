@@ -1,27 +1,36 @@
 ---
-title: BDSi - Behavioural Data Science incubator - Collaborate
+title: BDSi - Behavioural Data Science incubator - Research Support
 layout: default
 bodyClass: page-list
 ---
 
 <div class="container py-6">
-    <h1 class="text-white hero">Let's work together</h1>
+  <h1 class="hero text-white">
+    Research
+    <span
+      class="text-primary"
+      style="font-weight: bolder; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3)"
+      >Support</span
+    >
+  </h1>
 </div>
 
 <div class="strip strip-diagonal">
-    <div class="container">
+  <div class="content-with-toc">
+    <div class="toc"></div>
+    <div class="content">
         <h2>What can we do for you?</h2>
         <p>The best way to learn how we can help you is to contact us for a (digital) coffee, so we can discuss your research, the challenges you face, and potential support we may be able to provide. What happens afterwards depends on the situation, but broadly speaking we will either consult or collaborate.</p>
         <p>
             We can provide {% for service in site.services %}{% unless forloop.first %}, {% endunless %}<a href="{% link {{service.path}} %}">{{service.title | downcase }}</a>{% endfor %}, and much more. 
             We work closely together with {% for partner in site.partners %}{% unless forloop.first %}, {% if forloop.last %}and {% endif %}{% endunless %}<a href="{{partner.website}}">{{partner.title}}</a>{% endfor %}.
         </p>
-
+  
         <h3>Consultation</h3>
         <p>Consultations are always free. We will aim to provide advice and connect you with other researchers, communities or funding opportunities. Consultations are generally the first step towards collaboration.</p>
         <p>To schedule a consultation, please reach out to <a href="mailto:bdsi@utwente.nl">bdsi@utwente.nl</a> and one of our team members will answer your questions, or contact you for further consultations.</p>
         <a href="mailto:bdsi@utwente.nl" class="button">get in touch</a>
-
+  
         <h3>Collaboration</h3>
         <p>BDSi also collaborates on projects with a high impact for data science at BMS. <a href="{% link _news/call-for-proposals-2021.md %}">BDSi Data Science grants</a> are provided several times per year to support projects with a high impact for data science at BMS.</p>
         <p>BDSi Data Science grants are meant to:</p>
@@ -30,13 +39,39 @@ bodyClass: page-list
             <li>support valorization of ongoing BMS research with (interactive) visualization and data-exploration</li>
             <li>explore data-driven approaches to new and existing lines of research by supporting the gathering, storage, and processing of complex datasets</li>
         </ul>
-
+  
         <p>For more information about the BDSi Data Science grants, please <a
                 href="{% link _news/call-for-proposals-2021.md %}">see the 2022 call for proposals</a>, or <a
                 href="mailto:bdsi@utwente.nl">contact us directly</a>. Keep an eye on <a
                 href="https://www.utwente.nl/en/bms/research/bdsi/">our newsletter</a> and this website for announcement about
             new calls for proposals.</p>
-
+  
         <a href="mailto:bdsi@utwente.nl" class="button">get in touch</a> <a href="/data-science-grant/" class="button">BDSi Data Science Grant</a> <a href="https://www.utwente.nl/en/bms/research/bdsi/" class="button">sign up for the newsletter</a>
+  
+  
+        <h2>Project showcases</h2>
+
+        {% assign projects_reversed = site.projects | reverse %} 
+        {% for project in projects_reversed limit: 5 %}
+          <div class="mb-4">
+          <a href="{{site.baseurl}}{{ project.url }}"><h3>{{- project.title -}}</h3></a>
+          <div class="authors">
+            {% include author-list.html authors=project.authors page=project
+            header="h6" %}
+          </div>
+          <div class="introduction">
+            {% if project.introduction %}
+              {{ project.introduction }}
+            {% else %} 
+              {{ project.content | split: "</p>" | slice: 0, 1 | join: " " }} 
+            {% endif %}
+            <a href="{{project.url}}">continue reading...</a>
+          </div>
+        </div>
+        {% endfor %}
+
+        <h2>Project database</h2>
+        For a best-effort list of all completed and ongoing projects, see <a href="{% link projects.html %}">the project database</a>.
     </div>
+  </div>
 </div>
