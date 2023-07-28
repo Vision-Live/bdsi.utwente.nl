@@ -595,16 +595,9 @@ $button-width: 35px;
   border-radius: 2px;
 }
 
-.page-single {
+.page-single, .page-list {
   background-color: $primary;
-  background-image: url("/assets/images/strip-background.svg");
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-.page-list {
-  background-color: $primary;
-  background-image: url("/assets/images/strip-background.svg");
+  background-image: $strip-background-image;
   background-attachment: fixed;
   background-size: cover;
 }
