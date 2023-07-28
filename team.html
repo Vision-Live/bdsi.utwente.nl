@@ -12,32 +12,35 @@ iconSize: 28
 </div>
 
 <div class="strip strip-diagonal">
-    <div class="container">
-        <p>
-            Our team consists of one representative from each research cluster
-            at BMS faculty at University of Twente. Each of us have multiple
-            years of experience in developing data driven methods to solve
-            social science problems.
-        </p>
+    <div class="content-with-toc">
+        <div class="toc"></div>
+        <div class="content">
+            <p>
+                Our team consists of one representative from each research cluster
+                at BMS faculty at University of Twente. Each of us have multiple
+                years of experience in developing data driven methods to solve
+                social science problems.
+            </p>
 
-        <div class="mb-4">{% include find-expertise.html %}</div>
+            <div class="mb-4">{% include find-expertise.html %}</div>
 
-        <div id="profiles" class="container mb-6">
-            {% for section in sections %}
-            {% assign section_profiles = site.team | where_exp: "profile", "profile.section == section" | sort: "title" %}
-            <h1>{{section}}</h1>
-            {% for profile in section_profiles %}
-            <!-- prettier-ignore -->
-            {% assign givenName = profile.title | split: " " | first %}
-            <div
-                class="team team-summary mb-4"
-                id="{{profile.email | split: '@' | first | replace: '.', '-'}}"
-            >
-                {% include profile-widget.html %}
-                <div class="team-content mt-1">{{ profile.content }}</div>
+            <div id="profiles" class="container mb-6">
+                {% for section in sections %}
+                {% assign section_profiles = site.team | where_exp: "profile", "profile.section == section" | sort: "title" %}
+                <h2>{{section}}</h2>
+                {% for profile in section_profiles %}
+                <!-- prettier-ignore -->
+                {% assign givenName = profile.title | split: " " | first %}
+                <div
+                    class="team team-summary mb-4"
+                    id="{{profile.email | split: '@' | first | replace: '.', '-'}}"
+                >
+                    {% include profile-widget.html %}
+                    <div class="team-content mt-1">{{ profile.content }}</div>
+                </div>
+                {% endfor %}
+                {% endfor %}
             </div>
-            {% endfor %}
-            {% endfor %}
         </div>
     </div>
 </div>
