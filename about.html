@@ -9,7 +9,9 @@ bodyClass: page-list
 </div>
 
 <div class="strip strip-diagonal">
-    <div class="container">
+    <div class="content-with-toc">
+        <div class="toc"></div>
+        <div class="content">
         <h2>Mission</h2>
         <p>
             The aim of BDSI is to spark innovation and collaboration in data
@@ -39,10 +41,7 @@ bodyClass: page-list
             about us please visit our
             <a href="{% link team.html %}">teams</a>&nbsp;page.
         </p>
-    </div>
-
-    <div class="container mt-4">
-        <h2>Services</h2>
+        <h2 mt-4>Services</h2>
         <div class="row">
             {% for service in site.services %}
             <div class="col-12 col-md-6 mb-2">
@@ -59,10 +58,7 @@ bodyClass: page-list
             </div>
             {% endfor %}
         </div>
-    </div>
-
-    <div class="container mt-4">
-        <h2>Partners</h2>
+        <h2 mt-4>Partners</h2>
         {% for partner in site.partners %}
         <a href="{{ partner.website }}">
             <h3>{{ partner.title }}</h3>
@@ -77,4 +73,5 @@ bodyClass: page-list
         </a>
         {{ partner.content | markdownify }} {% endfor %}
     </div>
+</div>
 </div>
