@@ -21,6 +21,18 @@ function create_toc(target = ".content-with-toc .toc", content = ".content-with-
     // another out if there is no point for a ToC (no headers)
     if (header_elements.length <= 2) {
         console.debug("two or fewer headers for ToC, stopping...");
+
+        // give parent container class
+        const parent = content_element.parentElement;
+        parent.classList.remove("content-with-toc");
+        parent.classList.add("container")
+
+        // move content to parent
+        parent.append(...content_element.children)
+
+        // remove toc elements to clear our tracks
+        toc_element.remove();
+        content_element.remove();
         return;
     }
 
