@@ -1,0 +1,48 @@
+@use "sass:math";
+
+.bdsi-venn {
+    display: block;
+    aspect-ratio: 1/1;
+    position: relative;
+    width: 100%;
+
+    .circle {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+
+        position: absolute;
+        width: 52%;
+        height: 52%;
+        
+        border: 3px solid var(--accent-colour, steelblue);
+        border-radius: 50%;
+    }
+
+    .circle:nth-child(1) {
+        --accent-colour: #cf0071;
+
+        left: calc(cos(math.$pi * -3/6) * (50% / 2) + (50% / 2));
+        top:  calc(sin(math.$pi * -3/6) * (50% / 2) + (50% / 2));
+    }
+
+    .circle:nth-child(2) {
+        --accent-colour: #0093b3;
+
+        left: calc(cos(calc(math.$pi * 1/6)) * (50% / 2) + (50% / 2));
+        top:  calc(sin(calc(math.$pi * 1/6)) * (50% / 2) + (50% / 2));
+    }
+
+    .circle:nth-child(3) {
+        --accent-colour: #ec7908;
+
+        left: calc(cos(calc(math.$pi * 5/6)) * (50% / 2) + (50% / 2));
+        top:  calc(sin(calc(math.$pi * 5/6)) * (50% / 2) + (50% / 2));
+    }
+
+    .text-secondary {
+        border: 1px solid grey;            
+        padding: .2em;
+    }
+}

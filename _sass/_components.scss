@@ -3,6 +3,7 @@ $header: $secondary;
 $text: $secondary; // darken($header, 30);
 
 @import "./components/projects";
+@import "./components/bdsi_venn";
 
 @for $i from 1 through 6 {
   h#{$i} {
