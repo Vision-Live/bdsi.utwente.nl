@@ -9,31 +9,44 @@ bodyClass: page-projects-list
 </div>
 
 <div class="strip strip-diagonal">
-  <div class="container">
-      {% for project in site.projects %}
-        <div class="project row mb-4">
-            <div class="col-8">
-            <h3>
-              <a href="{{site.baseurl}}{{ project.url }}">{{ project.title }}</a>
-            </h3>
-            <div class="authors">
-              {% include author-list.html authors=project.authors page=project
-              header="h6" %}
-            </div>
-            <div class="introduction">
-              {% if project.introduction %}
-                {{ project.introduction }}
-              {% else %} 
-                {{ project.content | mardownify }} 
-              {% endif %}
-              <a href="{{site.baseurl}}{{project.url}}" class="button read-more">read more...</a>
-            </div>
-          </div>
-          <div class="col-4">
-            <h6 class="date mt-1"></h6>
-            {% include tags-list.html page=project %}
-          </div>
+    <div class="content-with-toc">
+      <div class="toc"></div>
+      <div class="content">
+      {% assign projects_reversed = site.projects | reverse %}
+      {% for project in projects_reversed %}
+      <div class="project mb-2">
+        <a href="{{site.baseurl}}{{ project.url }}">
+          <h3>{{- project.title -}}</h3>
+        </a>
+        <div class="authors">
+          {% include author-list.html authors=project.authors page=project
+          header="h6" %}
         </div>
+        <div class="introduction">
+          {% if project.introduction %}
+          {{ project.introduction }}
+          {% else %}
+          {{ project.content | split: "</p>" | slice: 0, 1 | join: " " | split: " " | slice: 0, 500 | join: " " }}
+          {% endif %}
+          <!-- <a href="{{project.url}}">continue reading...</a> -->
+        </div>
+      </div>
       {% endfor %}
     </div>
 </div>
+</div>
+
+<script>
+  function tag_tall_projects() {
+    /** @type {NodeListOf<HTMLDivElement>} */
+    const projects = document.querySelectorAll(".project");
+
+    for (const project of projects) {
+      const introduction = project.querySelector(".introduction");
+      if (introduction.scrollHeight > (introduction.offsetHeight + 10)) {
+        introduction.classList.add("tall")
+      }
+    }
+  }
+  document.addEventListener("DOMContentLoaded", tag_tall_projects);
+</script>
