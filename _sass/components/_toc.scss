@@ -1,0 +1,99 @@
+// @use "../bootstrap/variables";
+@use "../variables";
+@use "sass:math" as math;
+
+$toc-width: 250px;
+
+html {
+    scroll-behavior: smooth;
+}
+
+.content-with-toc {
+    position: relative;
+    margin: 0 auto;
+
+    display: flex;
+    flex-flow: row-reverse nowrap;
+
+    .content {
+        width: content;
+        max-width: 100%;
+        flex: 1 0;
+    }
+    
+    @each $breakpoint, $width in $grid-breakpoints {
+        $content-width: map-get($container-max-widths, $breakpoint);
+        
+        @if $content-width != null {
+            $margins: calc(100% - $content-width);
+            
+            @media screen and (min-width: $width) {
+                margin-left: max(0px, min($margins / 2, $margins - $toc-width));
+                margin-right: max(0px, $margins / 2 - $toc-width);
+
+                .content {
+                    max-width: $content-width;
+                }
+            }
+        }
+    }
+
+    .toc {
+        position: sticky;
+        top: 2em;
+        align-self: start;    
+        
+        display: none;
+        flex: 0 0 $toc-width;
+        padding-left: 2em;
+        padding-top: 1em;
+        line-height: 1.2;
+
+        @media screen and (min-width: map-get($grid-breakpoints, "md")){
+            display: block;
+        }
+
+        &::before {
+            content: 'ON THIS PAGE';
+            position: relative;
+            font-family: Arial, sans-serif;
+            font-weight: lighter;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            .toc-entry {
+                animation-duration: 1s;
+                padding: 0.2em 0.5em;
+                margin: 0;
+                border-left: 2px solid #cdcdcd;
+                
+                a {
+                    text-decoration: none;
+                }
+
+                &:hover, &.current {
+                    border-left: 2px solid  var(--link-colour, var(--accent-colour, #008eaa));
+                }
+
+                &:hover {
+                    filter: var(--link-hover-filter, brightness(120%));
+                    a {
+                        filter: none !important;
+                    }
+                }
+            }
+
+            .toc-level-h2 {
+                margin-top: 0.5em;
+            }
+
+            .toc-level-h3 {
+                padding-left: 1em;
+            }
+        }
+    }
+}

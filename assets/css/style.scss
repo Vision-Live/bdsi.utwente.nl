@@ -24,6 +24,7 @@ $strip_background_image: url("{% link /assets/images/strip-background.svg %}");
 // Components
 @import "components";
 @import "components/banner_cta";
+@import "components/toc";
 
 // Pages
 @import "pages/home";
