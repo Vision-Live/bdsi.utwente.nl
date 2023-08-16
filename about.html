@@ -29,6 +29,8 @@ bodyClass: page-list
             <li>visualisation and reporting.</li>
         </ul>
         <p>
+            The services we provide can be categorized into three overlapping areas:
+            research support, community building, and knowledge sharing. 
             We organise courses, workshops and networking events on these
             topics, and provide training in the R and Python programming
             languages on all skill levels. We support the writing of research
@@ -36,10 +38,19 @@ bodyClass: page-list
             researchers in BMS with each other, with other UT research groups
             and the outside world.
         </p>
+        <div class="my-2">
+            {% include bdsi-venn.html %}
+        </div>
+        
+        <h2>Contact us</h2>
         <p>
-            BDSI is run by representatives from all BMS clusters. To know more
-            about us please visit our
-            <a href="{% link team.html %}">teams</a>&nbsp;page.
+            BDSI is run by representatives from all BMS clusters. To find us, go to our
+            <a href="{% link team.html %}">team</a> page.
+        </p>
+        <p>If you're not sure if or how BDSi can support your research project, please 
+            come by on our <a href="{{site.baseurl}}/open-hours">open hours</a>, explain 
+            your problem in the <a href="{{site.baseurl}}/community">community</a>, or 
+            <a href="{{site.baseurl}}/contact">contact</a> us directly.
         </p>
         <h2 mt-4>Services</h2>
         <div class="row">

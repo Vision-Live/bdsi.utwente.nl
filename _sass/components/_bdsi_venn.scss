@@ -1,10 +1,14 @@
 @use "sass:math";
 
 .bdsi-venn {
+    --margin: min(5em, 10%);
+
     display: block;
     aspect-ratio: 1/1;
     position: relative;
-    width: 100%;
+    padding: 0 var(--margin);
+    margin: 0 auto;
+    width: calc(100% - var(--margin) * 2);
 
     .circle {
         display: flex;
@@ -23,8 +27,8 @@
     .circle:nth-child(1) {
         --accent-colour: #cf0071;
 
-        left: calc(cos(math.$pi * -3/6) * (50% / 2) + (50% / 2));
-        top:  calc(sin(math.$pi * -3/6) * (50% / 2) + (50% / 2));
+        left: calc(cos(math.div(math.$pi * -3, 6)) * (50% / 2) + (50% / 2));
+        top:  calc(sin(math.div(math.$pi * -3, 6)) * (50% / 2) + (50% / 2));
     }
 
     .circle:nth-child(2) {
@@ -42,7 +46,16 @@
     }
 
     .text-secondary {
-        border: 1px solid grey;            
-        padding: .2em;
+        // border: 1px solid grey;            
+        padding: 0 .2em;
+        text-decoration: none;
+    }
+
+    a {
+        text-decoration: none;
+
+        h1 {
+            text-decoration: underline;
+        }
     }
 }
