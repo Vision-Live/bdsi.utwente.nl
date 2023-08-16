@@ -6,5 +6,5 @@ image: /assets/images/data-science-week-2023-summer.svg
 imageNarrow: true
 imageBackground: "#6d0039"
 accentColour: "#ed007e"
-redirect_to: "/events/data-science-week-summer-2023/"
+redirect_to: "/events/data-science-week-summer-2023"
 ---

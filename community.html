@@ -90,9 +90,11 @@ bodyClass: page-list
       {% for community in site.communities %}
       <h3 class="mt-6">{{community.title}}</h3>
       {% include author-list.html page=community header="h5" %}
-      <a href="{{community.calendar}}">
+      {% if community.calendar_url %}
+      <a href="{{community.calendar_url}}">
         <div class="icon calendar"></div> calendar
       </a>
+      {% endif %}
       <br />
 
       <p>{{community.content}}</p>
