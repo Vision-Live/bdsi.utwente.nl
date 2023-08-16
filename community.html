@@ -7,19 +7,108 @@ bodyClass: page-list
 
 
 <div class="container py-6">
-    <h1 class="hero text-white">
-      Community
-      <span
-        class="text-primary"
-        style="font-weight: bolder; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3)"
-        >building</span
-      >
-    </h1>
-  </div>
-  
-  <div class="strip strip-diagonal">
-    <div class="container">
-      
+  <h1 class="hero text-white">
+    Community
+    <span class="text-primary" style="font-weight: bolder; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3)">building</span>
+  </h1>
+</div>
+
+<div class="strip strip-diagonal">
+  <div class="content-with-toc">
+    <div class="toc"></div>
+    <div class="content">
+
+      <div class="card_ card body">
+        <h3>TODO</h3>
+        <p>
+          insert text here about community building, importance, many existing communities, you should join.
+        </p>
+        <p>
+          We have a broad Teams DS community, and also a list of specialised communities (see below).
+        </p>
+      </div>
+
+      <h2 id="community"=>BDSi Data Science Community</h2>
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title" data-toc-skip="true">
+            <span class="iconify-inline" data-icon="ph:chats-fill"></span>Teams
+            Channel
+          </h3>
+          <p>
+            Part of supporting data science in the long term is building a
+            community of data scientists and researchers interested in data
+            science. Within the community we can share ideas, questions, and
+            expertise with eachother.
+          </p>
+          <p>
+            The BDSi Data Science Community is free to join for anyone affiliated
+            with the University of Twente, or involved in a research project of
+            the University of Twente.
+          </p>
+          <h4 class="mt-3">Do you have a University of Twente account?</h4>
+          <div class="row">
+            <div class="col-md-6 panel">
+              <blockquote>Yes</blockquote>
+              You can instantly join the BDSi Data Science Community team by
+              following these steps:
+              <ol>
+                <li>Open Teams</li>
+                <li>Go to the "Teams" tab</li>
+                <li>Make sure you're on the "all teams" page</li>
+                <li>Click "Join or create team"</li>
+                <li>Use the code <code>t1p0d1d</code></li>
+              </ol>
+            </div>
+            <div class="col-md-6">
+              <blockquote class="mt-4 mt-md-0">No</blockquote>
+              You can apply to join the BDSi Data Science Community team using the
+              link below. We'll let you in as soon as possible.
+              <br />
+              <a href="https://teams.microsoft.com/l/channel/19%3aByywZOzEom4TD269aMiOnryoyS6qxlP9qHo8PONi5Y01%40thread.tacv2/General?groupId=9e63c81f-f953-4d91-8826-385bb1ddb2f8&tenantId=723246a1-c3f5-43c5-acdc-43adb404ac4d"
+                class="button mt-2 large" style="
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                white-space: normal;
+                word-wrap: normal;
+                height: unset;
+                max-width: 80%;
+              ">
+                Join the Community
+              </a>
+            </div>
+          </div>
+          <h4 class="mt-3">Welcome to the community!</h4>
+          Don't forget to introduce yourself.
+        </div>
+      </div>
+
+      <h2>Topical Communities</h2>
+      There are a number of data science related communities active across BMS and the University of Twente.
+
+      {% for community in site.communities %}
+      <h3 class="mt-6">{{community.title}}</h3>
+      {% include author-list.html page=community header="h5" %}
+      <a href="{{community.calendar}}">
+        <div class="icon calendar"></div> calendar
+      </a>
+      <br />
+
+      <p>{{community.content}}</p>
+
+      {% endfor %}
+
+      <h2>Missing a community?</h2>
+      <p>Would you like to start a community around data science in your research? We can help get you in touch with
+        others doing similar research, and support all the organizational requirements so that you can get right to the
+        content. </p>
+      <p>Do you know of a community that is (at least somewhat) related to data science at BMS that isn't on the list
+        yet? We'd love to add it to the list!</p>
+
+      <p>Please get in touch through <a href="mailto:bdsi@utwente.nl">bdsi@utwente.nl</a> or come by during our <a
+          href="{{site.baseurl}}/open-hours">open hours</a>.</p>
     </div>
+
   </div>
-  
+</div>

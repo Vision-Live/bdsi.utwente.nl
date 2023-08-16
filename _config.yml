@@ -6,26 +6,28 @@ future: true
 collections:
   services:
     output: true
-    permalink: /:collection/:title/
+    permalink: /:collection/:title
   partners:
     output: false
   team:
     output: false
+  communities:
+    output: false
   blogs:
     output: true
-    permalink: /:collection/:title/
+    permalink: /:collection/:title
   projects:
     output: true
-    permalink: /:collection/:title/
+    permalink: /:collection/:title
   events:
     output: true
-    permalink: /:collection/:title/
+    permalink: /:collection/:title
   news:
     output: true
-    permalink: /:collection/:title/
+    permalink: /:collection/:title
   archive:
     output: true
-    permalink: /:collection/:title/
+    permalink: /:collection/:title
 
 defaults:
   - scope:
