@@ -86,8 +86,9 @@ bodyClass: page-list
 
       <h2>Topical Communities</h2>
       There are a number of data science related communities active across BMS and the University of Twente.
-
-      {% for community in site.communities %}
+      
+      {% assign communities_sorted=site.communities | sort: "title" %}
+      {% for community in communities_sorted %}
       <h3 class="mt-6">{{community.title}}</h3>
       {% include author-list.html page=community header="h5" %}
       {% if community.calendar_url %}
@@ -101,7 +102,7 @@ bodyClass: page-list
 
       {% endfor %}
 
-      <h2>Missing a community?</h2>
+      <h2 class="mt-6">Missing a community?</h2>
       <p>Would you like to start a community around data science in your research? We can help get you in touch with
         others doing similar research, and support all the organizational requirements so that you can get right to the
         content. </p>
