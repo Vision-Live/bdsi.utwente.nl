@@ -57,6 +57,39 @@ bodyClass: page-home
     {% endfor %}
   </div>
 </div>
+
+<div class="container mt-4 calendar">
+    {% capture renderTime %}{{- site.time -}}{% endcapture %}
+    {% assign events = site.data.calendar | concat: site.events %}
+    {% assign filtered_events = '' | split: '' %}
+    {% for event in events %}
+        {% assign event.startDate = event.startDate | default: event.date %}
+        {% capture startTime %}{{- event.startDate -}}{% endcapture %}
+        {% if startTime >= renderTime %}
+            {% assign filtered_events = filtered_events | push: event %}
+        {% endif %}
+    {% endfor %}
+    {% assign sorted_events = filtered_events | sort_natural: "startDate"%}
+
+    <h2>Upcoming events</h2>
+
+    <div class="calendar-items">
+        {% for event in sorted_events limit: 10 %}
+        <div class="calendar-item">
+            <h4>{{event.title}}</h4>
+            <div class="small text-muted">
+                {{event.startDate | date: "%B %e"}}
+                {%- if event.endDate %} – {{event.endDate | date: "%B %e"}}{% endif %}
+                {%- if event.time -%}, {{event.time}}{% endif %}
+                {% comment %}
+                {%- if event.location %}, {{event.location}}{% endif %}
+                {% endcomment %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
 <div class="container mt-6">
     <div class="row justify-content-start">
         <div class="col-12">

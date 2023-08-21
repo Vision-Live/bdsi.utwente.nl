@@ -4,6 +4,7 @@ $text: $secondary; // darken($header, 30);
 
 @import "./components/projects";
 @import "./components/bdsi_venn";
+@import "./components/calendar";
 
 @for $i from 1 through 6 {
   h#{$i} {
