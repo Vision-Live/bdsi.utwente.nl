@@ -3,6 +3,9 @@ title: 'Behavioural Data Science incubator'
 title_footer: 'BDSi'
 future: true
 
+exclude:
+  - "_utils"
+
 collections:
   services:
     output: true
