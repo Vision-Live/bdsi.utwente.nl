@@ -1,1 +1,6 @@
 !package*.json
+
+# data files used in dev
+calendar.yaml
+calendar.json
+calendar.ics

@@ -9,6 +9,8 @@ async function getCalendarData(url, out) {
     const jcalData = ICAL.parse(icalData);
     const comp = new ICAL.Component(jcalData);
     const events = [];
+    const now = dayjs();
+    const today = now.startOf("day");
 
     for (const vevent of comp.getAllSubcomponents('vevent')) {
 
@@ -18,7 +20,13 @@ async function getCalendarData(url, out) {
             const iterator = event.iterator();
             let next = iterator.next();
             while (next) {
-                if (next.toJSDate() >= Date.now()) {
+                const _next = dayjs(next.toJSDate())
+                if (_next.isAfter(today.add(1, "year"))) {
+                    // don't list more than a year ahead
+                    break;
+                }
+
+                if (_next.isAfter(today)) {
                     const occurrence = event.getOccurrenceDetails(next);
                     events.push({ title: (occurrence.summary ?? event.summary).replace(/^Copy: /, ""), location: occurrence.location ?? event.location, start: occurrence.startDate.toJSDate(), end: occurrence.endDate.toJSDate() });
                 }
