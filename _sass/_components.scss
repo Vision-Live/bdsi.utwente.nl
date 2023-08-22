@@ -457,8 +457,13 @@ $button-width: 35px;
 }
 
 .main-menu {
-  height: inherit;
+  padding-left: 1em;
+  height: 50px;
+  width: max-content;
   display: none;
+  flex-grow: 1;
+  // overflow-y: hidden;
+  // overflow-x: visible;
 
   @include media-breakpoint-up(md) {
     display: block;
@@ -468,15 +473,17 @@ $button-width: 35px;
     height: inherit;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    align-content: center;
+    justify-items: center;
     list-style: none;
     margin: 0;
     padding: 0;
+    overflow-y: hidden;
 
     >li {
-      height: inherit;
+      height: min-content;
       margin: 0;
-      padding: 0;
       list-style: none;
 
       &:last-of-type {
@@ -484,26 +491,52 @@ $button-width: 35px;
       }
 
       >a {
-        height: inherit;
+        padding: .5em 1em;
+        height: calc(1lh + 1em);
         display: inline-block;
-        padding: 0;
         font-family: $font-family-heading;
         font-size: 1.1rem;
         font-weight: 400;
         text-transform: uppercase;
-        padding: 10px 14px 10px 14px;
+        // padding: 10px 14px 10px 14px;
         text-decoration: none;
         color: $white;
+        overflow: hidden;
+
+        transition: all 0.3s ease-in;
+        >.rollover {
+          transition: all 0.3s ease-in;
+          padding-top: 1em;
+          font-weight: 100;
+        }
 
         &:hover {
           background: var(--accent-colour, $primary);
           color: $white;
           text-decoration: none;
+
+          &:has(>.rollover) {
+            padding-top: 0.2em;
+          }
+
+          >.rollover {
+            padding-top: 0em;
+            margin-top: -.8em;
+          }
         }
       }
 
       >a.current {
         background: lighten($secondary, 10);
+        
+        &:has(>.rollover) {
+          padding-top: 0.2em;
+        }
+
+        >.rollover {
+          padding-top: 0em;
+          margin-top: -.8em;
+        }
       }
     }
 
