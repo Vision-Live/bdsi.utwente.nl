@@ -78,13 +78,13 @@ bodyClass: page-home
         {% for event in sorted_events limit: 10 %}
         <div class="calendar-item">
             {% if event.image %}
-                <div style="background-image: url({{event.image}});" class="calendar-item-image"></div>
+                <div style="background-image: url({% link {{event.image}} %});" class="calendar-item-image"></div>
             {% endif %}
             <div class="calendar-item-content">
                 {% unless event.title == prev_title %}
                 {% assign prev_title = event.title %}
                 {% if event.url %}
-                    <a href="{{event.url | link}}" title="{{event.title}}">
+                    <a href="{% link {{event.path}} %}" title="{{event.title}}">
                         <h4>{{event.title}}</h4>
                     </a>
                 {% else %}
