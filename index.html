@@ -84,9 +84,9 @@ bodyClass: page-home
                 {% unless event.title == prev_title %}
                 {% assign prev_title = event.title %}
                 {% if event.url %}
-                    <a href="{% link {{event.path}} %}" title="{{event.title}}">
-                        <h4>{{event.title}}</h4>
-                    </a>
+                    <h4>
+                        <a href="{% link {{event.path}} %}" title="{{event.title}}">{{event.title}}</a>
+                    </h4>
                 {% else %}
                     <h4>{{event.title}}</h4>
                 {% endif %}
@@ -108,17 +108,17 @@ bodyClass: page-home
 <div class="container mt-6">
     <div class="row justify-content-start">
         <div class="col-12">
-            <h2 class="text-dark mb-3">Our Services</h2>
+            <h2 class="mb-3">Our Services</h2>
         </div>
         {% for service in site.services %}
         <div class="col-12 col-md-6 mb-2">
             <div class="service service-summary">
                 <div class="service-content">
-                    <h3 class="service-title">
+                    <h4>
                         <a href="{{site.baseurl}}{{ service.url }}"
                             >{{ service.title }}</a
                         >
-                    </h3>
+                    </h4>
                     {{ service.introduction | markdownify }}
                 </div>
             </div>
