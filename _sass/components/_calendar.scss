@@ -6,5 +6,24 @@
         gap: 1em;
         // display: flex;
         // flex-flow: column nowrap;
+
+        .calendar-item {
+            display: flex;
+            flex-flow: row nowrap;
+            gap: 1em;
+        }
+
+        .calendar-item-content {
+            display: flex;
+            flex-flow: column nowrap;
+        }
+
+        .calendar-item-image {
+            width: 250px;
+            aspect-ratio: 1.61/1;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
     }
 }

@@ -74,16 +74,31 @@ bodyClass: page-home
     <h2>Upcoming events</h2>
 
     <div class="calendar-items">
+        {% assign prev_title = "" %}
         {% for event in sorted_events limit: 10 %}
         <div class="calendar-item">
-            <h4>{{event.title}}</h4>
-            <div class="small text-muted">
-                {{event.startDate | date: "%B %e"}}
-                {%- if event.endDate %} – {{event.endDate | date: "%B %e"}}{% endif %}
-                {%- if event.time -%}, {{event.time}}{% endif %}
-                {% comment %}
-                {%- if event.location %}, {{event.location}}{% endif %}
-                {% endcomment %}
+            {% if event.image %}
+                <div style="background-image: url({{event.image}});" class="calendar-item-image"></div>
+            {% endif %}
+            <div class="calendar-item-content">
+                {% unless event.title == prev_title %}
+                {% assign prev_title = event.title %}
+                {% if event.url %}
+                    <a href="{{event.url | link}}" title="{{event.title}}">
+                        <h4>{{event.title}}</h4>
+                    </a>
+                {% else %}
+                    <h4>{{event.title}}</h4>
+                {% endif %}
+                {% endunless %}
+                <div class="small text-muted">
+                    {{event.startDate | date: "%B %e"}}
+                    {%- if event.endDate %} – {{event.endDate | date: "%B %e"}}{% endif %}
+                    {%- if event.time -%}, {{event.time}}{% endif %}
+                    {% comment %}
+                    {%- if event.location %}, {{event.location}}{% endif %}
+                    {% endcomment %}
+                </div>
             </div>
         </div>
         {% endfor %}
