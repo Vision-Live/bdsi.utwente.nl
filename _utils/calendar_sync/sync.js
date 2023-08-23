@@ -28,12 +28,20 @@ async function getCalendarData(url, out) {
 
                 if (_next.isAfter(today)) {
                     const occurrence = event.getOccurrenceDetails(next);
-                    events.push({ title: (occurrence.summary ?? event.summary).replace(/^Copy: /, ""), location: occurrence.location ?? event.location, start: occurrence.startDate.toJSDate(), end: occurrence.endDate.toJSDate() });
+                    events.push({ 
+                        title: (occurrence.summary ?? event.summary).replace(/^Copy: /, ""), 
+                        location: occurrence.location ?? event.location, 
+                        start: occurrence.startDate.toJSDate(), 
+                        end: occurrence.endDate.toJSDate() });
                 }
                 next = iterator.next();
             }
         } else {
-            events.push({ title: event.summary.replace(/^Copy: /, ""), location: event.location, start: event.startDate.toJSDate(), end: event.endDate.toJSDate() });
+            events.push({ 
+                title: event.summary.replace(/^Copy: /, ""), 
+                location: event.location, 
+                start: event.startDate.toJSDate(), 
+                end: event.endDate.toJSDate() });
         }
     }
 

@@ -99,6 +99,11 @@ body {
   font-weight: bolder;
 }
 
+button.button {
+  border: none;
+  outline: none;
+}
+
 .button {
   height: 2em;
   padding: 0 14px;

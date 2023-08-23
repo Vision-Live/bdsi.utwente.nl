@@ -10,8 +10,7 @@ bodyClass: page-list
     <span
       class="text-primary"
       style="font-weight: bolder; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3)"
-      >Support</span
-    >
+      >Support</span>
   </h1>
 </div>
 
@@ -20,7 +19,7 @@ bodyClass: page-list
     <div class="toc"></div>
     <div class="content">
         <h2>What can we do for you?</h2>
-        <p>The best way to learn how we can help you is to walk in during our <a href="{% link open-hours.html %}">open hours</a> or contact us for a (digital) coffee, so we can discuss your research, the challenges you face, and potential support we may be able to provide. What happens afterwards depends on the situation, but broadly speaking we will either consult or collaborate.</p>
+        <p>The best way to learn how we can help you is to walk in during our <a href="#open-hours">open hours</a> or contact us for a (digital) coffee, so we can discuss your research, the challenges you face, and potential support we may be able to provide. What happens afterwards depends on the situation, but broadly speaking we will either consult or collaborate.</p>
         <p>
             We can provide {% for service in site.services %}{% unless forloop.first %}, {% endunless %}<a href="{% link {{service.path}} %}">{{service.title | downcase }}</a>{% endfor %}, and much more. 
             We work closely together with {% for partner in site.partners %}{% unless forloop.first %}, {% if forloop.last %}and {% endif %}{% endunless %}<a href="{{partner.website}}">{{partner.title}}</a>{% endfor %}.
@@ -29,7 +28,30 @@ bodyClass: page-list
         <h3>Open Hours</h3>
         <p>We have walk-in open hours (almost) every monday, from 15:00 to 16:00. During these hours, our data scientists will be available to answer all your questions. We're eager to learn what research you are doing, and explore any opportunities for applying modern data science together.</p>
         <p>If we can't help you on the spot, we can set up a consultation later for us to prepare and discuss more in depth, refer you to other experts, or provide you with additional resources.</p>
-        <p></p>
+
+        {% comment %} find first 'Open Hour' event {% endcomment %}
+        {% assign next_open_hour = site.data.calendar | find_exp: "event", "event.title contains 'BDSi Open Hour'" %}
+        
+        <button class="button" id="add-to-calendar_open-hour">Add to calendar</button>
+
+        <script type="application/javascript">
+          const config = {
+            name:"{{ next_open_hour.title }}",
+            options:['Microsoft365', 'Apple', 'Google', 'iCal'],
+            location:"{{ next_open_hour.location }}",
+            startDate:"{{ next_open_hour.start | date: '%Y-%m-%d' }}",
+            endDate:"{{ next_open_hour.end | date: '%Y-%m-%d' }}",
+            startTime:"{{ next_open_hour.start | date: '%H:%M' }}",
+            endTime:"{{ next_open_hour.end | date: '%H:%M' }}",
+            timeZone:"Europe/Amsterdam",
+            organizer:"BDSi|bdsi@utwente.nl",
+            listStyle: "dropdown"
+          };
+          const button = document.getElementById('add-to-calendar_open-hour');
+          if (button) {
+            button.addEventListener('click', () => atcb_action(config, button));
+          }
+        </script>
   
         <h3>Consultation</h3>
         <p>Consultations are always free. We will aim to provide advice and connect you with other researchers, communities or funding opportunities. Consultations are generally the first step towards collaboration.</p>
