@@ -20,16 +20,21 @@ bodyClass: page-list
     <div class="toc"></div>
     <div class="content">
         <h2>What can we do for you?</h2>
-        <p>The best way to learn how we can help you is to contact us for a (digital) coffee, so we can discuss your research, the challenges you face, and potential support we may be able to provide. What happens afterwards depends on the situation, but broadly speaking we will either consult or collaborate.</p>
+        <p>The best way to learn how we can help you is to walk in during our <a href="{% link open-hours.html %}">open hours</a> or contact us for a (digital) coffee, so we can discuss your research, the challenges you face, and potential support we may be able to provide. What happens afterwards depends on the situation, but broadly speaking we will either consult or collaborate.</p>
         <p>
             We can provide {% for service in site.services %}{% unless forloop.first %}, {% endunless %}<a href="{% link {{service.path}} %}">{{service.title | downcase }}</a>{% endfor %}, and much more. 
             We work closely together with {% for partner in site.partners %}{% unless forloop.first %}, {% if forloop.last %}and {% endif %}{% endunless %}<a href="{{partner.website}}">{{partner.title}}</a>{% endfor %}.
         </p>
+
+        <h3>Open Hours</h3>
+        <p>We have walk-in open hours (almost) every monday, from 15:00 to 16:00. During these hours, our data scientists will be available to answer all your questions. We're eager to learn what research you are doing, and explore any opportunities for applying modern data science together.</p>
+        <p>If we can't help you on the spot, we can set up a consultation later for us to prepare and discuss more in depth, refer you to other experts, or provide you with additional resources.</p>
+        <p></p>
   
         <h3>Consultation</h3>
         <p>Consultations are always free. We will aim to provide advice and connect you with other researchers, communities or funding opportunities. Consultations are generally the first step towards collaboration.</p>
-        <p>To schedule a consultation, please reach out to <a href="mailto:bdsi@utwente.nl">bdsi@utwente.nl</a> and one of our team members will answer your questions, or contact you for further consultations.</p>
-        <a href="mailto:bdsi@utwente.nl" class="button">get in touch</a>
+        <p>To schedule a consultation, please reach out to <a href="mailto:{{ site.data.contact.email }}">{{ site.data.contact.email }}</a> and one of our team members will answer your questions, or contact you for further consultations.</p>
+        <a href="mailto:{{ site.data.contact.email }}" class="button">get in touch</a>
   
         <h3>Collaboration</h3>
         <p>BDSi also collaborates on projects with a high impact for data science at BMS. <a href="{% link _news/call-for-proposals-2021.md %}">BDSi Data Science grants</a> are provided several times per year to support projects with a high impact for data science at BMS.</p>
@@ -42,12 +47,11 @@ bodyClass: page-list
   
         <p>For more information about the BDSi Data Science grants, please <a
                 href="{% link _news/call-for-proposals-2021.md %}">see the 2022 call for proposals</a>, or <a
-                href="mailto:bdsi@utwente.nl">contact us directly</a>. Keep an eye on <a
+                href="mailto:{{ site.data.contact.email }}">contact us directly</a>. Keep an eye on <a
                 href="https://www.utwente.nl/en/bms/research/bdsi/">our newsletter</a> and this website for announcement about
             new calls for proposals.</p>
   
-        <a href="mailto:bdsi@utwente.nl" class="button">get in touch</a> <a href="/data-science-grant/" class="button">BDSi Data Science Grant</a> <a href="https://www.utwente.nl/en/bms/research/bdsi/" class="button">sign up for the newsletter</a>
-  
+        <a href="mailto:{{ site.data.contact.email }}" class="button">get in touch</a> <a href="/data-science-grant/" class="button">BDSi Data Science Grant</a> <a href="https://www.utwente.nl/en/bms/research/bdsi/" class="button">sign up for the newsletter</a>
   
         <h2 class="mt-6">Project showcases</h2>
 
