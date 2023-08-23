@@ -20,7 +20,7 @@ Projects receive an in-kind investment rather than funding. This means that a de
 
 ### Criteria - How to apply
 
-Applications can be submitted by sending a proposal to [bdsi@utwente.nl](mailto:bdsi@utwente.nl?subject=BDSi%202021) with the subject “BDSi 2021”.
+Applications can be submitted by sending a proposal to [{{ site.data.contact.email }}](mailto:{{ site.data.contact.email }}?subject=BDSi%202021) with the subject “BDSi 2021”.
 
 A proposal should:
 
@@ -78,4 +78,4 @@ A decision on successful proposals can be expected mid-November, and will be com
 
 ### Contact
 
-Contact [bdsi@utwente.nl](mailto:bdsi@utwente.nl?subject=BDSi%202021) for more information about the grant. Contact our [domain experts](/team/) or your [department representative](/team/) for specific information, or other data science questions.
+Contact [{{ site.data.contact.email }}](mailto:{{ site.data.contact.email }}?subject=BDSi%202021) for more information about the grant. Contact our [domain experts](/team/) or your [department representative](/team/) for specific information, or other data science questions.

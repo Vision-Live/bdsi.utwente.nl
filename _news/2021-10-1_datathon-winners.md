@@ -9,13 +9,6 @@ After a long week of data wrangling, feature creation, visualization and model b
 
 12 teams participated in the datathon, and over 30 more signed up for the various workshops throughout the Data Science week. We're extremely pleased with the interactions we've had. We've also learned some valuable lessons, and had some great constructive feedback for the next Data Science week. In fact, we're so happy that we're going to make the Data Science week a regularly recurring event!
 
-{% include card.html title="More information" title_element="h3" content="
-
-<p>The Data Science week has finished, but a new Data Science week will be announced in the coming months. If you <a href='mailto:bdsi@utwente.nl?subject=subscribe%20to%20the%20newsletter&body=please%20subscribe%20me%20to%20the%20newsletter' target='_blank'>subscribe to the newsletter</a>, you'll be the first to know!</p>
-<p>Recordings, slides, scripts and notebooks for the workshops and final session are available through the link below.</p>
-
-<a class='button bg-secondary' href='/data-science-week/'>Recordings, slides, and scripts</a>" %}
-
 ## Datathon Winners
 
 While everyone who has participated is (obviously) a winner, two teams deserve special mention;

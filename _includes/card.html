@@ -2,6 +2,11 @@
 {% assign title = include.title | default "no title given, add 'title=...' %}
 {% assign content = include.content | default "no content given, add 'content=...' %}
 {% capture shadow %}{{include.shadow | default: "true" }}{% endcapture %}
+{% if include.cta_link == "<email>" %}
+  {% capture cta_link %}mailto:{{site.data.contact.email}}{% endcapture %}
+{% else %}
+  {% assign cta_link = include.cta_link %}
+{% endif %}
 
 <div
   class="card mt-2 mb-2{% if shadow == 'true' %} shadow{% endif %}{% if include.bg %} bg-{{include.bg}}{% endif %}{% if include.text %} text-{{include.text}}{% endif %}">
@@ -18,7 +23,7 @@
     </div>
     {% endif %}
     {% if include.cta %}
-    <a class="button lg mt-2" href="{{include.cta_link}}">{{include.cta}}</a>
+    <a class="button lg mt-2" href="{{cta_link}}">{{include.cta}}</a>
     {% endif %}
   </div>
 </div>

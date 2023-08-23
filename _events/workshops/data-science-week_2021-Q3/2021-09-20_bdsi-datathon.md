@@ -23,28 +23,13 @@ endDate: 2021-09-27
 frontpage: true
 ---
 
-{% include card.html title="Signups have closed" title_element="h3" content="
-
-<p>The Data Science week has finished, and signups are now closed. A new Data Science week will be announced in the coming months.</p>
-<p>If you <a href='mailto:bdsi@utwente.nl?subject=subscribe%20to%20the%20newsletter&body=please%20subscribe%20me%20to%20the%20newsletter' target='_blank'>subscribe to the newsletter</a>, you'll be the first to know!</p>
-<!--<a class='button mr-2 btn disabled' href='https://forms.office.com/r/pM0qCQF5eH' title='signups have closed'>Sign up now!</a>-->
-" %}
 ## Contents
 
 - [Contents](#contents)
 - [What is it?](#what-is-it)
 - [Who can join?](#who-can-join)
 - [What can I do to prepare?](#what-can-i-do-to-prepare)
-  - [Get a team](#get-a-team)
-  - [Read the book (or at least pretend to)](#read-the-book-or-at-least-pretend-to)
-  - [Install R, RStudio, and tidyverse](#install-r-rstudio-and-tidyverse)
 - [Schedule](#schedule)
-  - [Kickoff](#kickoff)
-  - [Workshop Data Wrangling](#workshop-data-wrangling)
-  - [Workshop Machine Learning](#workshop-machine-learning)
-  - [Workshop Data Visualization](#workshop-data-visualization)
-  - [Submission Deadline](#submission-deadline)
-  - [Closing Session](#closing-session)
 
 <!-- ## Are you already signed up?
 

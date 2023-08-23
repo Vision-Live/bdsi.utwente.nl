@@ -109,7 +109,7 @@ While the number of tweets related to Covid19 quadrupled from March to April, th
 In Fig.1 we show an interactive plot of the sample of tweets from March.
 
 ## Enjoy exploring data 
-If you are interested in any part of the process or need further information on data scraping, model training or visualization, please contact us at bdsi@utwente.nl
+If you are interested in any part of the process or need further information on data scraping, model training or visualization, please contact us at {{ site.data.contact.email }}
 
 The project was done for a presentation of BDSi. 
 You can find the Prezi-presentation of the project [here](https://prezi.com/p/o9bpnhhtxkzq/data-science/) 

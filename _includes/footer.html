@@ -8,7 +8,7 @@
       <!-- todo: make this an actual form, with backing dbish thing (wait for webhare?) -->
       <a
         class="inset"
-        href="mailto:bdsi@utwente.nl?subject=subscribe to the newsletter&body=please subscribe me to the newsletter"
+        href="mailto:{{ site.data.contact.email }}?subject=subscribe to the newsletter&body=please subscribe me to the newsletter"
         title="subscribe to our newsletter"
       >
         <span
@@ -44,7 +44,7 @@
       </a>
       <a
         class="inset"
-        href="mailto:bdsi@utwente.nl?subject=Dear BDSi&body=Dear BDSi,"
+        href="mailto:{{ site.data.contact.email }}?subject=Dear BDSi&body=Dear BDSi,"
         title="write us a letter"
         ><span class="iconify-inline icon" data-icon="ph:envelope"></span>
         write us a letter
@@ -98,22 +98,15 @@
         Postal address
       </h5>
       <pre class="address-block inset">
-          Behavioural Data Science incubator
-          Faculty of Behavioural and Management Sciences
-          University of Twente
-          PO BOX 217
-          7500 AE Enschede, The Netherlands
+        {{site.data.contact.address.postal}}
       </pre>
       <h5 class="mt-2">
         <span class="iconify-inline" data-icon="ph:hand-waving"></span>
         Visiting address
       </h5>
       <pre class="address-block inset">
-          Cubicus B202
-          De Zul 10
-          7522 NJ Enschede, The Netherlands
-        </pre
-      >
+          {{site.data.contact.address.visiting}}
+      </pre>
     </div>
   </div>
   <div class="sub-footer">

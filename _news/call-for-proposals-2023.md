@@ -18,11 +18,17 @@ This call for proposals aims to support data-driven research. The call supports 
 
 Projects receive an in-kind investment rather than funding. This means that a dedicated team of data scientists from BDSi will work together with the applicants to simulate, retrieve, analyze and/or visualize the data. This call offers support for projects that can be seen as a pilot study or proof of concept for a larger project, with an aim to be later funded by other sources.
 
-{% include card.html title="Don't be a stranger" content="We strongly encourage potential applicants to get in touch early. We can help you with early feedback on your idea or draft proposal, fine-tuning your proposal, and making sure that expectations and estimates are realistic." cta="Get in touch!" cta_link="mailto:bdsi@utwente.nl" %}
+{%
+    include card.html 
+    title="Don't be a stranger"
+    content="We strongly encourage potential applicants to get in touch early. We can help you with early feedback on your idea or draft proposal, fine-tuning your proposal, and making sure that expectations and estimates are realistic."
+    cta="Get in touch!"
+    cta_link="<email>"
+%}
 
 ### Criteria — How to apply
 
-Applications can be submitted by sending a proposal to [bdsi@utwente.nl](mailto:bdsi@utwente.nl?subject=BDSi%20Data%20Science%20grant%202023) with the subject “BDSi Data Science grant 2023”.
+Applications can be submitted by sending a proposal to [{{ site.data.contact.email }}](mailto:{{ site.data.contact.email }}?subject=BDSi%20Data%20Science%20grant%202023) with the subject “BDSi Data Science grant 2023”.
 
 A proposal should:
 
@@ -72,7 +78,13 @@ You **can not** apply for tasks that;
 
 The deadline for submission of full proposals is April 1st, 2023. We are available to help you with writing the proposal. Contacting us early for an open discussion on a draft proposal or idea ensures the goals and time estimate will be realistic. 
 
-{% include card.html title="Don't be a stranger" content="We strongly encourage potential applicants to get in touch early. We can help you with early feedback on your idea or draft proposal, fine-tuning your proposal, and making sure that expectations and estimates are realistic." cta="Get in touch!" cta_link="mailto:bdsi@utwente.nl" %}
+{%
+    include card.html 
+    title="Don't be a stranger"
+    content="We strongly encourage potential applicants to get in touch early. We can help you with early feedback on your idea or draft proposal, fine-tuning your proposal, and making sure that expectations and estimates are realistic."
+    cta="Get in touch!"
+    cta_link="<email>"
+%}
 
 ### Selection procedure
 
@@ -84,4 +96,4 @@ A decision on successful proposals can be expected mid-April, and will be commun
 
 ### Contact
 
-Contact [bdsi@utwente.nl](mailto:bdsi@utwente.nl?subject=BDSi%202021) for more information about the grant. Contact our [domain experts](/team/) or your [department representative](/team/) for specific information, or other data science questions.
+Contact [{{ site.data.contact.email }}](mailto:{{ site.data.contact.email }}?subject=BDSi%202023) for more information about the grant. Contact our [domain experts](/team/) or your [department representative](/team/) for specific information, or other data science questions.

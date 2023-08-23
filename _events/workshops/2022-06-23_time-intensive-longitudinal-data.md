@@ -30,6 +30,6 @@ Real data sets from ZGT and MST will be used in this demonstration.
 For those interested in the finer details and those that want to be able to do data analyses on their own, a work group can be formed that will continue to work on the data sets.
 This will be organised after the second workshop.
 
-<a class="button" href="mailto:bdsi@utwente.nl?subject=intensive&body=I would like to join the workshops on analysis of intensive longitudinal data">Register now!</a>
+<a class="button" href="mailto:{{ site.data.contact.email }}?subject=intensive&body=I would like to join the workshops on analysis of intensive longitudinal data">Register now!</a>
 
 For questions about these workshops, please contact <stephanie.vandenberg@utwente.nl>.

@@ -44,4 +44,4 @@ You can keep yourself informed of the different seminars and activities organize
 
 
 ### Contact
-Feel free to contact us at [bdsi@utwente.nl](mailto:bdsi@utwente.nl?subject=BDSi%202021) for more information.
+Feel free to contact us at [{{ site.data.contact.email }}](mailto:{{ site.data.contact.email }}?subject=BDSi%202021) for more information.

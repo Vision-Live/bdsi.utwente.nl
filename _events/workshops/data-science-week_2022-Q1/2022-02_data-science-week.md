@@ -66,8 +66,6 @@ First off, get a team together, and [sign up][sign-up] now - or just [sign up][s
 
 <a class="button" href="https://forms.office.com/r/HyBXA6PJyS">Sign up now!</a>
 
-{% include card.html title="Signup button not working?" subtitle='You can also sign up by sending an email to <a href="mailto:bdsi@utwente.nl">bdsi@utwente.nl</a>. Please mention your name, any team members, and an indication of your experience with data science.' title_element="h5" %}
-
 ### Read the book (or at least pretend to)
 
 The materials we will use are based on the freely available [Introduction to Statistical Learning][isl-book] book. If you're interested in data science, statistical learning or machine learning, this book would be a great place to start. BDSi also organizes a yearly [reading club][ws-asl] around this book.

@@ -1,7 +1,12 @@
 email: 'bdsi@utwente.nl'
-address: |-
-  Behavioural Data Science incubator
-  Faculty of Behavioural and Management Sciences
-  University of Twente
-  PO BOX 217
-  7500 AE Enschede, The Netherlands
+address:
+  postal: |-
+    Behavioural Data Science incubator
+    Faculty of Behavioural and Management Sciences
+    University of Twente
+    PO BOX 217
+    7500 AE Enschede, The Netherlands
+  visiting: |-
+    Ravelijn 1438
+    Hallenweg 17
+    7522 NH Enschede, The Netherlands
