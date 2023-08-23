@@ -1,0 +1,57 @@
+---
+title: Expertise Sharing
+layout: single_page
+bodyClass: page-list
+note: AI-generated
+---
+
+BDSi is dedicated to supporting researchers in harnessing the power of data science within the realm of social sciences. Through a range of initiatives including workshops, tutorials, events, and blog posts showing our work, we strive to create an environment where knowledge sharing is fun, engaging, and tailored to meet the unique needs of the BMS research community.
+
+## Workshops and Tutorials
+Our hands-on workshops and tutorials offer an interactive learning experience that goes beyond traditional teaching methods. We understand that each researcher has their own style of absorbing information, which is why we design our sessions to cater to diverse skill levels and backgrounds. By creating an environment where you can actively engage with peers and experts, ask burning questions, and receive personalized guidance, we ensure that the knowledge shared is not only relevant but also readily applicable to real-world scenarios in the social sciences.
+
+### Upcoming workshops
+{% assign count = 0 %}
+{% assign today = site.time | date: '%Y-%m-%d' %}
+{% assign items = site.events | sort: "startDate" %}
+{% for item in items %}
+  {% assign item_date = item.startDate | date: '%Y-%m-%d' %}
+  {% if item_date < today %}{% continue %}{% endif %}
+  
+#### {{item.title}}
+###### {{item.startDate | default: item.date | date: "%B %e" }}
+
+  {% assign count = count | plus: 1 %}
+  {% if count > 5 %}{% break %}{% endif %}
+{% endfor %}
+
+## Community Events
+We help organize events where researchers from various domains come together to discuss shared research interests. These community events provide a platform for networking, sharing ideas, and gaining valuable insights from experienced individuals who have made their mark in the field. We emphasize a diverse range of discussions that are meant to challenge conventions and inspire new research.
+
+### Upcoming events
+{% assign count = 0 %}
+{% assign today = site.time | date: '%Y-%m-%d' %}
+{% assign items = site.data.calendar | sort: "startDate" %}
+{% for item in items %}
+  {% assign item_date = item.startDate | date: '%Y-%m-%d' %}
+  {% if item_date < today %}{% continue %}{% endif %}
+  {% if item.title contains "Open Hour" %}{% continue %}{% endif %}
+  
+#### {{item.title}}
+###### {{item.startDate | default: item.date }}
+
+  {% assign count = count | plus: 1 %}
+  {% if count > 5 %}{% break %}{% endif %}
+{% endfor %}
+
+## Blog Posts
+Not all our work is translatable to hands-on events, and not everyone can make it to our fantastic workshops. Our blog posts are meant to provide an overview of what Data Science can do for social science research, through real-world examples. We aim to provide concise, easy-to-follow materials that can both serve as interesting reading, as well as a step-by-step tutorial.
+
+### Latest blog posts
+{% assign items = site.blogs | sort: "date" | reverse %}
+{% for item in items %}
+
+#### {{item.title}}
+###### {{item.startDate | default: item.date }}
+
+{% endfor %}
