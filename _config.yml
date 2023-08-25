@@ -8,14 +8,14 @@ exclude:
 
 collections:
   services:
-    output: true
-    permalink: /:collection/:title
+    output: false
   partners:
     output: false
   team:
     output: false
   communities:
-    output: false
+    output: true
+    permalink: /:collection/:title
   blogs:
     output: true
     permalink: /:collection/:title
