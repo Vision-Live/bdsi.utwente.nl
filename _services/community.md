@@ -8,7 +8,7 @@ Part of supporting data science in the long term is building a community of data
 
 The BDSi Data Science Community is free to join for anyone affiliated with the University of Twente, or involved in a research project of the University of Twente.
 
-<h3 class="mt-3">Do you have a University of Twente account?</h3>
+<h4 class="mt-3">Do you have a University of Twente account?</h4>
 <div class="row">
   <div class="col-md-6 panel">
     <blockquote>Yes</blockquote>
@@ -41,5 +41,5 @@ The BDSi Data Science Community is free to join for anyone affiliated with the U
     </a>
   </div>
 </div>
-<h3 class="mt-3">Welcome to the community!</h3>
+<h4 class="mt-3">Welcome to the community!</h4>
 Don't forget to introduce yourself.
