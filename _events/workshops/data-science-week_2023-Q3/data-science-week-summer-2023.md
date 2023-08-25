@@ -19,7 +19,7 @@ imageBackground: "#6d0039"
 accentColour: "#ed007e"
 layout: "event"
 date: 2023-09-25
-startDate: 2023-09-25
+date: 2023-09-25
 endDate: 2023-10-02
 frontpage: true
 ---

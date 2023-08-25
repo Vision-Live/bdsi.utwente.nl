@@ -30,9 +30,11 @@ bodyClass: page-list
         <p>If we can't help you on the spot, we can set up a consultation later for us to prepare and discuss more in depth, refer you to other experts, or provide you with additional resources.</p>
 
         {% comment %} find first 'Open Hour' event {% endcomment %}
-        {% assign next_open_hour = site.data.calendar | find_exp: "event", "event.title contains 'BDSi Open Hour'" %}
+        {% assign next_open_hour = site.data.calendar | sort: "date" | find_exp: "event", "event.title contains 'BDSi Open Hour'" %}
+
+        <p>The next open hour is {% include datetime.html page=next_open_hour %}.</p>
         
-        <button class="button" id="add-to-calendar_open-hour">Add to calendar</button>
+        <button class="button center" id="add-to-calendar_open-hour">Add to calendar</button>
 
         <script type="application/javascript">
           const config = {
@@ -56,7 +58,7 @@ bodyClass: page-list
         <h3>Consultation</h3>
         <p>Consultations are always free. We will aim to provide advice and connect you with other researchers, communities or funding opportunities. Consultations are generally the first step towards collaboration.</p>
         <p>To schedule a consultation, please reach out to <a href="mailto:{{ site.data.contact.email }}">{{ site.data.contact.email }}</a> and one of our team members will answer your questions, or contact you for further consultations.</p>
-        <a href="mailto:{{ site.data.contact.email }}" class="button">get in touch</a>
+        <a href="mailto:{{ site.data.contact.email }}" class="button center">get in touch</a>
   
         <h3>Collaboration</h3>
         <p>BDSi also collaborates on projects with a high impact for data science at BMS. <a href="{% link _news/call-for-proposals-2021.md %}">BDSi Data Science grants</a> are provided several times per year to support projects with a high impact for data science at BMS.</p>
@@ -73,9 +75,10 @@ bodyClass: page-list
                 href="{{ site.data.contact.newsletter }}">our newsletter</a> and this website for announcements about
             new calls for proposals.</p>
   
-        <a href="mailto:{{ site.data.contact.email }}" class="button">get in touch</a> <a href="/data-science-grant/" class="button">BDSi Data Science Grant</a> <a href="{{ site.data.contact.newsletter }}" class="button">sign up for the newsletter</a>
-  
-        <h2 class="mt-6">Project showcases</h2>
+        <div style="margin: 0 auto; width: max-content;">
+          <a href="mailto:{{ site.data.contact.email }}" class="button">get in touch</a> <a href="/data-science-grant/" class="button">BDSi Data Science Grant</a> <a href="{{ site.data.contact.newsletter }}" class="button">sign up for the newsletter</a>
+        </div>
+        <h2 class="mt-6">Latest Projects</h2>
 
         {% assign projects_reversed = site.projects | reverse %} 
         {% for project in projects_reversed limit: 5 %}
@@ -96,8 +99,7 @@ bodyClass: page-list
         </div>
         {% endfor %}
 
-        <h2>Project database</h2>
-        For a best-effort list of all completed and ongoing projects, see <a href="{% link projects.html %}">the project database</a>.
+        <a href="{% link projects.html %}" class="button center">All projects</a>
     </div>
   </div>
 </div>

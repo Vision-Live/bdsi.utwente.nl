@@ -9,7 +9,7 @@ tags:
     - Beginner
     - R
     - Visualization
-startDate: 2021-09-24
+date: 2021-09-24
 time: "12:45 - 13:30"
 image: /assets/images/workshops/data-viz.png
 imageBackground: "#FFBE2E"

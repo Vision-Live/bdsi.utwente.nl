@@ -1,6 +1,6 @@
 ---
 title: Causality and causal inference from observational data
-startDate: 2022-01-20
+date: 2022-01-20
 time: "12:45 - 13:30"
 layout: event
 bodyClass: page-single

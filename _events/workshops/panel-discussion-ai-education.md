@@ -1,6 +1,6 @@
 ---
 title: "ChatGPT: chances and challenges in education"
-startDate: 2023-02-22
+date: 2023-02-22
 time: "15:30 - 17:00"
 layout: event
 bodyClass: page-single

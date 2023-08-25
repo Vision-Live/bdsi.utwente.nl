@@ -7,7 +7,7 @@ tags:
     - R
     - tidyverse
     - data wrangling
-startDate: 2023-09-26
+date: 2023-09-26
 time: "12:45 - 14:30"
 image: /assets/images/workshops/data-wrangling.jpg
 imageNarrow: true

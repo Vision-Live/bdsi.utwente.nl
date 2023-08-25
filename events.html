@@ -24,7 +24,7 @@ bodyClass: page-list
         <!-- prettier-ignore -->
         <div
       class="event mb-5"
-      {% if event.startDate %}data-start="{{event.startDate}}" {% else if event.date %}data-start="{{event.date}}" {% endif %}
+      {% if event.date %}data-start="{{event.date}}" {% endif %}
       {% if event.endDate %}data-end="{{event.endDate}}" {% endif %}
       {% if event.time %}data-time="{{event.time}}" {% endif %}
       data-title="{{event.title}}"

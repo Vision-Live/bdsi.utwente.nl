@@ -19,7 +19,7 @@ imageBackground: "#b95f06"
 accentColour: "#ec7a08"
 layout: "event"
 date: 2023-03-06
-startDate: 2023-03-06
+date: 2023-03-06
 endDate: 2023-03-13
 frontpage: true
 # redirect_to: /data-science-week

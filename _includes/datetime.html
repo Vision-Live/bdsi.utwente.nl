@@ -2,7 +2,7 @@
     {%- assign page = include.page -%}
 {%- endif -%} 
 
-{%- assign start = page.startDate | default: page.date -%}
+{%- assign start = page.date -%}
 {%- assign end = page.endDate | default: start -%}
 
 {%- capture startMonth -%}{{ start | date: "%B" }}{%- endcapture -%}

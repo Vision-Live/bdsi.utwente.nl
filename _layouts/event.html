@@ -21,7 +21,7 @@ layout: default
             {% include author-list.html header="h6" %}
             <h5>
                 <!-- prettier-ignore -->
-                {{- page.startDate | default: page.date | date: "%B %e, %Y" -}}
+                {{- page.date | date: "%B %e, %Y" -}}
                 {%- if page.endDate -%} — {{page.endDate | date: "%B %e, %Y"}}{% endif %}
                 {%- if page.time -%}, {{page.time}}{% endif %}
             </h5>
@@ -33,7 +33,7 @@ layout: default
                 {% include author-list.html header="h6 class='text-white'" %}
                 <h5 class="text-white">
                     <!-- prettier-ignore -->
-                    {{- page.startDate | default: page.date | date: "%B %e, %Y" -}}
+                    {{- page.date | date: "%B %e, %Y" -}}
                     {%- if page.endDate -%} — {{page.endDate | date: "%B %e, %Y"}}{% endif %}
                     {%- if page.time -%}, {{page.time}}{% endif %}
                 </h5>

@@ -2,6 +2,14 @@ const ICAL = require("ical.js");
 const fs = require("fs/promises");
 const yaml = require("yaml");
 const dayjs = require("dayjs");
+const utc = require("dayjs/plugin/utc");
+const timezone = require("dayjs/plugin/timezone");
+
+const TIMEZONE = "Europe/Amsterdam";
+
+dayjs.extend(utc);
+dayjs.extend(timezone);
+dayjs.tz.setDefault(TIMEZONE);
 
 async function getCalendarData(url, out) {
     const response = await fetch(url);
@@ -31,8 +39,8 @@ async function getCalendarData(url, out) {
                     events.push({ 
                         title: (occurrence.summary ?? event.summary).replace(/^Copy: /, ""), 
                         location: occurrence.location ?? event.location, 
-                        start: occurrence.startDate.toJSDate(), 
-                        end: occurrence.endDate.toJSDate() });
+                        start: dayjs.tz(occurrence.startDate.toJSDate()), 
+                        end: dayjs.tz(occurrence.endDate.toJSDate()) });
                 }
                 next = iterator.next();
             }
@@ -40,21 +48,23 @@ async function getCalendarData(url, out) {
             events.push({ 
                 title: event.summary.replace(/^Copy: /, ""), 
                 location: event.location, 
-                start: event.startDate.toJSDate(), 
-                end: event.endDate.toJSDate() });
+                start: dayjs.tz(event.startDate.toJSDate()), 
+                end: dayjs.tz(event.endDate.toJSDate()) 
+            });
         }
     }
 
     // convert date/time to be equivalent to events
     for (const event of events) {
-        const start = dayjs(event.start);
-        const end = dayjs(event.end);
+        event.date = event.start.format("YYYY-MM-DD");
+        event.endDate = event.end.format("YYYY-MM-DD");
 
-        event.startDate = start.format("YYYY-MM-DD");
-
-        if (end.isBefore(start.add(1, "day"))) {
-            event.time = start.format("HH:mm") + " - " + end.format("HH:mm");
+        if (event.end.isBefore(event.start.add(1, "day"))) {
+            event.time = event.start.format("HH:mm") + " - " + event.end.format("HH:mm");
         }
+
+        event.start = event.start.format()
+        event.end = event.end.format()
     }
 
 

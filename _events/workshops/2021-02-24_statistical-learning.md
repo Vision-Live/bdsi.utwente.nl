@@ -16,7 +16,7 @@ tags:
     - Python
     - Statistical Learning
     - Machine Learning
-startDate: 2021-02-24
+date: 2021-02-24
 endDate: 2021-06-28
 ---
 

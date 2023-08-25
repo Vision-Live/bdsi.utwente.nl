@@ -12,7 +12,7 @@ tags:
 image: /assets/images/workshops/machine-learning.jpg
 imageNarrow: true
 imageBackground: white
-startDate: 2023-03-09
+date: 2023-03-09
 endDate: 2023-03-10
 time: "12:45 - 14:30"
 location: Oosthorst 111 (Wed), Carre 2N (Thu)

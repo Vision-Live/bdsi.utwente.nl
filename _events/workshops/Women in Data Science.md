@@ -20,7 +20,7 @@ imageBackground: white
 accentColour: "#00B140"
 layout: "event"
 date: 2023-06-08
-startDate: 2023-06-08
+date: 2023-06-08
 frontpage: true
 ---
 <img alt="WIDS Twente" src="/assets/images/WIDS SPEAKERS/top header.png" style="position: relative; max-width: 120%" />

@@ -18,7 +18,7 @@ imageNarrow: true
 imageBackground: "#009CC3"
 layout: "event"
 date: 2021-09-20
-startDate: 2021-09-20
+date: 2021-09-20
 endDate: 2021-09-27
 frontpage: true
 ---

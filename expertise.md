@@ -13,9 +13,9 @@ Our hands-on workshops and tutorials offer an interactive learning experience th
 ### Upcoming workshops
 {% assign count = 0 %}
 {% assign today = site.time | date: '%Y-%m-%d' %}
-{% assign items = site.events | sort: "startDate" %}
+{% assign items = site.events | sort: "date" %}
 {% for item in items %}
-  {% assign item_date = item.startDate | date: '%Y-%m-%d' %}
+  {% assign item_date = item.date | date: '%Y-%m-%d' %}
   {% if item_date < today %}{% continue %}{% endif %}
   
 #### {{item.title}}
@@ -35,9 +35,9 @@ We help organize events where researchers from various domains come together to 
 ### Upcoming events
 {% assign count = 0 %}
 {% assign today = site.time | date: '%Y-%m-%d' %}
-{% assign items = site.data.calendar | sort: "startDate" %}
+{% assign items = site.data.calendar | sort: "date" %}
 {% for item in items %}
-  {% assign item_date = item.startDate | date: '%Y-%m-%d' %}
+  {% assign item_date = item.date | date: '%Y-%m-%d' %}
   {% if item_date < today %}{% continue %}{% endif %}
   {% if item.title contains "Open Hour" %}{% continue %}{% endif %}
   

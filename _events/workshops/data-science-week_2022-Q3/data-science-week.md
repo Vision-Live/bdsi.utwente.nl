@@ -19,7 +19,7 @@ imageBackground: "#edc300"
 # accentColour: "#ddb300"
 layout: "event"
 date: 2022-09-19
-startDate: 2022-09-19
+date: 2022-09-19
 endDate: 2022-09-27
 frontpage: true
 redirect_to: /data-science-week

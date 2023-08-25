@@ -7,7 +7,7 @@ tags:
     - R
     - tidyverse
     - data wrangling
-startDate: 2023-03-7
+date: 2023-03-7
 time: "12:45 - 14:30"
 image: /assets/images/workshops/data-wrangling.jpg
 location: Ravelijn 2231

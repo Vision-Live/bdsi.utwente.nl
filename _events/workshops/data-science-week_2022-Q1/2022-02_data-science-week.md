@@ -16,7 +16,7 @@ imageNarrow: true
 imageBackground: "#009CC3"
 layout: "event"
 date: 2022-02-14
-startDate: 2022-02-14
+date: 2022-02-14
 endDate: 2022-02-28
 frontpage: true
 ---

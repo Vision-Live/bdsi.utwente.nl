@@ -9,7 +9,7 @@ tags:
     - Beginner
     - R
     - Visualization
-startDate: 2023-03-10
+date: 2023-03-10
 time: "12:45 - 14:30"
 location: Oosthorst 114 
 image: /assets/images/workshops/data-viz.png

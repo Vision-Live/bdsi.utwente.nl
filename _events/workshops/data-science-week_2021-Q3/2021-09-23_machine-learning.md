@@ -12,7 +12,7 @@ tags:
 image: /assets/images/workshops/machine-learning.jpg
 imageNarrow: true
 imageBackground: white
-startDate: 2021-09-23
+date: 2021-09-23
 time: "12:45 - 13:30"
 ---
 

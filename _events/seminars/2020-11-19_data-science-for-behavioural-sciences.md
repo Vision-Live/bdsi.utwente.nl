@@ -1,6 +1,6 @@
 ---
 title: Data science for the behavioural sciences
-startDate: 2020-11-19
+date: 2020-11-19
 layout: event
 bodyClass: page-single
 author: Anna Machens
