@@ -1,6 +1,6 @@
 <!-- prettier-ignore -->
 <div
-    class="card shadow mb-2"
+    class="mb-2 news-card"
     style="
         {% if item.accentColour %}--accent-colour: {{item.accentColour}};{% endif %} 
         height: 500px;
@@ -33,7 +33,7 @@
                   {% assign id = profile.email | split: '@' | first | replace: '.', '-' %}
                   <a href="/team#{{id}}">{{item.author}}</a>, 
                 {% endif -%} 
-                {{item.startDate | default: item.date | date: "%B %e, %Y"}}
+                {{item.date | date: "%B %e, %Y"}}
                 {%- if item.endDate %}
                   — {{item.endDate | date: "%B %e, %Y"}}
                 {%- endif %}
@@ -51,11 +51,10 @@
             {% endfor %} {% else%} {{item.content | truncatewords: 50, '...'}}
             {% endif %}
         </div>
-        <div class="card-overflow"></div>
         <a
-            class="ml-auto button"
+            class="button center"
             href="{{site.baseurl}}{{item.url}}"
-            style="position: absolute; bottom: 0.5em; right: 0.5em"
+            style="position: absolute; bottom: 0.5em; left: 50%; translate: -50%;"
             >read more</a
         >
     </div>

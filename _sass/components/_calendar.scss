@@ -3,7 +3,6 @@
         display: flex;
         flex-flow: column wrap;
         // grid-template-columns: 1fr 1fr;
-        gap: 1em;
         // display: flex;
         // flex-flow: column nowrap;
 
@@ -11,16 +10,29 @@
             display: flex;
             flex-flow: row nowrap;
             gap: 1em;
+            
+            &+.calendar-item {
+                margin-top: 1.5em;
+
+                &.repeat-item {
+                    margin-top: 0;
+                }
+            }
         }
 
         .calendar-item-content {
             display: flex;
             flex-flow: column nowrap;
+
+            .calendar-item-title {
+                margin-bottom: 0.1em;
+            }
         }
 
         .calendar-item-image {
-            width: 250px;
-            aspect-ratio: 1.61/1;
+            max-width: 100px;
+            min-width: 100px;
+            aspect-ratio: 1/1;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;

@@ -40,95 +40,81 @@ bodyClass: page-home
     </div>
 </div> -->
 
-<div class="container mt-4">
-    <div class="row" style="place-items: stretch">
-        <div class="col-12">{% include find-expertise.html %}</div>
+<div id="main-with-sidebar">
+    <div id="main">
+        {% include find-expertise.html %}
+
+        <h2>Latest updates</h2>
+        <div class="row news-items">
+            {% capture currentDate %}{{- site.time | date: "%B %e, %Y" -}}{% endcapture %}
+            {% assign items = site.events | concat: site.news | concat: site.blogs | where: "frontpage", true | sort: "date" | reverse %} 
+            {% for item in items limit:3 %}
+                <div class="col-12 col-md-6 col-xl-4">{% include news-card.html %}</div>
+            {% endfor %}
+        </div>
+
+        <h2 class="mb-3">Our Services</h2>
+        <div class="row">
+            {% for service in site.services %}
+            <div class="col-12 col-md-6 mb-2">
+                <div class="service service-summary">
+                    <div class="service-content">
+                        <h4>
+                            <a href="{{site.baseurl}}{{ service.url }}"
+                                >{{ service.title }}</a
+                            >
+                        </h4>
+                        {{ service.introduction | markdownify }}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <a class="button center"
+            href="{% link about.html %}#services">
+            View All Services
+        </a>
     </div>
-</div>
-<div class="container mt-4">
-    <!-- prettier-ignore -->
-    <div class="row">
-    {% capture currentDate %}{{- site.time | date: "%B %e, %Y" -}}{% endcapture %}
-    <br />
-    {% assign items = site.events | concat: site.news | concat: site.blogs %} 
-    {% assign items = items | where: "frontpage", true | sort: "date" | reverse %}
-    {% for item in items limit:3 %}
-        <div class="col-12 col-md-6 col-xl-4">{% include news-card.html %}</div>
-    {% endfor %}
-  </div>
-</div>
-
-<div class="container mt-4 calendar">
-    {% capture renderTime %}{{- site.time -}}{% endcapture %}
-    {% assign events = site.data.calendar | concat: site.events %}
-    {% assign filtered_events = '' | split: '' %}
-    {% for event in events %}
-        {% assign event.startDate = event.startDate | default: event.date %}
-        {% capture startTime %}{{- event.startDate -}}{% endcapture %}
-        {% if startTime >= renderTime %}
-            {% assign filtered_events = filtered_events | push: event %}
-        {% endif %}
-    {% endfor %}
-    {% assign sorted_events = filtered_events | sort_natural: "startDate"%}
-
-    <h2>Upcoming events</h2>
-
-    <div class="calendar-items">
-        {% assign prev_title = "" %}
-        {% for event in sorted_events limit: 10 %}
-        <div class="calendar-item">
-            {% if event.image %}
-                <div style="background-image: url({% link {{event.image}} %});" class="calendar-item-image"></div>
+    <div id="sidebar">
+        {% capture renderDate %}{{- site.time | date: "%Y-%m-%d" -}}{% endcapture %}
+        {% assign events = site.data.calendar | concat: site.events %}
+        {% assign filtered_events = '' | split: '' %}
+        {% for event in events %}
+            {% capture startDate %}{{- event.date | date: "%Y-%m-%d" -}}{% endcapture %}
+            {% if startDate >= renderDate %}
+                {% assign filtered_events = filtered_events | push: event %}
             {% endif %}
-            <div class="calendar-item-content">
-                {% unless event.title == prev_title %}
-                {% assign prev_title = event.title %}
-                {% if event.url %}
-                    <h4>
-                        <a href="{% link {{event.path}} %}" title="{{event.title}}">{{event.title}}</a>
-                    </h4>
-                {% else %}
-                    <h4>{{event.title}}</h4>
-                {% endif %}
-                {% endunless %}
-                <div class="small text-muted">
-                    {{event.startDate | date: "%B %e"}}
-                    {%- if event.endDate %} – {{event.endDate | date: "%B %e"}}{% endif %}
-                    {%- if event.time -%}, {{event.time}}{% endif %}
-                    {% comment %}
-                    {%- if event.location %}, {{event.location}}{% endif %}
-                    {% endcomment %}
-                </div>
-            </div>
-        </div>
         {% endfor %}
-    </div>
-</div>
+        {% assign sorted_events = filtered_events | sort_natural: "date" %}
 
-<div class="container mt-6">
-    <div class="row justify-content-start">
-        <div class="col-12">
-            <h2 class="mb-3">Our Services</h2>
-        </div>
-        {% for service in site.services %}
-        <div class="col-12 col-md-6 mb-2">
-            <div class="service service-summary">
-                <div class="service-content">
-                    <h4>
-                        <a href="{{site.baseurl}}{{ service.url }}"
-                            >{{ service.title }}</a
-                        >
-                    </h4>
-                    {{ service.introduction | markdownify }}
+        <div class="calendar">
+            <h2>Upcoming events</h2>
+
+            <div class="calendar-items">
+                {% assign prev_title = "" %}
+                {% for event in sorted_events limit: 10 %}
+                <div class="calendar-item{% if event.title == prev_title %} repeat-item{% endif %}">
+                    {% if event.image and event.title != prev_title %}
+                        <div style="background-image: url({% link {{event.image}} %});" class="calendar-item-image"></div>
+                    {% endif %}
+                    <div class="calendar-item-content">
+                        {% unless event.title == prev_title %}
+                            {% assign prev_title = event.title %}
+                            {% if event.url %}
+                                <h4 class="calendar-item-title">
+                                    <a href="{% link {{event.path}} %}" title="{{event.title}}">{{event.title}}</a>
+                                </h4>
+                            {% else %}
+                                <h4 class="calendar-item-title">{{event.title}}</h4>
+                            {% endif %}
+                        {% endunless %}
+                        <div class="small text-muted calendar-item-time">
+                            {% include datetime.html page=event %}
+                        </div>
+                    </div>
                 </div>
+                {% endfor %}
             </div>
-        </div>
-        {% endfor %}
-        <div class="col-12 text-center pb-3">
-            <a class="button button-primary mt-2"
-               href="{% link about.html %}#services">
-               View All Services
-            </a>
         </div>
     </div>
 </div>
