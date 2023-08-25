@@ -25,6 +25,9 @@ Our hands-on workshops and tutorials offer an interactive learning experience th
   {% if count > 5 %}{% break %}{% endif %}
 {% endfor %}
 
+
+<a href="{% link events.html %}" class="button center mb-6">All BDSi events</a>
+
 ## Community Events
 We help organize events where researchers from various domains come together to discuss shared research interests. These community events provide a platform for networking, sharing ideas, and gaining valuable insights from experienced individuals who have made their mark in the field. We emphasize a diverse range of discussions that are meant to challenge conventions and inspire new research.
 
@@ -44,10 +47,12 @@ We help organize events where researchers from various domains come together to 
   {% if count > 5 %}{% break %}{% endif %}
 {% endfor %}
 
+<a href="{% link community.html %}" class="button center mb-6">Data Science communities</a>
+
 ## Blog Posts
 Not all our work is translatable to hands-on events, and not everyone can make it to our fantastic workshops. Our blog posts are meant to provide an overview of what Data Science can do for social science research, through real-world examples. We aim to provide concise, easy-to-follow materials that can both serve as interesting reading, as well as a step-by-step tutorial.
 
-### Latest blog posts
+### Latest posts
 {% assign items = site.blogs | sort: "date" | reverse %}
 {% for item in items %}
 
@@ -55,3 +60,5 @@ Not all our work is translatable to hands-on events, and not everyone can make i
 ###### {{item.startDate | default: item.date }}
 
 {% endfor %}
+
+<a href="{% link blogs.html %}" class="button center mb-6">All blog posts</a>
