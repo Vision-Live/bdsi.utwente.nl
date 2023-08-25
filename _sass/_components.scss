@@ -524,7 +524,7 @@ $button-width: 35px;
           &:has(>.rollover) {
             padding-top: 0.2em;
           }
-
+          
           >.rollover {
             padding-top: 0em;
             margin-top: -.8em;
@@ -806,5 +806,36 @@ $button-width: 35px;
         filter: saturate(100%) brightness(100%) contrast(100%);
       }
     }
+  }
+
+  .sitemap ul {
+    list-style: none;
+    padding-left: 0.5em;
+
+    ul li {
+      margin-top: -0.2em;
+    }
+  }
+
+  #team-icon {
+    path {
+      fill: "white";
+    }
+  }
+
+  #team-icon-div {
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    background-color: white;
+    mask-image: $team_icon_mask_image;
+    -webkit-mask-image: $team_icon_mask_image;
+    mask-size: cover;
+    -webkit-mask-size: cover;
+  }
+
+  .footer-block:hover #team-icon-div {
+    // generated with https://doodad.dev/gradient-generator/
+    background-image: linear-gradient(140deg, rgba(255, 0, 0, 0) 55%, #ffffff 55%), radial-gradient(68% 68% at 45% 65%, #4299e1 28%, #ecc94b 29%, #ecc94b 51%, #f56565 52%);
   }
 }

@@ -69,9 +69,9 @@
         {% endfor %}
       </div>
     </div>
-    <div class="footer-block" data-proofer-ignore>
+    <div class="footer-block">
       <h5 class="mt-2">
-        <span class="iconify-inline" data-icon="ph:rainbow-cloud"></span>
+        <div id="team-icon-div"></div>
         Meet the team
       </h5>
       {% assign section = "" %}
@@ -92,6 +92,44 @@
       >
       {% endfor %}
     </div>
+    <div class="footer-block sitemap">
+      <h5 class="mt-2">
+        <span class="iconify-inline" data-icon="ph:git-merge"></span>
+        Sitemap
+      </h5>
+      <ul>
+        <li>
+          <a href="{% link about.html %}">About us</a>
+          <ul>
+              <li><a href="{% link about.html %}#services">Services</a></li>
+              <li><a href="{% link about.html %}#partners">Partners</a></li>
+          </ul>
+        </li>
+        <li><a href="{% link news.html %}">News</a></li>
+        <li>
+          <a href="{% link research.html %}">Research Support</a>
+          <ul>
+            <li><a href="{% link projects.html %}">Projects</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="{% link expertise.md %}">Expertise Sharing</a>
+          <ul>
+            <li><a href="{% link events.html %}">BDSi Events</a></li>
+            <li><a href="{% link community.html %}#topical-communities">Community Events</a></li>
+            <li><a href="{% link blogs.html %}">Blog</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="{% link community.html %}">Community Building</a>
+          <ul>
+            <li><a href="{% link community.html %}#topical-communities">Data Science communities</a></li>
+          </ul>
+        </li>
+        <li><a href="{% link team.html %}">Team</a></li>
+      </ul>
+      
+    </div>
     <div class="footer-block">
       <h5 class="mt-2">
         <span class="iconify-inline" data-icon="ph:package"></span>
@@ -111,7 +149,7 @@
   </div>
   <div class="sub-footer">
     <div class="title">
-      BDSi - Behavioural Data Science incubator, {{site.time | date: "%Y" }}
+      BDSi - Behavioural Data Science incubator, 2021–{{site.time | date: "%Y" }}
     </div>
     <a
       class="ml-auto"
