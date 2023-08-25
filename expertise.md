@@ -19,7 +19,8 @@ Our hands-on workshops and tutorials offer an interactive learning experience th
   {% if item_date < today %}{% continue %}{% endif %}
   
 #### {{item.title}}
-###### {{item.startDate | default: item.date | date: "%B %e" }}
+{% include author-list.html page=item header="h6" %}
+###### {% include datetime.html page = item %}
 
   {% assign count = count | plus: 1 %}
   {% if count > 5 %}{% break %}{% endif %}
@@ -41,7 +42,8 @@ We help organize events where researchers from various domains come together to 
   {% if item.title contains "Open Hour" %}{% continue %}{% endif %}
   
 #### {{item.title}}
-###### {{item.startDate | default: item.date }}
+{% include author-list.html page=item header="h6" %}
+###### {% include datetime.html page = item %}
 
   {% assign count = count | plus: 1 %}
   {% if count > 5 %}{% break %}{% endif %}
@@ -57,7 +59,8 @@ Not all our work is translatable to hands-on events, and not everyone can make i
 {% for item in items %}
 
 #### {{item.title}}
-###### {{item.startDate | default: item.date }}
+{% include author-list.html page=item header="h6" %}
+###### {% include datetime.html page = item %}
 
 {% endfor %}
 

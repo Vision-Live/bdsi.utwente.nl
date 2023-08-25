@@ -1,0 +1,26 @@
+{%- if include.page -%}
+    {%- assign page = include.page -%}
+{%- endif -%} 
+
+{%- assign start = page.startDate | default: page.date -%}
+{%- assign end = page.endDate | default: start -%}
+
+{%- capture startMonth -%}{{ start | date: "%B" }}{%- endcapture -%}
+{%- capture endMonth -%}{{ end | date: "%B" }}{%- endcapture -%}
+{%- capture curYear -%}{{ site.time | date: "%Y" }}{%- endcapture -%}
+{%- capture endYear -%}{{ end | date: "%Y" }}{%- endcapture -%}
+
+{{- start | date: "%B %e" -}}
+{%- if end != start -%}
+    –
+    {%- if endMonth != startMonth -%}
+        {{- end | date: "%B %e" -}}
+    {%- else -%}
+        {{- end | date: "%e" -}}
+    {%- endif -%}
+{%- endif -%}
+{%- if curYear != endYear -%}
+    ,&nbsp;
+    {{- endYear -}}
+{%- endif -%}
+{%- if page.time %}, {{page.time | replace: " - ", "–"}}{% endif %}
