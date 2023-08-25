@@ -8,7 +8,8 @@ exclude:
 
 collections:
   services:
-    output: false
+    output: true
+    permalink: /:collection/:title
   partners:
     output: false
   team:
