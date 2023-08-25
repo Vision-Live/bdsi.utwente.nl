@@ -1,0 +1,25 @@
+---
+title: BDSi - Behavioural Data Science incubator - News
+layout: default
+bodyClass: page-news-archive
+---
+
+<div class="container py-6">
+    <h1 class="hero text-white">News</h1>
+</div>
+
+<div class="strip strip-diagonal">
+    <div class="container">
+        {% for newsitem in site.news reversed %}
+        <div class="newsitem newsitem-summary mb-2">
+            <div class="newsitem-content">
+                <h2 class="newsitem-title">
+                    <a href="{% link {{ newsitem.path }} %}">{{ newsitem.title }}</a>
+                </h2>
+                {% include author-list.html page=newsitem %}
+                {% include datetime.html page=newsitem %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
