@@ -40,8 +40,8 @@ Fear not! There will be another Data Science Week 6th-13th of March 2023, with a
 ## Keep in touch
 We would like to thank all participants for their support. We hope you enjoyed this week as much as we did and to see you on the next Data Science Week happening on March 6-13, 2023! 
 
-You can keep yourself informed of the different seminars and activities organized by the BDSi <a href='https://www.utwente.nl/en/bms/research/bdsi/#the-behavioural-data-science-incubator' target='_blank'>by subscribing to our newsletter</a>, this way you can always be the first to know what is happening! 
+You can keep yourself informed of the different seminars and activities organized by the BDSi <a href='{{site.data.contact.newsletter}}' target='_blank'>by subscribing to our newsletter</a>, this way you can always be the first to know what is happening! 
 
 
 ### Contact
-Feel free to contact us at [{{ site.data.contact.email }}](mailto:{{ site.data.contact.email }}?subject=BDSi%202021) for more information.
+Feel free to contact us at [{{ site.data.contact.email }}](mailto:{{ site.data.contact.email }}?subject=BDSi%202022) for more information.
