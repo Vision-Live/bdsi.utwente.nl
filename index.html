@@ -44,7 +44,7 @@ bodyClass: page-home
     <div id="main">
         {% include find-expertise.html %}
 
-        <h2>Latest updates</h2>
+        <h2 class="mt-6">Latest updates</h2>
         <div class="row news-items">
             {% capture currentDate %}{{- site.time | date: "%B %e, %Y" -}}{% endcapture %}
             {% assign items = site.events | concat: site.news | concat: site.blogs | where: "frontpage", true | sort: "date" | reverse %} 
@@ -53,7 +53,7 @@ bodyClass: page-home
             {% endfor %}
         </div>
 
-        <h2 class="mb-3">Our Services</h2>
+        <h2 class="mt-6">Our Services</h2>
         <div class="row">
             {% for service in site.services %}
             <div class="col-12 col-md-6 mb-2">
