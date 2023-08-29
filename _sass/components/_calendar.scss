@@ -41,9 +41,10 @@
         }
 
         .calendar-item-image {
-            max-width: 100px;
-            min-width: 100px;
-            aspect-ratio: 1/1;
+            // max-width: 150px;
+            // min-width: 150px;
+            width: 100px;
+            aspect-ratio: 1.41/1;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
