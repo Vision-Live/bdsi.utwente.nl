@@ -35,7 +35,7 @@
         <span class="iconify-inline icon" data-icon="ph:linkedin-logo"></span>
         connect with us on linkedin
       </a>
-      <a class="inset" href="/services/community" title="join the team (chat)"
+      <a class="inset" href="{% link community.html %}#community" title="join the team (chat)"
         ><span
           class="iconify-inline icon"
           data-icon="mdi:microsoft-teams"
@@ -75,14 +75,14 @@
         Meet the team
       </h5>
       {% assign section = "" %}
-      {% assign members = site.team | sort: "title" | sort: "sortorder" %} {% for profile in members
-      %}
+      {% assign members = site.team | sort: "title" | sort: "sortorder" %} 
+      {% for profile in members %}
       {% if profile.section != section %}
-      {% assign section = profile.section %}
-      <div class="tiny-header">{{section}}</div>
+        {% assign section = profile.section %}
+        <div class="tiny-header">{{section}}</div>
       {% endif %}
       <a
-        href="/team/#{{profile.email | split: '@' | first | replace: '.', '-'}}"
+        href="{{ site.baseurl }}/team/#{{profile.email | split: '@' | first | replace: '.', '-'}}"
         class="inset"
         ><img
           src="{% link {{profile.image}} %}"
