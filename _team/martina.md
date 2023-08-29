@@ -1,6 +1,6 @@
 ---
 title: "Martina Ivich Jijon"
-image: "/assets/images/team/martina.jpeg"
+image: "/assets/images/team/Martina-thumbnail.png"
 jobtitle: "Communications Manager"
 section: "Student Assistants"
 email: "m.ivichjijon@student.utwente.nl"
