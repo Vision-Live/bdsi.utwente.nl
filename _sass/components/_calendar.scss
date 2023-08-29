@@ -7,12 +7,16 @@
         // flex-flow: column nowrap;
 
         .calendar-item {
-            display: flex;
-            flex-flow: row nowrap;
-            gap: 1em;
-            
+            display: grid;
+            grid-template-columns: [left] min-content [main] 1fr;
+            grid-template-rows: [title] min-content [content] 1fr;
+
+            &:has(.calendar-item-image) {
+                column-gap: 1em;
+            }
+
             &+.calendar-item {
-                margin-top: 1.5em;
+                margin-top: 1em;
 
                 &.repeat-item {
                     margin-top: 0;
@@ -20,13 +24,20 @@
             }
         }
 
-        .calendar-item-content {
-            display: flex;
-            flex-flow: column nowrap;
+        .calendar-item-title {
+            margin-bottom: 0.1em;
+            grid-row: title;
+            grid-column: main;
 
-            .calendar-item-title {
-                margin-bottom: 0.1em;
-            }
+            margin: 0;
+            padding: 0;
+        }
+
+        .calendar-item-time {
+            font-size: 80%;
+            color: $gray-600;
+            grid-row: content;
+            grid-column: main;
         }
 
         .calendar-item-image {
@@ -36,6 +47,17 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+            grid-row: 1/-1;
+            grid-column: left;
+        }
+
+        @include media-breakpoint-down(lg) {
+            .calendar-item-title {
+                grid-column: left/-1;
+            }
+            .calendar-item-image {
+                grid-row: content;
+            }
         }
     }
 }
