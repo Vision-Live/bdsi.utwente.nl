@@ -1,6 +1,9 @@
 ---
 title: Causal Community
 author: Anna Machens
+image: assets/images/communities/causal/newtons-cradle.jpg
+keywords:
+    - causal community
 ---
 
 > Just as a keen observer uses various methods to study human experiences, thoughts, and behaviors, causal inference provides the tools to uncover the hidden dynamics of cause and effect relationships. This powerful approach enables us to transcend mere correlations and understand the true mechanisms driving outcomes. 

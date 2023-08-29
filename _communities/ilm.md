@@ -1,6 +1,12 @@
 ---
 title: Intensive Longitudinal Methods
 author: Peter ten Klooster
+keywords:
+  - INTENSIVE LONGITUNAL DATA COMMUNITY
+  - intensive longitudinal data community
+image: assets/images/communities/ilm/data-pipeline.svg
+attribution:
+  - <a href="https://www.freepik.com/free-vector/data-processing-concept-illustration_12219361.htm">Image by storyset</a> on Freepik
 ---
 
 Intensive Longitudinal Methods (ILMs) allow to study people's thoughts, behaviours, feelings and physiology as they occur in real daily life using either diaries, mobile apps and/or (wearable) sensors​. Measurements can be both active (self-reports) or passive (e.g., acoustic sampling, GPS, actigraph, HR).

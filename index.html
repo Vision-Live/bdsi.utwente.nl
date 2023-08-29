@@ -87,30 +87,7 @@ bodyClass: page-home
 
         <div class="calendar">
             <h3>Upcoming events</h3>
-
-            <div class="calendar-items">
-                {% assign prev_title = "" %}
-                {% for event in sorted_events limit: 10 %}
-                <div class="calendar-item{% if event.title == prev_title %} repeat-item{% endif %}">
-                    {% if event.image and event.title != prev_title %}
-                        <div style="background-image: url({% link {{event.image}} %});" class="calendar-item-image"></div>
-                    {% endif %}
-                    {% unless event.title == prev_title %}
-                        {% assign prev_title = event.title %}
-                        {% if event.url %}
-                            <h6 class="calendar-item-title">
-                                <a href="{% link {{event.path}} %}" title="{{event.title}}">{{event.title}}</a>
-                            </h6>
-                        {% else %}
-                            <h6 class="calendar-item-title">{{event.title}}</h6>
-                        {% endif %}
-                    {% endunless %}
-                    <div class="calendar-item-time">
-                        {% include datetime.html page=event %}
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
+            {% include calendar.html events=sorted_events %}
         </div>
     </div>
 </div>

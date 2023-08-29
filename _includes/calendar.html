@@ -1,0 +1,51 @@
+{% if include.events %}
+{% assign events = include.events %}
+{% endif %}
+
+<div class="calendar-items">
+    {% assign prev_title = "" %}
+    {% for event in events limit: 10 %}
+    {% assign title_lower = event.title | downcase %}
+    {% assign event_image = event.image %}
+    {% if event.path %}
+        {% capture event_path %}{% link {{event.path}} %}{% endcapture %}
+    {% else %}
+        {% assign event_path = false %}
+    {% endif %}
+
+    {% unless event_path %}
+        {% if title_lower contains "bdsi open hour" %}
+            {% capture event_path %}{% link research.html %}#open-hours{% endcapture %}
+            {% assign event_image = "assets/images/open-hour-header.png" %}
+        {% endif %}
+    {% endunless %}
+
+    {% unless event_path %}
+        {% for community in site.communities %}
+            {% for keyword in community.keywords %}
+                {% assign keyword_lower = keyword | downcase %}
+                {% if title_lower contains keyword_lower %}
+                    {% capture event_path %}{% link {{ community.path }} %}{% endcapture %}  
+                    {% assign event_image = event.image | default: community.image %}
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+    {% endunless %}
+
+    <div class="calendar-item{% if event.title == prev_title %} repeat-item{% endif %}">
+        {% if event_image and event.title != prev_title %}
+            <div style="background-image: url({% link {{event_image}} %});" class="calendar-item-image"></div>
+        {% endif %}
+        {% if event_path %}
+            <h6 class="calendar-item-title">
+                <a href="{{event_path}}" title="{{event.title}}">{{event.title}}</a>
+            </h6>
+        {% else %}
+            <h6 class="calendar-item-title">{{event.title}}</h6>
+        {% endif %}
+        <div class="calendar-item-time">
+            {% include datetime.html page=event %}
+        </div>
+    </div>
+    {% endfor %}
+</div>

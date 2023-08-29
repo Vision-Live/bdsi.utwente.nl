@@ -3,6 +3,9 @@ title: Text Analysis
 authors: 
     - Maryam Amir Haeri
     - Anna Machens
+image: assets/images/communities/text/header.png
+keywords:
+    - text analysis community
 ---
 
 > The field of natural language processing has been revolutionised in the last years. With the Transformer Model, methods for text classification, summarisation, translation and generation have become incredibly powerful. The most prominent example of which is chatGPT. Researchers who work with text data can benefit from this development.
