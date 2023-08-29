@@ -1,7 +1,8 @@
 ---
 title: Causal Community
 author: Anna Machens
-image: assets/images/communities/causal/newtons-cradle.jpg
+image: assets/images/communities/causal/SVG/Asset 1.svg
+imageNarrow: true
 keywords:
     - causal community
 ---

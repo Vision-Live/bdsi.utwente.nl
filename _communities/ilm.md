@@ -5,6 +5,7 @@ keywords:
   - INTENSIVE LONGITUNAL DATA COMMUNITY
   - intensive longitudinal data community
 image: assets/images/communities/ilm/data-pipeline.svg
+imageNarrow: true
 attribution:
   - <a href="https://www.freepik.com/free-vector/data-processing-concept-illustration_12219361.htm">Image by storyset</a> on Freepik
 ---

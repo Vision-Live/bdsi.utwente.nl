@@ -73,6 +73,12 @@ defaults:
       path: images
     values:
       image: true
+  - scope:
+      path: ''
+      type: communities
+    values: 
+      layout: single_page
+      bodyClass: page-single
 
 sass:
   style: expanded # possible values: nested expanded compact compressed

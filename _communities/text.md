@@ -3,7 +3,8 @@ title: Text Analysis
 authors: 
     - Maryam Amir Haeri
     - Anna Machens
-image: assets/images/communities/text/header.png
+image: assets/images/communities/text/SVG/Asset 1.svg
+imageNarrow: true
 keywords:
     - text analysis community
 ---
