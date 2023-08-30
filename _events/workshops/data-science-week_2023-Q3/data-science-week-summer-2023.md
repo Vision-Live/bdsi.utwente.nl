@@ -15,7 +15,7 @@ tags:
     - Machine Learning
 image: /assets/images/data-science-week-2023-summer.svg
 imageNarrow: true
-imageBackground: "#6d0039"
+# imageBackground: "#6d0039"
 accentColour: "#ed007e"
 layout: "event"
 date: 2023-09-25

@@ -12,6 +12,8 @@ tags:
 date: 2023-09-29
 time: "12:45 - 14:30"
 image: /assets/images/workshops/data-viz.png
+imageNarrow: true
+accentColour: "#FFBE2E"
 imageBackground: "#FFBE2E"
 ---
 
@@ -22,3 +24,4 @@ This workshop is also open for those who do not want to participate in the Data 
 {% include card.html title_element="h4" title="Materials" content="Materials for this workshop will be uploaded when available." %}
 
 [dsw]: {% link _events/workshops/data-science-week_2023-Q3/data-science-week-summer-2023.md %}
+
