@@ -20,6 +20,12 @@ async function getCalendarData(url, out) {
     const now = dayjs();
     const today = now.startOf("day");
 
+    console.log({
+        icalData, 
+        jcalData: JSON.stringify(jcalData, null, 2),
+        now
+    })
+
     for (const vevent of comp.getAllSubcomponents('vevent')) {
 
         const event = new ICAL.Event(vevent);
@@ -39,8 +45,8 @@ async function getCalendarData(url, out) {
                     events.push({ 
                         title: (occurrence.summary ?? event.summary).replace(/^Copy: /, ""), 
                         location: occurrence.location ?? event.location, 
-                        start: dayjs.tz(occurrence.startDate.toJSDate(), TIMEZONE), 
-                        end: dayjs.tz(occurrence.endDate.toJSDate(), TIMEZONE) });
+                        start: dayjs(occurrence.startDate.toJSDate()), 
+                        end: dayjs(occurrence.endDate.toJSDate()) });
                 }
                 next = iterator.next();
             }
@@ -48,8 +54,8 @@ async function getCalendarData(url, out) {
             events.push({ 
                 title: event.summary.replace(/^Copy: /, ""), 
                 location: event.location, 
-                start: dayjs.tz(event.startDate.toJSDate(), TIMEZONE), 
-                end: dayjs.tz(event.endDate.toJSDate(), TIMEZONE) 
+                start: dayjs(event.startDate.toJSDate()), 
+                end: dayjs(event.endDate.toJSDate()) 
             });
         }
     }
