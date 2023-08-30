@@ -3,6 +3,7 @@ title: Expertise Sharing
 layout: single_page
 bodyClass: page-list
 note: AI-generated
+accentColour: "#ec7908"
 ---
 
 BDSi is dedicated to supporting researchers in harnessing the power of data science within the realm of social sciences. Through a range of initiatives including workshops, tutorials, events, and blog posts showing our work, we strive to create an environment where knowledge sharing is fun, engaging, and tailored to meet the unique needs of the BMS research community.

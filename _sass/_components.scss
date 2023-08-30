@@ -7,6 +7,18 @@ $text: $secondary; // darken($header, 30);
 @import "./components/bdsi_venn";
 @import "./components/calendar";
 
+.text-accent {
+  color: var(--accent-colour, $primary);
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 3px rgba(0,0,0,.5);
+}
+
 @for $i from 1 through 6 {
   h#{$i} {
     text-transform: uppercase;
@@ -650,7 +662,7 @@ $button-width: 35px;
 }
 
 .page-single, .page-list {
-  background-color: $primary;
+  background-color: var(--accent-colour, $primary);
   background-image: $strip-background-image;
   background-attachment: fixed;
   background-size: cover;
