@@ -39,8 +39,8 @@ async function getCalendarData(url, out) {
                     events.push({ 
                         title: (occurrence.summary ?? event.summary).replace(/^Copy: /, ""), 
                         location: occurrence.location ?? event.location, 
-                        start: dayjs.tz(occurrence.startDate.toJSDate()), 
-                        end: dayjs.tz(occurrence.endDate.toJSDate()) });
+                        start: dayjs.tz(occurrence.startDate.toJSDate(), TIMEZONE), 
+                        end: dayjs.tz(occurrence.endDate.toJSDate(), TIMEZONE) });
                 }
                 next = iterator.next();
             }
@@ -48,8 +48,8 @@ async function getCalendarData(url, out) {
             events.push({ 
                 title: event.summary.replace(/^Copy: /, ""), 
                 location: event.location, 
-                start: dayjs.tz(event.startDate.toJSDate()), 
-                end: dayjs.tz(event.endDate.toJSDate()) 
+                start: dayjs.tz(event.startDate.toJSDate(), TIMEZONE), 
+                end: dayjs.tz(event.endDate.toJSDate(), TIMEZONE) 
             });
         }
     }
