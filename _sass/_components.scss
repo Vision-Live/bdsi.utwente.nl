@@ -515,6 +515,7 @@ $button-width: 35px;
 
       >a {
         padding: .5em 1em;
+        height: calc(28px + 1em); // firefox doesn't respect lh-units
         height: calc(1lh + 1em);
         display: inline-block;
         font-family: $font-family-heading;
@@ -539,6 +540,7 @@ $button-width: 35px;
           color: $white;
           text-decoration: none;
 
+          // note: Safari doesn't support :has(), afaik there's no feasible alternative
           &:has(>.rollover) {
             padding-top: 0.2em;
           }
