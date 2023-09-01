@@ -13,11 +13,4 @@
     justify-content: space-between;
     align-items: center;
   }
-  .header-social {
-    height: inherit;
-    display: none;
-    @include media-breakpoint-up(lg) {
-      display: block;
-    }
-  }
 }
