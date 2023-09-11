@@ -19,4 +19,5 @@ jobs:
         working-directory: _utils/calendar_sync
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
+          token: ${{secrets.CALENDAR_PAT}}
           commit_message: automated calendar update
