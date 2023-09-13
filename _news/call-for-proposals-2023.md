@@ -7,7 +7,7 @@ introduction: |
     Do you have data lying around? Are you curious about what Data Science can mean for your research?\n
     BDSi is making several grants available for research involving data science. The grant is meant for projects exploring new ideas, or as a first step to qualify for external funding.\n
     A dedicated team of BDSi data scientists will help integrate data science into your project.
-date: 2023-01-01
+date: 2023-12-01
 ---
 
 BDSi invites BMS researchers to apply for projects requiring data science and machine learning or involving challenging data sets.
