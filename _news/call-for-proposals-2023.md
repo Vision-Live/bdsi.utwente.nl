@@ -7,12 +7,12 @@ introduction: |
     Do you have data lying around? Are you curious about what Data Science can mean for your research?\n
     BDSi is making several grants available for research involving data science. The grant is meant for projects exploring new ideas, or as a first step to qualify for external funding.\n
     A dedicated team of BDSi data scientists will help integrate data science into your project.
-date: 2023-01-01
+date: 2023-12-01
 ---
 
 BDSi invites BMS researchers to apply for projects requiring data science and machine learning or involving challenging data sets.
 
-### Purpose
+## Purpose
 
 This call for proposals aims to support data-driven research. The call supports and reflects BDSi’s strategy to advance the use of data science methods in BMS research.
 
@@ -26,9 +26,7 @@ Projects receive an in-kind investment rather than funding. This means that a de
     cta_link="<email>"
 %}
 
-### Criteria — How to apply
-
-Applications can be submitted by sending a proposal to [{{ site.data.contact.email }}](mailto:{{ site.data.contact.email }}?subject=BDSi%20Data%20Science%20grant%202023) with the subject “BDSi Data Science grant 2023”.
+## Application criteria
 
 A proposal should:
 
@@ -51,7 +49,7 @@ The decision on which proposals to support will be loosely based on these criter
 -   Potential for followup
 -   Investment by applicant(s)
 
-### Who may apply?
+## Who may apply?
 
 Proposals can be submitted by BMS researchers. In case the proposal is submitted by an inter-disciplinary team, the principal investigator (PI) must belong to BMS faculty. The PI should satisfy the following requirements:
 
@@ -59,7 +57,7 @@ Proposals can be submitted by BMS researchers. In case the proposal is submitted
 -   Have a contract at least for the duration of the project. In case the contract is for a shorter period, the proposal should be accompanied by a letter of intent signed by the department head.
 -   Ensure a minimal personal commitment to the project (dedicated hours)
 
-### What can you apply for?
+## What can you apply for?
 
 The call makes available in-kind support by allocating the time of BDSi’s Data Scientists to the project. BDSi’s in-kind contribution is calculated in “person hours”. Note that there is a limit in hours BDSi can provide across all projects. BDSi's aim is to incubate Data Science in BMS research and education, with a focus on developing new skills and capabilities.
 
@@ -74,9 +72,9 @@ You **can not** apply for tasks that;
 -   Are too large, or take too long (for the Data Science grant)  
     _We do not have the (wo)manpower to take on large projects on our own, but we can cooperate with researchers to provide data science support. Please do get in touch, there may be other ways in which we can support you._
 
-### When to apply
+## When to apply
 
-The deadline for submission of full proposals is April 1st, 2023. We are available to help you with writing the proposal. Contacting us early for an open discussion on a draft proposal or idea ensures the goals and time estimate will be realistic. 
+The deadline for submission of full proposals is **December 1st, 2023**. We are available to help you with writing the proposal. Contacting us early for an open discussion on a draft proposal or idea ensures the goals and time estimate will be realistic. 
 
 {%
     include card.html 
@@ -86,14 +84,20 @@ The deadline for submission of full proposals is April 1st, 2023. We are availab
     cta_link="<email>"
 %}
 
-### Selection procedure
+## How to apply
+
+Applications can be sent to [{{ site.data.contact.email }}](mailto:{{ site.data.contact.email }}?subject=BDSi%202023), using the provided template. 
+
+<a class="button" href="{% link /assets/files/templates/BDSi-grant-template-v2.docx %}">Proposal Template</a>
+
+## Selection procedure
 
 Before or after submitting a proposal, you will be invited for short meeting with BDSi data scientists to discuss the project idea, and ensure it can be achieved within the scope of the Data Science grant.
 
 Proposals that fit the scope and aims of the BDSi Data Science grant as outlined in the 'Criteria — How to apply' section will be considered. To maximize the impact of the grants BDSi will then make a selection based on proposals' expected costs and benefits.
 
-A decision on successful proposals can be expected mid-April, and will be communicated with applicants directly and through this website.
+A decision on successful proposals can be expected mid-December, and will be communicated with applicants directly and through this website.
 
-### Contact
+## Contact
 
 Contact [{{ site.data.contact.email }}](mailto:{{ site.data.contact.email }}?subject=BDSi%202023) for more information about the grant. Contact our [domain experts](/team/) or your [department representative](/team/) for specific information, or other data science questions.
