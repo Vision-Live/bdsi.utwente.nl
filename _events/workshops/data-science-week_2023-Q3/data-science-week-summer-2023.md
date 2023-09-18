@@ -41,9 +41,15 @@ BDSi primarily supports Data Science for the faculty of Behavioural and Manageme
 
 ### Some experience with R (or another programming language)
 
-You'll need to have a basic idea of R in order to follow along with the workshops and seminars as all of our examples will be using R and various R packages.
+{% include card.html title_element="h3" title="<span style='color: var(--accent-colour, #008eaa);'>Some programming knowledge is required!</span>" content="
+<p>You'll need to have a basic idea of R in order to follow along with the workshops and seminars as all of our examples will be using R and various R packages.</p>
+<p>While we will do our best to introduce data science topics in the various workshops without relying on code, a basic understanding of R will make it much easier to follow along.</p>
+" %}
 
-{% include card.html title_element="h3" title="<span style='color: var(--accent-colour, #008eaa);'>Some programming knowledge is required!</span>" content="While we will do our best to introduce data science topics in the various workshops, a basic understanding of R will make it much easier to follow along. <br/><br/><a href='https://www.utwente.nl/en/bms/m-store/'>Introductory courses an R helpdesk for staff</a> are provided by the <a href='https://www.utwente.nl/en/bms/code/'>Cognition, Data and Education (CoDE)</a> section." %}
+<p>If you have some experience with other programming languages, you should be able to follow along with a little preparation. More information on installing and using R can be found in the <a href='#what-can-i-do-to-prepare'>What can I do to prepare?</a> section.</p>
+
+<p>If you're new to programming in general or would like a deeper understanding of R, and would rather learn from one of our colleagues, the <a href='https://www.utwente.nl/en/bms/code/'>Cognition, Data and Education (CoDE)</a> section provides <a href='https://canvas.utwente.nl/courses/4715'>courses and materials aimed at teaching staff</a> and <a href='https://people.utwente.nl/j.steinrucke'>Johannes Steinrücke</a> teaches half-day <a href='https://www.utwente.nl/en/ctd/courses/1897203/introduction-to-r-workshop/'>introduction to R</a> and <a href='https://www.utwente.nl/en/ctd/courses/1897245/data-visualization-using-r-workshop/'>data visualization in R</a> workshops for PhD's (and EngD's).</p>
+
 
 If you're confident you can do the datathon in Python (or any other language - we challenge you to try in C, Fortran, [Brainf\*\*\*](https://en.wikipedia.org/wiki/Brainfuck), or JavaScript), you're more than welcome to do so. Just be aware that we probably can't offer support if or when you get stuck.
 
@@ -53,9 +59,9 @@ If you're confident you can do the datathon in Python (or any other language - w
 
 First off, get a team together. The datathon is meant to be a collaborative experience where you work alongside a variety of expertises.
 
-### Read the book (or at least pretend to)
+### Read the book (or at least skim through it)
 
-The materials we will use are based on the freely available [Introduction to Statistical Learning][isl-book] book. If you're interested in data science, statistical learning or machine learning, this book would be a great place to start. BDSi also organizes a yearly [reading club][ws-asl] around this book.
+The materials we will use are loosely based on the freely available [Introduction to Statistical Learning][isl-book] book. If you're interested in data science, statistical learning or machine learning, this book would be a great place to start. BDSi also organizes a yearly [reading club][ws-asl] around this book.
 
 ### Install R, RStudio, and tidyverse
 
@@ -63,6 +69,11 @@ As a faculty, BMS has decided to use _R_ for statistical education. We will foll
 
 ## What will we do?
 
+The Data Science Week workshops and datathon are designed to be related but stand-alone experiences. The workshops will cover basic Data Science concepts applicable to any data science projects, using the datathon materials as a case study. During the afternoon practical sessions we will expand on the topics covered in the morning. Usually, this will involve a hands-on walkthrough of the datathon materials. You can follow along and use the scripts as provided, expand and improve upon them, or write your own, all while having BDSi staff on hand to answer your questions.
+
+During the final session, we ask the groups that prepared the best and most interesting models to present their solutions, and the process by which they arrived at them. Finally, the winning team will have the honour of receiving the BDSi Data Science Trophy™! 
+
+### Previous participants
 <div class="row">
   <div class="col-lg-6 col-12">
 <div style="padding: 62.5% 0 0 0; position: relative">
