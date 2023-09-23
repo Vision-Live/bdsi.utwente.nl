@@ -348,6 +348,13 @@
   date: 2024-09-09
   endDate: 2024-09-09
   time: 15:00 - 16:00
+- title: BDSi Open Hour
+  location: Ravelijn 1438
+  start: 2024-09-16T15:00:00+00:00
+  end: 2024-09-16T16:00:00+00:00
+  date: 2024-09-16
+  endDate: 2024-09-16
+  time: 15:00 - 16:00
 - title: Data Science Drinks
   location: Theatercafe Vrijhof
   start: 2023-09-25T16:00:00+00:00
