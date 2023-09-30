@@ -355,6 +355,13 @@
   date: 2024-09-16
   endDate: 2024-09-16
   time: 15:00 - 16:00
+- title: BDSi Open Hour
+  location: Ravelijn 1438
+  start: 2024-09-23T15:00:00+00:00
+  end: 2024-09-23T16:00:00+00:00
+  date: 2024-09-23
+  endDate: 2024-09-23
+  time: 15:00 - 16:00
 - title: BDSi Intensive Longitunal Data community
   location: RA1444
   start: 2023-10-17T15:30:00+00:00
