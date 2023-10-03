@@ -35,8 +35,8 @@ async function getCalendarData(url, out) {
             let next = iterator.next();
             while (next) {
                 const _next = dayjs(next.toJSDate())
-                if (_next.isAfter(today.add(1, "year"))) {
-                    // don't list more than a year ahead
+                if (_next.isAfter(today.add(2, "month"))) {
+                    // don't list more than two months ahead
                     break;
                 }
 
@@ -72,6 +72,8 @@ async function getCalendarData(url, out) {
         event.start = event.start.format()
         event.end = event.end.format()
     }
+
+    
 
 
     await fs.writeFile(out, yaml.stringify(events));
