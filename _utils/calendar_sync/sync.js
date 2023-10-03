@@ -33,10 +33,15 @@ async function getCalendarData(url, out) {
         if (event.isRecurring) {
             const iterator = event.iterator();
             let next = iterator.next();
+            let i = 0;
             while (next) {
                 const _next = dayjs(next.toJSDate())
                 if (_next.isAfter(today.add(2, "month"))) {
                     // don't list more than two months ahead
+                    break;
+                }
+                if (i++ >= 4) {
+                    // don't list more than 4 events of the same type
                     break;
                 }
 
