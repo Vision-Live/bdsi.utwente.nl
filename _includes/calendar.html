@@ -4,7 +4,9 @@
 
 <div class="calendar-items">
     {% assign prev_title = "" %}
+    {% assign prev_date = "" %}
     {% for event in events limit: 10 %}
+
     {% assign title_lower = event.title | downcase %}
     {% assign event_image = event.image %}
     {% if event.path %}
@@ -17,6 +19,12 @@
     {% else %}
         {% assign event_image = false %}
     {% endif %}
+
+    {% unless event_path %}
+        {% if event.url %}
+            {% assign event_path = event.url %}
+        {% endif %}
+    {% endunless %}
 
     {% unless event_path %}
         {% if title_lower contains "bdsi open hour" %}
@@ -38,13 +46,21 @@
     {% endunless %}
 
     {% unless event_image %}
+        {% if event.img_url %}
+            {% assign event_image = event.img_url %}
+        {% elsif event.image %}
+            {% capture event_image %}{% link {{event.image}} %}{% endcapture %}
+        {% endif %}
+    {% endunless %}
+
+    {% unless event_image %}
         {% assign event_image = "assets/images/calendar-blank.png" %}
     {% endunless %}
 
 
-    <div class="calendar-item{% if event.title == prev_title %} repeat-item{% endif %}">
-        {% if event_image and event.title != prev_title %}
-            <div style="background-image: url({% link {{event_image}} %});" class="calendar-item-image"></div>
+    <div class="calendar-item">
+        {% if event_image %}
+            <div style="background-image: url({{event_image}});" class="calendar-item-image"></div>
         {% endif %}
         {% if event_path %}
             <h6 class="calendar-item-title">

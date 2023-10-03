@@ -16,7 +16,10 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-      - run: npm install && node sync.js "${{secrets.CALENDAR_URL}}" "../../_data/calendar.yaml"
+      - run: |
+          npm install 
+          node sync.js "${{secrets.CALENDAR_URL}}" "../../_data/calendar.yaml"
+          node bms-lab-events.js "${{secrets.BMSLAB_EVENTS_URL}}" "../../_data/bmslab_events.yml"
         working-directory: _utils/calendar_sync
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
