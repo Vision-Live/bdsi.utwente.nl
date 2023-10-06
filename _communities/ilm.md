@@ -2,7 +2,7 @@
 title: Intensive Longitudinal Methods
 author: Peter ten Klooster
 keywords:
-  - INTENSIVE LONGITUNAL DATA COMMUNITY
+  - INTENSIVE LONGITUDINAL DATA COMMUNITY
   - intensive longitudinal data community
 image: assets/images/communities/ilm/data-pipeline.svg
 imageNarrow: true
