@@ -32,10 +32,11 @@ async function getCalendarData(url, out) {
 
         if (event.isRecurring) {
             const iterator = event.iterator();
-            let next = iterator.next();
+            let next; // = iterator.next();
             let i = 0;
-            while (next) {
+            while (next = iterator.next()) {
                 const _next = dayjs(next.toJSDate())
+                
                 if (_next.isBefore(today)) {
                     continue;
                 }
@@ -56,7 +57,6 @@ async function getCalendarData(url, out) {
                         start: dayjs(occurrence.startDate.toJSDate()), 
                         end: dayjs(occurrence.endDate.toJSDate()) });
                 }
-                next = iterator.next();
             }
         } else {
             events.push({ 
