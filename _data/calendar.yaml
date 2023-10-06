@@ -1,7 +1,56 @@
-- title: BDSi Intensive Longitunal Data community
+- title: BDSi Open Hour
+  location: Ravelijn 1438
+  start: 2023-10-09T15:00:00+02:00
+  end: 2023-10-09T16:00:00+02:00
+  date: 2023-10-09
+  endDate: 2023-10-09
+  time: 15:00 - 16:00
+- title: BDSi Open Hour
+  location: Ravelijn 1438
+  start: 2023-10-16T15:00:00+02:00
+  end: 2023-10-16T16:00:00+02:00
+  date: 2023-10-16
+  endDate: 2023-10-16
+  time: 15:00 - 16:00
+- title: BDSi Open Hour
+  location: Ravelijn 1438
+  start: 2023-10-23T15:00:00+02:00
+  end: 2023-10-23T16:00:00+02:00
+  date: 2023-10-23
+  endDate: 2023-10-23
+  time: 15:00 - 16:00
+- title: BDSi Open Hour
+  location: Ravelijn 1438
+  start: 2023-10-30T15:00:00+01:00
+  end: 2023-10-30T16:00:00+01:00
+  date: 2023-10-30
+  endDate: 2023-10-30
+  time: 15:00 - 16:00
+- title: BDSi Intensive Longitudinal Data community
   location: RA1444
-  start: 2023-10-17T15:30:00+00:00
-  end: 2023-10-17T16:30:00+00:00
+  start: 2023-10-17T15:30:00+02:00
+  end: 2023-10-17T16:30:00+02:00
   date: 2023-10-17
   endDate: 2023-10-17
   time: 15:30 - 16:30
+- title: Network Science Community
+  location: Ravelijn-Room-RA1444 (Situation Room)
+  start: 2023-10-17T16:30:00+02:00
+  end: 2023-10-17T17:00:00+02:00
+  date: 2023-10-17
+  endDate: 2023-10-17
+  time: 16:30 - 17:00
+- title: Causal Community - Data Set Challenge
+  location: Ravelijn-Room-RA1444 (Situation Room)
+  start: 2023-10-24T16:00:00+02:00
+  end: 2023-10-24T17:00:00+02:00
+  date: 2023-10-24
+  endDate: 2023-10-24
+  time: 16:00 - 17:00
+- title: Text Analysis Community
+  location: Ravelijn-Room-RA1444 (Situation Room)
+  start: 2023-10-31T16:00:00+01:00
+  end: 2023-10-31T17:30:00+01:00
+  date: 2023-10-31
+  endDate: 2023-10-31
+  time: 16:00 - 17:30
