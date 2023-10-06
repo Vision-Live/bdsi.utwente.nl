@@ -58,20 +58,18 @@
     {% endunless %}
 
 
-    <div class="calendar-item">
+    <a href="{{event_path}}" title="{{event.title}}" class="calendar-item">
         {% if event_image %}
-            <div style="background-image: url({{event_image}});" class="calendar-item-image"></div>
+            <div style="background-image: url('{{event_image}}');" class="calendar-item-image{% if event.source == 'BMSLab' %} bms-lab{% endif %}"></div>
         {% endif %}
         {% if event_path %}
-            <h6 class="calendar-item-title">
-                <a href="{{event_path}}" title="{{event.title}}">{{event.title}}</a>
-            </h6>
+            <h6 class="calendar-item-title">{{event.title}}</h6>
         {% else %}
             <h6 class="calendar-item-title">{{event.title}}</h6>
         {% endif %}
         <div class="calendar-item-time">
             {% include datetime.html page=event %}
         </div>
-    </div>
+    </a>
     {% endfor %}
 </div>

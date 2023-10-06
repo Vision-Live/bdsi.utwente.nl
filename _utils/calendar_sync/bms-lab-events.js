@@ -13,7 +13,7 @@ dayjs.extend(timezone);
 dayjs.extend(customParseFormat)
 dayjs.tz.setDefault(TIMEZONE);
 
-async function getEvents(url, out = "./bms-lab-events.yml") {
+async function getEvents(url, out = "./bms-lab-events.yaml") {
     const response = await fetch(url);
     const body = await response.text();
     const root = parse(body);
@@ -33,6 +33,7 @@ async function getEvents(url, out = "./bms-lab-events.yml") {
         return {
             title,
             description,
+            source: "BMSLab",
             url: event_url,
             img_url: img_url.href,
             date,

@@ -1,6 +1,11 @@
 ---
 title: Network Science Community
 author: Anna Machens
+keywords:
+    - Network Science Community
+attribution: 
+    - event icon derived from a design by Harryarts / Freepik
+image: assets/images/communities/network/event-header.png
 ---
 
 > All interconnected systems like the economy, the brain, social groups, enterprises or the internet share universal properties. With the help of graph theory and social network analysis we can uncover these properties, understand the spread of misinformation or emotions, find out who is in control of an organisation or how resilient a network is against external threats.

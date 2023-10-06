@@ -52,7 +52,7 @@ async function getCalendarData(url, out) {
                 if (_next.isAfter(today)) {
                     const occurrence = event.getOccurrenceDetails(next);
                     events.push({ 
-                        title: (occurrence.summary ?? event.summary).replace(/^Copy: /, ""), 
+                        title: (occurrence.summary ?? event.summary).replace(/^Copy: /, "").trim(), 
                         location: occurrence.location ?? event.location, 
                         start: dayjs(occurrence.startDate.toJSDate()), 
                         end: dayjs(occurrence.endDate.toJSDate()) });
@@ -60,7 +60,7 @@ async function getCalendarData(url, out) {
             }
         } else {
             events.push({ 
-                title: event.summary.replace(/^Copy: /, ""), 
+                title: event.summary.replace(/^Copy: /, "").trim(), 
                 location: event.location, 
                 start: dayjs(event.startDate.toJSDate()), 
                 end: dayjs(event.endDate.toJSDate()) 
