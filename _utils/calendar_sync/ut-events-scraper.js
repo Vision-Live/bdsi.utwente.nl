@@ -1,6 +1,7 @@
 const fs = require("fs/promises");
 const yaml = require("yaml");
 const { parse } = require("node-html-parser");
+const { decode } = require("html-entities");
 
 const dayjs = require("dayjs");
 const customParseFormat = require("dayjs/plugin/customParseFormat");
@@ -15,11 +16,14 @@ dayjs.extend(customParseFormat);
 dayjs.tz.setDefault(TIMEZONE);
 
 async function getEvents(url, source, out) {
-  const response = await fetch(url);
+  const response = await fetch(url, {
+    headers: { "content-encoding": "utf8" },
+  });
   const body = await response.text();
+
   const root = parse(body);
   let events = root
-    .querySelectorAll("li.summary__introblock")
+    .querySelectorAll("li.summary__introblock, .summary__item")
     .map(async (li) => {
       const event_url = li.querySelector("a.summary__link").attributes["href"];
       const img_url = new URL(
@@ -29,17 +33,17 @@ async function getEvents(url, source, out) {
       const title = li.querySelector(".summary__title").innerText.trim();
       const description = li
         .querySelector(".summary__description")
-        .innerText.trim();
-      const date = li.querySelector(".summary__date").innerText.trim();
-      const [startDate, endDate] = await getEventTimes(event_url);
+        ?.innerText.trim();
+      // const date = li.querySelector(".summary__date, .summary__meta .date")?.innerText.trim();
+      const [startDate, endDate, _description] = await getEventTimes(event_url);
 
       return {
-        title,
-        description,
+        title: decode(title),
+        description: decode(description ?? _description),
         source,
         url: event_url,
         img_url: img_url.href,
-        date,
+        // date,
         start: startDate,
         end: endDate,
       };
@@ -60,6 +64,12 @@ async function getEvents(url, source, out) {
     event.end = event.end.format();
   }
 
+  // filter out duplicates
+  evaluated_events = evaluated_events.filter(
+    (ev, index, events) =>
+      index == events.findIndex((other_ev) => ev.title == other_ev.title)
+  );
+
   // write to outfile
   await fs.writeFile(out, yaml.stringify(evaluated_events));
 }
@@ -73,8 +83,14 @@ async function getEventTimes(url) {
     .querySelector("div.addeventatc span.start")
     .innerText.trim();
   const end = root.querySelector("div.addeventatc span.end").innerText.trim();
+  const desc =
+    root.querySelector(".contentpart__main p")?.innerText.trim() ?? "";
 
-  return [dayjs(start, "DD/MM/YYYY HH:mm"), dayjs(end, "DD/MM/YYYY HH:mm")];
+  return [
+    dayjs(start, "DD/MM/YYYY HH:mm"),
+    dayjs(end, "DD/MM/YYYY HH:mm"),
+    desc,
+  ];
 }
 
 function main() {
