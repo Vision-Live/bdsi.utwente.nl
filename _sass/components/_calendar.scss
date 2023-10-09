@@ -29,7 +29,7 @@
             &:hover, &:active, &:focus-within {
                 background-color: rgba(255,255,255,0.8);
 
-                .bms-lab::after {
+                .external::after {
                     background-color: rgba(0,0,0,.9);
                     width: 40%;
                 }
@@ -65,18 +65,26 @@
             grid-row: 1/-1;
             grid-column: left;
 
-            &.bms-lab::after {
+            &.external::after {
                 content: "";
                 display: block;
                 width: 33%;
                 height: 100%;
                 background-color: rgba(0,0,0,.6);
-                background-image: url('/assets/images/content/bmslab/logo-light.svg');
                 background-size: 80%;
                 background-repeat: no-repeat;
                 background-position: center center;
-
                 transition: all 0.2s ease-in-out;
+
+                
+            }
+
+            &.external.bms-lab::after {
+                background-image: url('/assets/images/content/bmslab/logo-light.svg');
+            }
+
+            &.external.dcc::after {
+                background-image: url('/assets/images/dcc-logo-light-2.svg');
             }
         }
 

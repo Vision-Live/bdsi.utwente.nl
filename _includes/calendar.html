@@ -60,7 +60,7 @@
 
     <a href="{{event_path}}" title="{{event.title}}" class="calendar-item">
         {% if event_image %}
-            <div style="background-image: url('{{event_image}}');" class="calendar-item-image{% if event.source == 'BMSLab' %} bms-lab{% endif %}"></div>
+            <div style="background-image: url('{{event_image}}');" class="calendar-item-image{% if event.source %} external {{event.source}}{% endif %}"></div>
         {% endif %}
         {% if event_path %}
             <h6 class="calendar-item-title">{{event.title}}</h6>
