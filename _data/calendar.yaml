@@ -1,12 +1,5 @@
 - title: BDSi Open Hour
   location: Ravelijn 1438
-  start: 2023-10-30T15:00:00+00:00
-  end: 2023-10-30T16:00:00+00:00
-  date: 2023-10-30
-  endDate: 2023-10-30
-  time: 15:00 - 16:00
-- title: BDSi Open Hour
-  location: Ravelijn 1438
   start: 2023-11-06T15:00:00+00:00
   end: 2023-11-06T16:00:00+00:00
   date: 2023-11-06
@@ -26,6 +19,13 @@
   date: 2023-11-20
   endDate: 2023-11-20
   time: 15:00 - 16:00
+- title: BDSi Open Hour
+  location: Ravelijn 1438
+  start: 2023-11-27T15:00:00+00:00
+  end: 2023-11-27T16:00:00+00:00
+  date: 2023-11-27
+  endDate: 2023-11-27
+  time: 15:00 - 16:00
 - title: Text Analysis Community
   location: Ravelijn-Room-RA1444 (Situation Room)
   start: 2023-10-31T16:00:00+00:00
@@ -33,3 +33,10 @@
   date: 2023-10-31
   endDate: 2023-10-31
   time: 16:00 - 17:30
+- title: Causal Community - Data Set Challenge
+  location: Microsoft Teams Meeting
+  start: 2023-12-14T16:00:00+00:00
+  end: 2023-12-14T17:00:00+00:00
+  date: 2023-12-14
+  endDate: 2023-12-14
+  time: 16:00 - 17:00
