@@ -5,3 +5,6 @@
 *.yml
 *.json
 *.ics
+
+# test bash scripts (containing tokens)
+*-test.sh
