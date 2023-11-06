@@ -27,8 +27,8 @@
     {% endunless %}
 
     {% unless event_path %}
-        {% if title_lower contains "bdsi open hour" %}
-            {% capture event_path %}{% link research.html %}#open-hours{% endcapture %}
+        {% if title_lower contains "bdsi walk-in hour" %}
+            {% capture event_path %}{% link research.html %}#walk-in-hours{% endcapture %}
             {% assign event_image = "assets/images/open-hour-header.png" %}
         {% endif %}
     {% endunless %}
