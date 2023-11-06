@@ -1,7 +1,7 @@
 !package*.json
 
 # data files used in dev
-calendar.yaml
-calendar.json
-calendar.ics
-bms-lab-events.yml
+*.yaml
+*.yml
+*.json
+*.ics
