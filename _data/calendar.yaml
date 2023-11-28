@@ -1,12 +1,5 @@
 - title: BDSi Walk-in Hour
   location: Ravelijn 1438
-  start: 2023-11-27T15:00:00+00:00
-  end: 2023-11-27T16:00:00+00:00
-  date: 2023-11-27
-  endDate: 2023-11-27
-  time: 15:00 - 16:00
-- title: BDSi Walk-in Hour
-  location: Ravelijn 1438
   start: 2023-12-04T15:00:00+00:00
   end: 2023-12-04T16:00:00+00:00
   date: 2023-12-04
@@ -25,6 +18,13 @@
   end: 2023-12-18T16:00:00+00:00
   date: 2023-12-18
   endDate: 2023-12-18
+  time: 15:00 - 16:00
+- title: BDSi Walk-in Hour
+  location: Ravelijn 1438
+  start: 2023-12-25T15:00:00+00:00
+  end: 2023-12-25T16:00:00+00:00
+  date: 2023-12-25
+  endDate: 2023-12-25
   time: 15:00 - 16:00
 - title: BDSi Intensive Longitudinal Data community meeting
   location: Ravelijn 1444
