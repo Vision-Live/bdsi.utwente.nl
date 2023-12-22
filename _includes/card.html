@@ -19,7 +19,7 @@
     </div>
     {% if include.content %}
     <div class="card-text">
-      {{content}}
+      {{content | markdownify}}
     </div>
     {% endif %}
     {% if include.cta %}
