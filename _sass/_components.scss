@@ -772,15 +772,26 @@ $button-width: 35px;
   #partners-list {
     display: flex;
     flex-flow: row wrap;
+    max-width: 25vw;
 
     gap: 1em;
 
     a {
-      min-width: 3em;
+      display: block;
+      min-width: min-content;
       max-width: min-content;
 
       font-weight: bolder;
       text-transform: capitalize;
+
+      img {
+        filter: saturate(0);
+        transition: filter 0.2s ease-in-out;
+
+        &:hover {
+          filter: saturate(0.5);
+        }
+      }
     }
   }
 
@@ -816,8 +827,7 @@ $button-width: 35px;
     img.logo {
       display: block;
       height: 5rem;
-      width: 3rem;
-      object-fit: cover;
+      // object-fit: cover;
     }
 
     text-decoration: none;
