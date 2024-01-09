@@ -28,12 +28,14 @@ imageNarrow: false
 layout: "event"
 date: 2024-04-15
 endDate: 2024-04-22
-frontpage: true
+frontpage: false
 ---
 
 <img src="/assets/images/workshops/wids-logo-wide-PLACEHOLDER.png" style="max-width: 100%; margin: 0 auto; max-height: 250px;">
 
 <!-- {% include card.html title="WiDS Spring 2024 Data Science Week" toc="false" content="Registration for the WiDS & BDSi Spring 2024 Data Science Week, April 15th - 22nd, is already open!." cta="Register now!" cta_link="https://www.utwente.nl/en/bms/research/bdsi/wids-data-science-week-spring-2024/" %} -->
+
+{% include card.html title="This page is a draft" content="This page is a draft. Any information is preliminary, and should not be considered final." %}
 
 ## What is the Women in Data Science Week?
 
