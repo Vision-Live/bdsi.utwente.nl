@@ -1,0 +1,30 @@
+<div class="profile-widget-generic">
+  <img class="avatar" src="{{ include.image_url }}" alt="{{ include.name }}" />
+  <div class="content">
+    <div class="title">
+      {% if include.prefix %}
+        <div class="prefix">{{include.prefix}}</div>
+      {% endif %}
+      <div class="name">
+        {% if include.url %}
+          <a href="{{include.url}}" alt="{{include.name}}">{{include.name}}</a>
+        {% else %}
+          {{include.name}}
+        {% endif %}
+      </div>
+      {% if include.postfix %}
+      <div class="postfix">{{include.postfix}}</div>
+      {% endif %}
+    </div>
+    {% if include.affiliation %}
+    <div class="affiliation">
+        {% if include.affiliation_url %}
+        <a href="{{include.affiliation_url}}" alt="{{include.affiliation}}">{{include.affiliation}}</a>
+        {% else %}
+        {{include.affiliation}}
+        {% endif %}
+    </div>
+    {% endif %}
+    <div class="description">{{include.desc}}</div>
+  </div>
+</div>

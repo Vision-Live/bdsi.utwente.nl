@@ -1,0 +1,46 @@
+.profile-widget-generic {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1em;
+
+    .avatar {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        aspect-ratio: 1/1;
+    }
+
+    .content {
+        padding: 0.2em;
+
+        .title {
+            display: flex;
+            flex-flow: row nowrap;
+            
+            .name, .prefix, .postfix {
+                text-transform: uppercase;
+                font-size: larger;
+                font-weight: 300;
+                font-family: $font-family-heading;
+            }
+            .prefix, .postfix {
+                color: lighten($black, 60);
+                white-space: pre;
+            }
+        }
+
+        .title + .affiliation {
+            margin-top: -.5em;
+        }
+
+        .affiliation {
+            // text-transform: uppercase;
+            font-weight: 300;
+            font-family: $font-family-heading;
+        }
+    }
+
+    & + & {
+        margin-top: 1em;
+    }
+}

@@ -6,6 +6,7 @@ $text: $secondary; // darken($header, 30);
 @import "./components/projects";
 @import "./components/bdsi_venn";
 @import "./components/calendar";
+@import "./components/profile_widget_generic";
 
 .text-accent {
   color: var(--accent-colour, $primary);
