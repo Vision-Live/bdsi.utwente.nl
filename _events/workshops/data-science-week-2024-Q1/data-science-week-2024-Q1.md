@@ -35,7 +35,7 @@ frontpage: true
 
 <!-- {% include card.html title="WiDS Spring 2024 Data Science Week" toc="false" content="Registration for the WiDS & BDSi Spring 2024 Data Science Week, April 15th - 22nd, is already open!." cta="Register now!" cta_link="https://www.utwente.nl/en/bms/research/bdsi/wids-data-science-week-spring-2024/" %} -->
 
-## What is the Data Science Week?
+## What is the Women in Data Science Week?
 
 The goal of the Data Science week is to introduce interested students and staff to data science in a fun and cooperative way, and help create a community of data scientists at the University of Twente, the faculty of Behavioural and Management Sciences, and beyond. BDSi organizes various events during the week, including a datathon, lectures, workshops, and a networking drink.
 
@@ -58,7 +58,7 @@ We are thrilled to partner with Gilead Sciences and Health Verity to provide a s
 
 Every lunch break (12:45 - 13:30, Tuesday - Friday) expert data scientists from BDSi and our partners will provide a lecture on the most important tools in a data scientists' toolbox; data wrangling, modelling, and communicating results. These lectures will be structured to support the datathon materials, but can be attended without participating in the datathon itself.
 
-After a short coffee break (13:30 - 13:45), the lecture will be followed by a hands-on practical session (13:45 - 15:30). During these two hours, the lecturer - supported by a team of motivated coaches - will support participants in applying the lecture materials to their datathon submissions. While these sessions are meant to accompany the days' lecture, they can be attended by any datathon participants. Couches will be on hand to answer any questions about the days' lecture, the datathon, or data science in general.
+After a short coffee break (13:30 - 13:45), the lecture will be followed by a hands-on practical session (13:45 - 15:30). During these two hours, the lecturer - supported by a team of motivated coaches - will support participants in applying the lecture materials to their datathon submissions. While these sessions are meant to accompany the days' lecture, they can be attended by any datathon participants. Coaches will be on hand to answer any questions about the days' lecture, the datathon, or data science in general.
 
 ### Drinks
 
@@ -70,15 +70,15 @@ The data science drinks are proudly sponsored by \[DSI?]
 
 ### Staff, students, family, and friends
 
-Everyone related to the University of Twente and their friends and family can join. You can join with friends, colleagues or even family. The event is open to both novices and experts, and everyone in between. You can join the datathon as a team, alone, or skip it altogether and only participate in the workshops. If you do join alone, you can choose to be assigned to a team with other data science enthusiasts.
+Everyone related to the University of Twente and their friends and family can join. You can join with friends, colleagues or even family. The event is open to both novices and experts, and everyone in between. You can join the datathon as a team, alone, or skip it altogether and only participate in the workshops. If you do join alone, you can choose to be assigned to a team with other data science enthusiasts. 
+
+Men, women, and everyone in between is free to join - but only teams with 50% or more women are able to compete in the WiDS regional and global leaderboards.
 
 {% include figure.html url="/assets/images/workshops/wids-datathon.jpg" caption="A tutor giving advice to two participants at a previous Women in Data Science event." %}
 
-BDSi primarily supports Data Science for the faculty of Behavioural and Management Sciences (BMS). Other University of Twente students and staff are welcome to attend (with or without their family and friends), as long as spaces are available.
-
 ### Women and men
 
-Both women and men are free to join. In order to compete on the regional or international WiDS datathon leaderboards, teams must be at least 50% women. This restriction does not apply to joining any the data science week events. You're free to join a lecture, practical, or the drinks on your own (regardless of whether you identify as male, female, or otherwise), you just won't be able to compete on the WiDS leaderboards.
+Both women and men are free to join. In order to compete on the regional or international WiDS datathon leaderboards, teams must be at least 50% women. This restriction does not apply to joining any the data science week events. You're welcome to join a lecture, practical, or the drinks on your own (regardless of whether you identify as male, female, or otherwise) or with your male friends and colleagues, you just won't be able to compete on the WiDS leaderboards.
 
 ### Some experience with R or Python
 
@@ -92,28 +92,151 @@ Both women and men are free to join. In order to compete on the regional or inte
 
 <p>If you're new to programming in general or would like a deeper understanding of R, and would rather learn from one of our colleagues, the <a href='https://www.utwente.nl/en/bms/code/'>Cognition, Data and Education (CoDE)</a> section provides <a href='https://canvas.utwente.nl/courses/4715'>courses and materials aimed at teaching staff</a> and <a href='https://people.utwente.nl/j.steinrucke'>Johannes Steinrücke</a> teaches half-day <a href='https://www.utwente.nl/en/ctd/courses/1897203/introduction-to-r-workshop/'>introduction to R</a> and <a href='https://www.utwente.nl/en/ctd/courses/1897245/data-visualization-using-r-workshop/'>data visualization in R</a> workshops for PhD's (and EngD's).</p>
 
-If you're confident you can do the datathon in any other language (we challenge you to try in C, Fortran, [Brainf\*\*\*](https://en.wikipedia.org/wiki/Brainfuck), or JavaScript), you're more than welcome to do so. Just be aware that we probably can't offer support if or when you get stuck.
+If you're confident you can participate in the datathon in another programming language, you're more than welcome to do so (we challenge you to try in C, Fortran, [Brainf\*\*\*](https://en.wikipedia.org/wiki/Brainfuck), or JavaScript). Just be aware that we probably can't offer support if or when you get stuck.
 
 ## What can I do to prepare?
 
 ### Get a team
 
-First off, get a team together. The datathon is meant to be a collaborative experience where you work alongside a variety of expertises. In order to compete on the regional and international leaderboards, your team should be at least 50% women.
+First off, get a team together. The datathon is meant to be a collaborative experience where you work alongside a variety of expertises. In order to compete on the regional and international leaderboards, your team should be at least 50% women. 
 
-## What will we do?
+### Create a Kaggle.com account
 
-The data science week datathon, lectures and practicals are designed to be related but stand-alone experiences. The lectures will cover basic data science concepts applicable to any data science projects, using the datathon materials as a case study. The practical sessions will focus on applying the topics covered in the preceding lunch lectures. Usually, this will involve a short hands-on walkthrough of the datathon materials, and plenty of time to work on your own. You can follow along and use the scripts as provided, expand and improve upon them, or write your own, all while having expert coaches on hand to answer your questions.
+The WiDS datathons are hosted on [Kaggle.com](https://kaggle.com). Kaggle.com is a platform hosting various competitions, datasets, courses, and other data science and machine learning related content. It boasts building _"skills in our competitions, co-hosted by world-class research organizations & companies"_, _"learn cutting edge ML techniques and what worked and didn't from the top Kaggle competitors"_, and a diverse community of _"16 million data scientists, ML engineers & enthusiasts from around the world"_. 
 
-During the final session, we ask the groups that prepared the best and most interesting models to present their solutions, and the process by which they arrived at them. Finally, the winning team will have the honour of receiving the BDSi Data Science Trophy™!
+### Set up your coding environment
+
+If you're new to data science, you'll want to set up a working environment. We recommend working in R or Python, depending on your experience. 
+
+
+**Install R and RStudio** - ModernDive has a good tutorial on setting and getting to know R and ubiquitous R development environment, RStudio. <https://moderndive.netlify.app/1-getting-started.html>
+
+**Install (Anaconda) Python** - The Women in Data Science team maintains a set of tutorials on installing Python (using Anaconda to manage packages and environments), Jupyter notebooks and the basics of Python data structures. <https://github.com/keikokamei/WiDS_Datathon_Tutorials>
+
+### Further reading
+
+If you're looking for more information, a competitive edge, or just a good way to spend some time, we can recommend some more reading materials: 
+
+[Sharada Kalanidhi](https://www.linkedin.com/in/sharada-kalanidhi-12430ab2/) has written an excellent deep dive into the 2023 WiDS datathon, including links to further resources for both R and Python: <https://www.widsworldwide.org/get-inspired/blog/a-data-scientists-deep-dive-into-the-wids-datathon/>.
+
+[An Introduction to Statistical Learning](https://www.statlearning.com/) is a free to download book providing an excellent introduction to practical machine learning using both R and Python.
+
+Kaggle.com provides resources to [get started with Kaggle](https://www.kaggle.com/code/alexisbcook/getting-started-with-kaggle-competitions/notebook), as well as [a long list of competitions that are approachable for beginners](https://www.kaggle.com/competitions?hostSegmentIdFilter=5) - with code and discussions available from hundreds of other participants. Trying your hand at a competition or two is a good wat to spend a rainy weekend.
+
+[R for Data Science](https://r4ds.hadley.nz/) is a free online book compiled by Hadley Wickham and a long list of community contributors, covering the whole gamut of modern data science in R. It is well worth a look, and a good reference even for experienced data scientists.
 
 ## Schedule
 
-The data science week will start and end with a group session on Monday the 15th and 22nd of April, respectively. Lunch sessions and practicals will be organized on Tuesday 16th through Friday 19th. Networking drinks will \[PROBABLY?] be Thursday 18th, 16:00 - 18:00. You will be free to work on the case on your own schedule, and coaches will be available for questions and feedback throughout.
+The Women in Data Science week starts Monday the 15th and ends Monday the 22nd of April. The data science week will start and end with a group session on Monday the 15th and 22nd of April, respectively. Lunch sessions and practicals will be organized on Tuesday 16th through Friday 19th. The deadline for submissions for the local leaderboard is Sunday at midnight, and we'll ask the team(s) with the best and most interesting submissions to present their work on Monday the 22nd. 
 
-A detailed schedule including locations will be made available soon.
+### Monday 
+###### April 15th
 
-###### References
+#### Keynote speech and official kickoff
+###### 12:45 - 13:30 - Location: TBA
 
-[isl-book]: https://www.statlearning.com/ "Introduction to Statistical Learning book"
-[r-primer]: https://moderndive.netlify.app/1-getting-started.html#installing "A primer to R and RStudio"
-[r4ds]: https://r4ds.had.co.nz/ "Hadley Wickhams' R for Data Science"
+##### Speakers
+The following is a preliminary list of speakers. We are still in discussions with various internal and external speakers, and will provide more details when we can. Some of the speakers listed have agreed in principle, but have not yet been confirmed specifics.
+
+{% include profile-widget-generic.html 
+  name="Stéphanie van den Berg"
+  prefix="Dra. "
+  url="https://people.utwente.nl/stephanie.vandenberg"
+  image_url="https://people.utwente.nl/stephanie.vandenberg/picture.jpg"
+  affiliation="University of Twente" 
+  desc="Head of CoDE section, founder and head of BDSi, data science sorceress, WiDS Ambassador."
+%}
+{% include profile-widget-generic.html 
+  name="Anna Machens"
+  postfix=", PhD"
+  url="https://people.utwente.nl/a.k.machens"
+  image_url="https://people.utwente.nl/a.k.machens/picture.jpg"
+  affiliation="University of Twente" 
+  desc="Data Scientist for the Behavioural Data Science incubator, WiDS Ambassador."
+%}
+{% include profile-widget-generic.html 
+  name="Maryam Amir Haeri"
+  prefix="Dr. "
+  postfix=" [NOT CONFIRMED]"
+  url="https://people.utwente.nl/m.amirhaeri"
+  image_url="https://people.utwente.nl/m.amirhaeri/picture.jpg"
+  affiliation="University of Twente" 
+  desc="Machine Learning and Artificial Intelligence researcher and educator, WiDS Ambassador."
+%}
+{% include profile-widget-generic.html 
+  name="Karen Groothuis-Oudshoorn"
+  prefix="Dr. "
+  postfix=" [NOT CONFIRMED]"
+  url="https://people.utwente.nl/c.g.m.oudshoorn"
+  image_url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOHeQB64h-2zQYjqBYPd7mBV9UuEVqst9bnJ4wcLfr4w&s"
+  affiliation="University of Twente" 
+  desc="Applied Machine Learning in medical settings."
+%}
+{% include profile-widget-generic.html 
+  name="Erika van Lier"
+  postfix=", PhD [NOT CONFIRMED]"
+  url="https://www.linkedin.com/in/erikavl/"
+  image_url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxjyfZGukJNZ9r4o7H2wg-Yry7aBIE9hp1zg5hjMHYEg&s"
+  affiliation="The Implementation Group" 
+  desc="Director of The Implementation Group, educational data analysis."
+%}
+
+#### Hands-on session
+###### 13:45 - 15:30 - Location: TBA
+
+Getting started: introductions, finding a team, using Kaggle, installing python/R, setting up an environment.
+
+### Tuesday
+###### April 16th
+
+#### Lunch Lecture
+###### 12:45 - 13:30 - Location: TBA
+
+#### Hands-on session
+###### 13:45 - 15:30 - Location: TBA
+
+### Wednesday
+###### April 17th
+
+#### Lunch Lecture
+###### 12:45 - 13:30 - Location: TBA
+
+#### Hands-on session
+###### 13:45 - 15:30 - Location: TBA
+
+### Thursday
+###### April 18th
+
+#### Lunch Lecture
+###### 12:45 - 13:30 - Location: TBA
+
+#### Hands-on session
+###### 13:45 - 15:30 - Location: TBA
+
+#### Data Science Drinks
+###### 16:00 - 18:00 - Location: TBA
+
+(Social) networking with other participants, and other University of Twente students and staff interested in data science.
+
+### Friday
+###### April 19th
+
+#### Lunch Lecture
+###### 12:45 - 13:30 - Location: TBA
+
+#### Hands-on session
+###### 13:45 - 15:30 - Location: TBA
+
+### Sunday
+###### April 21st
+
+#### Submission Deadline
+###### 23:59
+Deadline datathon submissions for local leaderboard
+
+### Monday
+###### April 22nd
+
+#### Closing session
+###### 12:45 - 13:30 - Location: TBA
+Prize ceremony and presentations by winning team(s)
