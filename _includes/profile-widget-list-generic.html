@@ -1,0 +1,7 @@
+{% assign style=include.style | default: "default" %} 
+
+<div class="profile-widget-list profile-widget-list-{{style}}">
+    {% for speaker in include.speakers %}
+        {% include profile-widget-generic.html speaker=speaker %}
+    {% endfor %}
+</div>
