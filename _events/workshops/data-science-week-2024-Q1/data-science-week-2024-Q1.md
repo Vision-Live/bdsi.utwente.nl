@@ -31,7 +31,7 @@ endDate: 2024-04-22
 frontpage: false
 ---
 
-<img src="/assets/images/workshops/wids-logo-wide-PLACEHOLDER.png" style="max-width: 100%; margin: 0 auto; max-height: 250px;">
+<img src="{% link /assets/images/workshops/wids-logo-wide-PLACEHOLDER.png %}" style="max-width: 100%; margin: 0 auto; max-height: 250px;">
 
 <!-- {% include card.html title="WiDS Spring 2024 Data Science Week" toc="false" content="Registration for the WiDS & BDSi Spring 2024 Data Science Week, April 15th - 22nd, is already open!." cta="Register now!" cta_link="https://www.utwente.nl/en/bms/research/bdsi/wids-data-science-week-spring-2024/" %} -->
 
@@ -41,7 +41,9 @@ frontpage: false
 
 The goal of the Data Science week is to introduce interested students and staff to data science in a fun and cooperative way, and help create a community of data scientists at the University of Twente, the faculty of Behavioural and Management Sciences, and beyond. BDSi organizes various events during the week, including a datathon, lectures, workshops, and a networking drink.
 
-The spring 2024 (women in) data science week is independently organized by BDSi and our partners to be part of Women in Data Science Worldwide's mission to increase participation of women in data science and to feature outstanding women doing outstanding work. The datathon will use a curated dataset provided by WiDS, and women in data science will be in focus during the entire week.
+The spring 2024 women in data science week is independently organized by BDSi and our partners to be part of Women in Data Science Worldwide's mission to increase participation of women in data science and to feature outstanding women doing outstanding work. The datathon will use a curated dataset provided by WiDS, and women in data science will be in focus during the entire week. 
+
+Of course, the event isn't limited to only women. People of all shapes and sizes are welcome to join - though we encourage you to bring your female friends and colleagues along!
 
 ### Datathon
 
@@ -67,6 +69,10 @@ After a short coffee break (13:30 - 13:45), the lecture will be followed by a ha
 On thursday afternoon, we invite all data science week participants as well as anyone interested in data science at the University of Twente to join us for networking drinks. This is a great opportunity to mingle with the other teams, and create lasting connections with peers and data science experts!
 
 The data science drinks are proudly sponsored by \[DSI?]
+
+### Competition
+
+The best solutions to the datathon challenge will compete on global, regional, and local leaderboards. The global and regional leaderboards are maintained by WiDS, you can sign up for the datathon on their website to join. The local leaderboard includes just those teams participating in the Women in Data Science week at the University of Twente. Compete against your peers for the coveted BDSi Trophy!
 
 ## Who can join?
 
