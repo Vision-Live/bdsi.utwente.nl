@@ -29,6 +29,46 @@ layout: "event"
 date: 2024-04-15
 endDate: 2024-04-22
 frontpage: false
+speakers:
+  - name: Stéphanie van den Berg
+    prefix: "Dra. "
+    url: https://people.utwente.nl/stephanie.vandenberg
+    image_url: https://people.utwente.nl/stephanie.vandenberg/picture.jpg
+    affiliation: University of Twente
+    description: Head of CoDE section, founder and head of BDSi, data science sorceress, WiDS Ambassador
+    tags: [kickoff]
+  - name: Anna Machens
+    postfix: ", PhD"
+    url: https://people.utwente.nl/a.k.machens
+    image_url: https://people.utwente.nl/a.k.machens/picture.jpg
+    affiliation: University of Twente
+    description: Data Scientist for the Behavioural Data Science incubator, WiDS Ambassador.
+    tags: [kickoff]
+  - name: Maryam Amir Haeri
+    prefix: "Dr. "
+    postfix: " [NOT CONFIRMED]"
+    url: https://people.utwente.nl/m.amirhaeri
+    image_url: https://people.utwente.nl/m.amirhaeri/picture.jpg
+    affiliation: University of Twente 
+    description: Machine Learning and Artificial Intelligence researcher and educator, WiDS Ambassador.
+    tags: [closing]
+  - name: Karen Groothuis-Oudshoorn
+    prefix: "Dr. "
+    postfix: " [NOT CONFIRMED]"
+    url: https://people.utwente.nl/c.g.m.oudshoorn
+    image_url: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOHeQB64h-2zQYjqBYPd7mBV9UuEVqst9bnJ4wcLfr4w&s
+    affiliation: University of Twente 
+    description: Applied Machine Learning in medical settings.
+    tags: [drinks]
+  - name: Erika van Lier
+    postfix: ", PhD [NOT CONFIRMED]"
+    url: https://www.linkedin.com/in/erikavl/
+    image_url: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxjyfZGukJNZ9r4o7H2wg-Yry7aBIE9hp1zg5hjMHYEg&s
+    affiliation: The Implementation Group 
+    affiliation_url: https://tignl.eu/
+    affiliation_image_url: "/assets/images/workshops/tig-logo.png"
+    description: Director of The Implementation Group, educational data analysis.
+    tags: [drinks]
 ---
 
 <img src="{% link /assets/images/workshops/wids-logo-wide-PLACEHOLDER.png %}" style="max-width: 100%; margin: 0 auto; max-height: 250px;">
@@ -58,6 +98,13 @@ WiDS datathons are based on well-curated, real-world datasets that are not readi
 We are thrilled to partner with Gilead Sciences and Health Verity to provide a set of datathon challenges utilizing a real-world oncology dataset which contains information about demographics, diagnosis and treatment options, and insurance provided about patients who were diagnosed with breast cancer from 2015-2018.
 "%}
 
+### Speakers
+
+{% include card.html title="Speaker list is not final" content="The following is a preliminary list of speakers. We are still in discussions with various internal and external speakers, and will provide more details when we can. Some of the speakers listed have agreed in principle, but have not yet confirmed specifics." %}
+
+{% include profile-widget-list-generic.html speakers=page.speakers style="hero" %}
+
+
 ### Lectures & Practicals
 
 Every lunch break (12:45 - 13:30, Tuesday - Friday) expert data scientists from BDSi and our partners will provide a lecture on the most important tools in a data scientists' toolbox; data wrangling, modelling, and communicating results. These lectures will be structured to support the datathon materials, but can be attended without participating in the datathon itself.
@@ -82,7 +129,7 @@ Everyone related to the University of Twente and their friends and family can jo
 
 Men, women, and everyone in between is free to join - but only teams with 50% or more women are able to compete in the WiDS regional and global leaderboards.
 
-{% include figure.html url="/assets/images/workshops/wids-datathon.jpg" caption="A tutor giving advice to two participants at a previous Women in Data Science event." %}
+{% include figure.html url="/assets/images/workshops/wids-datathon.jpg" caption="A tutor giving advice to two participants at a previous Women in Data Science event." no_shadow=1 no_border=1 no_label=1 %}
 
 ### Women and men
 
@@ -146,48 +193,9 @@ The Women in Data Science week starts Monday the 15th and ends Monday the 22nd o
 ##### Speakers
 The following is a preliminary list of speakers. We are still in discussions with various internal and external speakers, and will provide more details when we can. Some of the speakers listed have agreed in principle, but have not yet been confirmed specifics.
 
-{% include profile-widget-generic.html 
-  name="Stéphanie van den Berg"
-  prefix="Dra. "
-  url="https://people.utwente.nl/stephanie.vandenberg"
-  image_url="https://people.utwente.nl/stephanie.vandenberg/picture.jpg"
-  affiliation="University of Twente" 
-  desc="Head of CoDE section, founder and head of BDSi, data science sorceress, WiDS Ambassador."
-%}
-{% include profile-widget-generic.html 
-  name="Anna Machens"
-  postfix=", PhD"
-  url="https://people.utwente.nl/a.k.machens"
-  image_url="https://people.utwente.nl/a.k.machens/picture.jpg"
-  affiliation="University of Twente" 
-  desc="Data Scientist for the Behavioural Data Science incubator, WiDS Ambassador."
-%}
-{% include profile-widget-generic.html 
-  name="Maryam Amir Haeri"
-  prefix="Dr. "
-  postfix=" [NOT CONFIRMED]"
-  url="https://people.utwente.nl/m.amirhaeri"
-  image_url="https://people.utwente.nl/m.amirhaeri/picture.jpg"
-  affiliation="University of Twente" 
-  desc="Machine Learning and Artificial Intelligence researcher and educator, WiDS Ambassador."
-%}
-{% include profile-widget-generic.html 
-  name="Karen Groothuis-Oudshoorn"
-  prefix="Dr. "
-  postfix=" [NOT CONFIRMED]"
-  url="https://people.utwente.nl/c.g.m.oudshoorn"
-  image_url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOHeQB64h-2zQYjqBYPd7mBV9UuEVqst9bnJ4wcLfr4w&s"
-  affiliation="University of Twente" 
-  desc="Applied Machine Learning in medical settings."
-%}
-{% include profile-widget-generic.html 
-  name="Erika van Lier"
-  postfix=", PhD [NOT CONFIRMED]"
-  url="https://www.linkedin.com/in/erikavl/"
-  image_url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxjyfZGukJNZ9r4o7H2wg-Yry7aBIE9hp1zg5hjMHYEg&s"
-  affiliation="The Implementation Group" 
-  desc="Director of The Implementation Group, educational data analysis."
-%}
+{% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'kickoff'" %}
+{% include profile-widget-list-generic.html speakers=_speakers %}
+
 
 #### Hands-on session
 ###### 13:45 - 15:30 - Location: TBA
@@ -226,6 +234,9 @@ Getting started: introductions, finding a team, using Kaggle, installing python/
 
 (Social) networking with other participants, and other University of Twente students and staff interested in data science.
 
+{% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'drinks'" %}
+{% include profile-widget-list-generic.html speakers=_speakers %}
+
 ### Friday
 ###### April 19th
 
@@ -248,3 +259,6 @@ Deadline datathon submissions for local leaderboard
 #### Closing session
 ###### 12:45 - 13:30 - Location: TBA
 Prize ceremony and presentations by winning team(s)
+
+{% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'closing'" %}
+{% include profile-widget-list-generic.html speakers=_speakers %}
