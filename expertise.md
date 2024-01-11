@@ -19,7 +19,7 @@ Our hands-on workshops and tutorials offer an interactive learning experience th
   {% assign item_date = item.date | date: '%Y-%m-%d' %}
   {% if item_date < today %}{% continue %}{% endif %}
   
-#### {{item.title}}
+#### [{{item.title}}]({{item.url}})
 {% include author-list.html page=item header="h6" %}
 ###### {% include datetime.html page = item %}
 
@@ -45,7 +45,7 @@ We help organize events where researchers from various domains come together to 
   {% if title_lower contains "bdsi open hour" %}{% continue %}{% endif %}
   {% if title_lower contains "bdsi walk-in hour" %}{% continue %}{% endif %}
   
-#### {{item.title}}
+#### [{{item.title}}]({{item.url}})
 {% include author-list.html page=item header="h6" %}
 ###### {% include datetime.html page = item %}
 
@@ -62,7 +62,7 @@ Not all our work is translatable to hands-on events, and not everyone can make i
 {% assign items = site.blogs | sort: "date" | reverse %}
 {% for item in items %}
 
-#### {{item.title}}
+#### [{{item.title}}]({{item.url}})
 {% include author-list.html page=item header="h6" %}
 ###### {% include datetime.html page = item %}
 
