@@ -1,11 +1,13 @@
 ---
 title: "STEERS: SmarT rEsEarch Recommender System"
+date: 2022-07-25
 authors:
     - Aizhan Tursunbayeva
     - Abhishta Abhishta
     - Wouter van Heeswijk
     - Anna Machens
     - Karel Kroeze
+tags: [wsv, essays, thesis, bachelor thesis, master thesis, recommendation, supervisor, topic, host organization, network science, graph data, knowledge graph]
 ---
 
 Creating a recommender system for suggesting research topics and relevant thesis supervisors based on the professional ambition and educational path of the student.

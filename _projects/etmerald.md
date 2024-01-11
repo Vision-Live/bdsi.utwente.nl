@@ -1,5 +1,7 @@
 ---
 title: "Etmerald - Eye Tracking Made Easy"
+tags: [wsv, eye tracking, DIY, education, course materials]
+date: 2021-06-06
 authors:
     - Martin Schmettow
     - Peter Slijkhuis

@@ -1,5 +1,7 @@
 ---
 title: "ELSA: Exploring new frontiers in research on the governance of connected and automated vehicles"
+tags: [data science grant 2022, governance, connected automated vehicles, CAVs, regulatory landscape, innovation, safety discourse, text analysis]
+date: 2022-09-01
 authors:
     - Le Anh Long
     - Dasom Lee

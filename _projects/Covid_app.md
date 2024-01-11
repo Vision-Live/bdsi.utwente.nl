@@ -1,7 +1,7 @@
 ---
 title: "The Corona app – no, thanks?"
 subtitle: "Citizens’ perspectives on individual freedom, governmental control and civic solidarity in times of a global pandemic"
-image: "/services/default.png"
+date: 2021-09-15
 authors:
   - "Giedo Jansen"
   - "Peter de Vries"

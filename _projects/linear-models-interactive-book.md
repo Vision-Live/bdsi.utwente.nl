@@ -1,5 +1,7 @@
 ---
 title: Teaching data analysis interactively to BMS students
+tags: [wsv, education, statistics, linear models, interactive graphs, widgets, shiny]
+date: 2022-06-05
 authors:
     - Stéphanie van den Berg
     - Karel Kroeze
