@@ -75,13 +75,15 @@ speakers:
 
 <!-- {% include card.html title="WiDS Spring 2024 Data Science Week" toc="false" content="Registration for the WiDS & BDSi Spring 2024 Data Science Week, April 15th - 22nd, is already open!." cta="Register now!" cta_link="https://www.utwente.nl/en/bms/research/bdsi/wids-data-science-week-spring-2024/" %} -->
 
-{% include card.html title="This page is a draft" content="This page is a draft. Any information is preliminary, and should not be considered final." %}
+{% include card.html title="This page is a draft" content="This page is a draft. Other than the dates, all contents are preliminary and should not be considered final.
+
+Register now to block the dates in your calendar, and receive updates as soon as they become available." cta="Register now" cta_link="example.com" %}
 
 ## What is the Women in Data Science Week?
 
-The goal of the Data Science week is to introduce interested students and staff to data science in a fun and cooperative way, and help create a community of data scientists at the University of Twente, the faculty of Behavioural and Management Sciences, and beyond. BDSi organizes various events during the week, including a datathon, lectures, workshops, and a networking drink.
+The goal of the data science week is to introduce interested students and staff to data science in a fun and cooperative way, and help create a community of data scientists at the University of Twente, the faculty of Behavioural and Management Sciences, and beyond. BDSi organizes various events during the week, including a datathon, lectures, workshops, and a networking drink.
 
-The spring 2024 women in data science week is independently organized by BDSi and our partners to be part of Women in Data Science Worldwide's mission to increase participation of women in data science and to feature outstanding women doing outstanding work. The datathon will use a curated dataset provided by WiDS, and women in data science will be in focus during the entire week. 
+The spring 2024 _women_ in data science week is independently organized by BDSi and our partners to be part of Women in Data Science Worldwide's ([WiDS](https://www.widsworldwide.org/)) mission to increase participation of women in data science and to feature outstanding women doing outstanding work. The datathon will use a curated dataset provided by WiDS, and women in data science will be in focus during the entire week. 
 
 Of course, the event isn't limited to only women. People of all shapes and sizes are welcome to join - though we encourage you to bring your female friends and colleagues along!
 
@@ -95,7 +97,7 @@ WiDS datathons are based on well-curated, real-world datasets that are not readi
 
 #### 2024 Challenge Theme: Equity in Healthcare
 
-We are thrilled to partner with Gilead Sciences and Health Verity to provide a set of datathon challenges utilizing a real-world oncology dataset which contains information about demographics, diagnosis and treatment options, and insurance provided about patients who were diagnosed with breast cancer from 2015-2018.
+We (WiDS) are thrilled to partner with Gilead Sciences and Health Verity to provide a set of datathon challenges utilizing a real-world oncology dataset which contains information about demographics, diagnosis and treatment options, and insurance provided about patients who were diagnosed with breast cancer from 2015-2018.
 "%}
 
 ### Speakers
