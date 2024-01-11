@@ -1,6 +1,6 @@
 ---
 title: "Legitimacy and public sentiment regarding the Covid-19 vaccine(s)"
-image: "/services/default.png"
+date: 2021-01-02
 authors: 
   - "Sikke R. Jansma"
   - "Jordy F. Gosselt"

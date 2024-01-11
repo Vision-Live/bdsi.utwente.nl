@@ -1,6 +1,7 @@
 ---
 title: Ylab
 subtitle: YLab is Your Lab
+date: 2022-02-24
 authors:
     - Martin Schmettow
     - Peter ten Klooster

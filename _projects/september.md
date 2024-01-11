@@ -1,7 +1,7 @@
 ---
 title: "SEPTEMBER"
 subtitle: "Simulation-basEd Procedures To EstiMate BasE Rates"
-image: "/services/default.png"
+date: 2021-01-01
 authors:
   - "Reinoud Joosten"
   - "Abhishta Abhishta"

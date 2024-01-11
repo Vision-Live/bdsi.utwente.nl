@@ -1,5 +1,7 @@
 ---
 title: Improving data visualizations at BMS
+tags: [wsv, visualization, R, education, recommendations, reference, shiny, ggplot, ggplot2]
+date: 2022-06-06
 authors:
     - Henk van der Kolk
     - Karel Kroeze
