@@ -1,30 +1,55 @@
+{% if include.speaker %}
+  {% assign name = include.speaker.name %}
+  {% assign url = include.speaker.url %}
+  {% assign image_url = include.speaker.image_url %}
+  {% assign prefix = include.speaker.prefix %}
+  {% assign postfix = include.speaker.postfix %}
+  {% assign affiliation = include.speaker.affiliation %}
+  {% assign affiliation_url = include.speaker.affiliation_url %}
+  {% assign affiliation_image_url = include.speaker.affiliation_image_url %}
+  {% assign description = include.speaker.description %}
+{% else %}
+  {% assign name = include.name %}
+  {% assign url = include.url %}
+  {% assign image_url = include.image_url %}
+  {% assign prefix = include.prefix %}
+  {% assign postfix = include.postfix %}
+  {% assign affiliation = include.affiliation %}
+  {% assign affiliation_url = include.affiliation_url %}
+  {% assign affiliation_image_url = include.affiliation_image_url %}
+  {% assign description = include.description %}
+{% endif %}
+
 <div class="profile-widget-generic">
-  <img class="avatar" src="{{ include.image_url }}" alt="{{ include.name }}" />
+  <div class="avatar">
+    <img class="avatar-portrait" src="{{image_url}}" alt="{{name}}" />
+    {% if affiliation_image_url %}<img class="avatar-badge" src="{{affiliation_image_url}}" alt="{{affiliation}}" />{% endif %}
+  </div>
   <div class="content">
     <div class="title">
-      {% if include.prefix %}
-        <div class="prefix">{{include.prefix}}</div>
+      {% if prefix %}
+        <span class="prefix">{{prefix}}</span>
       {% endif %}
-      <div class="name">
-        {% if include.url %}
-          <a href="{{include.url}}" alt="{{include.name}}">{{include.name}}</a>
+      <span class="name">
+        {% if url %}
+          <a href="{{url}}" alt="{{name}}">{{name}}</a>
         {% else %}
-          {{include.name}}
+          {{name}}
         {% endif %}
-      </div>
-      {% if include.postfix %}
-      <div class="postfix">{{include.postfix}}</div>
+      </span>
+      {% if postfix %}
+      <span class="postfix">{{postfix}}</span>
       {% endif %}
     </div>
-    {% if include.affiliation %}
+    {% if affiliation %}
     <div class="affiliation">
-        {% if include.affiliation_url %}
-        <a href="{{include.affiliation_url}}" alt="{{include.affiliation}}">{{include.affiliation}}</a>
+        {% if affiliation_url %}
+        <a href="{{affiliation_url}}" alt="{{affiliation}}">{{affiliation}}</a>
         {% else %}
-        {{include.affiliation}}
+        {{affiliation}}
         {% endif %}
     </div>
     {% endif %}
-    <div class="description">{{include.desc}}</div>
+    <div class="description">{{description}}</div>
   </div>
 </div>
