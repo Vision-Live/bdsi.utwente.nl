@@ -21,14 +21,14 @@ tags:
   - Visualization
   - Statistical Learning
   - Machine Learning
-image: assets/images/workshops/wids-datathon-equity-in-health-cropped.png
-imageNarrow: false
+image: assets/images/workshops/WiDS-line1-3-altered-white-cropped.svg
+imageNarrow: true
 # imageBackground: "#6d0039"
 # accentColour: "#ed007e"
 layout: "event"
 date: 2024-04-15
 endDate: 2024-04-22
-frontpage: false
+frontpage: true
 speakers:
   - name: Stéphanie van den Berg
     prefix: "Dra. "
@@ -71,7 +71,7 @@ speakers:
     tags: [drinks]
 ---
 
-<img src="{% link /assets/images/workshops/wids-logo-wide-PLACEHOLDER.png %}" style="max-width: 100%; margin: 0 auto; max-height: 250px;">
+<!-- <img src="{% link /assets/images/workshops/WiDS-line1-3.svg %}" style="max-width: 100%; margin: 0 auto; max-height: 250px;"> -->
 
 <!-- {% include card.html title="WiDS Spring 2024 Data Science Week" toc="false" content="Registration for the WiDS & BDSi Spring 2024 Data Science Week, April 15th - 22nd, is already open!." cta="Register now!" cta_link="https://www.utwente.nl/en/bms/research/bdsi/wids-data-science-week-spring-2024/" %} -->
 
