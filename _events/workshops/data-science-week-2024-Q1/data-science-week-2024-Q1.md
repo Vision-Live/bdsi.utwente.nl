@@ -21,7 +21,8 @@ tags:
   - Visualization
   - Statistical Learning
   - Machine Learning
-image: assets/images/workshops/WiDS-line1-3-altered-white-cropped.svg
+image: /assets/images/workshops/wids-datathon.jpg
+heroImage: assets/images/workshops/WiDS-line1-3-altered-white-cropped.svg
 imageNarrow: true
 # imageBackground: "#6d0039"
 # accentColour: "#ed007e"
