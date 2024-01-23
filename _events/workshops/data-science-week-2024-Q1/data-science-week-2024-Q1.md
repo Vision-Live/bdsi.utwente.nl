@@ -77,7 +77,7 @@ speakers:
 <!-- {% include card.html title="WiDS Spring 2024 Data Science Week" toc="false" content="Registration for the WiDS & BDSi Spring 2024 Data Science Week, April 15th - 22nd, is already open!." cta="Register now!" cta_link="https://www.utwente.nl/en/bms/research/bdsi/wids-data-science-week-spring-2024/" %} -->
 
 {% include card.html title="This page is a work in progress" shadow="false" title_element="h4" content="The dates won't change, but we're still inviting more extraordinary women in Data Science to come and speak with us, and ironing out the details of the workshop schedule. Keep an eye on this website for updates, or register now to get updates straight in your mailbox."%}
-{% include card.html title="Register now!" content="Register now to block the dates in your calendar, and receive updates as soon as they become available." cta="Register now" cta_link="example.com" %}
+{% include card.html title="Register now!" content="Register now to block the dates in your calendar, and receive updates as soon as they become available." cta="Register now" cta_link="https://www.utwente.nl/en/bms/research/bdsi/Women%20in%20Data%20Science%20Week%202024/" %}
 
 ## What is the Women in Data Science Week?
 
