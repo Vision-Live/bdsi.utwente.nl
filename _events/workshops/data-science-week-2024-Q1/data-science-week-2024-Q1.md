@@ -37,14 +37,14 @@ speakers:
     image_url: https://people.utwente.nl/stephanie.vandenberg/picture.jpg
     affiliation: University of Twente
     description: Head of CoDE section, founder and head of BDSi, data science sorceress, WiDS Ambassador
-    tags: [kickoff]
+    tags: []
   - name: Anna Machens
     postfix: ", PhD"
     url: https://people.utwente.nl/a.k.machens
     image_url: https://people.utwente.nl/a.k.machens/picture.jpg
     affiliation: University of Twente
     description: Data Scientist for the Behavioural Data Science incubator, WiDS Ambassador.
-    tags: [kickoff]
+    tags: []
   - name: Maryam Amir Haeri
     prefix: "Dr. "
     postfix: " [NOT CONFIRMED]"
@@ -52,33 +52,32 @@ speakers:
     image_url: https://people.utwente.nl/m.amirhaeri/picture.jpg
     affiliation: University of Twente 
     description: Machine Learning and Artificial Intelligence researcher and educator, WiDS Ambassador.
-    tags: [closing]
-  - name: Karen Groothuis-Oudshoorn
-    prefix: "Dr. "
-    postfix: " [NOT CONFIRMED]"
-    url: https://people.utwente.nl/c.g.m.oudshoorn
-    image_url: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOHeQB64h-2zQYjqBYPd7mBV9UuEVqst9bnJ4wcLfr4w&s
-    affiliation: University of Twente 
-    description: Applied Machine Learning in medical settings.
-    tags: [drinks]
-  - name: Erika van Lier
-    postfix: ", PhD [NOT CONFIRMED]"
-    url: https://www.linkedin.com/in/erikavl/
-    image_url: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxjyfZGukJNZ9r4o7H2wg-Yry7aBIE9hp1zg5hjMHYEg&s
-    affiliation: The Implementation Group 
-    affiliation_url: https://tignl.eu/
-    affiliation_image_url: "/assets/images/workshops/tig-logo.png"
-    description: Director of The Implementation Group, educational data analysis.
-    tags: [drinks]
+    tags: []
+  # - name: Karen Groothuis-Oudshoorn
+  #   prefix: "Dr. "
+  #   postfix: " [NOT CONFIRMED]"
+  #   url: https://people.utwente.nl/c.g.m.oudshoorn
+  #   image_url: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOHeQB64h-2zQYjqBYPd7mBV9UuEVqst9bnJ4wcLfr4w&s
+  #   affiliation: University of Twente 
+  #   description: Applied Machine Learning in medical settings.
+  #   tags: [drinks]
+  # - name: Erika van Lier
+  #   postfix: ", PhD [NOT CONFIRMED]"
+  #   url: https://www.linkedin.com/in/erikavl/
+  #   image_url: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxjyfZGukJNZ9r4o7H2wg-Yry7aBIE9hp1zg5hjMHYEg&s
+  #   affiliation: The Implementation Group 
+  #   affiliation_url: https://tignl.eu/
+  #   affiliation_image_url: "/assets/images/workshops/tig-logo.png"
+  #   description: Director of The Implementation Group, educational data analysis.
+  #   tags: [drinks]
 ---
 
 <!-- <img src="{% link /assets/images/workshops/WiDS-line1-3.svg %}" style="max-width: 100%; margin: 0 auto; max-height: 250px;"> -->
 
 <!-- {% include card.html title="WiDS Spring 2024 Data Science Week" toc="false" content="Registration for the WiDS & BDSi Spring 2024 Data Science Week, April 15th - 22nd, is already open!." cta="Register now!" cta_link="https://www.utwente.nl/en/bms/research/bdsi/wids-data-science-week-spring-2024/" %} -->
 
-{% include card.html title="This page is a draft" content="This page is a draft. Other than the dates, all contents are preliminary and should not be considered final.
-
-Register now to block the dates in your calendar, and receive updates as soon as they become available." cta="Register now" cta_link="example.com" %}
+{% include card.html title="This page is a work in progress" shadow="false" title_element="h4" content="The dates won't change, but we're still inviting more extraordinary women in Data Science to come and speak with us, and ironing out the details of the workshop schedule. Keep an eye on this website for updates, or register now to get updates straight in your mailbox."%}
+{% include card.html title="Register now!" content="Register now to block the dates in your calendar, and receive updates as soon as they become available." cta="Register now" cta_link="example.com" %}
 
 ## What is the Women in Data Science Week?
 
@@ -103,7 +102,7 @@ We (WiDS) are thrilled to partner with Gilead Sciences and Health Verity to prov
 
 ### Speakers
 
-{% include card.html title="Speaker list is not final" content="The following is a preliminary list of speakers. We are still in discussions with various internal and external speakers, and will provide more details when we can. Some of the speakers listed have agreed in principle, but have not yet confirmed specifics." %}
+{% include card.html title_element="h4" shadow="false" title="Speaker list is not final" content="The following is a preliminary list of speakers. We are still in discussions with various internal and external speakers, and will provide more details when we can. Some of the speakers listed have agreed in principle, but have not yet confirmed specifics." %}
 
 {% include profile-widget-list-generic.html speakers=page.speakers style="hero" %}
 
@@ -118,7 +117,7 @@ After a short coffee break (13:30 - 13:45), the lecture will be followed by a ha
 
 On thursday afternoon, we invite all data science week participants as well as anyone interested in data science at the University of Twente to join us for networking drinks. This is a great opportunity to mingle with the other teams, and create lasting connections with peers and data science experts!
 
-The data science drinks are proudly sponsored by \[DSI?]
+<!-- The data science drinks are proudly sponsored by \[DSI?] -->
 
 ### Competition
 
@@ -166,10 +165,9 @@ The WiDS datathons are hosted on [Kaggle.com](https://kaggle.com). Kaggle.com is
 
 If you're new to data science, you'll want to set up a working environment. We recommend working in R or Python, depending on your experience. 
 
+Install R and RStudio - ModernDive has a good tutorial on setting and getting to know R and ubiquitous R development environment, RStudio: <https://moderndive.netlify.app/1-getting-started.html>.
 
-**Install R and RStudio** - ModernDive has a good tutorial on setting and getting to know R and ubiquitous R development environment, RStudio. <https://moderndive.netlify.app/1-getting-started.html>
-
-**Install (Anaconda) Python** - The Women in Data Science team maintains a set of tutorials on installing Python (using Anaconda to manage packages and environments), Jupyter notebooks and the basics of Python data structures. <https://github.com/keikokamei/WiDS_Datathon_Tutorials>
+Install (Anaconda) Python - The Women in Data Science team maintains a set of tutorials on installing Python (using Anaconda to manage packages and environments), Jupyter notebooks and the basics of Python data structures: <https://github.com/keikokamei/WiDS_Datathon_Tutorials>.
 
 ### Further reading
 
@@ -179,7 +177,7 @@ If you're looking for more information, a competitive edge, or just a good way t
 
 [An Introduction to Statistical Learning](https://www.statlearning.com/) is a free to download book providing an excellent introduction to practical machine learning using both R and Python.
 
-Kaggle.com provides resources to [get started with Kaggle](https://www.kaggle.com/code/alexisbcook/getting-started-with-kaggle-competitions/notebook), as well as [a long list of competitions that are approachable for beginners](https://www.kaggle.com/competitions?hostSegmentIdFilter=5) - with code and discussions available from hundreds of other participants. Trying your hand at a competition or two is a good wat to spend a rainy weekend.
+Kaggle.com provides resources to [get started with Kaggle](https://www.kaggle.com/code/alexisbcook/getting-started-with-kaggle-competitions/notebook), as well as [a long list of competitions that are approachable for beginners](https://www.kaggle.com/competitions?hostSegmentIdFilter=5) - with code and discussions available from hundreds of other participants. Trying your hand at a competition or two is a good way to spend a rainy weekend.
 
 [R for Data Science](https://r4ds.hadley.nz/) is a free online book compiled by Hadley Wickham and a long list of community contributors, covering the whole gamut of modern data science in R. It is well worth a look, and a good reference even for experienced data scientists.
 
@@ -192,10 +190,6 @@ The Women in Data Science week starts Monday the 15th and ends Monday the 22nd o
 
 #### Keynote speech and official kickoff
 ###### 12:45 - 13:30 - Location: TBA
-
-##### Speakers
-The following is a preliminary list of speakers. We are still in discussions with various internal and external speakers, and will provide more details when we can. Some of the speakers listed have agreed in principle, but have not yet been confirmed specifics.
-
 {% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'kickoff'" %}
 {% include profile-widget-list-generic.html speakers=_speakers %}
 
