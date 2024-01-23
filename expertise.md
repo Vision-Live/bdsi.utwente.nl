@@ -40,12 +40,23 @@ We help organize events where researchers from various domains come together to 
 {% for item in items %}
   {% assign item_date = item.date | date: '%Y-%m-%d' %}
   {% if item_date < today %}{% continue %}{% endif %}
-
   {% assign title_lower = item.title | downcase %}
   {% if title_lower contains "bdsi open hour" %}{% continue %}{% endif %}
   {% if title_lower contains "bdsi walk-in hour" %}{% continue %}{% endif %}
   
-#### [{{item.title}}]({{site.baseurl}}{{item.url}})
+  {% assign item_url = item.url %}
+  {% unless item_url %}
+    {% for community in site.communities %}
+        {% for keyword in community.keywords %}
+            {% assign keyword_lower = keyword | downcase %}
+            {% if title_lower contains keyword_lower %}
+                {% capture item_url %}{% link {{ community.path }} %}{% endcapture %}  
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+  {% endunless %}
+  
+#### [{{item.title}}]({{item_url}})
 {% include author-list.html page=item header="h6" %}
 ###### {% include datetime.html page = item %}
 
