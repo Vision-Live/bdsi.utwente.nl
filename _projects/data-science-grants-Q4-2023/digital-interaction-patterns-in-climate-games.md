@@ -1,5 +1,6 @@
 ---
-title: Development of a methodological and statistical framework for studying mental health interventions with micro-randomised trials
+title: Digital Interaction Patterns in Climate Games
+subtitle: DIP-C, pronounced <i>DIPsee</i>
 date: 2023-12-17
 authors:
  - Lily Chen
