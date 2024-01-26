@@ -1,13 +1,15 @@
 ---
 title: Digital Interaction Patterns in Climate Games
 subtitle: Social network and discource analysis of learners' communication patterns in a collaborative game on climate change.
-acronym: DIP-C, pronounced <i>DIPsee</i>
+acronym: DIP-C
 date: 2023-12-17
 authors:
  - Lily Chen
  - Karel Kroeze
  - Chia-Yu Wang
  - Hannie Gijlers
+image: /assets/images/projects/dip-c_wide.png
+# imageNarrow: true
 tags: [data science grant 2023, social network analysis, SNA, collaborative games, learner dialogue, climate change, communication patterns, educational games, serious games]
 introduction: This research uses advanced social network analysis tools to explore how students converse in collaborative games about climate change. By analyzing their communication patterns, we aim to understand how to learn and collaborate effectively within a gaming context.
 ---
