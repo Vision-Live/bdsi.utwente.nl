@@ -1,6 +1,7 @@
 ---
 title: Digital Interaction Patterns in Climate Games
-subtitle: DIP-C, pronounced <i>DIPsee</i>
+subtitle: Social network and discource analysis of learners' communication patterns in a collaborative game on climate change.
+acronym: DIP-C, pronounced <i>DIPsee</i>
 date: 2023-12-17
 authors:
  - Lily Chen

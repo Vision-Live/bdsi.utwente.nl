@@ -1,6 +1,7 @@
 ---
-title: Comparative Analysis on Dutch and British Policy Instruments
-subtitle: Dutch and British Policy Instruments on Digital Open Strategic Autonomy and Sustainable Transformation
+title: Digital Open Strategic Autonomy
+subtitle: Comparative analysis of governance surrounding strategic autonomy in the United Kingdom, the Netherlands, and the European Union.
+acronym: DOSA decoded
 date: 2023-12-17
 authors:
  - Pauline Weritz
