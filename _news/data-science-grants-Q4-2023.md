@@ -21,7 +21,8 @@ It was our pleasure to inform the winning applicants just before the holidays, a
 {% for project in _projects %}
 {% assign contributors=project.authors | slice: 1, 99 %}
 
-### {{project.title}}
+### [{{project.title}}]({{site.baseUrl}}{{project.url}})
+{% if project.subtitle %}##### {{project.subtitle}}{% endif %}
 {% include author-list.html authors=project.authors.first header="h4" %}
 {% include author-list.html authors=contributors header="h6" %}
 {{project.introduction}}
