@@ -888,7 +888,7 @@ $button-width: 35px;
 
   #main {    
     padding: 2em 0;   
-    margin: auto;
+    margin: 0 auto;
 
     @each $breakpoint, $width in $grid-breakpoints {
       $content-width: map-get($container-max-widths, $breakpoint);

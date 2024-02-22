@@ -2,10 +2,22 @@
 {% assign events = include.events %}
 {% endif %}
 
+{% assign bdsi_events = events | where: 'source', nil %}
+{% assign other_events = events | where_exp: 'event', "event.source != nil" %}
+{% assign filtered_events = bdsi_events %}
+{% for other in other_events %}
+    {% assign event = filtered_events | find: "title", other.title %}
+    {% unless event %}
+        {% assign filtered_events = filtered_events | push: other %}
+    {% endunless %}
+{% endfor %}
+{% assign filtered_events = filtered_events | sort: "date" %}
+
 <div class="calendar-items">
     {% assign prev_title = "" %}
     {% assign prev_date = "" %}
-    {% for event in events limit: 10 %}
+    {% for event in filtered_events limit: 36 %}
+
 
     {% assign title_lower = event.title | downcase %}
     {% assign event_image = event.image %}
