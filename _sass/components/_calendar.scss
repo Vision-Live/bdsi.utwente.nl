@@ -86,6 +86,10 @@
             &.external.dcc::after {
                 background-image: url('/assets/images/dcc-logo-light-2.svg');
             }
+
+            &.external.dsi::after {
+                background-image: url('/assets/images/dsi-logo-light.svg');
+            }
         }
 
         @include media-breakpoint-down(lg) {

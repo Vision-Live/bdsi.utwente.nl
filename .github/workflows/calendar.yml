@@ -3,14 +3,14 @@ name: Update calendar events
 on:
   schedule:
     - cron: "0 0 * * *"
-  workflow_dispatch: 
+  workflow_dispatch:
 
 jobs:
   update-calendar:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        with: 
+        with:
           ref: production
           token: ${{secrets.CALENDAR_PAT}}
       - uses: actions/setup-node@v3
@@ -26,6 +26,9 @@ jobs:
         name: fetch bmslab events
         working-directory: _utils/calendar_sync
       - run: node ut-events-scraper.js "${{secrets.DCC_EVENTS_URL}}" "dcc" "../../_data/dcc_events.yaml"
+        name: fetch dcc events
+        working-directory: _utils/calendar_sync
+      - run: node ut-events-scraper.js "${{secrets.DSI_EVENTS_URL}}" "dcc" "../../_data/dsi_events.yaml"
         name: fetch dcc events
         working-directory: _utils/calendar_sync
       - uses: stefanzweifel/git-auto-commit-action@v4

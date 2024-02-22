@@ -75,7 +75,7 @@ bodyClass: page-home
     </div>
     <div id="sidebar">
         {% capture renderDate %}{{- site.time | date: "%Y-%m-%d" -}}{% endcapture %}
-        {% assign events = site.data.calendar | concat: site.events | concat: site.data.bmslab_events | concat: site.data.dcc_events %}
+        {% assign events = site.data.calendar | concat: site.events | concat: site.data.bmslab_events | concat: site.data.dsi_events | concat: site.data.dcc_events %}
         {% assign filtered_events = '' | split: '' %}
         {% for event in events %}
             {% capture startDate %}{{- event.date | date: "%Y-%m-%d" -}}{% endcapture %}
