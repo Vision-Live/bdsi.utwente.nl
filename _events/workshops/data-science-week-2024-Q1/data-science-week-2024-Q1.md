@@ -291,7 +291,7 @@ Practical modelling, evaluating models, creating features, working with the tidy
 {% include profile-widget-list-generic.html speakers=_speakers style="inline" %}
 
 #### Data Science Drinks
-###### 16:00 - 18:00 - Location: The Gallery Cafe
+###### 16:00 - 18:00 - Location: The Gallery Theatre
 
 (Social) networking with other participants, and other University of Twente students and staff interested in data science.
 
