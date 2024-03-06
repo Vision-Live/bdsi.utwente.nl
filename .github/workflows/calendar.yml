@@ -28,7 +28,7 @@ jobs:
       - run: node ut-events-scraper.js "${{secrets.DCC_EVENTS_URL}}" "dcc" "../../_data/dcc_events.yaml"
         name: fetch dcc events
         working-directory: _utils/calendar_sync
-      - run: node ut-events-scraper.js "${{secrets.DSI_EVENTS_URL}}" "dcc" "../../_data/dsi_events.yaml"
+      - run: node ut-events-scraper.js "${{secrets.DSI_EVENTS_URL}}" "dsi" "../../_data/dsi_events.yaml"
         name: fetch dcc events
         working-directory: _utils/calendar_sync
       - uses: stefanzweifel/git-auto-commit-action@v4
