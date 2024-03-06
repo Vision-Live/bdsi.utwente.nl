@@ -218,15 +218,17 @@ The Women in Data Science week starts Monday the 15th and ends Monday the 22nd o
 ### Monday 
 ###### April 15th
 
-#### Official kickoff
+#### Opening and kickoff
 ###### 12:45 - 13:00 - Location: TBA
 {% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'opening'" %}
 {% include profile-widget-list-generic.html speakers=_speakers %}
 
-#### Keynote speech
-###### 13:00 - 13:30 - Location: TBA
+#### Lunch talk: Breast cancer epidemiology and the clinical use of prediction models
+###### 13:00 - 13:45 - Location: TBA
 {% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'keynote'" %}
 {% include profile-widget-list-generic.html speakers=_speakers %}
+
+Marissa will talk about breast cancer, its risk factors, incidence, survival and the disease trajectory. She will show examples of prediction models that are used in breast cancer care, and discuss their relevance for clinical practice. 
 
 
 #### Hands-on session
