@@ -2,17 +2,17 @@ name: Build & deploy to production server
 
 on:
   push:
-    branches: [ production ]
+    branches: [production]
   pull_request:
-    branches: [ production ]
+    branches: [production]
   workflow_dispatch:
-    
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: production
 
@@ -25,10 +25,10 @@ jobs:
 
       - name: Build static files for production
         run: bundle exec jekyll build
-        
+
       - name: Check dead links
         run: bundle exec htmlproofer --only-4xx --ignore-status-codes "403" --assume-extension ".html" --ignore-empty-alt true --ignore-missing-alt true --checks "Links,Images" ./_site
-        
+
       - name: Create production artifact
         uses: actions/upload-pages-artifact@v2
 
@@ -37,7 +37,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout www
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           path: www
           ref: www
@@ -47,7 +47,7 @@ jobs:
         with:
           name: github-pages
           path: www-new
-    
+
       - name: Push to www
         run: |
           rm -rf www/*
