@@ -30,7 +30,10 @@ jobs:
         run: bundle exec htmlproofer --only-4xx --ignore-status-codes "403" --assume-extension ".html" --ignore-empty-alt true --ignore-missing-alt true --checks "Links,Images" ./_site
 
       - name: Create production artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-artifact@v4
+        with:
+          name: github-pages
+          path: _site_dev/
 
   deploy:
     needs: build
