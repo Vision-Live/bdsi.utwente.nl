@@ -38,13 +38,13 @@ speakers:
     affiliation: Cognition, Data and Education, Behavioural Data Science incubator
     description: Head of CoDE section, founder and head of BDSi, data science sorceress, WiDS Ambassador
     tags: ["hero", "opening", "mo-pm", "tu-am", "tu-pm", "we-pm", "th-pm", "fr-pm"]
-  - name: Anna Machens
-    postfix: ", PhD"
-    url: https://bdsi.bms.utwente.nl/team/#anna-machens
-    image_url: https://people.utwente.nl/a.k.machens/picture.jpg
-    affiliation: Behavioural Data Science incubator
-    description: Data Scientist for the Behavioural Data Science incubator, WiDS Ambassador.
-    tags: ["hero", "mo-pm", "tu-pm", "we-am", "we-pm", "th-am", "th-pm", "fr-pm"]
+  - name: Sabine Siesling
+    prefix: "Prof. Dr. "
+    url: https://people.utwente.nl/s.siesling
+    image_url: https://people.utwente.nl/s.siesling/picture.jpg
+    affiliation: Health Technology & Services Research, Netherlands Comprehensive Cancer Organisation
+    description: Clinical epidemiologist and Professor of outcomes research and personalized cancer care. Leads the Women's Health program at the University of Twente, and former president of the Netherlands Epidemiological Society.
+    tags: ["hero", "we-talk"]
   - name: Maryam Amir Haeri
     prefix: "Dr. "
     url: https://people.utwente.nl/m.amirhaeri
@@ -59,6 +59,13 @@ speakers:
     affiliation: Health Technology & Services Research, Netherlands Comprehensive Cancer Organisation
     description:  Clinical epidemiologist and Assistant Professor of oncology care at the UT and IKNL. Researcher, teacher, and advanced epidemiological methods evangelist.
     tags: ["hero", "keynote"]
+  - name: Anna Machens
+    postfix: ", PhD"
+    url: https://bdsi.bms.utwente.nl/team/#anna-machens
+    image_url: https://people.utwente.nl/a.k.machens/picture.jpg
+    affiliation: Behavioural Data Science incubator
+    description: Data Scientist for the Behavioural Data Science incubator, WiDS Ambassador.
+    tags: ["hero", "mo-pm", "tu-pm", "we-am", "we-pm", "th-am", "th-pm", "fr-pm"]
   - name: Karel Kroeze
     postfix: ", MSc."
     url: https://bdsi.bms.utwente.nl/team/#karel-kroeze
@@ -66,20 +73,13 @@ speakers:
     affiliation: Behavioural Data Science incubator
     description: Data Scientist for the Behavioural Data Science incubator. Computational statistician, R pirate, tidy data wrangling cowboy.
     tags: ["mo-pm", "tu-pm", "we-pm", "th-pm", "fr-pm"]
-  - name: Sabine Siesling
-    prefix: "Prof. Dr. "
-    url: https://people.utwente.nl/s.siesling
-    image_url: https://people.utwente.nl/s.siesling/picture.jpg
-    affiliation: Health Technology & Services Research, Netherlands Comprehensive Cancer Organisation
-    description: Clinical epidemiologist and Professor of outcomes research and personalized cancer care. Leads the Women's Health program at the University of Twente, and former president of the Netherlands Epidemiological Society.
-    tags: ["hero", "we-talk"]
   - name: Johannes Steinrֹücke
     prefix: "Dr. "
     url: https://people.utwente.nl/j.steinrucke
     image_url: https://people.utwente.nl/j.steinrucke/picture.jpg
     affiliation: Cognition, Data and Education
     description: Assistant Professor at CoDE, tasked with easing the faculty's transition from SPSS to R. Methodologist and statistician, expert R teacher.
-    tags: ["mo-pm"]
+    tags: []
   - name: Doina Bucur
     prefix: "Dr. "
     url: https://people.utwente.nl/d.bucur
