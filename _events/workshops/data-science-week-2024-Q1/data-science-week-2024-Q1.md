@@ -258,34 +258,34 @@ Hands on: getting an overview, inspecting descriptives, visualizing distribution
 ### Wednesday
 ###### April 17th
 
-#### Lunch Talk
-###### 12:45 - 13:30 - Location: TBA
-{% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'we-talk'" %}
-{% include profile-widget-list-generic.html speakers=_speakers %}
-
-#### Lecture: Modeling 101
-###### 13:45 - 14:30 - Location: Citadel T300
+#### Lunch lecture: Introduction to model building and evaluating
+###### 12:45 - 13:30 - Location: Citadel T300
 {% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'we-am'" %}
 {% include profile-widget-list-generic.html speakers=_speakers %}
 
 Introduction to modelling in R using the tidymodels framework.
 
-#### Hands-on session
-###### 14:45 - 15:30 - Location: Citadel T300
+#### Hands on: Introduction to model building and evaluating
+###### 13:45 - 14:30 - Location: Citadel T300
 {% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'we-pm'" %}
 {% include profile-widget-list-generic.html speakers=_speakers style="inline" %}
 
 Practical modelling, evaluating models, creating features, working with the tidymodels framework.
 
+#### Afternoon Talk
+###### 14:45 - 15:30 - Location: TBA
+{% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'we-talk'" %}
+{% include profile-widget-list-generic.html speakers=_speakers %}
+
 ### Thursday
 ###### April 18th
 
-#### Lunch Lecture: Modeling Extended
+#### Lunch Lecture: Advanced model building
 ###### 12:45 - 13:30 - Location: Citadel T300
 {% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'th-am'" %}
 {% include profile-widget-list-generic.html speakers=_speakers %}
 
-#### Hands-on session
+#### Hands-on session: Advanced model building
 ###### 13:45 - 15:30 - Location: Citadel T300
 {% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'th-pm'" %}
 {% include profile-widget-list-generic.html speakers=_speakers style="inline" %}
