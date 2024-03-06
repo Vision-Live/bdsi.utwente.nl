@@ -80,6 +80,13 @@ speakers:
     affiliation: Cognition, Data and Education
     description: Assistant Professor at CoDE, tasked with easing the faculty's transition from SPSS to R. Methodologist and statistician, expert R teacher.
     tags: ["mo-pm"]
+  - name: Doina Bucur
+    prefix: "Dr. "
+    url: https://people.utwente.nl/d.bucur
+    image_url: https://people.utwente.nl/d.bucur/picture.jpg
+    affiliation: Faculty of Electrical Engineering, Mathematics and Computer Science; Datamanagement & Biometrics
+    description: Assistant Professor at the Faculty of Electrical Engineering, Mathematics and Computer Science (EEMCS); Datamanagement & Biometrics (DMB). Teacher, and researcher in data science, application of network science, and the ethics of data science.
+    tags: ["hero", "doina"]
 
     
   # - name: Karen Groothuis-Oudshoorn
@@ -254,6 +261,12 @@ Exploring a dataset: where to start, finding patterns, visualizing for clarity, 
 {% include profile-widget-list-generic.html speakers=_speakers style="inline" %}
 
 Hands on: getting an overview, inspecting descriptives, visualizing distributions and relations, cleaing up and reshaping data, creating new features.
+
+#### Network Analysis Community
+###### 16:00 - 17:00 - Location: TBA
+{% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'doina'" %}
+{% include profile-widget-list-generic.html speakers=_speakers %}
+
 
 ### Wednesday
 ###### April 17th
