@@ -33,26 +33,62 @@ frontpage: true
 speakers:
   - name: Stéphanie van den Berg
     prefix: "Dra. "
-    url: https://people.utwente.nl/stephanie.vandenberg
+    url: https://bdsi.bms.utwente.nl/team/#st-phanie-van-den-berg
     image_url: https://people.utwente.nl/stephanie.vandenberg/picture.jpg
-    affiliation: University of Twente
+    affiliation: Cognition, Data and Education, Behavioural Data Science incubator
     description: Head of CoDE section, founder and head of BDSi, data science sorceress, WiDS Ambassador
-    tags: []
-  - name: Anna Machens
-    postfix: ", PhD"
-    url: https://people.utwente.nl/a.k.machens
-    image_url: https://people.utwente.nl/a.k.machens/picture.jpg
-    affiliation: University of Twente
-    description: Data Scientist for the Behavioural Data Science incubator, WiDS Ambassador.
-    tags: []
+    tags: ["hero", "opening", "mo-pm", "tu-am", "tu-pm", "we-pm", "th-pm", "fr-pm"]
+  - name: Sabine Siesling
+    prefix: "Prof. Dr. "
+    url: https://people.utwente.nl/s.siesling
+    image_url: https://people.utwente.nl/s.siesling/picture.jpg
+    affiliation: Health Technology & Services Research, Netherlands Comprehensive Cancer Organisation
+    description: Clinical epidemiologist and Professor of outcomes research and personalized cancer care. Leads the Women's Health program at the University of Twente, and former president of the Netherlands Epidemiological Society.
+    tags: ["hero", "we-talk"]
   - name: Maryam Amir Haeri
     prefix: "Dr. "
-    postfix: " [NOT CONFIRMED]"
     url: https://people.utwente.nl/m.amirhaeri
     image_url: https://people.utwente.nl/m.amirhaeri/picture.jpg
-    affiliation: University of Twente 
+    affiliation: Cognition, Data and Education
     description: Machine Learning and Artificial Intelligence researcher and educator, WiDS Ambassador.
+    tags: ["hero", "fr-talk", "fr-am", "fr-pm"]
+  - name: Marissa van Maaren
+    prefix: "Dr. "
+    url: https://people.utwente.nl/m.c.vanmaaren
+    image_url: https://people.utwente.nl/m.c.vanmaaren/picture.jpg
+    affiliation: Health Technology & Services Research, Netherlands Comprehensive Cancer Organisation
+    description:  Clinical epidemiologist and Assistant Professor of oncology care at the UT and IKNL. Researcher, teacher, and advanced epidemiological methods evangelist.
+    tags: ["hero", "keynote"]
+  - name: Anna Machens
+    postfix: ", PhD"
+    url: https://bdsi.bms.utwente.nl/team/#anna-machens
+    image_url: https://bdsi.bms.utwente.nl/assets/images/team/Anna.jpg
+    affiliation: Behavioural Data Science incubator
+    description: Data Scientist for the Behavioural Data Science incubator, WiDS Ambassador.
+    tags: ["hero", "mo-pm", "tu-pm", "we-am", "we-pm", "th-am", "th-pm", "fr-pm"]
+  - name: Karel Kroeze
+    postfix: ", MSc."
+    url: https://bdsi.bms.utwente.nl/team/#karel-kroeze
+    image_url: https://people.utwente.nl/k.a.kroeze/picture.jpg
+    affiliation: Behavioural Data Science incubator
+    description: Data Scientist for the Behavioural Data Science incubator. Computational statistician, R pirate, tidy data wrangling cowboy.
+    tags: ["mo-pm", "tu-pm", "we-pm", "th-pm", "fr-pm"]
+  - name: Johannes Steinrֹücke
+    prefix: "Dr. "
+    url: https://people.utwente.nl/j.steinrucke
+    image_url: https://people.utwente.nl/j.steinrucke/picture.jpg
+    affiliation: Cognition, Data and Education
+    description: Assistant Professor at CoDE, tasked with easing the faculty's transition from SPSS to R. Methodologist and statistician, expert R teacher.
     tags: []
+  - name: Doina Bucur
+    prefix: "Dr. "
+    url: https://people.utwente.nl/d.bucur
+    image_url: https://people.utwente.nl/d.bucur/picture.jpg
+    affiliation: Faculty of Electrical Engineering, Mathematics and Computer Science; Datamanagement & Biometrics
+    description: Doina Bucur (/'doy-nah 'boo-koor/) is Assistant Professor in Network Data Science. She works with complex networked systems, designing computational methods to infer, predict, learn and optimize networked systems. 
+    tags: ["hero", "doina"]
+
+    
   # - name: Karen Groothuis-Oudshoorn
   #   prefix: "Dr. "
   #   postfix: " [NOT CONFIRMED]"
@@ -76,7 +112,7 @@ speakers:
 
 <!-- {% include card.html title="WiDS Spring 2024 Data Science Week" toc="false" content="Registration for the WiDS & BDSi Spring 2024 Data Science Week, April 15th - 22nd, is already open!." cta="Register now!" cta_link="https://www.utwente.nl/en/bms/research/bdsi/wids-data-science-week-spring-2024/" %} -->
 
-{% include card.html title="This page is a work in progress" shadow="false" title_element="h4" content="The dates won't change, but we're still inviting more extraordinary women in Data Science to come and speak with us, and ironing out the details of the workshop schedule. Keep an eye on this website for updates, or register now to get updates straight in your mailbox."%}
+<!-- {% include card.html title="This page is a work in progress" shadow="false" title_element="h4" content="The dates won't change, but we're still inviting more extraordinary women in Data Science to come and speak with us, and ironing out the details of the workshop schedule. Keep an eye on this website for updates, or register now to get updates straight in your mailbox."%} -->
 {% include card.html title="Register now!" content="Register now to block the dates in your calendar, and receive updates as soon as they become available." cta="Register now" cta_link="https://www.utwente.nl/en/bms/research/bdsi/Women%20in%20Data%20Science%20Week%202024/" %}
 
 ## What is the Women in Data Science Week?
@@ -102,9 +138,10 @@ We (WiDS) are thrilled to partner with Gilead Sciences and Health Verity to prov
 
 ### Speakers
 
-{% include card.html title_element="h4" shadow="false" title="Speaker list is not final" content="The following is a preliminary list of speakers. We are still in discussions with various internal and external speakers, and will provide more details when we can. Some of the speakers listed have agreed in principle, but have not yet confirmed specifics." %}
+{% include card.html title_element="h4" shadow="false" title="Stay tuned for updates!" content="We're still coordinating with more inspiring women to come and speak during the Women in Data Science Week." %}
 
-{% include profile-widget-list-generic.html speakers=page.speakers style="hero" %}
+{% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'hero'" %}
+{% include profile-widget-list-generic.html speakers=_speakers style="hero" %}
 
 
 ### Lectures & Practicals
@@ -183,51 +220,97 @@ Kaggle.com provides resources to [get started with Kaggle](https://www.kaggle.co
 
 ## Schedule
 
+{% include card.html title_element="h4" shadow="false" title="Stay tuned for updates!" content="There may still be some minor tweaks to the schedule as we coordinate with external lecturers and speakers." %}
+
 The Women in Data Science week starts Monday the 15th and ends Monday the 22nd of April. The data science week will start and end with a group session on Monday the 15th and 22nd of April, respectively. Lunch sessions and practicals will be organized on Tuesday 16th through Friday 19th. The deadline for submissions for the local leaderboard is Sunday at midnight, and we'll ask the team(s) with the best and most interesting submissions to present their work on Monday the 22nd. 
 
 ### Monday 
 ###### April 15th
 
-#### Keynote speech and official kickoff
-###### 12:45 - 13:30 - Location: TBA
-{% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'kickoff'" %}
+#### Opening and kickoff
+###### 12:45 - 13:00 - Location: TBA
+{% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'opening'" %}
 {% include profile-widget-list-generic.html speakers=_speakers %}
+
+#### Lunch talk: Breast cancer epidemiology and the clinical use of prediction models
+###### 13:00 - 13:45 - Location: TBA
+{% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'keynote'" %}
+{% include profile-widget-list-generic.html speakers=_speakers %}
+
+Marissa will talk about breast cancer, its risk factors, incidence, survival and the disease trajectory. She will show examples of prediction models that are used in breast cancer care, and discuss their relevance for clinical practice. 
 
 
 #### Hands-on session
-###### 13:45 - 15:30 - Location: TBA
+###### 13:45 - 15:30 - Location: Citadel T300
+{% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'mo-pm'" %}
+{% include profile-widget-list-generic.html speakers=_speakers style="inline" %}
 
-Getting started: introductions, finding a team, using Kaggle, installing python/R, setting up an environment.
+Getting started: introduction to the datathon, finding a team, using Kaggle, installing python/R, setting up an environment.
 
 ### Tuesday
 ###### April 16th
 
-#### Lunch Lecture
-###### 12:45 - 13:30 - Location: TBA
+#### Lunch Lecture: Data Wrangling 101
+###### 12:45 - 13:30 - Location: Citadel T300
+{% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'tu-am'" %}
+{% include profile-widget-list-generic.html speakers=_speakers %}
 
-#### Hands-on session
-###### 13:45 - 15:30 - Location: TBA
+Exploring a dataset: where to start, finding patterns, visualizing for clarity, creating informative features.
+
+#### Hands-on session: Data Wrangling 101
+###### 13:45 - 15:30 - Location: Citadel T300
+{% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'tu-pm'" %}
+{% include profile-widget-list-generic.html speakers=_speakers style="inline" %}
+
+Hands on: getting an overview, inspecting descriptives, visualizing distributions and relations, cleaing up and reshaping data, creating new features.
+
+#### Network Analysis Community
+###### 16:00 - 17:00 - Location: TBA
+{% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'doina'" %}
+{% include profile-widget-list-generic.html speakers=_speakers %}
+
+> The Network Analysis community is one of several peer communities that brings together researchers across disciplines using similar methods, if not topics. 
+
+In this meeting, Doina will present her work on complex networked systems. Many networks are hiding in plain sight: words are connected into discourse, books are connected via the readers they have in common, concepts are connected into knowledge graphs, biological species into food webs, and stars into constellations. All these networks are intangible, but measuring and analysing them provides insight about how the mind and societies work. This talk runs through Network Science (a creative and very cross-disciplinary field), and demonstrates recent research, with diverse data sources, methods (from various areas of artificial intelligence), and case studies. (This talk is based on a conference keynote.)
+ 
 
 ### Wednesday
 ###### April 17th
 
-#### Lunch Lecture
-###### 12:45 - 13:30 - Location: TBA
+#### Lunch lecture: Introduction to model building and evaluating
+###### 12:45 - 13:30 - Location: Citadel T300
+{% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'we-am'" %}
+{% include profile-widget-list-generic.html speakers=_speakers %}
 
-#### Hands-on session
-###### 13:45 - 15:30 - Location: TBA
+Introduction to modelling in R using the tidymodels framework.
+
+#### Hands on: Introduction to model building and evaluating
+###### 13:45 - 14:30 - Location: Citadel T300
+{% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'we-pm'" %}
+{% include profile-widget-list-generic.html speakers=_speakers style="inline" %}
+
+Practical modelling, evaluating models, creating features, working with the tidymodels framework.
+
+#### Afternoon Talk
+###### 14:45 - 15:30 - Location: TBA
+{% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'we-talk'" %}
+{% include profile-widget-list-generic.html speakers=_speakers %}
 
 ### Thursday
 ###### April 18th
 
-#### Lunch Lecture
-###### 12:45 - 13:30 - Location: TBA
+#### Lunch Lecture: Advanced model building
+###### 12:45 - 13:30 - Location: Citadel T300
+{% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'th-am'" %}
+{% include profile-widget-list-generic.html speakers=_speakers %}
 
-#### Hands-on session
-###### 13:45 - 15:30 - Location: TBA
+#### Hands-on session: Advanced model building
+###### 13:45 - 15:30 - Location: Citadel T300
+{% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'th-pm'" %}
+{% include profile-widget-list-generic.html speakers=_speakers style="inline" %}
 
 #### Data Science Drinks
-###### 16:00 - 18:00 - Location: TBA
+###### 16:00 - 18:00 - Location: The Gallery Theatre
 
 (Social) networking with other participants, and other University of Twente students and staff interested in data science.
 
@@ -237,11 +320,20 @@ Getting started: introductions, finding a team, using Kaggle, installing python/
 ### Friday
 ###### April 19th
 
-#### Lunch Lecture
+#### Lunch Talk: Equity and Artificial Intelligence
 ###### 12:45 - 13:30 - Location: TBA
+{% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'fr-talk'" %}
+{% include profile-widget-list-generic.html speakers=_speakers %}
 
-#### Hands-on session
-###### 13:45 - 15:30 - Location: TBA
+#### Lecture: Measuring and modeling equity
+###### 13:45 - 14:30 - Location: Citadel T300
+{% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'fr-am'" %}
+{% include profile-widget-list-generic.html speakers=_speakers %}
+
+#### Hands-on session: Measuring and modeling equity
+###### 14:45 - 15:30 - Location: Citadel T300
+{% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'fr-pm'" %}
+{% include profile-widget-list-generic.html speakers=_speakers style="inline" %}
 
 ### Sunday
 ###### April 21st
