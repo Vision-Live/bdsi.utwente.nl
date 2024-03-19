@@ -1,35 +1,21 @@
-- title: How to Ethically AI?
-  description: During this DSI meet up, Doina Bucur will talk about how to apply
-    an ethical workflow in AI models.
+- title: "Big Geodata Talk: Smart Neural Network Optimization"
+  description: Running a computer vision model is an expensive operation. You have
+    invested a lot of resources and time building your model. Now it turns out
+    keeping the lights on might be even more costly. And then you realise this
+    will cost a lot of energy as well.
   source: dsi
-  url: https://www.utwente.nl/en/digital-society/events/2024/3/1301731/how-to-ethically-ai
-  img_url: https://1348661504.rsc.cdn77.org/.uc/i8efae0d90102183247022f8f2b0329c0413a5257d6230701c3a401ee0080/data.jpg
-  start: 2024-03-12T12:00:00+00:00
-  end: 2024-03-12T13:00:00+00:00
-  date: 2024-03-12
-  endDate: 2024-03-12
-  time: 12:00 - 13:00
-- title: "Training Workshop: Introduction to Docker"
-  description: This workshop organized by the Center of Expertise in Big Geodata
-    Science (CRIB), aims to introduce the use of Docker containers with the goal
-    of using them for modern, scalable computational workflows. Such workflows
-    are useful for ensuring reproducible research outputs. The participants will
-    learn the fundamentals of containers, practice essential Docker commands,
-    and gain hands-on experience in building and managing Docker images and
-    containers.
-  source: dsi
-  url: https://www.utwente.nl/en/digital-society/events/2024/3/1330283/training-workshop-introduction-to-docker
-  img_url: https://1348661504.rsc.cdn77.org/.uc/i5a426e2d0102b8495a021fc13902bf261e0b4c59ceca0701c3a401ee0080/data.jpg
-  start: 2024-03-13T12:30:00+00:00
-  end: 2024-03-13T17:00:00+00:00
-  date: 2024-03-13
-  endDate: 2024-03-13
-  time: 12:30 - 17:00
+  url: https://www.utwente.nl/en/digital-society/events/2024/3/1409922/big-geodata-talk-smart-neural-network-optimization
+  img_url: https://1348661504.rsc.cdn77.org/.uc/i541a9ebe0102e02f8f02d92add0190b2a12b38b4d9d30701c3a401ee0080/data.png
+  start: 2024-03-27T11:00:00+00:00
+  end: 2024-03-27T12:00:00+00:00
+  date: 2024-03-27
+  endDate: 2024-03-27
+  time: 11:00 - 12:00
 - title: Robotics Day 2024
   description: WHERE SCIENCE, TECHNOLOGY, SOCIETY, AND BUSINESS MEET
   source: dsi
   url: https://www.utwente.nl/en/digital-society/events/2024/4/1246192/robotics-day-2024
-  img_url: https://1348661504.rsc.cdn77.org/.uc/i75a7b1b10102ea4a2002c95b0b036015b3c12207e18c0701c33a003a0080/data.jpg
+  img_url: https://1348661504.rsc.cdn77.org/.uc/ib585848b0102ea4a2002c95b0b03c13bc17a29abcf6c0701c3a401ee0080/data.png
   start: 2024-04-09T09:00:00+00:00
   end: 2024-04-09T17:00:00+00:00
   date: 2024-04-09
@@ -55,8 +41,8 @@
   date: 2024-04-15
   endDate: 2024-04-22
 - title: DSI Meet Up
-  description: "DSI will organise several Meet Up's in 2024 to touch upon various
-    topics as requested by you: the community!"
+  description: The DSI Meet on Wednesday 17 April will be about the Centre for
+    Security and Digitalisation in Apeldoorn (CVD).
   source: dsi
   url: https://www.utwente.nl/en/digital-society/events/2024/4/1301746/dsi-meet-up
   img_url: https://1348661504.rsc.cdn77.org/.uc/i03aa5f4701021134470274792d0329c0413a5257d6230701c33a003a0080/data.jpg
