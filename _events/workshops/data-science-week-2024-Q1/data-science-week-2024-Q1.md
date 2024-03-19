@@ -62,7 +62,7 @@ speakers:
   - name: Anna Machens
     postfix: ", PhD"
     url: https://bdsi.bms.utwente.nl/team/#anna-machens
-    image_url: https://people.utwente.nl/a.k.machens/picture.jpg
+    image_url: https://bdsi.bms.utwente.nl/assets/images/team/Anna.jpg
     affiliation: Behavioural Data Science incubator
     description: Data Scientist for the Behavioural Data Science incubator, WiDS Ambassador.
     tags: ["hero", "mo-pm", "tu-pm", "we-am", "we-pm", "th-am", "th-pm", "fr-pm"]
@@ -85,7 +85,7 @@ speakers:
     url: https://people.utwente.nl/d.bucur
     image_url: https://people.utwente.nl/d.bucur/picture.jpg
     affiliation: Faculty of Electrical Engineering, Mathematics and Computer Science; Datamanagement & Biometrics
-    description: Assistant Professor at the Faculty of Electrical Engineering, Mathematics and Computer Science (EEMCS); Datamanagement & Biometrics (DMB). Teacher, and researcher in data science, application of network science, and the ethics of data science.
+    description: Doina Bucur (/'doy-nah 'boo-koor/) is Assistant Professor in Network Data Science. She works with complex networked systems, designing computational methods to infer, predict, learn and optimize networked systems. 
     tags: ["hero", "doina"]
 
     
@@ -112,7 +112,7 @@ speakers:
 
 <!-- {% include card.html title="WiDS Spring 2024 Data Science Week" toc="false" content="Registration for the WiDS & BDSi Spring 2024 Data Science Week, April 15th - 22nd, is already open!." cta="Register now!" cta_link="https://www.utwente.nl/en/bms/research/bdsi/wids-data-science-week-spring-2024/" %} -->
 
-{% include card.html title="This page is a work in progress" shadow="false" title_element="h4" content="The dates won't change, but we're still inviting more extraordinary women in Data Science to come and speak with us, and ironing out the details of the workshop schedule. Keep an eye on this website for updates, or register now to get updates straight in your mailbox."%}
+<!-- {% include card.html title="This page is a work in progress" shadow="false" title_element="h4" content="The dates won't change, but we're still inviting more extraordinary women in Data Science to come and speak with us, and ironing out the details of the workshop schedule. Keep an eye on this website for updates, or register now to get updates straight in your mailbox."%} -->
 {% include card.html title="Register now!" content="Register now to block the dates in your calendar, and receive updates as soon as they become available." cta="Register now" cta_link="https://www.utwente.nl/en/bms/research/bdsi/Women%20in%20Data%20Science%20Week%202024/" %}
 
 ## What is the Women in Data Science Week?
@@ -220,6 +220,8 @@ Kaggle.com provides resources to [get started with Kaggle](https://www.kaggle.co
 
 ## Schedule
 
+{% include card.html title_element="h4" shadow="false" title="Stay tuned for updates!" content="There may still be some minor tweaks to the schedule as we coordinate with external lecturers and speakers." %}
+
 The Women in Data Science week starts Monday the 15th and ends Monday the 22nd of April. The data science week will start and end with a group session on Monday the 15th and 22nd of April, respectively. Lunch sessions and practicals will be organized on Tuesday 16th through Friday 19th. The deadline for submissions for the local leaderboard is Sunday at midnight, and we'll ask the team(s) with the best and most interesting submissions to present their work on Monday the 22nd. 
 
 ### Monday 
@@ -267,6 +269,10 @@ Hands on: getting an overview, inspecting descriptives, visualizing distribution
 {% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'doina'" %}
 {% include profile-widget-list-generic.html speakers=_speakers %}
 
+> The Network Analysis community is one of several peer communities that brings together researchers across disciplines using similar methods, if not topics. 
+
+In this meeting, Doina will present her work on complex networked systems. Many networks are hiding in plain sight: words are connected into discourse, books are connected via the readers they have in common, concepts are connected into knowledge graphs, biological species into food webs, and stars into constellations. All these networks are intangible, but measuring and analysing them provides insight about how the mind and societies work. This talk runs through Network Science (a creative and very cross-disciplinary field), and demonstrates recent research, with diverse data sources, methods (from various areas of artificial intelligence), and case studies. (This talk is based on a conference keynote.)
+ 
 
 ### Wednesday
 ###### April 17th
