@@ -48,7 +48,7 @@ speakers:
   - name: Maryam Amir Haeri
     prefix: "Dr. "
     url: https://people.utwente.nl/m.amirhaeri
-    image_url: https://bdsi.bms.utwente.nl/assets/images/team/Maryam.jpg
+    image_url: /assets/images/team/Maryam.jpg
     affiliation: Cognition, Data and Education
     description: Machine Learning and Artificial Intelligence researcher and educator, WiDS Ambassador.
     tags: ["hero", "fr-talk", "fr-am", "fr-pm"]
