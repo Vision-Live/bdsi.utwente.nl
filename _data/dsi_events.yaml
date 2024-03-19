@@ -1,3 +1,16 @@
+- title: "Big Geodata Talk: Smart Neural Network Optimization"
+  description: Running a computer vision model is an expensive operation. You have
+    invested a lot of resources and time building your model. Now it turns out
+    keeping the lights on might be even more costly. And then you realise this
+    will cost a lot of energy as well.
+  source: dsi
+  url: https://www.utwente.nl/en/digital-society/events/2024/3/1409922/big-geodata-talk-smart-neural-network-optimization
+  img_url: https://1348661504.rsc.cdn77.org/.uc/i541a9ebe0102e02f8f02d92add0190b2a12b38b4d9d30701c3a401ee0080/data.png
+  start: 2024-03-27T11:00:00+00:00
+  end: 2024-03-27T12:00:00+00:00
+  date: 2024-03-27
+  endDate: 2024-03-27
+  time: 11:00 - 12:00
 - title: Robotics Day 2024
   description: WHERE SCIENCE, TECHNOLOGY, SOCIETY, AND BUSINESS MEET
   source: dsi
@@ -22,7 +35,7 @@
     Places are limited, register now so you don’t miss out!
   source: dsi
   url: https://www.utwente.nl/en/digital-society/events/2024/4/1341462/women-in-data-science-week
-  img_url: https://1348661504.rsc.cdn77.org/.uc/id76b0ee10102215e60028fcf1203f55334c81ce575fd0701c3a401ee0080/data.png
+  img_url: https://1348661504.rsc.cdn77.org/.uc/i4c0ccacf0102215e60028fcf1203f55334c81ce575fd0701c33a003a0080/data.png
   start: 2024-04-15T12:45:00+00:00
   end: 2024-04-22T18:00:00+00:00
   date: 2024-04-15
