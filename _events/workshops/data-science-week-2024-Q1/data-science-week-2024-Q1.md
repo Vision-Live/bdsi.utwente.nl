@@ -202,9 +202,9 @@ The WiDS datathons are hosted on [Kaggle.com](https://kaggle.com). Kaggle.com is
 
 If you're new to data science, you'll want to set up a working environment. We recommend working in R or Python, depending on your experience. 
 
-Install R and RStudio - ModernDive has a good tutorial on setting and getting to know R and ubiquitous R development environment, RStudio: <https://moderndive.netlify.app/1-getting-started.html>.
+Install R and RStudio, and prepare a working environment - Our colleague Johannes Steinrücke has written a good [guide on how to set up R and RStudio for your projects](https://www.utwente.nl/.utwente_base/ws2016/download.shtml?f=YYFp2rZoJE9DZfb_JhcmwKM-JwjplDHWWUL_GYodlOijrx0AhZNPJeEKf7J3ZR3iqTupk4V4SdOhYax9tbd4dg), including some practical advice not covered in many other sources. The guide was written for students starting with coursework with R, but is equally applicable for other data science projects.
 
-Install (Anaconda) Python - The Women in Data Science team maintains a set of tutorials on installing Python (using Anaconda to manage packages and environments), Jupyter notebooks and the basics of Python data structures: <https://github.com/keikokamei/WiDS_Datathon_Tutorials>.
+Install Python - The Women in Data Science team maintains a set of tutorials on installing Python (using Anaconda to manage packages and environments), Jupyter notebooks and the basics of Python data structures: <https://github.com/keikokamei/WiDS_Datathon_Tutorials>.
 
 ### Further reading
 
@@ -320,15 +320,27 @@ Practical modelling, evaluating models, creating features, working with the tidy
 ### Friday
 ###### April 19th
 
-#### Lunch Talk: Equity and Artificial Intelligence
+#### Lunch Talk: Building Fair AI; Methods and Metrics for Reducing Bias in Machine Learning
 ###### 12:45 - 13:30 - Location: TBA
 {% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'fr-talk'" %}
 {% include profile-widget-list-generic.html speakers=_speakers %}
+
+This talk focuses on the important issue of bias in AI systems, especially when they make decisions about people. We will discuss the need to find and lower bias in machine learning. Our main point is the methods and ways we can do this. 
+
+First, we look at where bias in machine learning models comes from and what effects it has. Then, we will talk about the different ways to make machine learning models that think about fairness. 
+
+We will go into detail about these methods, focusing on the new and effective techniques being used today. A big part of the talk will be about the methods and measurements we use to check how fair these models are. 
+
+We will look at the latest ways to measure bias and see how well we are doing at making things fairer. Finally, we will talk about the challenges and questions that we still face in this area, showing why we need to keep researching and developing better AI systems. 
+
+The goal of this talk is to give a clear understanding of how we can make machine learning decisions fairer and more responsible.
 
 #### Lecture: Measuring and modeling equity
 ###### 13:45 - 14:30 - Location: Citadel T300
 {% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'fr-am'" %}
 {% include profile-widget-list-generic.html speakers=_speakers %}
+
+Putting into practice the theory and methods discussed in the lunch talk.
 
 #### Hands-on session: Measuring and modeling equity
 ###### 14:45 - 15:30 - Location: Citadel T300
