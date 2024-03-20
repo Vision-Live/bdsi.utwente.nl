@@ -40,16 +40,29 @@
   end: 2024-04-22T18:00:00+00:00
   date: 2024-04-15
   endDate: 2024-04-22
-- title: DSI Meet Up
-  description: The DSI Meet on Wednesday 17 April will be about the Centre for
+- title: "DSI Meet Up: Security & Digitalisation"
+  description: The DSI Meet on Tuesday 16 April will be about the Centre for
     Security and Digitalisation in Apeldoorn (CVD).
   source: dsi
-  url: https://www.utwente.nl/en/digital-society/events/2024/4/1301746/dsi-meet-up
+  url: https://www.utwente.nl/en/digital-society/events/2024/4/1301746/dsi-meet-up-security-digitalisation
   img_url: https://1348661504.rsc.cdn77.org/.uc/i03aa5f4701021134470274792d0329c0413a5257d6230701c33a003a0080/data.jpg
-  start: 2024-04-17T12:00:00+00:00
-  end: 2024-04-17T13:00:00+00:00
-  date: 2024-04-17
-  endDate: 2024-04-17
+  start: 2024-04-16T12:00:00+00:00
+  end: 2024-04-16T13:00:00+00:00
+  date: 2024-04-16
+  endDate: 2024-04-16
+  time: 12:00 - 13:00
+- title: "DSI Meet Up: UT's mission on AI"
+  description: The DSI Meetup on Wednesday 15 May will be about UT's mission on
+    AI. What is our shared story when it comes to our Data Science and Artifical
+    Intelligence research? What makes the UT stand out? What is the common
+    ground of our research approach?
+  source: dsi
+  url: https://www.utwente.nl/en/digital-society/events/2024/5/1407004/dsi-meet-up-uts-mission-on-ai
+  img_url: https://1348661504.rsc.cdn77.org/.uc/i44f41f1901025a938a02db57560329c0413a5257d6230701c33a003a0080/data.jpg
+  start: 2024-05-15T12:00:00+00:00
+  end: 2024-05-15T13:00:00+00:00
+  date: 2024-05-15
+  endDate: 2024-05-15
   time: 12:00 - 13:00
 - title: Risk & Resilience Festival
   description: On November 7, 2024, the 8th edition of our festival comes to life,
