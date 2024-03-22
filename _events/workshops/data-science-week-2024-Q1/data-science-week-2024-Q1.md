@@ -36,35 +36,35 @@ speakers:
     url: https://bdsi.bms.utwente.nl/team/#st-phanie-van-den-berg
     image_url: https://people.utwente.nl/stephanie.vandenberg/picture.jpg
     affiliation: Cognition, Data and Education, Behavioural Data Science incubator
-    description: Head of CoDE section, founder and head of BDSi, data science sorceress, WiDS Ambassador
+    description: Stéphanie is Associate Professor and chair of the Cognition, Data and Education section. She is also the founder and head of the Behavioural Data Science incubator, all-around data science sorceress, and Women in Data Science Ambassador.
     tags: ["hero", "opening", "mo-pm", "tu-am", "tu-pm", "we-pm", "th-pm", "fr-pm"]
   - name: Sabine Siesling
     prefix: "Prof. Dr. "
     url: https://people.utwente.nl/s.siesling
     image_url: https://people.utwente.nl/s.siesling/picture.jpg
     affiliation: Health Technology & Services Research, Netherlands Comprehensive Cancer Organisation
-    description: Clinical epidemiologist and Professor of outcomes research and personalized cancer care. Leads the Women's Health program at the University of Twente, and former president of the Netherlands Epidemiological Society.
+    description: Sabine is a clinical epidemiologist, Professor of Outcomes Research and Personalized cancer care, and senior researcher at the Netherlands Comprehensive Cancer Organisation. She leads the Women's Health programme at the University of Twente, and is a former president of the Netherlands Epidemiological Society.
     tags: ["hero", "we-talk"]
   - name: Maryam Amir Haeri
     prefix: "Dr. "
     url: https://people.utwente.nl/m.amirhaeri
     image_url: /assets/images/team/Maryam.jpg
     affiliation: Cognition, Data and Education
-    description: Machine Learning and Artificial Intelligence researcher and educator, WiDS Ambassador.
+    description: Maryam is Assistant Professor .....
     tags: ["hero", "fr-talk", "fr-am", "fr-pm"]
   - name: Marissa van Maaren
     prefix: "Dr. "
     url: https://people.utwente.nl/m.c.vanmaaren
     image_url: https://people.utwente.nl/m.c.vanmaaren/picture.jpg
     affiliation: Health Technology & Services Research, Netherlands Comprehensive Cancer Organisation
-    description:  Clinical epidemiologist and Assistant Professor of oncology care at the UT and IKNL. Researcher, teacher, and advanced epidemiological methods evangelist.
+    description:  Marissa is a clinical epidemiologist and Assistant Professor of Oncology care. Her research includes the long-term outcomes of various breast cancer treatments. As a board member of the Netherlands Epidemiology Society she focuses on awarenes and accessibility of advanced epidemiological methods. 
     tags: ["hero", "keynote"]
   - name: Anna Machens
     postfix: ", PhD"
     url: https://bdsi.bms.utwente.nl/team/#anna-machens
     image_url: https://bdsi.bms.utwente.nl/assets/images/team/Anna.jpg
     affiliation: Behavioural Data Science incubator
-    description: Data Scientist for the Behavioural Data Science incubator, WiDS Ambassador.
+    description: Anna is a Data Scientist for the Behavioural Data Science incubator, and Women in Data Science Ambassador. She supports cutting-edge social sciences research by developing tailored Artificial Intelligence and Machine Learning solutions to social science research problems.
     tags: ["hero", "mo-pm", "tu-pm", "we-am", "we-pm", "th-am", "th-pm", "fr-pm"]
   - name: Karel Kroeze
     postfix: ", MSc."
@@ -73,13 +73,6 @@ speakers:
     affiliation: Behavioural Data Science incubator
     description: Data Scientist for the Behavioural Data Science incubator. Computational statistician, R pirate, tidy data wrangling cowboy.
     tags: ["mo-pm", "tu-pm", "we-pm", "th-pm", "fr-pm"]
-  - name: Johannes Steinrֹücke
-    prefix: "Dr. "
-    url: https://people.utwente.nl/j.steinrucke
-    image_url: https://people.utwente.nl/j.steinrucke/picture.jpg
-    affiliation: Cognition, Data and Education
-    description: Assistant Professor at CoDE, tasked with easing the faculty's transition from SPSS to R. Methodologist and statistician, expert R teacher.
-    tags: []
   - name: Doina Bucur
     prefix: "Dr. "
     url: https://people.utwente.nl/d.bucur
@@ -340,7 +333,7 @@ The goal of this talk is to give a clear understanding of how we can make machin
 {% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'fr-am'" %}
 {% include profile-widget-list-generic.html speakers=_speakers %}
 
-Putting into practice the theory and methods discussed in the lunch talk.
+Putting into practice the theory and methods discussed in the lunch talk. Practical examples of measuring model biases, and how to ensure equity of the model by mitigating biases. 
 
 #### Hands-on session: Measuring and modeling equity
 ###### 14:45 - 15:30 - Location: Citadel T300
