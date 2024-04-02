@@ -50,7 +50,7 @@ speakers:
     url: https://people.utwente.nl/m.amirhaeri
     image_url: /assets/images/team/Maryam.jpg
     affiliation: Cognition, Data and Education
-    description: Maryam is Assistant Professor .....
+    description: Maryam is Assistant Professor at the Cognition, Data and Education section. Her work includes machine learning, big data analytics, complex networks, and soft computing.
     tags: ["hero", "fr-talk", "fr-am", "fr-pm"]
   - name: Marissa van Maaren
     prefix: "Dr. "
