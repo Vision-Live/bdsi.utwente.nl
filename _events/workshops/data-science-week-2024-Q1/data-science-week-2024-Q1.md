@@ -284,10 +284,13 @@ Introduction to modelling in R using the tidymodels framework.
 
 Practical modelling, evaluating models, creating features, working with the tidymodels framework.
 
-#### Afternoon Talk
+#### Afternoon Talk: (in)Equity in breast cancer care: two examples (direct reconstruction and Gene expression profiles)
 ###### 14:45 - 15:30 - Location: TBA
 {% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'we-talk'" %}
 {% include profile-widget-list-generic.html speakers=_speakers %}
+
+In the Netherlands breast cancer care is reimbursed by the health insurers. Still, we see inequity in the application of for instance a direct reconstruction after a mastectomy and the application of gene expression profiles. The first treatment option is proven to improve quality of live. The latter is used in diagnostics to determine the possible profit of chemotherapy for the patient and supports the decision on having chemotherapy. 
+
 
 ### Thursday
 ###### April 18th
