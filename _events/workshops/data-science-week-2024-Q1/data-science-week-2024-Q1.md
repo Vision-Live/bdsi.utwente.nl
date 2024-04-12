@@ -236,12 +236,12 @@ The Women in Data Science week starts Monday the 15th and ends Monday the 22nd o
 ###### April 15th
 
 #### Opening and kickoff
-###### 12:45 - 13:00 - Location: TBA
+###### 12:45 - 13:00 - Location: Citadel T300
 {% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'opening'" %}
 {% include profile-widget-list-generic.html speakers=_speakers %}
 
 #### Lunch talk: Breast cancer epidemiology and the clinical use of prediction models
-###### 13:00 - 13:45 - Location: TBA
+###### 13:00 - 13:45 - Location: Citadel T300
 {% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'keynote'" %}
 {% include profile-widget-list-generic.html speakers=_speakers %}
 
@@ -300,7 +300,7 @@ Introduction to modelling in R using the tidymodels framework.
 Practical modelling, evaluating models, creating features, working with the tidymodels framework.
 
 #### Afternoon Talk: (in)Equity in breast cancer care: two examples (direct reconstruction and Gene expression profiles)
-###### 14:45 - 15:30 - Location: TBA
+###### 14:45 - 15:30 - Location: Citadel T300
 {% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'we-talk'" %}
 {% include profile-widget-list-generic.html speakers=_speakers %}
 
@@ -332,7 +332,7 @@ In the Netherlands breast cancer care is reimbursed by the health insurers. Stil
 ###### April 19th
 
 #### Lunch Talk & Lecture: Building Fair AI; Methods and Metrics for Reducing Bias in Machine Learning
-###### 12:45 - 13:30 - Location: TBA
+###### 12:45 - 13:30 - Location: Citadel T300
 {% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'fr-talk'" %}
 {% include profile-widget-list-generic.html speakers=_speakers %}
 
@@ -369,7 +369,7 @@ Deadline datathon submissions for local leaderboard
 ###### April 22nd
 
 #### Closing session
-###### 12:45 - 13:30 - Location: TBA
+###### 12:45 - 13:30 - Location: Citadel T300
 Prize ceremony and presentations by winning team(s)
 
 {% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'closing'" %}
