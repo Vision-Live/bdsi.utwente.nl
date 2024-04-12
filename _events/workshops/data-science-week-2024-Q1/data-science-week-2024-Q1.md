@@ -331,7 +331,7 @@ In the Netherlands breast cancer care is reimbursed by the health insurers. Stil
 ### Friday
 ###### April 19th
 
-#### Lunch Talk: Building Fair AI; Methods and Metrics for Reducing Bias in Machine Learning
+#### Lunch Talk & Lecture: Building Fair AI; Methods and Metrics for Reducing Bias in Machine Learning
 ###### 12:45 - 13:30 - Location: TBA
 {% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'fr-talk'" %}
 {% include profile-widget-list-generic.html speakers=_speakers %}
@@ -346,7 +346,7 @@ We will look at the latest ways to measure bias and see how well we are doing at
 
 The goal of this talk is to give a clear understanding of how we can make machine learning decisions fairer and more responsible.
 
-#### Lecture: Measuring and modeling equity
+#### Practical: Measuring and modeling equity
 ###### 13:45 - 14:30 - Location: Citadel T300
 {% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'fr-am'" %}
 {% include profile-widget-list-generic.html speakers=_speakers %}
