@@ -20,23 +20,6 @@
   end: 2024-05-15T23:59:00+00:00
   date: 2024-05-08
   endDate: 2024-05-15
-- title: "Training: Introduction to Geospatial Raster and Vector with R"
-  description: In this training workshop, organized by the Center of Expertise in
-    Big Geodata Science (CRIB), participants will embark on a journey through
-    the fundamentals of geospatial data analysis using R. With its excellent
-    statistical capabilities and a huge package ecosystem, R supports
-    transparent data analysis workflows with an emphasize on reproducible
-    research. Geospatial R packages, such as sf, raster, and leaflet, enable
-    complex geospatial studies and striking visualizations that facilitate
-    gettting insights from geospatial datasets. Join us to learn how to use R to
-    accesss, analyze, and visualize spatial data!
-  source: dsi
-  url: https://www.utwente.nl/en/digital-society/events/2024/5/1440440/training-introduction-to-geospatial-raster-and-vector-with-r
-  img_url: https://1348661504.rsc.cdn77.org/.uc/ia754478001029798a7020eab000259b95888861e73010701c33a003a0080/data.png
-  start: 2024-05-15T09:00:00+00:00
-  end: 2024-05-16T12:00:00+00:00
-  date: 2024-05-15
-  endDate: 2024-05-16
 - title: "DSI Meet Up: UT's mission on AI"
   description: The DSI Meetup on Wednesday 15 May will be about UT's mission on
     AI. What is our shared story when it comes to our Data Science and Artifical
@@ -50,6 +33,42 @@
   date: 2024-05-15
   endDate: 2024-05-15
   time: 12:00 - 13:00
+- title: "Talk: High-performance Spatial Data Management and Analysis with DuckDB"
+  description: DuckDB is a novel in-process SQL database system designed for
+    analytical workloads that has been making waves in the data science and
+    engineering community. Not only for its impressive performance, but also for
+    its focus on ease of use and integrations with the wider data ecosystem. A
+    key part in making this possible is DuckDB's flexible extension system that
+    enable DuckDB to be used across different domains while the core system
+    itself remains small and focused. One such extension is the DuckDB Spatial
+    Extension which brings geospatial data processing capabilities to DuckDB's
+    vectorized execution engine and memory model, allowing users to perform
+    complex spatial queries and transformations.
+  source: dsi
+  url: https://www.utwente.nl/en/digital-society/events/2024/5/1474788/talk-high-performance-spatial-data-management-and-analysis-with-duckdb
+  img_url: https://1348661504.rsc.cdn77.org/.uc/iacee720301025badcc02fae8c802190973ab33207a930701c33a003a0080/data.png
+  start: 2024-05-31T11:00:00+00:00
+  end: 2024-05-31T12:00:00+00:00
+  date: 2024-05-31
+  endDate: 2024-05-31
+  time: 11:00 - 12:00
+- title: "Training: Introduction to Geospatial Raster and Vector with R"
+  description: In this training workshop, organized by the Center of Expertise in
+    Big Geodata Science (CRIB), participants will embark on a journey through
+    the fundamentals of geospatial data analysis using R. With its excellent
+    statistical capabilities and a huge package ecosystem, R supports
+    transparent data analysis workflows with an emphasize on reproducible
+    research. Geospatial R packages, such as sf, raster, and leaflet, enable
+    complex geospatial studies and striking visualizations that facilitate
+    gettting insights from geospatial datasets. Join us to learn how to use R to
+    accesss, analyze, and visualize spatial data!
+  source: dsi
+  url: https://www.utwente.nl/en/digital-society/events/2024/8/1440440/training-introduction-to-geospatial-raster-and-vector-with-r
+  img_url: https://1348661504.rsc.cdn77.org/.uc/ia754478001029798a7020eab000259b95888861e73010701c33a003a0080/data.png
+  start: 2024-08-21T09:00:00+00:00
+  end: 2024-08-22T12:00:00+00:00
+  date: 2024-08-21
+  endDate: 2024-08-22
 - title: Risk & Resilience Festival
   description: On November 7, 2024, the 8th edition of our festival comes to life,
     and this time it's all about 'Leadership in organizing Risk & Resilience'.
