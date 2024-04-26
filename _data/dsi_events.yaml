@@ -33,6 +33,22 @@
   date: 2024-05-15
   endDate: 2024-05-15
   time: 12:00 - 13:00
+- title: "Training: Publishing Research Data with fairly Toolset"
+  description: The FAIR principles require research data to be published with
+    complete metadata and ideally shared at different key milestones during the
+    research. However currently, data publication and sharing happen mostly at
+    the end, and published data mostly lack important supplementary information
+    and metadata limiting its reusability. On the other hand, regular
+    high-quality data publication takes time and requires manual interaction
+    with the data repositories.
+  source: dsi
+  url: https://www.utwente.nl/en/digital-society/events/2024/5/1475483/training-publishing-research-data-with-fairly-toolset
+  img_url: https://1348661504.rsc.cdn77.org/.uc/iedd5e6de0102976acd02b9ed5704f3b5f55e8813bef70701c33a003a0080/data.png
+  start: 2024-05-15T13:00:00+00:00
+  end: 2024-05-15T17:00:00+00:00
+  date: 2024-05-15
+  endDate: 2024-05-15
+  time: 13:00 - 17:00
 - title: "Talk: High-performance Spatial Data Management and Analysis with DuckDB"
   description: DuckDB is a novel in-process SQL database system designed for
     analytical workloads that has been making waves in the data science and
