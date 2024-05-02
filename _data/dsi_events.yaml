@@ -58,6 +58,17 @@
   date: 2024-05-31
   endDate: 2024-05-31
   time: 11:00 - 12:00
+- title: "DSI Meet Up: Transport Research Theme @ the UT"
+  description: The DSI Meet Up on Tuesday 11 June will be about the initiatives of
+    the Transport Community (T-Slots) at the UT
+  source: dsi
+  url: https://www.utwente.nl/en/digital-society/events/2024/6/1486035/dsi-meet-up-transport-research-theme-the-ut
+  img_url: https://1348661504.rsc.cdn77.org/.uc/i754b98e901026f05da025adfda0129c0413a5257d6230701c33a003a0080/data.jpg
+  start: 2024-06-11T12:00:00+00:00
+  end: 2024-06-11T13:00:00+00:00
+  date: 2024-06-11
+  endDate: 2024-06-11
+  time: 12:00 - 13:00
 - title: "Training: Introduction to Geospatial Raster and Vector with R"
   description: In this training workshop, organized by the Center of Expertise in
     Big Geodata Science (CRIB), participants will embark on a journey through
