@@ -1,32 +1,3 @@
-- title: "DSI Meet Up: UT's mission on AI"
-  description: The DSI Meetup on Wednesday 15 May will be about UT's mission on
-    AI. What is our shared story when it comes to our Data Science and Artifical
-    Intelligence research? What makes the UT stand out? What is the common
-    ground of our research approach?
-  source: dsi
-  url: https://www.utwente.nl/en/digital-society/events/2024/5/1407004/dsi-meet-up-uts-mission-on-ai
-  img_url: https://1348661504.rsc.cdn77.org/.uc/i1f0b737301025a938a02db57560329c0413a5257d6230701c3a401ee0080/data.jpg
-  start: 2024-05-15T12:00:00+00:00
-  end: 2024-05-15T13:00:00+00:00
-  date: 2024-05-15
-  endDate: 2024-05-15
-  time: 12:00 - 13:00
-- title: "Training: Publishing Research Data with fairly Toolset"
-  description: The FAIR principles require research data to be published with
-    complete metadata and ideally shared at different key milestones during the
-    research. However currently, data publication and sharing happen mostly at
-    the end, and published data mostly lack important supplementary information
-    and metadata limiting its reusability. On the other hand, regular
-    high-quality data publication takes time and requires manual interaction
-    with the data repositories.
-  source: dsi
-  url: https://www.utwente.nl/en/digital-society/events/2024/5/1475483/training-publishing-research-data-with-fairly-toolset
-  img_url: https://1348661504.rsc.cdn77.org/.uc/i3c2bd0f00102976acd02b9ed5704f3b5f55e8813bef70701c3a401ee0080/data.png
-  start: 2024-05-15T13:00:00+00:00
-  end: 2024-05-15T17:00:00+00:00
-  date: 2024-05-15
-  endDate: 2024-05-15
-  time: 13:00 - 17:00
 - title: "Talk: High-performance Spatial Data Management and Analysis with DuckDB"
   description: DuckDB is a novel in-process SQL database system designed for
     analytical workloads that has been making waves in the data science and
@@ -40,7 +11,7 @@
     complex spatial queries and transformations.
   source: dsi
   url: https://www.utwente.nl/en/digital-society/events/2024/5/1474788/talk-high-performance-spatial-data-management-and-analysis-with-duckdb
-  img_url: https://1348661504.rsc.cdn77.org/.uc/iacee720301025badcc02fae8c802190973ab33207a930701c33a003a0080/data.png
+  img_url: https://1348661504.rsc.cdn77.org/.uc/ie7cc4b7d01025badcc02fae8c802190973ab33207a930701c3a401ee0080/data.png
   start: 2024-05-31T11:00:00+00:00
   end: 2024-05-31T12:00:00+00:00
   date: 2024-05-31
@@ -51,7 +22,7 @@
     the Transport Community (T-Slots) at the UT
   source: dsi
   url: https://www.utwente.nl/en/digital-society/events/2024/6/1486035/dsi-meet-up-transport-research-theme-the-ut
-  img_url: https://1348661504.rsc.cdn77.org/.uc/i754b98e901026f05da025adfda0129c0413a5257d6230701c33a003a0080/data.jpg
+  img_url: https://1348661504.rsc.cdn77.org/.uc/icf06b24401026f05da025adfda0129c0413a5257d6230701c3a401ee0080/data.jpg
   start: 2024-06-11T12:00:00+00:00
   end: 2024-06-11T13:00:00+00:00
   date: 2024-06-11
