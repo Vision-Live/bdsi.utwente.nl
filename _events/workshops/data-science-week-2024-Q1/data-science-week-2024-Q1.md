@@ -34,14 +34,14 @@ speakers:
   - name: Stéphanie van den Berg
     prefix: "Dra. "
     url: https://bdsi.bms.utwente.nl/team/#st-phanie-van-den-berg
-    image_url: https://people.utwente.nl/stephanie.vandenberg/picture.jpg
+    image_url: https://people.utwente.nl/stephanie.vandenberg/picture
     affiliation: Cognition, Data and Education, Behavioural Data Science incubator
     description: Stéphanie is Associate Professor and chair of the Cognition, Data and Education section. She is also the founder and head of the Behavioural Data Science incubator, all-around data science sorceress, and Women in Data Science Ambassador.
     tags: ["hero", "opening", "mo-pm", "tu-am", "tu-pm", "we-pm", "th-pm", "fr-pm"]
   - name: Sabine Siesling
     prefix: "Prof. Dr. "
     url: https://people.utwente.nl/s.siesling
-    image_url: https://people.utwente.nl/s.siesling/picture.jpg
+    image_url: https://people.utwente.nl/s.siesling/picture
     affiliation: Health Technology & Services Research, Netherlands Comprehensive Cancer Organisation
     description: Sabine is a clinical epidemiologist, Professor of Outcomes Research and Personalized cancer care, and senior researcher at the Netherlands Comprehensive Cancer Organisation. She leads the Women's Health programme at the University of Twente, and is a former president of the Netherlands Epidemiological Society.
     tags: ["hero", "we-talk"]
@@ -55,7 +55,7 @@ speakers:
   - name: Marissa van Maaren
     prefix: "Dr. "
     url: https://people.utwente.nl/m.c.vanmaaren
-    image_url: https://people.utwente.nl/m.c.vanmaaren/picture.jpg
+    image_url: https://people.utwente.nl/m.c.vanmaaren/picture
     affiliation: Health Technology & Services Research, Netherlands Comprehensive Cancer Organisation
     description:  Marissa is a clinical epidemiologist and Assistant Professor of Oncology care. Her research includes the long-term outcomes of various breast cancer treatments. As a board member of the Netherlands Epidemiology Society she focuses on awarenes and accessibility of advanced epidemiological methods. 
     tags: ["hero", "keynote"]
@@ -69,14 +69,14 @@ speakers:
   - name: Karel Kroeze
     postfix: ", MSc."
     url: https://bdsi.bms.utwente.nl/team/#karel-kroeze
-    image_url: https://people.utwente.nl/k.a.kroeze/picture.jpg
+    image_url: https://people.utwente.nl/k.a.kroeze/picture
     affiliation: Behavioural Data Science incubator
     description: Data Scientist for the Behavioural Data Science incubator. Computational statistician, R pirate, tidy data wrangling cowboy.
     tags: ["mo-pm", "tu-pm", "we-pm", "th-pm", "fr-pm"]
   - name: Doina Bucur
     prefix: "Dr. "
     url: https://people.utwente.nl/d.bucur
-    image_url: https://people.utwente.nl/d.bucur/picture.jpg
+    image_url: https://people.utwente.nl/d.bucur/picture
     affiliation: Faculty of Electrical Engineering, Mathematics and Computer Science; Datamanagement & Biometrics
     description: Doina Bucur (/'doy-nah 'boo-koor/) is Assistant Professor in Network Data Science. She works with complex networked systems, designing computational methods to infer, predict, learn and optimize networked systems. 
     tags: ["hero", "doina"]
