@@ -6,7 +6,7 @@ date: 2023-12-17
 authors:
  - Lily Chen
  - Karel Kroeze
- - Chia-Yu Wang
+ - Chia-Yu Wang !external
  - Hannie Gijlers
 image: /assets/images/projects/dip-c_wide.png
 # imageNarrow: true
