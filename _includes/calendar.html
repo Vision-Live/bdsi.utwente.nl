@@ -57,6 +57,10 @@
         {% endfor %}
     {% endunless %}
 
+    {% unless event_path %}
+        {% assign event_path = "#" %}
+    {% endunless %}
+
     {% unless event_image %}
         {% if event.img_url %}
             {% assign event_image = event.img_url %}
