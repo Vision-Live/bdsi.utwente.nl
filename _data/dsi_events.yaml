@@ -1,45 +1,25 @@
-- title: Women in Data Science Week
-  description: >-
-    Join us for an exciting Data Science Week filled with interesting events,
-    inspiring lectures, extraordinary speakers, hand-on workshops, a datathon to
-    practice your skills, and a networking drink to connect with the community
-    of data science enthusiasts at the University of Twente.
-
-
-    Of course, the event isn’t limited to only women. People of all shapes and sizes are welcome to join - though we encourage you to invite your female friends and colleagues along.
-
-
-    Places are limited, register now so you don’t miss out!
+- title: "DSI Meet Up: Transport Research Theme @ the UT"
+  description: The DSI Meet Up on Tuesday 11 June will be about the initiatives of
+    the Transport Community (T-Slots) at the UT
   source: dsi
-  url: https://www.utwente.nl/en/digital-society/events/2024/4/1341462/women-in-data-science-week
-  img_url: https://1348661504.rsc.cdn77.org/.uc/id76b0ee10102215e60028fcf1203f55334c81ce575fd0701c3a401ee0080/data.png
-  start: 2024-04-15T12:45:00+00:00
-  end: 2024-04-22T18:00:00+00:00
-  date: 2024-04-15
-  endDate: 2024-04-22
-- title: "DSI Meet Up: Security & Digitalisation"
-  description: The DSI Meet Up on Tuesday 16 April will be about the Centre for
-    Security and Digitalisation in Apeldoorn (CVD).
-  source: dsi
-  url: https://www.utwente.nl/en/digital-society/events/2024/4/1301746/dsi-meet-up-security-digitalisation
-  img_url: https://1348661504.rsc.cdn77.org/.uc/i408a16df01021134470274792d0329c0413a5257d6230701c3a401ee0080/data.jpg
-  start: 2024-04-16T12:00:00+00:00
-  end: 2024-04-16T13:00:00+00:00
-  date: 2024-04-16
-  endDate: 2024-04-16
+  url: https://www.utwente.nl/en/digital-society/events/2024/6/1486035/dsi-meet-up-transport-research-theme-the-ut
+  img_url: https://1348661504.rsc.cdn77.org/.uc/icf06b24401026f05da025adfda0129c0413a5257d6230701c3a401ee0080/data.jpg
+  start: 2024-06-11T12:00:00+00:00
+  end: 2024-06-11T13:00:00+00:00
+  date: 2024-06-11
+  endDate: 2024-06-11
   time: 12:00 - 13:00
-- title: Erasmus+ Inspire Days
-  description: Are you interested in hearing more about the Erasmus+ programme at
-    UT? Join us for the Erasmus+ Inspire Days on 8, 14 and 15 May 2024, and find
-    out how you can make the most of the funding schemes available via the
-    Erasmus+ programme.
+- title: "DSI Meet Up: AI Literacy and the UT Curricula"
+  description: This DSI Meet Up will be about AI Literacy, UT's narrative on AI
+    and our the curricula.
   source: dsi
-  url: https://www.utwente.nl/en/digital-society/events/2024/5/1431100/erasmus-inspire-days
-  img_url: https://1348661504.rsc.cdn77.org/.uc/ibd74adb40102ac7d9f02c5bd9603c05982cec8e797990701c33a003a0080/data.jpg
-  start: 2024-05-08T00:00:00+00:00
-  end: 2024-05-15T23:59:00+00:00
-  date: 2024-05-08
-  endDate: 2024-05-15
+  url: https://www.utwente.nl/en/digital-society/events/2024/7/1570711/dsi-meet-up-ai-literacy-and-the-ut-curricula
+  img_url: https://1348661504.rsc.cdn77.org/.uc/i7753437601024f012f033412220429c0413a5257d6230701c3a401ee0080/data.jpg
+  start: 2024-07-03T12:00:00+00:00
+  end: 2024-07-03T13:00:00+00:00
+  date: 2024-07-03
+  endDate: 2024-07-03
+  time: 12:00 - 13:00
 - title: "Training: Introduction to Geospatial Raster and Vector with R"
   description: In this training workshop, organized by the Center of Expertise in
     Big Geodata Science (CRIB), participants will embark on a journey through
@@ -51,25 +31,12 @@
     gettting insights from geospatial datasets. Join us to learn how to use R to
     accesss, analyze, and visualize spatial data!
   source: dsi
-  url: https://www.utwente.nl/en/digital-society/events/2024/5/1440440/training-introduction-to-geospatial-raster-and-vector-with-r
+  url: https://www.utwente.nl/en/digital-society/events/2024/8/1440440/training-introduction-to-geospatial-raster-and-vector-with-r
   img_url: https://1348661504.rsc.cdn77.org/.uc/ia754478001029798a7020eab000259b95888861e73010701c33a003a0080/data.png
-  start: 2024-05-15T09:00:00+00:00
-  end: 2024-05-16T12:00:00+00:00
-  date: 2024-05-15
-  endDate: 2024-05-16
-- title: "DSI Meet Up: UT's mission on AI"
-  description: The DSI Meetup on Wednesday 15 May will be about UT's mission on
-    AI. What is our shared story when it comes to our Data Science and Artifical
-    Intelligence research? What makes the UT stand out? What is the common
-    ground of our research approach?
-  source: dsi
-  url: https://www.utwente.nl/en/digital-society/events/2024/5/1407004/dsi-meet-up-uts-mission-on-ai
-  img_url: https://1348661504.rsc.cdn77.org/.uc/i44f41f1901025a938a02db57560329c0413a5257d6230701c33a003a0080/data.jpg
-  start: 2024-05-15T12:00:00+00:00
-  end: 2024-05-15T13:00:00+00:00
-  date: 2024-05-15
-  endDate: 2024-05-15
-  time: 12:00 - 13:00
+  start: 2024-08-21T09:00:00+00:00
+  end: 2024-08-22T12:00:00+00:00
+  date: 2024-08-21
+  endDate: 2024-08-22
 - title: Risk & Resilience Festival
   description: On November 7, 2024, the 8th edition of our festival comes to life,
     and this time it's all about 'Leadership in organizing Risk & Resilience'.
@@ -85,3 +52,13 @@
   date: 2024-11-07
   endDate: 2024-11-07
   time: 00:00 - 23:59
+- title: Meaningful Human Computer Interaction
+  description: 16th International Conference on Intelligent Human Computer
+    Interaction (IHCI-2024)
+  source: dsi
+  url: https://www.utwente.nl/en/digital-society/events/2024/11/1225373/meaningful-human-computer-interaction
+  img_url: https://1348661504.rsc.cdn77.org/.uc/i07c10d940102db0b0f028eb3c701f7c2b59b10a6bde70701c33a003a0080/data.jpg
+  start: 2024-11-13T09:00:00+00:00
+  end: 2024-11-16T17:00:00+00:00
+  date: 2024-11-13
+  endDate: 2024-11-16
