@@ -7,4 +7,5 @@ keywords:
   - Reinforcement Learning Community/ Study Group - invite for the webpage calendar
   - Reinforcement Learning Community
   - Reinforcement Learning Study Group
+image: assets/images/communities/rl/robot.avif
 ---
