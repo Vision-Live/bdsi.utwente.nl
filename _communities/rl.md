@@ -37,7 +37,7 @@ If you've dabbled in machine learning (ML) but haven't explored RL extensively, 
 
 Participation requires dedication—approximately two hours per week for homework, reading, and attending sessions. Our friendly atmosphere and collaborative spirit will make the journey enjoyable.
 
-So, bring your lunch, fire up your curiosity, and let's explore the world of reinforcement learning together!
+So, pack your lunch, fire up your curiosity, and let's explore the world of reinforcement learning together!
 
 [book]: http://www.incompleteideas.net/book/the-book-2nd.html
 [videos]: https://www.youtube.com/playlist?list=PLqYmG7hTraZCRwoyGxvQkqVrZgDQi4m-5
