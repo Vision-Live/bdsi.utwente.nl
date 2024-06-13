@@ -16,7 +16,7 @@
 <div class="author-list">
     {%- for author in authors -%}
         {%- if forloop.first != true -%}
-            <{{header}}>,&MediumSpace;</{{header}}>
+            <{{header}}>{% if forloop.length > 2 %},{%endif%}&MediumSpace;</{{header}}>
             {%- if forloop.last -%}
                 <{{header}}>and&MediumSpace;</{{header}}>
             {%- endif -%}
