@@ -77,7 +77,7 @@ defaults:
       path: ''
       type: communities
     values: 
-      layout: single_page
+      layout: community
       bodyClass: page-single
 
 sass:
