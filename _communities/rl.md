@@ -39,5 +39,5 @@ Participation requires dedication—approximately two hours per week for homewor
 
 So, pack your lunch, fire up your curiosity, and let's explore the world of reinforcement learning together!
 
-[book]: http://www.incompleteideas.net/book/the-book-2nd.html
+[book]: https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf
 [videos]: https://www.youtube.com/playlist?list=PLqYmG7hTraZCRwoyGxvQkqVrZgDQi4m-5
