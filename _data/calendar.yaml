@@ -21,13 +21,6 @@
   time: 12:45 - 13:30
 - title: BDSi Walk-in Hour
   location: Langezijds 1514
-  start: 2024-07-01T15:00:00+00:00
-  end: 2024-07-01T16:00:00+00:00
-  date: 2024-07-01
-  endDate: 2024-07-01
-  time: 15:00 - 16:00
-- title: BDSi Walk-in Hour
-  location: Langezijds 1514
   start: 2024-07-08T15:00:00+00:00
   end: 2024-07-08T16:00:00+00:00
   date: 2024-07-08
@@ -46,6 +39,13 @@
   end: 2024-07-22T16:00:00+00:00
   date: 2024-07-22
   endDate: 2024-07-22
+  time: 15:00 - 16:00
+- title: BDSi Walk-in Hour
+  location: Langezijds 1514
+  start: 2024-07-29T15:00:00+00:00
+  end: 2024-07-29T16:00:00+00:00
+  date: 2024-07-29
+  endDate: 2024-07-29
   time: 15:00 - 16:00
 - title: Reinforcement Learning Study Group
   location: ""
