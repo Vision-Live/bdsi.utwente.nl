@@ -24,7 +24,57 @@ layout: "event"
 date: 2025-03-03
 endDate: 2025-03-10
 frontpage: true
+speakers: {}
+events: 
+  - title: Opening & introduction
+    type: lectures
+    start: 2025-03-03 12:45
+    end: 2025-03-03 13:30
+  - title: Practical & Hands-on
+    type: practicals
+    start: 2025-03-03 13:45
+    end: 2025-03-03 15:30
+  - title: Lunch lecture
+    type: lectures
+    start: 2025-03-04 12:45
+    end: 2025-03-04 13:30
+  - title: Practical & Hands-on
+    type: practicals
+    start: 2025-03-04 13:45
+    end: 2025-03-04 15:30
+  - title: Lunch lecture
+    type: lectures
+    start: 2025-03-05 12:45
+    end: 2025-03-05 13:30
+  - title: Practical & Hands-on
+    type: practicals
+    start: 2025-03-05 13:45
+    end: 2025-03-05 15:30
+  - title: Lunch lecture
+    type: lectures
+    start: 2025-03-06 12:45
+    end: 2025-03-06 13:30
+  - title: Practical & Hands-on
+    type: practicals
+    start: 2025-03-06 13:45
+    end: 2025-03-06 15:30
+  - title: Posters & Drinks
+    type: socials
+    start: 2025-03-06 16:00
+    end: 2025-03-06 18:00
+  - title: Lunch lecture
+    type: lectures
+    start: 2025-03-07 12:45
+    end: 2025-03-07 13:30
+  - title: Practical & Hands-on
+    type: practicals
+    start: 2025-03-07 13:45
+    end: 2025-03-07 15:30
 ---
+
+<link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.css" />
+<script src="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.js"></script>
+
 
 <!-- {% include card.html title="This page is a work in progress" shadow="false" title_element="h4" content="The dates are set, the room is booked, and the rough schedule is ready, but we are still hard at work filling in the blanks."%} -->
 
@@ -118,6 +168,92 @@ The spring 2025 Data Science Week takes place from March 3rd to March 10th. Ther
 The rest of the week, there will be lunch lectures on core data science skills, followed by practicals applying those skills to the problem in the datathon. Invited speakers will be fit into the schedule based on availability and opportunity. The data science week closes on Monday the 10th with presentations from the competing datathon teams, and a final keynote.
 
 Further details will be made available in the coming weeks and months. 
+
+
+<div id="calendar" style="height: 400px;"></div>
+
+<style>
+  #calendar .toastui-calendar-timegrid {
+    min-height: 0;
+    height: 100% !important;
+  }
+  #calendar .toastui-calendar-panel {
+    overflow-y: unset;
+  }
+</style>
+
+<script>
+  const Calendar = tui.Calendar;
+  const format_time = new Intl.DateTimeFormat('en-GB', {
+    timeStyle: "short"
+  })
+  
+  const calendar = new Calendar('#calendar', {
+    defaultView: 'week',
+    isReadOnly: true,
+    useDetailPopup: true,
+    week: {
+      startDayOfWeek: 1,
+      hourStart: 12,
+      hourEnd: 18.5,
+      narrowWeekend: true,
+      taskView: false,
+      eventView: ['time']
+    },
+    theme: {
+      common: {
+        dayName: { color: "#333" },
+        holiday: { color: "#9e9e9e" },
+        saturday: { color: "#9e9e9e" }
+      },
+      week: {
+        dayName: {
+          borderBottom: "none"
+        },
+        timeGrid: {
+          borderRight: "1px dashed #eee"
+        }
+      }
+    },
+    template: {
+      timegridDisplayPrimaryTime({time}) {
+        return format_time.format(time);
+      }
+    },
+    calendars: [
+      {
+        id: 'lectures',
+        name: 'Lectures',
+        backgroundColor: '#03bd9e',
+      },
+      {
+        id: 'practicals',
+        name: 'Practicals',
+        backgroundColor: '#00a9ff',
+      },
+      {
+        id: 'socials',
+        name: "Social events",
+        backgroundColor: '#bb3aff'
+      }
+    ],
+    usageStatistics: false
+  });
+
+  calendar.setDate(new Date("2025-03-03 12:00"))
+  calendar.createEvents([
+    {% for event in page.events %}
+
+    {
+      calendarId: "{{event.type}}",
+      title: "{{event.title}}",
+      start: new Date("{{event.start}}"),
+      end: new Date("{{event.end}}")
+    },
+
+    {% endfor %}
+  ])
+</script>
 
 
 ### Monday 
