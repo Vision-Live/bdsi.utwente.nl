@@ -34,6 +34,10 @@ frontpage: true
 
 The goal of the data science week is to introduce interested students and staff to data science in a fun and cooperative way, and help create a community of data scientists at the University of Twente, the faculty of Behavioural and Management Sciences, and beyond. BDSi and DSI organize various events during the week, including a datathon, contextual speakers, expert lectures, hands-on workshops, and a networking drink.
 
+During the lunch breaks expert data scientists will provide lectures on the most important tools in a data scientists' toolbox; data wrangling, modelling, and communicating results. These lectures will be structured to support the datathon materials, but can be attended without participating in the datathon itself. The lectures are followed by a hands-on practical session in which the lunch lecturerer - supported by a team of motivated coaches - will guide participants in applying the lecture materials to their datathon submissions. 
+
+(Guest) speakers will be invited during the week to provide a deeper background in the topics and methods covered in the lectures and datathon, or to put these topics in a broader context. Throughout the week there will be ample time for socialization and networking, as well as a poster presentation session and networking drink on Thursday afternoon.
+
 ### Datathon
 
 A datathon is an event in which teams collaborate and compete to create a solution to a shared problem. By learning from experts and peers and immediately applying your skills on a relevant and engaging real-world dataset, the BDSi datathons provide a great environment for both students and staff, beginners and experts to further hone their skills. For the spring 2025, we will have a new and rewarding data challenge. 
@@ -51,6 +55,7 @@ A datathon is an event in which teams collaborate and compete to create a soluti
 Every lunch break (12:45 - 13:30, Tuesday - Friday) expert data scientists from BDSi and our partners will provide a lecture on the most important tools in a data scientists' toolbox; data wrangling, modelling, and communicating results. These lectures will be structured to support the datathon materials, but can be attended without participating in the datathon itself.
 
 After a short coffee break (13:30 - 13:45), the lecture will be followed by a hands-on practical session (13:45 - 15:30). During these two hours, the lecturer - supported by a team of motivated coaches - will support participants in applying the lecture materials to their datathon submissions. While these sessions are meant to accompany the days' lecture, they can be attended by any datathon participants. Coaches will be on hand to answer any questions about the days' lecture, the datathon, or data science in general.
+
 
 ### Posters & Drinks
 
