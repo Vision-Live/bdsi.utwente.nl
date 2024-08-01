@@ -159,6 +159,8 @@ A datathon is an event in which teams collaborate and compete to create a soluti
 {% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'hero'" %}
 {% include profile-widget-list-generic.html speakers=_speakers style="hero" %}
 
+{% include figure.html url="/assets/images/workshops/widsw-2024-sabine-siesling-speaking.jpg" caption="Sabine Siesling speaking on (in)Equity in breast cancer care for the Women in Data Science Week 2024" %}
+
 
 ### Lectures & Practicals
 
