@@ -24,52 +24,112 @@ layout: "event"
 date: 2025-03-03
 endDate: 2025-03-10
 frontpage: true
-speakers: {}
+speakers:
+  - name: Anna Machens
+    image_url: https://bdsi.bms.utwente.nl/assets/images/team/Anna-thumbnail.png
+    tags: 
+    - "mon-practical"
+    - "tue-practical"
+    - "wed-practical"
+    - "thu-practical"
+    - "fri-practical"
+  - name: Karel Kroeze
+    image_url: https://1348661504.rsc.cdn77.org/.uc/i02497df20103be9ef10191157003574a66994291b30a0801e3400140018041/kakroeze.jpg
+    tags: 
+    - "mon-practical"
+    - "tue-practical"
+    - "wed-practical"
+    - "thu-practical"
+    - "fri-practical"
 events: 
   - title: Opening & introduction
     type: lectures
     start: 2025-03-03 12:45
     end: 2025-03-03 13:30
+    location: Citadel T300
+    description: Welcome to the data science week, general information, etc.
   - title: Practical & Hands-on
     type: practicals
     start: 2025-03-03 13:45
     end: 2025-03-03 15:30
+    location: Citadel T300
+    description: Introduction to the datathon, finding and matching teams, using Kaggle, installing and setting up R/Python
+    tag: mon-practical
   - title: Lunch lecture
     type: lectures
     start: 2025-03-04 12:45
     end: 2025-03-04 13:30
+    location: Citadel T300
   - title: Practical & Hands-on
     type: practicals
     start: 2025-03-04 13:45
     end: 2025-03-04 15:30
+    location: Citadel T300
+    tag: tue-practical
   - title: Lunch lecture
     type: lectures
     start: 2025-03-05 12:45
     end: 2025-03-05 13:30
+    location: Citadel T300
   - title: Practical & Hands-on
     type: practicals
     start: 2025-03-05 13:45
     end: 2025-03-05 15:30
+    location: Citadel T300
+    tag: wed-practical
   - title: Lunch lecture
     type: lectures
     start: 2025-03-06 12:45
     end: 2025-03-06 13:30
+    location: Citadel T300
   - title: Practical & Hands-on
     type: practicals
     start: 2025-03-06 13:45
     end: 2025-03-06 15:30
+    location: Citadel T300
+    tag: thu-practical
   - title: Posters & Drinks
     type: socials
     start: 2025-03-06 16:00
     end: 2025-03-06 18:00
+    location: TBA
+    description: (Social) networking with other participants, and other University of Twente students and staff interested in data science.
   - title: Lunch lecture
     type: lectures
     start: 2025-03-07 12:45
     end: 2025-03-07 13:30
+    location: Citadel T300
   - title: Practical & Hands-on
     type: practicals
     start: 2025-03-07 13:45
     end: 2025-03-07 15:30
+    location: Citadel T300
+    tag: fri-practical
+  - title: Submission deadline
+    type: other
+    start: 2025-03-09 23:59
+    description: Deadline for datathon submissions on the leaderboard.
+  - title: Team presentations
+    type: lectures
+    start: 2025-03-10 12:45
+    end: 2025-03-10 13:30 
+    location: Citadel T300
+    description: Presentations by the datathon participants. Solutions, challenges, and lessons learned.
+  - title: Prize ceremony
+    type: speaker
+    start: 2025-03-10 13:45
+    end: 2025-03-10 14:00
+    location: Citadel T300
+    description: Prizes for the best and most innovative teams.
+    tag: fin-prizes
+  - title: Final keynote
+    type: speaker
+    start: 2025-03-10 14:00
+    end: 2025-03-10 14:30
+    location: Citadel T300
+    description: Final keynote speech and official closing of the Data Science Week.
+    tag: fin-keynote
+
 ---
 
 <link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.css" />
@@ -110,6 +170,10 @@ After a short coffee break (13:30 - 13:45), the lecture will be followed by a ha
 ### Posters & Drinks
 
 On thursday afternoon, we invite all data science week participants as well as anyone interested in data science at the University of Twente to join us for a poster presentation and drinks. This is a great opportunity to mingle with the other teams, and create lasting connections with peers and data science experts!
+
+
+{% include figure.html iframe="https://universiteittwente.sharepoint.com/sites/WomeninDataScienceWeek2/_layouts/15/embed.aspx?UniqueId=1ecc7d6a-e004-4788-89c3-f6b275d41092&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" caption="Women in Data Science Drinks & Poster Presentations 2024" %}
+
 
 ### Competition
 
@@ -248,105 +312,33 @@ Further details will be made available in the coming weeks and months.
       calendarId: "{{event.type}}",
       title: "{{event.title}}",
       start: new Date("{{event.start}}"),
-      end: new Date("{{event.end}}")
+      end: new Date("{{event.end}}"),
+      description: "Location: {{event.location}}\n\n{{event.description}}"
     },
 
     {% endfor %}
   ])
 </script>
 
+{% assign events_sorted = page.events | sort: "start" %}
+{% assign previous_day = "None" %}
 
-### Monday 
-###### March 3rd
+{% for event in events_sorted %}
+{% assign day = event.start | date: "%A" %}
+{% if previous_day != day %}
+  {% assign previous_day = day %}
+### {{ day }}
+###### {{ event.start | date: "%B %e" }}
+{% endif %}
+##### {{ event.title }}
+###### {{ event.start | date: "%R" }} - {{ event.end | date: "%R" }}, Location: {{ event.location }}
+{% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains event.tag" %}
+{% if event.type == "practicals" %}
+  {% include profile-widget-list-generic.html speakers=_speakers style="inline" %}
+{% else %}
+  {% include profile-widget-list-generic.html speakers=_speakers %}
+{% endif %}
 
-##### Opening and kickoff
-###### 12:45 - 13:30 - Location: Citadel T300
-{% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'opening'" %}
-{% include profile-widget-list-generic.html speakers=_speakers %}
+{{ event.description }}
 
-Welcome to the data science week, general information, etc.
-
-##### Practical & Hands-on session
-###### 13:45 - 15:30 - Location: Citadel T300
-{% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'mo-pm'" %}
-{% include profile-widget-list-generic.html speakers=_speakers style="inline" %}
-
-Getting started: introduction to the datathon, finding a team, using Kaggle, installing python/R, setting up an environment.
-
-### Tuesday
-###### March 4th
-
-##### Lunch Lecture
-###### 12:45 - 13:30 - Location: Citadel T300
-{% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'tu-am'" %}
-{% include profile-widget-list-generic.html speakers=_speakers %}
-
-##### Practical & Hands-on session
-###### 13:45 - 15:30 - Location: Citadel T300
-{% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'tu-pm'" %}
-{% include profile-widget-list-generic.html speakers=_speakers style="inline" %}
-
-
-### Wednesday
-###### March 5th
-
-##### Lunch lecture
-###### 12:45 - 13:30 - Location: Citadel T300
-{% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'we-am'" %}
-{% include profile-widget-list-generic.html speakers=_speakers %}
-
-##### Practical & Hands-on session
-###### 13:45 - 15:30 - Location: Citadel T300
-{% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'we-pm'" %}
-{% include profile-widget-list-generic.html speakers=_speakers style="inline" %}
-
-### Thursday
-###### March 6th
-
-##### Lunch Lecture
-###### 12:45 - 13:30 - Location: Citadel T300
-{% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'th-am'" %}
-{% include profile-widget-list-generic.html speakers=_speakers %}
-
-##### Practical & Hands-on session
-###### 13:45 - 15:30 - Location: Citadel T300
-{% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'th-pm'" %}
-{% include profile-widget-list-generic.html speakers=_speakers style="inline" %}
-
-##### Data Science Drinks
-###### 16:00 - 18:00 - Location: TBA
-
-(Social) networking with other participants, and other University of Twente students and staff interested in data science.
-
-{% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'drinks'" %}
-{% include profile-widget-list-generic.html speakers=_speakers %}
-
-### Friday
-###### March 7th
-
-##### Lunch Lecture
-###### 12:45 - 13:30 - Location: Citadel T300
-{% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'fr-talk'" %}
-{% include profile-widget-list-generic.html speakers=_speakers %}
-
-##### Practical & Hands-on session
-###### 13:45 - 15:30 - Location: Citadel T300
-{% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'fr-am'" %}
-{% include profile-widget-list-generic.html speakers=_speakers %}
-
-### Sunday
-###### March 9th
-
-##### Submission Deadline
-###### 23:59
-Deadline datathon submissions
-
-### Monday
-###### March 10th
-
-##### Closing session
-###### 12:45 - 14:30 - Location: Citadel T300
-Prize ceremony and presentations by winning team(s)
-
-{% assign _speakers = page.speakers | where_exp: "speaker", "speaker.tags contains 'closing'" %}
-{% include profile-widget-list-generic.html speakers=_speakers %}
+{% endfor %}
