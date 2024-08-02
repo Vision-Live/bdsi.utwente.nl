@@ -1,14 +1,12 @@
 <div id="footer">
-  <div class="footer-content">
-    <div class="footer-block">
-      <h5 class="mt-2">
-        <span class="iconify-inline" data-icon="ph:users-three"></span>
-        Join the community
-      </h5>
-      <!-- todo: make this an actual form, with backing dbish thing (wait for webhare?) -->
-      <a
-        class="inset"
-        href="{{ site.data.contact.newsletter }}"
+    <div class="footer-content">
+        <div class="footer-block">
+            <h5 class="mt-2">
+                <span class="iconify-inline" data-icon="ph:users-three"></span>
+                Join the community
+            </h5>
+            <a class="inset"
+               href="https://example.com/newsletter-signup"  <!-- Replace with actual newsletter signup link -->
         title="subscribe to our newsletter"
       >
         <span
@@ -17,152 +15,91 @@
         ></span>
         subscribe to our newsletter
       </a>
-      <a
-        class="inset"
-        href="https://twitter.com/BdsiUt"
+            <a class="inset"
+               href="https://twitter.com/GrimshawStreetCommunityCenter"  <!-- Replace with actual Twitter link -->
         target="_blank"
         title="follow us on twitter"
       >
         <span class="iconify-inline icon" data-icon="ph:twitter-logo"></span>
         follow us on twitter
       </a>
-      <a
-        class="inset"
-        href="https://www.linkedin.com/company/behavioural-data-science-incubator/about/"
+            <a class="inset"
+               href="https://www.linkedin.com/company/grimshaw-street-community-center"  <!-- Replace with actual LinkedIn link -->
         target="_blank"
         title="connect with us on linkedin"
       >
         <span class="iconify-inline icon" data-icon="ph:linkedin-logo"></span>
         connect with us on linkedin
       </a>
-      <a class="inset" href="{% link community.html %}#community" title="join the team (chat)"
-        ><span
-          class="iconify-inline icon"
-          data-icon="mdi:microsoft-teams"
-        ></span>
-        join the team (chat)
-      </a>
-      <a
-        class="inset"
-        href="mailto:{{ site.data.contact.email }}?subject=Dear BDSi&body=Dear BDSi,"
+            <a class="inset"
+               href="mailto:contact@grimshawstreet.org"  <!-- Replace with actual contact email -->
         title="write us a letter"
         ><span class="iconify-inline icon" data-icon="ph:envelope"></span>
         write us a letter
       </a>
-      <h5 class="mt-2">Proud partners with</h5>
-      {% assign partners = site.partners | sort: "title" %}
-      <div class="inset" id="partners-list">
-        {% for partner in partners %}
-        <a href="{{partner.website}}" target="_blank">
-          {% if partner.logo %}
-          <img
-            src="{% link {{partner.logoLight | default: partner.logo}} %}"
-            alt="{{partner.title}} logo"
-            class="logo"
-          />
-          {% elsif partner.short_title %}
-          {{partner.short_title}}
-          {% else %}
-          {{partner.title}}
-          {% endif %}
-        </a>
-        {% endfor %}
-      </div>
-    </div>
-    <div class="footer-block">
-      <h5 class="mt-2">
-        <div id="team-icon-div"></div>
-        Meet the team
-      </h5>
-      {% assign section = "" %}
-      {% assign members = site.team | sort: "title" | sort: "sortorder" %} 
-      {% for profile in members %}
-      {% if profile.section != section %}
-        {% assign section = profile.section %}
-        <div class="tiny-header">{{section}}</div>
-      {% endif %}
-      <a
-        href="{{ site.baseurl }}/team/#{{profile.email | split: '@' | first | replace: '.', '-'}}"
+        </div>
+        <div class="footer-block">
+            <h5 class="mt-2">
+                <div id="team-icon-div"></div>
+                Meet the team
+            </h5>
+            <!-- Team members should be listed here -->
+            <!-- Example: -->
+            <a href="https://example.com/team#john-doe"  <!-- Replace with actual team member link -->
         class="inset"
         ><img
-          src="{% link {{profile.image}} %}"
-          alt="{{author}}"
+          src="https://example.com/images/john-doe.jpg"  <!-- Replace with actual image link -->
+          alt="John Doe"
           class="profile-image"
-        />{{profile.title}}{% if profile.department %} <span class="text-muted">{{ profile.department}}</span>{% endif %}</a
+        />John Doe<span class="text-muted"> Director</span></a
       >
-      {% endfor %}
-    </div>
-    <div class="footer-block sitemap">
-      <h5 class="mt-2">
-        <span class="iconify-inline" data-icon="ph:git-merge"></span>
-        Sitemap
-      </h5>
-      <ul>
-        <li>
-          <a href="{% link about.html %}">About us</a>
-          <ul>
-              <li><a href="{% link about.html %}#services">Services</a></li>
-              <li><a href="{% link about.html %}#partners">Partners</a></li>
-          </ul>
-        </li>
-        <li><a href="{% link news.html %}">News</a></li>
-        <li>
-          <a href="{% link research.html %}">Research Support</a>
-          <ul>
-            <li><a href="{% link projects.html %}">Projects</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="{% link expertise.md %}">Expertise Sharing</a>
-          <ul>
-            <li><a href="{% link events.html %}">BDSi Events</a></li>
-            <li><a href="{% link community.html %}#topical-communities">Community Events</a></li>
-            <li><a href="{% link blogs.html %}">Blog</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="{% link community.html %}">Community Building</a>
-          <ul>
-            <li><a href="{% link community.html %}#topical-communities">Data Science communities</a></li>
-          </ul>
-        </li>
-        <li><a href="{% link team.html %}">Team</a></li>
-      </ul>
-      
-    </div>
-    <div class="footer-block">
-      <h5 class="mt-2">
-        <span class="iconify-inline" data-icon="ph:package"></span>
-        Postal address
-      </h5>
-      <pre class="address-block inset">
-        {{site.data.contact.address.postal}}
+            <!-- Repeat the above block for each team member -->
+        </div>
+        <div class="footer-block sitemap">
+            <h5 class="mt-2">
+                <span class="iconify-inline" data-icon="ph:git-merge"></span>
+                Sitemap
+            </h5>
+            <ul>
+                <li><a href="https://example.com/about">About us</a></li> <!-- Replace with actual link -->
+                <li><a href="https://example.com/blog">Blog</a></li> <!-- Replace with actual link -->
+                <li><a href="https://example.com/events">Events</a></li> <!-- Replace with actual link -->
+                <li><a href="https://example.com/community">Community</a></li> <!-- Replace with actual link -->
+                <li><a href="https://example.com/team">Team</a></li> <!-- Replace with actual link -->
+                <li><a href="https://example.com/contact">Contact</a></li> <!-- Replace with actual link -->
+            </ul>
+        </div>
+        <div class="footer-block">
+            <h5 class="mt-2">
+                <span class="iconify-inline" data-icon="ph:package"></span>
+                Postal address
+            </h5>
+            <pre class="address-block inset">
+        123 Grimshaw Street, Townsville, TX 12345 <!-- Replace with actual postal address -->
       </pre>
-      <h5 class="mt-2">
-        <span class="iconify-inline" data-icon="ph:hand-waving"></span>
-        Visiting address
-      </h5>
-      <pre class="address-block inset">
-          {{site.data.contact.address.visiting}}
+            <h5 class="mt-2">
+                <span class="iconify-inline" data-icon="ph:hand-waving"></span>
+                Visiting address
+            </h5>
+            <pre class="address-block inset">
+        123 Grimshaw Street, Townsville, TX 12345 <!-- Replace with actual visiting address -->
       </pre>
+        </div>
     </div>
-  </div>
-  <div class="sub-footer">
-    <div class="title">
-      BDSi - Behavioural Data Science incubator, 2021–{{site.time | date: "%Y" }}
-    </div>
-    <a
-      class="ml-auto"
-      target="_blank"
-      href="https://www.utwente.nl/en/about-our-website/"
+    <div class="sub-footer">
+        <div class="title">
+            Grimshaw Street Community Center, 2021–{{site.time | date: "%Y" }}
+        </div>
+        <a class="ml-auto"
+           target="_blank"
+           href="https://example.com/privacy-policy"  <!-- Replace with actual link -->
       >Privacy & Cookies</a
     >
-    <a
-      target="_blank"
-      href="https://www.utwente.nl/en/about-our-website/disclaimer/"
+        <a target="_blank"
+           href="https://example.com/disclaimer"  <!-- Replace with actual link -->
       >Disclaimer & Copyright</a
     >
-  </div>
+    </div>
 </div>
 
-<script src="{% link assets/js/pages/people.js %}"></script>
+<script src="{{site.baseurl}}/assets/js/pages/people.js"></script>
