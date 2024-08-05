@@ -34,7 +34,7 @@ events:
       end: 2024-10-03 14:30
       type: socials
     - title: Reactive Programming
-      description: Overview of the reactive programming paradigm. Reactive expressions, observers, dependency chains. The importance of defining dependency flows, and how to control updates.
+      description: Overview of the reactive programming paradigm. Reactive expressions, observers, and controlling dependency flows.
       start: 2024-10-03 14:30
       end: 2024-10-03 15:00
       type: lectures
@@ -91,9 +91,13 @@ The (target) schedule alternates short lectures with hands-on sessions, immediat
 
 <link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.css" />
 <script src="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.js"></script>
-<div id="calendar" style="height: 400px;"></div>
+<div id="calendar"></div>
 
 <style>
+  #calendar {
+    height: 400px;
+    /* position: fixed; */
+  }
   #calendar .toastui-calendar-timegrid {
     min-height: 0;
     height: 100% !important;
@@ -102,8 +106,9 @@ The (target) schedule alternates short lectures with hands-on sessions, immediat
     overflow-y: unset;
   }
   .event-body {
-    max-width: 100%;
-    
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
   }
 </style>
 
@@ -116,7 +121,7 @@ The (target) schedule alternates short lectures with hands-on sessions, immediat
   const calendar = new Calendar('#calendar', {
     defaultView: 'day',
     isReadOnly: true,
-    useDetailPopup: true,
+    useDetailPopup: false,
     day: {
         hourStart: 13,
         hourEnd: 17
@@ -149,8 +154,10 @@ The (target) schedule alternates short lectures with hands-on sessions, immediat
         return format_time.format(time);
       },
       time(event) {
-        console.log({event});
-        return `<div class="event_title"><span>${format_time.format(event.start)} - ${format_time.format(event.end)}</span>: <span style="color: black; font-weight: bold;">${event.title}</span></div><div class="event_body">${event.body}</div>`;
+        return `<span>${format_time.format(event.start)} - ${format_time.format(event.end)}</span>: <span style="color: black; font-weight: bold;">${event.title}</span><div class="event-body">${event.body}</div>`;
+      },
+      popupDetailDate({ start, end }) {
+        return `${format_time.format(start)} - ${format_time.format(end)}`;
       }
     },
     calendars: [
