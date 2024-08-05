@@ -82,6 +82,7 @@ defaults:
 
 sass:
   style: expanded # possible values: nested expanded compact compressed
+  quiet_deps: true
 
 plugins:
   - jekyll-environment-variables
