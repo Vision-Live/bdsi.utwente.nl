@@ -1,10 +1,11 @@
-!package*.json
-
 # data files used in dev
 *.yaml
 *.yml
 *.json
 *.ics
+
+# excluding npm package files
+!package*.json
 
 # test bash scripts (containing tokens)
 *-test.sh
