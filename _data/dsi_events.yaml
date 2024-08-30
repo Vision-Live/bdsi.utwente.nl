@@ -100,6 +100,18 @@
   end: 2024-11-16T17:00:00+00:00
   date: 2024-11-13
   endDate: 2024-11-16
+- title: Unlocking the Power of LLMs
+  description: Are you looking to enhance your research and teaching? Join our
+    one-day workshop on Large Language Models (LLMs) to learn how to utilize
+    this technology effectively.
+  source: dsi
+  url: https://www.utwente.nl/en/digital-society/events/2024/11/1725112/unlocking-the-power-of-llms
+  img_url: https://1348661504.rsc.cdn77.org/.uc/i5ff2448201024dc6e203f33c1a03dbb56dfd8cd31af60701c33a003a0080/data.png
+  start: 2024-11-28T09:30:00+00:00
+  end: 2024-11-28T17:00:00+00:00
+  date: 2024-11-28
+  endDate: 2024-11-28
+  time: 09:30 - 17:00
 - title: Data Science Week
   description: The goal of the data science week is to introduce interested
     students and staff to data science in a fun and cooperative way, and help
