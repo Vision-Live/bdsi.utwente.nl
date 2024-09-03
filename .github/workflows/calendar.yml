@@ -15,7 +15,7 @@ jobs:
           token: ${{secrets.CALENDAR_PAT}}
       - uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20
       - run: npm install
         name: prepare npm environment
         working-directory: _utils/calendar_sync
