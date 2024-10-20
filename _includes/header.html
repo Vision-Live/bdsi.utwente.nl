@@ -1,13 +1,13 @@
-<div class="header {{include.headerClass}}">
+<div class="header {{ include.headerClass }}">
     <div class="container">
         <div class="logo">
-            <a href="{{site.baseurl}}/">
-                {% include images/logo-light.svg %}
+            <a href="{{ site.baseurl }}/">
+                <img src="{{ '/assets/images/gcclogo2.png' | relative_url }}" alt="Logo" />
             </a>
         </div>
         <div class="logo-mobile">
-            <a href="{{site.baseurl}}/">
-                <img src="{% link assets/images/logo-light.svg %}" alt="">
+            <a href="{{ site.baseurl }}/">
+                <img src="{{ '/assets/images/gcclogo2.png' | relative_url }}" alt="Mobile Logo" />
             </a>
         </div>
         {% include main-menu.html %}
